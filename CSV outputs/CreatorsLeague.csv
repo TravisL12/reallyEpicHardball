@@ -1,0 +1,177 @@
+teamName,firstName,lastName,primaryPosition,pitcherRole,power,contact,speed,fielding,arm,velocity,junk,accuracy,age
+"Jomboy Media",Sloop,Whoopity,4,,29,73,83,58,53,,,,20
+"Prime Time",Sal,Slinger,1,2,65,14,38,75,,75,46,95,28
+"Prime Time",Almondo,Gnuts,1,3,4,14,37,70,,74,55,67,33
+"Pinstripe Strong",Boozle,Doozyshine,5,,91,98,71,50,52,,,,27
+"We Got Ice",Sirloin,Jones,1,4,17,5,48,29,,87,61,59,37
+"We Got Ice",Charlie,Best,1,3,3,13,5,82,,74,93,86,31
+"Pinstripe Strong",Ace,"von Acesson",1,1,15,32,16,96,,65,84,78,29
+"Prime Time",Kitty,Kauffman,4,,32,94,93,51,52,,,,21
+"Girls & Co.",Bobby,Bashe,5,,96,32,75,55,63,,,,24
+"Goat Herd",Hank,Aaron,9,,99,98,35,73,87,,,,36
+"Prime Time",Bartolo,Colon,1,1,90,0,21,41,,54,64,83,35
+"We Got Ice",Torii,Hunter,8,,66,47,65,78,65,,,,23
+"Jomboy Media",John,Kruk,7,,36,61,60,50,65,,,,21
+"Can O' Corns",Mark,Langston,1,1,7,0,15,61,,64,84,56,21
+"We Got Ice",Cliff,Lee,1,1,9,5,30,19,,34,65,88,32
+"Pinstripe Strong",Willie,Mays,8,,97,91,45,98,63,,,,20
+"Prime Time",Mike,Napoli,2,,86,9,37,74,72,,,,33
+"Can O' Corns",Joe,Nathan,1,4,12,2,1,43,,92,72,61,33
+"Jomboy Media",Kerry,Wood,1,1,29,7,11,39,,74,74,9,19
+"We Got Ice",Kevin,Youkilis,5,,73,57,68,65,29,,,,23
+"Can O' Corns",Jeff,Bagwell,3,,95,79,82,61,25,,,,28
+"Jomboy Media",Jimmy,"O'Brien",2,,95,95,39,95,97,,,,34
+"Jomboy Media",Bobby,Skinner,5,,93,30,30,90,90,,,,29
+"Jomboy Media",Kelsey,Wingert,7,,71,57,95,90,90,,,,20
+"Jomboy Media",Jake,Storiale,8,,87,59,40,85,88,,,,35
+"Jomboy Media",Jerry,Blevins,1,1,28,44,73,64,,93,56,81,27
+"Jomboy Media",Justin,Penik,1,1,7,3,12,41,,82,53,82,32
+"We Got Ice",Kyle,MacDonald,2,,84,76,39,80,67,,,,38
+"We Got Ice",Lorenzo,DeMalia,6,,65,99,99,99,99,,,,29
+"We Got Ice",Dalton,Feely,7,,91,67,89,59,74,,,,29
+"We Got Ice",Jack,Doyle,1,1,28,1,73,76,,92,60,52,26
+"We Got Ice",Kollin,Stone,1,1,19,73,12,92,,98,12,50,30
+"We Got Ice",Yill,Yill,1,3,5,46,29,56,,95,95,5,29
+"Girls & Co.",Jolly,Olive,2,,85,80,60,50,61,,,,31
+"Girls & Co.",Trevor,Plouffe,5,,99,99,45,99,94,,,,30
+"Girls & Co.",Paxton,Elrod,8,,51,99,99,79,99,,,,31
+"Girls & Co.",Drew,Davis,1,1,59,60,57,49,,60,82,60,30
+"Girls & Co.",Dan,Canobbio,1,1,13,11,29,83,,95,68,52,27
+"Girls & Co.",Dan,Rourke,1,1,33,54,37,60,,92,89,25,31
+"Pinstripe Strong",Ashland,Scott,3,,89,89,44,88,47,,,,31
+"Pinstripe Strong",Lou,Dab,4,,69,97,47,53,94,,,,42
+"Pinstripe Strong",Peter,Moylan,5,,90,80,20,70,54,,,,28
+"Pinstripe Strong",Chris,Rose,6,,68,80,32,68,88,,,,34
+"Pinstripe Strong",Joez,McFly,7,,99,99,64,99,99,,,,25
+"Pinstripe Strong",Justin,Shackil,9,,80,91,70,72,50,,,,25
+"Goat Herd",Gyvi,World,4,,95,95,28,58,56,,,,38
+"Goat Herd",Mighty,Goat,5,,99,99,99,70,92,,,,24
+"Goat Herd",K,Pritz,6,,70,21,70,30,92,,,,25
+"Goat Herd",Alex,Twin,7,,24,6,98,75,86,,,,20
+"Goat Herd",Brett,Barrett,8,,78,67,85,69,50,,,,26
+"Goat Herd",Claire,Bear,1,1,10,32,70,73,,91,81,50,37
+"Prime Time",Bruce,Wayne,2,,40,92,82,65,92,,,,25
+"Prime Time",Scuffy,McGee,4,,89,80,84,55,98,,,,21
+"Prime Time",Maximillian,Reible,5,,99,50,55,99,99,,,,31
+"Prime Time",Kevin,Gohd,6,,70,99,82,86,94,,,,37
+"Prime Time",Lauren,Remy,7,,95,79,64,63,71,,,,31
+"Prime Time",Tim,Koogs,1,1,68,44,13,65,,99,95,90,33
+"Mashing Monsters",Daddy,Dimmu,2,,99,99,9,73,70,,,,24
+"Mashing Monsters",Chandler,Sartain,3,,65,99,56,89,29,,,,23
+"Mashing Monsters",King,Shelfy,5,,99,89,80,99,99,,,,26
+"Mashing Monsters",Your,FriendKyle,8,,99,20,55,48,60,,,,37
+"Mashing Monsters",Adam,Samuels,7,,20,20,99,99,99,,,,30
+"Mashing Monsters",Caden,Sartain,9,,68,90,75,65,88,,,,26
+"Can O' Corns",Fuzzy,FromYT,8,,97,95,83,79,90,,,,24
+"Can O' Corns",Foolish,Baseball,1,3,43,25,19,38,,25,99,50,34
+"Can O' Corns",GiraffeNeck,Marc,2,,41,67,67,97,99,,,,27
+"Can O' Corns",Jared,Carrabis,1,1,79,52,95,78,,58,75,40,31
+"Can O' Corns",Littleman,17,4,,97,97,17,97,17,,,,21
+"Can O' Corns",Chaison,Miklich,5,,91,91,19,91,91,,,,21
+"Mashing Monsters",Doyen,Stafford,1,1,10,4,18,58,,93,57,88,29
+"Mashing Monsters",Hito,Moonshota,5,,98,68,30,88,93,,,,28
+"Mashing Monsters",Buttons,Bunterson,6,,46,99,92,92,82,,,,25
+"Jomboy Media",Huffly,Buffler,4,,91,90,28,75,58,,,,25
+"Goat Herd",Jacques,"O'Ften",2,,87,49,69,76,81,,,,36
+"Can O' Corns",Sakda,Song,3,,80,93,90,93,57,,,,25
+"Mashing Monsters",Steve,Bedrosian,1,3,0,6,4,40,,88,71,42,27
+"Jomboy Media",Johnny,Bench,2,,83,60,49,74,96,,,,24
+"Girls & Co.",George,Brett,5,,64,91,79,70,62,,,,33
+"Goat Herd",Eddie,Mathews,5,,92,70,27,76,92,,,,21
+"Girls & Co.",Jorge,Posada,2,,71,42,45,25,74,,,,32
+"Mashing Monsters",Jovita,Pulo,1,1,8,10,49,63,,97,89,85,29
+"Jomboy Media",Bella,Mietballe,1,1,39,64,11,93,,14,25,34,32
+"Pinstripe Strong",Johnny,Bags,9,,66,73,75,35,70,,,,23
+"Prime Time",Mash,Taters,3,,95,74,27,65,75,,,,23
+"Girls & Co.",Lucy,Finnegans,1,3,25,28,43,60,,53,69,29,28
+"Prime Time",Shay,Dee,1,3,29,17,32,94,,84,51,95,31
+"Jomboy Media",Wiggles,Freeman,6,,33,61,45,50,56,,,,28
+"Girls & Co.",Tucker,Turlington,1,3,12,8,7,40,,53,85,51,37
+"Goat Herd",Harry,Backman,2,,95,71,58,33,39,,,,31
+"Can O' Corns",Jock,Sports,6,,89,98,57,93,71,,,,29
+"We Got Ice",Doc,Simpleman,1,3,22,26,28,58,,61,53,53,37
+"Goat Herd",Kay,Frequin,1,4,8,2,32,34,,99,84,97,31
+"Mashing Monsters",Rhonda,Horne,5,,94,69,83,46,45,,,,29
+"Goat Herd",Elmo,Slayer,1,1,16,0,7,79,,72,94,95,23
+"Can O' Corns",Hurley,Bender,1,1,12,8,23,67,,73,99,86,23
+"Prime Time",Immaculo,Spectaculo,1,3,2,12,11,56,,84,95,79,25
+"Prime Time",Hercules,Bentley,3,,88,66,13,78,56,,,,31
+"Goat Herd",Sluggy,Boomhauer,9,,94,84,45,32,72,,,,31
+"Jomboy Media",Phil,Flusterer,1,4,4,12,3,44,,54,77,76,27
+"We Got Ice",Beefcake,McStevens,5,,83,96,74,57,65,,,,27
+"Girls & Co.",Yakker,Asherbomb,4,,98,61,54,63,25,,,,28
+"Can O' Corns",Alisha,Woodrow,1,1,30,4,23,64,,87,77,99,31
+"Mashing Monsters",Hammer,Longballo,9,,99,78,60,58,75,,,,29
+"Girls & Co.",Ice,Vainer,1,4,3,13,57,40,,87,93,46,31
+"Pinstripe Strong",Chico,Lapada,1,4,8,17,24,71,,79,96,62,31
+"Can O' Corns",Hack,Liner,5,,92,87,65,57,86,,,,31
+"Girls & Co.",Maggie,Rags,4,,26,17,67,92,98,,,,28
+"Jomboy Media",Derr,Neverwocker,1,3,5,15,54,71,,90,87,73,21
+"Goat Herd",Maurice,Brick,1,1,16,15,13,81,,76,96,52,22
+"Jomboy Media",Whopper,Batsman,4,,81,15,50,49,37,,,,23
+"Can O' Corns",Juice,Jackson,5,,95,88,43,68,70,,,,22
+"Pinstripe Strong",Archie,Alonso,1,3,10,8,38,55,,50,74,58,27
+"Mashing Monsters",Knox,Oxensocksen,2,,11,96,79,92,77,,,,29
+"Pinstripe Strong",Buzz,Pastimm,1,2,14,26,3,56,,87,29,65,31
+"Mashing Monsters",Squinch,Tootwhistle,4,,97,85,69,55,49,,,,37
+"Girls & Co.",Jack,Cracker,7,,81,94,33,50,66,,,,28
+"Pinstripe Strong",Cozy,Spooner,2,,42,32,29,66,39,,,,20
+"We Got Ice",Batch,Wilson,8,,39,75,52,77,71,,,,38
+"Girls & Co.",Thurman,Colt,8,,70,45,83,31,49,,,,32
+"Prime Time",Rogan,Balls,1,4,26,7,11,45,,82,43,34,29
+"Goat Herd",Taylor,McWhales,1,3,3,13,16,48,,99,51,62,31
+"Goat Herd",Mack,Gunn,1,3,11,7,17,79,,98,68,75,29
+"Pinstripe Strong",Nacho,Crisp,6,,70,53,61,69,69,,,,27
+"We Got Ice",Ella,Roids,9,,80,52,23,71,79,,,,21
+"Can O' Corns",Handley,Dexterez,6,,63,87,87,97,74,,,,29
+"Jomboy Media",Yoyo,Yamamoto,5,,50,86,34,66,86,,,,29
+"We Got Ice",Rip,Dingers,5,,97,50,40,42,90,,,,25
+"We Got Ice",Dick,Burger,5,,97,16,65,36,42,,,,29
+"Girls & Co.",Rick,Ankiel,1,1,65,5,57,42,,90,5,3,20
+"Girls & Co.",Ernie,Banks,3,,86,80,25,95,22,,,,34
+"Girls & Co.",Bert,Blyleven,1,1,7,1,5,82,,62,73,93,36
+"Girls & Co.",Chad,Bradford,1,3,7,0,0,85,,2,72,50,32
+"Goat Herd",Ryan,Braun,7,,96,62,51,37,54,,,,29
+"We Got Ice",Craig,Counsell,4,,17,49,68,90,71,,,,31
+"Prime Time",Andre,Dawson,8,,72,62,83,69,60,,,,39
+"We Got Ice",Carlos,Delgado,3,,96,48,50,53,11,,,,27
+"Prime Time",Jim,Edmonds,8,,86,43,61,92,87,,,,21
+"We Got Ice",Dwight,Evans,9,,84,69,79,68,91,,,,34
+"Can O' Corns",Bob,Feller,1,1,15,5,5,50,,90,74,43,18
+"Goat Herd",John,Franco,1,3,0,4,27,78,,62,81,60,33
+"Goat Herd",David,Ortiz,3,,98,99,16,25,42,,,,28
+"Can O' Corns",Goose,Gossage,1,4,6,3,3,35,,97,86,60,35
+"Jomboy Media",Curtis,Granderson,8,,81,35,57,85,55,,,,38
+"Prime Time",Vladimir,Guerrero,9,,83,87,62,12,75,,,,23
+"Jomboy Media",Ron,Guidry,1,2,4,7,0,68,,88,24,84,23
+"Pinstripe Strong",LaTroy,Hawkins,1,3,3,0,2,66,,75,48,68,23
+"Mashing Monsters",Tom,Henke,1,3,5,6,3,64,,63,96,68,38
+"Goat Herd",Ryan,Howard,3,,96,11,41,44,9,,,,32
+"We Got Ice",Tommy,John,1,2,9,5,5,94,,62,58,90,26
+"Mashing Monsters",Randy,Johnson,1,1,7,1,7,11,,98,86,74,23
+"Can O' Corns",Andruw,Jones,8,,87,33,75,98,81,,,,32
+"Can O' Corns",Chuck,Knoblauch,4,,33,80,95,34,59,,,,20
+"Prime Time",Al,Leiter,1,2,5,7,14,44,,68,88,25,24
+"Pinstripe Strong",Derek,Lowe,1,2,7,3,22,86,,38,65,70,28
+"Pinstripe Strong",Tippy,Martinez,1,3,2,3,3,58,,32,78,9,36
+"Girls & Co.",Joe,Mauer,2,,62,84,36,67,93,,,,22
+"Prime Time",Fred,McGriff,3,,89,58,59,56,15,,,,24
+"Pinstripe Strong",Paul,Molitor,5,,54,92,93,69,66,,,,36
+"Pinstripe Strong",Mike,Mussina,1,1,3,6,14,87,,67,55,97,37
+"Jomboy Media",Jeff,Nelson,1,3,0,3,4,40,,69,99,3,34
+"We Got Ice",Roy,Oswalt,1,1,5,4,8,75,,67,52,82,33
+"Girls & Co.",Mike,Piazza,2,,90,77,41,56,30,,,,19
+"Jomboy Media",Babe,Ruth,1,1,99,96,20,58,,67,86,58,31
+"Goat Herd",Nolan,Ryan,1,1,3,7,21,19,,99,98,24,36
+"Mashing Monsters",Bret,Saberhagen,1,1,3,3,18,80,,80,12,95,33
+"Can O' Corns",Ron,Santo,5,,87,83,19,91,97,,,,30
+"Mashing Monsters",Mike,Schmidt,5,,96,54,79,98,96,,,,35
+"Pinstripe Strong",Tom,Seaver,1,1,17,1,36,64,,89,63,75,26
+"Can O' Corns",Grady,Sizemore,8,,66,40,77,81,35,,,,39
+"Pinstripe Strong",Reggie,Smith,8,,69,68,55,55,68,,,,35
+"Goat Herd",Lee,Smith,1,3,1,1,0,64,,94,72,69,22
+"Mashing Monsters",Bruce,Sutter,1,4,1,6,22,77,,45,90,78,23
+"Prime Time",Luis,Tiant,1,2,19,2,3,48,,56,72,79,26
+"Jomboy Media",Shane,Victorino,8,,35,59,82,75,86,,,,30
+"Mashing Monsters",Billy,Wagner,1,4,6,7,16,40,,98,89,62,23
+"Mashing Monsters",Brad,Ziegler,1,3,3,1,6,80,,16,93,60,34
