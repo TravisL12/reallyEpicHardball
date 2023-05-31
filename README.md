@@ -49,6 +49,31 @@ Tables:
 
 This works to get the trait and subType (and Local ID)
 
+finds 440
+
+```
+select
+    team.teamName,
+    vbpi.firstName,
+    vbpi.lastName,
+    vbpi.primaryPosition,
+    vbpi.pitcherRole,
+    tbp.power,
+    tbp.contact,
+    tbp.speed,
+    tbp.fielding,
+    tbp.arm,
+    tbp.velocity,
+    tbp.junk,
+    tbp.accuracy,
+    tbp.age
+from v_baseball_player_info vbpi
+join t_baseball_players tbp
+    on vbpi.baseballPlayerGUID = tbp.GUID
+join t_teams team
+    on tbp.teamGUID = team.GUID
+```
+
 ```
 select
     loc.localId,
@@ -73,7 +98,7 @@ join t_baseball_players tbp
     on vbpi.baseballPlayerGUID = tbp.GUID
 join t_baseball_player_local_ids loc
     on tbp.GUID = loc.GUID
-join t_baseball_player_traits trait
+left join t_baseball_player_traits trait
     on loc.localID = trait.baseballPlayerLocalID
 join t_teams team
     on tbp.teamGUID = team.GUID

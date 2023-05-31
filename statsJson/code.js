@@ -1,3 +1,6 @@
+const fs = require("fs");
+// const smbOptionData = require("./SuperMegaOptions.json");
+
 // code to convert the array of json options (...Options.json) into the object file (...OptionsData.json)
 function reducePlayers(players) {
   return players.reduce((acc, player) => {
@@ -12,6 +15,10 @@ function reducePlayers(players) {
   }, {});
 }
 
-// const fs = require('fs')
-// const smbOptionData = require("./SuperMegaOptions.json")
-// > fs.writeFile('./smbOptionsData.json', JSON.stringify(reducePlayers(smbOptionData)), err => {err})
+// fs.writeFile(
+//   "./smbOptionsData.json",
+//   JSON.stringify(reducePlayers(smbOptionData)),
+//   (err) => {
+//     err;
+//   }
+// );
