@@ -1,552 +1,470 @@
-teamName,firstName,lastName,primaryPosition,pitcherRole,power,contact,speed,fielding,arm,velocity,junk,accuracy,age
-Sawteeth,Thrash,Allmeyer,1,1,2,21,24,82,,44,56,76,31
-Sawteeth,Mattie,Batts,8,,62,64,73,52,40,,,,36
-Sawteeth,Johnny,Bags,9,,66,73,75,35,70,,,,23
-Sawteeth,Slash,Trips,8,,66,88,95,64,36,,,,22
-"Hot Corners",Dirk,Sportswood,3,,70,89,39,64,68,,,,31
-Sawteeth,Cathy,Culdesac,7,,50,52,64,88,48,,,,21
-Sawteeth,Junior,"Young Jr",3,,79,29,49,45,58,,,,19
-Sawteeth,Kira,Nutmeg,5,,44,93,52,55,72,,,,21
-Sawteeth,Jon,Ronero,6,,90,58,69,74,19,,,,28
-Jacks,Alberto,Roberto,1,1,11,18,20,43,,16,72,64,37
-Sawteeth,Melody,Moods,1,1,20,26,15,55,,26,69,55,30
-Sawteeth,Doc,Simpleman,1,3,22,26,28,58,,61,53,53,37
-Sawteeth,Pex,Flext,2,,62,73,15,69,75,,,,29
-Sawteeth,Maximo,Primo,1,4,9,22,13,71,,70,91,80,27
-Sawteeth,Hanso,Magikko,6,,37,41,57,91,80,,,,22
-Sawteeth,Libby,Doe,1,3,7,18,32,63,,56,58,49,25
-Sawteeth,DP,Turner,4,,61,55,43,80,46,,,,32
-Sawteeth,Junior,"Young Sr",2,,70,41,38,76,92,,,,42
-Sawteeth,Grease,Veterano,1,2,6,26,17,70,,28,75,63,32
-Sawteeth,Brick,Towers,1,3,2,24,48,46,,59,96,48,29
-Sirloins,Manny,Kays,1,1,11,2,67,88,,75,88,77,25
-Sirloins,Slip,"Van'Derwink",1,1,44,2,14,46,,60,76,71,30
-Sirloins,Bugsy,Snugs,1,1,18,6,15,37,,77,64,64,31
-Sirloins,Preston,Addonomus,2,,84,19,48,64,69,,,,37
-Sirloins,Lloyd,Cook,4,,80,52,83,72,33,,,,32
-Sirloins,Hammer,Longballo,9,,99,78,60,58,75,,,,29
-Sirloins,Willard,Wiggins,6,,66,50,64,46,68,,,,21
-Sirloins,Filet,Jones,7,,97,41,44,55,25,,,,20
-Sirloins,Miguel,Duke,1,3,9,13,47,39,,30,86,18,29
-"Hot Corners",Bobby,Bashe,5,,96,32,75,55,63,,,,24
-Sirloins,Madoka,Hayata,5,,48,84,97,43,45,,,,36
-Sirloins,Damien,Rush,8,,89,12,93,57,70,,,,31
-Sirloins,Momo,Tobo,2,,50,48,37,70,80,,,,29
-Sirloins,Linus,Digby,1,3,21,6,54,89,,50,55,19,27
-Sirloins,Javier,Cortez,7,,65,32,46,44,64,,,,27
-Sirloins,Mick,Steeyle,3,,84,35,45,28,21,,,,27
-Sirloins,Franz,Zilla,1,4,5,2,19,58,,85,39,25,32
-Jacks,Betty,Sparks,9,,97,26,37,21,64,,,,27
-"Sand Cats",Kerwin,Arches,1,1,55,13,16,82,,60,62,80,35
-Sirloins,Shay,Dee,1,3,29,17,32,94,,84,51,95,31
-Grapplers,Bertram,"Haftberger III",1,1,14,18,35,58,,18,54,29,29
-Grapplers,Marco,Demarco,8,,71,37,86,67,66,,,,36
-"Hot Corners",Seymour,Socks,9,,7,58,85,62,94,,,,32
-Grapplers,Perd,Lovelorn,1,1,16,3,12,50,,30,90,86,29
-Grapplers,Eduardo,Electro,6,,60,8,81,76,78,,,,29
-Grapplers,Ali,Finderre,5,,60,92,66,61,80,,,,38
-Grapplers,Biff,Noggins,7,,61,42,55,37,73,,,,21
-Grapplers,Jefe,Manzano,7,,39,49,67,67,56,,,,37
-Grapplers,Joven,Bambino,9,,94,60,76,71,80,,,,27
-"Sand Cats",Jess,Fowl,3,,62,35,88,90,64,,,,22
-Grapplers,Hiro,Misano,1,1,5,23,49,63,,30,42,69,22
-Grapplers,Rallie,Overro,1,3,53,8,23,69,,85,77,98,32
-Grapplers,Tucker,Turlington,1,3,12,8,7,40,,53,85,51,37
-Grapplers,Grizz,Senioro,2,,15,32,63,71,90,,,,39
-Grapplers,Marla,Moore,2,,29,44,8,64,76,,,,27
-Jacks,Chico,Lapada,1,4,8,17,24,71,,79,96,62,31
-Grapplers,Zoom,Delacruz,4,,59,9,97,94,46,,,,28
-Grapplers,Ben,Kringer,3,,46,63,59,59,72,,,,27
-Grapplers,Lola,Nopps,1,2,14,51,18,68,,71,27,55,24
-Grapplers,Mack,Gunn,1,3,11,7,17,79,,98,68,75,29
-Freebooters,Angel,Verde,1,1,3,19,13,67,,64,59,84,21
-Freebooters,Sturdy,Woodman,3,,63,83,38,39,38,,,,38
-Freebooters,Stockton,Brickhouse,8,,76,94,53,27,49,,,,24
-Freebooters,Oakley,Stiffs,9,,87,67,43,29,80,,,,37
-Freebooters,Jermaine,Raines,2,,41,69,16,79,53,,,,29
-Freebooters,Patience,Evergreen,7,,54,79,54,52,45,,,,27
-Jacks,Downtown,Upton,3,,65,67,48,50,31,,,,37
-Freebooters,Steamboat,Wisselle,1,3,2,12,33,32,,86,79,62,28
-Freebooters,Badhop,Brown,5,,57,83,20,12,34,,,,26
-Freebooters,Gunns,Jackman,6,,93,84,47,46,54,,,,32
-"Sand Cats",Maverick,McMann,1,3,5,15,53,58,,79,97,62,21
-Freebooters,Lana,Rhymes,1,1,50,5,29,46,,23,66,51,31
-Freebooters,Kache,Baskette,7,,41,50,58,53,72,,,,22
-Freebooters,Winnie,Noelle,1,1,21,27,17,60,,77,64,70,31
-Freebooters,Rocky,Backstop,2,,24,85,46,41,17,,,,29
-Freebooters,Kay,Frequin,1,4,8,2,32,34,,99,84,97,31
-Freebooters,Walker,Runs,4,,46,55,88,48,16,,,,20
-Freebooters,Landon,Fare,4,,44,42,49,67,55,,,,28
-Freebooters,Kent,Ratherswell,1,2,1,13,37,16,,35,60,74,29
-Freebooters,Grace,Loopinovich,1,3,2,2,32,50,,65,72,68,36
-Blowfish,Bartholomew,Draculo,1,1,37,7,24,43,,65,45,79,37
-Blowfish,Shania,Burns,1,1,19,2,15,52,,52,50,72,27
-Blowfish,Wanda,Dregler,1,1,22,5,16,71,,51,59,95,32
-Blowfish,Shayanne,Hill,4,,35,83,91,70,21,,,,32
-Blowfish,Elvis,Stanley,6,,68,80,75,87,77,,,,28
-Blowfish,Julio,Huper,1,4,24,46,5,50,,55,77,39,25
-Blowfish,Jose,Carloco,3,,76,98,35,13,11,,,,29
-Blowfish,Sting,McGee,2,,52,85,57,74,68,,,,36
-Blowfish,Rod,Forth,9,,18,97,95,36,42,,,,31
-Blowfish,Alfonzo,Delgado,5,,37,47,66,66,78,,,,27
-Blowfish,Nirub,Oowanga,9,,61,84,83,70,53,,,,28
-Blowfish,Keg,Gutterson,5,,70,97,39,39,68,,,,31
-Jacks,Batch,Wilson,8,,39,75,52,77,71,,,,38
-Heaters,Simba,Delano,1,3,12,12,53,24,,58,32,29,26
-"Hot Corners",Randy,Mann,4,,70,65,46,20,54,,,,27
-Blowfish,Harry,Backman,2,,95,71,58,33,39,,,,31
-Blowfish,Joanna,Heater,1,3,27,2,8,16,,97,10,69,22
-Blowfish,Marvin,Steed,7,,74,79,86,65,27,,,,36
-Blowfish,Lad,Bradwick,1,1,3,97,34,81,,78,60,63,21
-Blowfish,Mindy,Marshwater,1,3,3,21,25,60,,33,41,45,26
-Buzzards,Erlang,Elwood,1,1,5,10,14,84,,52,41,46,29
-"Hot Corners",Geronimo,James,8,,18,74,76,97,80,,,,29
-Buzzards,Danno,Yoshida,9,,60,69,57,84,97,,,,21
-Buzzards,Mario,Mustaccio,5,,72,63,69,88,79,,,,25
-Buzzards,Emilio,Idoya,4,,28,35,82,85,81,,,,31
-Buzzards,Buttons,Bunterson,6,,46,99,92,92,82,,,,25
-Buzzards,Helena,Bigsby,3,,59,91,25,45,47,,,,31
-Buzzards,Meat,Commonly,1,3,5,10,20,54,,69,20,18,38
-Buzzards,Rolf,Borgnar,7,,49,66,65,82,77,,,,37
-Buzzards,Joseph,Trunk,3,,68,77,67,77,42,,,,23
-Buzzards,Sebastian,Morrow,1,2,21,13,22,55,,55,53,54,28
-"Sand Cats",Kandi,Sweet,1,1,15,3,29,53,,50,45,35,30
-Heaters,Kimme,Smoke,2,,53,54,78,68,50,,,,25
-Buzzards,Meow,Bubbkins,1,1,4,26,16,77,,44,53,75,29
-Buzzards,Ham,Slamous,6,,73,56,46,53,75,,,,22
-Buzzards,Leyla,Buckberger,1,4,19,14,23,68,,52,81,50,27
-Buzzards,Jacques,"O'Ften",2,,87,49,69,76,81,,,,36
-Buzzards,Sloop,Whoopity,4,,29,73,83,58,53,,,,20
-Buzzards,Hannah,Hogswind,1,1,4,19,56,98,,32,15,61,27
-Buzzards,Max,Texis,1,3,2,16,17,93,,85,76,57,37
-Moonstars,Alisha,Woodrow,1,1,30,4,23,64,,87,77,99,31
-Moonstars,Slip,Sauder,1,1,3,11,39,43,,82,88,87,29
-Heaters,Elmo,Slayer,1,1,16,0,7,79,,72,94,95,23
-Moonstars,Pepe,Vinicio,4,,27,61,82,74,32,,,,22
-"Hot Corners",Lars,Stadkleef,2,,37,34,6,74,60,,,,32
-Moonstars,Rusty,Bustum,3,,63,79,29,26,21,,,,19
-Moonstars,Lacky,Luster,9,,49,57,71,44,66,,,,29
-"Sand Cats",Rodney,Park,6,,27,77,69,61,72,,,,21
-Moonstars,Bert,Bergerer,1,3,15,1,10,21,,85,72,55,31
-Moonstars,Gustav,Gustavson,7,,83,57,27,30,45,,,,38
-Moonstars,Herbert,Hackman,5,,84,68,39,26,55,,,,28
-Moonstars,Clyde,Oliver,7,,37,65,34,64,35,,,,35
-Moonstars,Lil,Bupton,1,4,9,1,3,26,,54,96,64,32
-Moonstars,Windy,Wheels,8,,47,58,94,63,46,,,,32
-Moonstars,Raffy,Slaps,5,,54,40,51,52,54,,,,29
-Moonstars,Clubber,Buff,2,,75,45,42,29,63,,,,36
-Moonstars,Taylor,McWhales,1,3,3,13,16,48,,99,51,62,31
-Moonstars,Elija,Gobbleson,6,,41,45,29,64,72,,,,20
-Moonstars,Durn,Wonderfloss,1,1,18,11,2,89,,54,72,39,37
-Moonstars,Deft,Weddums,1,2,11,14,4,58,,44,47,69,26
-"Wild Pigs",Wes,Yogurt,1,1,8,3,33,17,,74,75,85,29
-"Wild Pigs",Hugs,Lovell,1,1,33,4,74,38,,52,55,70,36
-"Sand Cats",Stracy,Wickers,2,,71,23,55,42,44,,,,36
-"Wild Pigs",Durbin,Holmes,1,1,4,15,17,55,,39,85,64,21
-"Wild Pigs",Enrique,Goyo,7,,51,46,73,49,25,,,,19
-"Wild Pigs",Mannon,Moon,8,,62,26,87,53,50,,,,32
-"Wild Pigs",Spanky,Wagnerd,3,,97,58,66,16,14,,,,28
-"Wild Pigs",Bloop,Michaels,6,,78,76,92,73,53,,,,25
-"Wild Pigs",Godfried,Storm,8,,48,37,55,35,83,,,,21
-"Wild Pigs",Rosy,Hardman,7,,93,30,47,36,31,,,,22
-Heaters,Theodore,Stiffner,5,,87,39,94,37,45,,,,25
-"Wild Pigs",Kendra,Kerr,1,3,6,8,28,32,,61,85,67,21
-"Wild Pigs",Earnie,Blings,2,,85,40,31,40,34,,,,29
-"Wild Pigs",Donovan,Drake,1,2,6,12,15,23,,92,24,45,31
-"Wild Pigs",Wally,Bacon,4,,59,36,96,58,25,,,,37
-"Wild Pigs",Roberto,Alba,5,,53,51,58,43,45,,,,36
-"Hot Corners",Sirloin,Jones,1,4,17,5,48,29,,87,61,59,37
-"Wild Pigs",Flash,Evans,9,,90,30,98,49,29,,,,30
-"Wild Pigs",Wiff,Smesson,1,1,2,39,13,44,,47,65,53,31
-"Wild Pigs",Alana,Lantana,1,3,4,14,29,7,,62,94,94,29
-"Hot Corners",Terrok,Smith,1,1,11,13,28,48,,43,25,62,19
-Overdogs,Dick,Burger,5,,97,16,65,36,42,,,,29
-"Sand Cats",Marsha,Brown,9,,82,76,87,58,52,,,,22
-Overdogs,Guy,Gold,7,,62,92,51,25,44,,,,29
-Overdogs,Chasey,Kim,1,1,17,6,50,39,,92,44,47,35
-Overdogs,Rhonda,Horne,5,,94,69,83,46,45,,,,29
-Overdogs,Kasha,Emyn,6,,64,77,86,67,44,,,,35
-Overdogs,Robbin,Yew,7,,62,51,78,83,32,,,,38
-Overdogs,Anton,Goodwood,2,,69,64,79,43,63,,,,31
-Overdogs,Casper,Stern,9,,50,54,48,68,74,,,,28
-Overdogs,Larry,"La'Joy",1,1,3,4,30,32,,45,77,62,31
-Overdogs,David,Diggler,1,3,26,25,28,86,,87,64,30,29
-Overdogs,Rocket,Ramon,1,3,25,17,70,48,,74,69,25,27
-Overdogs,Samuel,Perez,2,,73,43,55,70,36,,,,31
-Overdogs,Elroy,Action,4,,37,89,98,38,37,,,,21
-Overdogs,Doug,Nerdwerd,1,3,11,31,18,71,,54,68,32,37
-Overdogs,Raphael,Gonzolo,3,,65,38,85,43,20,,,,28
-Overdogs,Yvette,Victorino,8,,58,37,80,59,55,,,,32
-Overdogs,Carrie,Wayward,1,1,3,34,62,85,,18,46,52,29
-Overdogs,Brawn,Thunderchump,1,3,4,5,21,73,,53,82,68,27
-Herbisaurs,Olaff,Slakov,1,1,33,4,13,62,,83,20,72,36
-Herbisaurs,Tussker,Fuss,1,1,11,34,52,38,,68,44,75,29
-Herbisaurs,Chilli,Little,9,,73,29,47,49,69,,,,21
-Herbisaurs,Dick,Lukas,1,1,6,34,63,73,,46,73,66,21
-Herbisaurs,Fiona,Clark,2,,41,25,54,82,99,,,,24
-Herbisaurs,Annabella,Stokes,4,,22,70,92,98,66,,,,22
-"Sand Cats",Dolf,Steak,8,,42,68,87,87,88,,,,27
-Herbisaurs,Milo,Stewart,6,,26,68,73,97,96,,,,29
-Herbisaurs,Grunt,Manly,3,,65,77,66,69,69,,,,32
-Herbisaurs,Ralph,Blue,6,,77,54,42,60,60,,,,31
-Herbisaurs,Henry,Hampster,5,,62,64,88,80,86,,,,30
-Herbisaurs,Leonar,Ramiro,1,3,4,24,93,95,,72,35,30,37
-Herbisaurs,Elrick,Rippin,1,4,13,3,6,50,,82,8,36,38
-Herbisaurs,Nate,Hanky,2,,49,64,34,38,54,,,,31
-Herbisaurs,Morton,Stanberg,7,,60,64,86,72,85,,,,28
-Herbisaurs,Omar,Chombo,1,3,5,5,25,46,,63,25,21,19
-Herbisaurs,Juan,Rojas,9,,60,57,71,84,87,,,,31
-Herbisaurs,Stevo,Reeves,7,,12,88,74,56,65,,,,29
-Herbisaurs,Gem,Qualita,1,1,19,74,33,94,,72,57,78,32
-"Hot Corners",Grump,Everbright,1,3,8,16,14,75,,39,66,52,38
-Beewolves,Hurley,Bender,1,1,12,8,23,67,,73,99,86,23
-Beewolves,Steve,Monstur,2,,69,45,56,52,53,,,,32
-Beewolves,Bevis,Ortiz,1,1,4,7,65,70,,63,66,63,28
-Beewolves,Gina,Torrens,4,,25,87,91,80,20,,,,36
-Beewolves,Johnson,Swanson,2,,62,43,72,73,70,,,,31
-"Hot Corners",Yolanda,Cooper,1,1,7,34,19,50,,74,49,92,21
-Heaters,Buscha,Digman,6,,75,17,49,77,74,,,,31
-Beewolves,Buster,Bigs,7,,74,68,77,44,40,,,,31
-Beewolves,Magic,Moore,8,,56,40,87,61,69,,,,22
-Beewolves,Poke,Foster,9,,25,76,24,68,66,,,,24
-Beewolves,Billy,LeBoink,9,,56,74,28,73,97,,,,32
-Jacks,Kisha,Musharra,1,3,12,12,41,58,,68,13,32,26
-Beewolves,Smack,Avery,1,4,3,4,19,80,,72,36,40,20
-Beewolves,Freddie,Knox,4,,23,81,95,43,56,,,,38
-Beewolves,Ruby,Greene,3,,63,69,54,18,51,,,,26
-Beewolves,Benson,Rushmore,1,3,25,8,8,39,,62,59,31,26
-Beewolves,Benny,Balmer,7,,32,40,58,89,84,,,,29
-Beewolves,Bertha,Banks,5,,64,56,51,67,52,,,,29
-Beewolves,Fran,Gipani,1,1,2,38,35,98,,66,54,46,37
-Beewolves,Tatts,Balfour,1,3,2,13,41,90,,49,64,40,37
-Moose,Joeffrey,Rockman,1,1,6,3,10,65,,72,32,95,36
-Moose,Rhiannon,Cannon,1,1,29,39,19,65,,83,49,70,32
-Moose,Pedro,Nixon,2,,83,54,14,33,52,,,,28
-Moose,Heronimus,Jackson,8,,89,59,62,60,49,,,,31
-Moose,Sancha,Silvio,1,1,7,3,9,76,,68,42,89,21
-Moose,Roman,Rhoades,2,,64,27,35,72,61,,,,31
-Moose,Perry,Quaker,3,,88,60,40,31,44,,,,31
-Moose,Fred,Bobbit,4,,52,86,38,51,41,,,,31
-Heaters,Bubbles,Garcia,7,,78,47,37,47,45,,,,26
-Moose,Nacho,Crisp,6,,70,53,61,69,69,,,,27
-Moose,Rip,Dingers,5,,97,50,40,42,90,,,,25
-Jacks,Ellain,Munstar,1,3,15,5,11,35,,90,39,73,23
-Moose,Klaus,"D'Gayme",1,4,28,7,15,42,,75,84,56,30
-Moose,Irene,Fast,9,,84,43,93,48,66,,,,38
-Moose,Wiggles,Freeman,6,,33,61,45,50,56,,,,28
-Moose,Carla,Tolbert,1,3,4,2,8,43,,65,76,43,29
-Moose,Stallion,Johnson,7,,50,55,87,32,44,,,,21
-"Sand Cats",Winston,Draper,4,,68,35,52,79,33,,,,38
-Moose,Raul,Strikes,1,1,42,10,9,65,,38,64,71,28
-Moose,Charlie,Best,1,3,3,13,5,82,,74,93,86,31
-Platypi,Rufus,Zumar,1,2,7,40,10,64,,52,66,81,29
-Platypi,Scooter,Sandbrick,3,,62,76,67,59,49,,,,37
-Platypi,Rory,Crowds,7,,67,46,61,62,37,,,,23
-Platypi,Stooby,Tubrek,1,1,4,37,9,65,,57,46,87,31
-Platypi,Willy,Bacon,8,,51,82,71,73,56,,,,32
-Platypi,Beefcake,McStevens,5,,83,96,74,57,65,,,,27
-Platypi,Kerry,Cartman,4,,39,60,84,60,64,,,,34
-Platypi,Muffin,Studwick,7,,52,87,59,74,47,,,,35
-Platypi,Charley,Lopez,6,,21,98,70,84,76,,,,38
-Platypi,Tugboat,Thomas,2,,59,62,24,79,68,,,,32
-Jacks,Donk,Oh,1,1,29,48,5,63,,54,57,95,20
-"Sand Cats",Jemma,Yago,1,3,6,58,12,50,,47,30,52,28
-Platypi,Hugh,Jacobs,1,3,11,13,12,67,,16,64,46,29
-Platypi,Herra,"O'Wuggliems",9,,44,84,40,82,76,,,,21
-Platypi,Chase,Tibuhle,2,,27,30,57,74,93,,,,37
-Platypi,Walt,Huckster,1,4,5,11,61,27,,55,25,59,29
-Platypi,Kitty,Kauffman,4,,32,94,93,51,52,,,,21
-"Hot Corners",Stu,Berko,3,,64,92,34,32,46,,,,35
-Platypi,Ace,"von Acesson",1,1,15,32,16,96,,65,84,78,29
-Platypi,Chance,Lotterbury,1,2,6,19,21,69,,6,20,40,37
-Crocodons,Jovita,Pulo,1,1,8,10,49,63,,97,89,85,29
-Crocodons,Evan,Chukov,2,,41,53,23,78,89,,,,20
-Crocodons,Maurice,Brick,1,1,16,15,13,81,,76,96,52,22
-Crocodons,Gordon,Fruitwell,8,,42,63,88,49,59,,,,29
-Crocodons,Clifford,Kane,8,,59,62,53,30,47,,,,37
-Crocodons,Juanita,Hernandez,9,,48,69,65,89,96,,,,31
-Crocodons,Andre,Candela,4,,67,72,71,76,22,,,,25
-Heaters,Bishop,Fuller,1,1,5,47,54,52,,75,83,72,37
-Crocodons,Bubba,Blastman,7,,74,42,25,47,56,,,,30
-Crocodons,Norton,Pickle,6,,33,79,69,78,73,,,,31
-Crocodons,Trisha,Lee,5,,38,80,58,48,69,,,,21
-Crocodons,Ricky,McFarland,1,4,3,22,20,36,,66,97,31,25
-Crocodons,Woody,Ano,1,3,5,30,10,76,,85,89,15,38
-Crocodons,Liane,Drive,3,,57,96,39,39,59,,,,27
-Jacks,Bruno,Adamo,4,,16,89,87,41,54,,,,31
-Crocodons,Tia,Mayfair,1,3,2,19,13,98,,73,48,24,32
-"Hot Corners",Nori,Miyoshi,7,,54,61,59,91,23,,,,30
-Crocodons,Terra,Lionerre,2,,74,60,39,50,63,,,,28
-Crocodons,Jerry,Kapps,1,1,2,36,7,88,,64,70,74,37
-Crocodons,Lou,DaBaziz,1,3,1,15,8,22,,39,29,43,26
-Wideloads,Holder,Close,1,2,22,10,9,54,,46,78,76,22
-Wideloads,Masha,Donga,6,,73,92,48,56,65,,,,29
-Wideloads,Janus,Friedman,4,,75,62,57,81,50,,,,31
-Wideloads,Hack,Liner,5,,92,87,65,57,86,,,,31
-Wideloads,Wade,Hobbes,8,,88,54,48,71,57,,,,37
-Wideloads,Harmony,Straus,2,,77,60,12,45,96,,,,28
-Wideloads,Jules,Bergman,7,,76,13,72,40,53,,,,30
-Wideloads,Ella,Roids,9,,80,52,23,71,79,,,,21
-Wideloads,Darcy,Hicks,3,,84,92,53,8,39,,,,38
-Wideloads,Chugg,Burbony,1,1,13,5,9,49,,79,58,92,23
-Wideloads,Latoya,Lumberg,1,1,17,5,13,23,,36,56,75,36
-Heaters,Splash,Cashmore,1,3,18,2,50,52,,74,13,67,37
-Wideloads,Izzy,Baker,4,,40,59,82,56,62,,,,29
-Wideloads,Rogan,Balls,1,4,26,7,11,45,,82,43,34,29
-Jacks,Clutch,Cormen,2,,44,89,49,10,66,,,,37
-Wideloads,Molly,Pops,1,3,15,2,5,66,,60,60,48,27
-Wideloads,Olaf,Beerson,7,,79,36,29,86,25,,,,37
-Wideloads,Chimo,Gaspar,6,,89,53,56,89,72,,,,29
-Wideloads,Gerry,Rawner,1,1,40,29,53,72,,29,65,52,31
-Wideloads,Bale,Bozzer,1,3,24,3,29,65,,49,84,69,27
-Nemesis,Heidi,Mabettes,1,1,20,6,30,45,,47,51,86,38
-Nemesis,Brine,Pickleford,7,,69,54,70,63,34,,,,31
-Nemesis,Javy,Yatter,9,,81,81,35,89,81,,,,29
-Nemesis,Mimori,Aoshima,2,,73,43,37,27,90,,,,25
-Nemesis,Mark,Harbourmouth,1,1,77,17,8,82,,50,40,57,34
-Nemesis,Jock,Sports,6,,89,98,57,93,71,,,,29
-Nemesis,Jackie,Slam,8,,81,98,68,84,65,,,,31
-Jacks,Log,Freely,7,,77,66,49,57,71,,,,29
-Nemesis,Mash,Taters,3,,95,74,27,65,75,,,,23
-Nemesis,Churl,Dangerfield,8,,54,40,65,78,95,,,,22
-Nemesis,Ansel,Carouse,1,1,32,11,28,71,,65,60,70,25
-Nemesis,Babette,Walkman,1,3,33,1,34,70,,49,51,17,26
-Heaters,Huck,Enduck,1,3,69,8,20,8,,43,35,42,23
-"Sand Cats",Hercules,Bentley,3,,88,66,13,78,56,,,,31
-Nemesis,Hito,Moonshota,5,,98,68,30,88,93,,,,28
-Nemesis,Lawrence,Wimple,1,4,19,1,14,96,,68,50,39,19
-Nemesis,Javier,Hautier,4,,93,66,41,65,47,,,,21
-Nemesis,Stacy,Staples,2,,70,70,22,74,69,,,,37
-Nemesis,Jacob,Marshmallow,1,2,1,5,20,72,,37,36,54,24
-Nemesis,Lucy,Finnegans,1,3,25,28,43,60,,53,69,29,28
-Heaters,Mantonio,Laevo,3,,83,67,39,21,45,,,,32
-Buzzards,Spits,McKinny,7,,30,84,69,75,56,,,,36
-Platypi,Linda,Hand,9,,53,38,82,60,95,,,,31
-Jacks,Rob,Glover,6,,10,78,83,83,54,,,,21
-Crocodons,Tarzan,Woodburn,3,,21,34,11,96,83,,,,26
-Beewolves,Handley,Dexterez,6,,63,87,87,97,74,,,,29
-Moose,Lionel,Martinez,3,,56,45,31,91,40,,,,34
-Heaters,Maggie,Rags,4,,26,17,67,92,98,,,,28
-"Wild Pigs",Turbo,Miles,4,,40,56,91,27,25,,,,31
-Sirloins,Tish,Balin,8,,58,33,68,70,90,,,,22
-Moonstars,Dale,Nale,9,,57,68,18,50,63,,,,37
-Blowfish,Ricky,Quan,8,,30,45,70,92,91,,,,21
-Grapplers,Ian,Fielder,5,,45,70,60,57,63,,,,31
-Heaters,Murky,Nubswubbles,9,,57,29,64,15,65,,,,28
-Nemesis,Flash,Leathar,4,,51,22,64,95,80,,,,28
-"Sand Cats",Gia,Axelson,7,,33,76,59,43,32,,,,28
-Overdogs,Digg,Efforto,6,,7,27,31,87,69,,,,21
-Jacks,Juice,Jackson,5,,95,88,43,68,70,,,,22
-Jacks,Yoyo,Yamamoto,5,,50,86,34,66,86,,,,29
-Sirloins,Kat,Stanza,3,,90,71,58,42,65,,,,31
-Moose,Buck,Swiner,7,,74,40,66,81,71,,,,25
-Jacks,Razi,Dazzler,8,,83,62,63,93,49,,,,27
-Jacks,Jack,Cracker,7,,81,94,33,50,66,,,,28
-"Wild Pigs",Snag,Roper,6,,68,87,22,93,91,,,,38
-Jacks,Tuff,Lift,2,,74,67,8,97,70,,,,31
-"Wild Pigs",Frank,Battery,2,,35,61,73,97,87,,,,27
-Wideloads,Fungo,Accuro,8,,38,97,72,58,35,,,,31
-Freebooters,Kenna,Quorn,9,,52,26,65,92,68,,,,31
-Jacks,Huffly,Buffler,4,,91,90,28,75,58,,,,25
-Overdogs,Werner,Bergenberg,1,1,5,23,50,61,,56,40,68,22
-Jacks,Bella,Mietballe,1,1,39,64,11,93,,14,25,34,32
-Blowfish,Geoffrey,Jenkins,1,2,20,10,0,67,,45,53,44,20
-Jacks,Barry,Ozone,1,1,30,5,18,59,,27,66,34,24
-Platypi,Remington,Sharp,1,3,8,8,27,66,,70,60,89,36
-Herbisaurs,Chuck,Filthwick,1,3,2,5,25,73,,63,96,79,31
-Jacks,Immaculo,Spectaculo,1,3,2,12,11,56,,84,95,79,25
-Beewolves,Dusty,Winder,1,3,12,3,13,76,,62,42,46,28
-Sawteeth,Lester,Bronco,9,,65,78,70,27,74,,,,31
-Blowfish,Hog,Porker,4,,71,58,38,78,52,,,,38
-Grapplers,Devon,Godsendez,3,,92,95,51,30,40,,,,23
-"Hot Corners",Stan,Elyve,7,,84,81,68,18,25,,,,29
-"Hot Corners",Beau,Belter,8,,95,80,76,31,20,,,,29
-Freebooters,Pomp,Duchee,3,,81,42,87,54,65,,,,21
-"Hot Corners",Tiny,deGrande,2,,84,46,39,32,68,,,,25
-"Hot Corners",Nora,Homes,6,,77,95,50,34,48,,,,31
-Blowfish,Pumper,Lumpkins,7,,49,28,49,75,38,,,,31
-Wideloads,Prince,Prize,2,,26,50,72,72,49,,,,32
-Sirloins,Boomer,Plattune,5,,70,54,54,41,80,,,,34
-Grapplers,Kelby,King,9,,89,43,64,21,75,,,,31
-"Hot Corners",Jeb,Jumps,4,,85,92,62,34,12,,,,21
-Sirloins,Kayo,Niomo,1,1,6,1,73,60,,70,49,56,38
-Beewolves,Deshaun,Levonn,1,1,54,24,5,60,,42,41,68,28
-Platypi,Rusty,Nozzle,1,1,13,19,9,74,,56,42,51,28
-"Hot Corners",Noah,Kaiser,1,1,28,40,33,24,,62,67,85,22
-"Hot Corners",Joseph,Broseph,1,3,1,9,43,20,,88,66,58,37
-"Hot Corners",Rachel,Rhubarb,1,2,11,1,19,33,,70,22,65,30
-Freebooters,Ryder,McPride,1,3,11,7,9,97,,64,33,78,29
-"Hot Corners",Amazo,Haze,1,3,41,4,13,11,,38,97,56,21
-Sawteeth,Sammie,Shigetani,4,,42,56,57,65,53,,,,29
-Nemesis,Gabby,Ganez,9,,50,63,74,49,29,,,,31
-Herbisaurs,Yoink,Sax,8,,50,39,91,89,95,,,,27
-Nemesis,Amy,Zoner,6,,28,58,57,65,68,,,,27
-Buzzards,Billy,Bronx,2,,46,28,38,61,74,,,,28
-"Sand Cats",Knox,Oxensocksen,2,,11,96,79,92,77,,,,29
-Crocodons,Vinnie,Vortex,9,,35,80,93,56,64,,,,29
-"Sand Cats",Chip,Duffers,4,,20,72,90,73,80,,,,37
-Beewolves,Kobe,Kingman,3,,95,27,51,68,63,,,,31
-Crocodons,Runda,Thurd,5,,78,53,95,61,61,,,,31
-"Sand Cats",Kara,Kawaguchi,5,,44,42,90,60,90,,,,29
-"Sand Cats",Tigg,Tantrum,7,,41,32,85,37,65,,,,28
-"Sand Cats",Super,Sampson,8,,24,57,98,97,97,,,,29
-"Sand Cats",Beebee,Takabasei,1,1,6,16,21,57,,55,62,9,31
-"Sand Cats",Trey,Mondo,1,1,1,33,79,92,,23,45,28,19
-Moose,Felix,Farmhand,1,2,30,7,29,40,,26,28,59,19
-Crocodons,Bae,Paul,1,1,7,28,33,75,,9,75,52,27
-"Sand Cats",Gasser,Morris,1,3,2,6,12,58,,95,56,79,31
-Nemesis,Binky,Stevens,1,3,3,2,18,13,,65,34,81,37
-"Sand Cats",Ice,Vainer,1,4,3,13,57,40,,87,93,46,31
-Buzzards,Bradley,Bowler,1,2,14,1,17,71,,62,68,53,29
-Moose,Hose,Tremendo,9,,61,53,64,85,98,,,,29
-Platypi,Sky,Rodriguez,5,,94,38,43,8,58,,,,27
-Moonstars,Boo,Louis,2,,47,68,46,86,81,,,,31
-Overdogs,Sakda,Song,3,,80,93,90,93,57,,,,25
-Moonstars,Nance,Tools,6,,86,75,69,87,48,,,,29
-Heaters,Volt,Bolter,8,,24,45,96,63,79,,,,38
-Buzzards,Thurman,Colt,8,,70,45,83,31,49,,,,32
-Heaters,Slapper,Glute,7,,54,90,68,41,85,,,,31
-Heaters,Hank,Hart,2,,36,84,54,74,88,,,,37
-Heaters,Dion,Bass,4,,33,73,82,71,75,,,,31
-Heaters,Carlton,Starr,6,,42,84,71,85,73,,,,22
-Heaters,Raise,Ruffo,8,,49,89,78,84,79,,,,29
-Herbisaurs,Whopper,Batsman,4,,81,15,50,49,37,,,,23
-Moonstars,Vern,Turnburner,1,1,44,4,38,66,,94,60,44,22
-Sawteeth,Fabio,Fabulo,1,1,13,21,10,12,,59,38,82,31
-Heaters,Boris,Biggsworth,1,2,7,5,0,77,,52,35,34,26
-Heaters,Air,Lovestone,1,1,5,11,34,44,,39,42,72,36
-"Wild Pigs",Hander,"O'Speciallo",1,3,2,5,10,75,,23,70,51,30
-Heaters,Derr,Neverwocker,1,3,5,15,54,71,,90,87,73,21
-Grapplers,Meggy,Meggles,1,3,6,1,72,61,,37,63,38,29
-Wideloads,Kyrone,Throne,1,3,4,1,8,21,,38,74,38,30
-Wideloads,Danny,Deals,1,1,9,23,13,59,,77,78,56,21
-Buzzards,Punchie,Patterson,1,1,30,12,25,72,,89,89,34,27
-Overdogs,Slick,Pickman,1,2,15,11,5,39,,71,75,60,36
-Crocodons,Norm,Fenomeno,1,2,77,79,23,78,,54,76,67,23
-Beewolves,Buzz,Pastimm,1,2,14,26,3,56,,87,29,65,31
-Moose,Swirly,Cutstiff,1,2,18,44,37,57,,67,83,35,21
-Herbisaurs,Sal,Slinger,1,2,65,14,38,75,,75,46,95,28
-"Wild Pigs",Cutter,Crackebarrel,1,2,24,28,4,30,,89,37,39,29
-Sirloins,Split,Seemerson,1,2,15,9,8,51,,35,65,55,21
-Blowfish,Dwight,Breeze,1,2,7,7,44,17,,29,42,35,26
-Freebooters,Nic,Diegez,1,1,5,16,11,54,,60,58,90,25
-Grapplers,Ritonda,Black,1,1,54,7,5,45,,70,60,70,22
-Nemesis,Deuce,Stacker,1,1,22,22,12,42,,22,72,22,27
-Jacks,Stitch,Gripowski,1,2,13,42,16,47,,46,67,83,23
-"Hot Corners",Dot,Dacornas,1,1,27,11,23,37,,55,46,95,29
-"Sand Cats",Sergio,Slider,1,2,14,30,26,50,,76,85,55,31
-Heaters,Pan,Knibbles,1,1,16,7,6,47,,40,19,58,26
-Platypi,Shirley,Indiere,1,2,6,7,20,18,,56,31,72,29
-Moonstars,Testy,Osteroni,3,,91,55,65,31,80,,,,30
-Sawteeth,Lefty,Southpalm,1,1,12,16,31,44,,47,80,60,38
-t_achievement_completed_games_won            
-t_baseball_player_colors                     
-t_baseball_player_local_ids                  
-t_baseball_player_options                    
-t_baseball_player_traits                     
-t_baseball_players                           
-t_batting_orders                             
-t_career_playoff_stats                       
-t_career_season_stats                        
-t_conferences                                
-t_defensive_positions                        
-t_division_teams                             
-t_divisions                                  
-t_fantasy_draft_generated_players            
-t_franchise                                  
-t_franchise_available_players                
-t_franchise_local_ids                        
-t_franchise_manager_moment_player_changes    
-t_franchise_manager_moments_queue            
-t_franchise_news                             
-t_franchise_news_championship                
-t_franchise_news_game_result                 
-t_franchise_news_income                      
-t_franchise_news_negotiation_round_result    
-t_franchise_news_player_snapshot             
-t_franchise_news_players                     
-t_franchise_news_resigned                    
-t_franchise_news_resigned_group_player       
-t_franchise_news_retired                     
-t_franchise_news_roster_acquisition          
-t_franchise_news_salary_change               
-t_franchise_news_skill_arc_outcome           
-t_franchise_news_skill_changes               
-t_franchise_news_traded                      
-t_franchise_news_training_available          
-t_franchise_news_training_outcome            
-t_franchise_news_trait_changes               
-t_franchise_pending_available_players        
-t_franchise_player_extensions                
-t_franchise_players_leaving_player_team      
-t_franchise_resigned_players                 
-t_franchise_retired_players                  
-t_franchise_season_creation_params           
-t_franchise_seasons                          
-t_franchise_team_cash                        
-t_franchise_training                         
-t_franchise_unavailable_players              
-t_game_participants                          
-t_game_results                               
-t_league_available_players                   
-t_league_local_ids                           
-t_leagues                                    
-t_lineups                                    
-t_pitching_rotations                         
-t_playoff_games                              
-t_playoff_games_played_snapshot              
-t_playoff_games_won_lost_snapshot            
-t_playoff_series                             
-t_playoff_stats                              
-t_playoffs                                   
-t_salary                                     
-t_save_data_validity                         
-t_season_games                               
-t_season_games_played_snapshot               
-t_season_games_won_lost_snapshot             
-t_season_pitch_counts                        
-t_season_player_condition                    
-t_season_schedule                            
-t_season_stats                               
-t_season_summary_snapshot                    
-t_season_user_controlled_teams               
-t_seasons                                    
-t_standard_edited_teams                      
-t_starting_lineups                           
-t_stats                                      
-t_stats_batting                              
-t_stats_pitching                             
-t_stats_players                              
-t_team_attributes                            
-t_team_local_ids                             
-t_team_logo_attributes                       
-t_team_logo_element_types                    
-t_team_logo_types                            
-t_team_logos                                 
-t_team_types                                 
-t_teams                                      
-v_active_historical_players                  
-v_active_historical_teams                    
-v_baseball_player_info                       
-v_franchise_players                          
-v_franchise_players_including_pending_players
-v_franchise_teams                            
-v_league_players                             
-v_league_reclaimable_teams                   
-v_league_teams                               
-v_lineups_default                            
-v_lineups_pennant                            
-v_playoff_games_played                       
-v_playoff_games_won_lost                     
-v_season_games_played                        
-v_season_games_won_lost                      
-v_season_historical_players                  
-v_season_historical_teams                    
-v_season_single_user_teams                   
-v_season_standings                           
-v_season_summary                             
-v_stats_batting                              
-v_stats_pitching                             
+localID,teamName,firstName,lastName,primaryPosition,pitcherRole,power,contact,speed,fielding,arm,velocity,junk,accuracy,age,trait,subType
+1,Sawteeth,Thrash,Allmeyer,1,1,2,21,24,82,,44,56,76,31,31,7
+2,Sawteeth,Mattie,Batts,8,,62,64,73,52,40,,,,36,15,6
+2,Sawteeth,Mattie,Batts,8,,62,64,73,52,40,,,,36,36,7
+3,Sawteeth,Johnny,Bags,9,,66,73,75,35,70,,,,23,32,6
+4,Sawteeth,Slash,Trips,8,,66,88,95,64,36,,,,22,11,6
+4,Sawteeth,Slash,Trips,8,,66,88,95,64,36,,,,22,13,6
+5,"Hot Corners",Dirk,Sportswood,3,,70,89,39,64,68,,,,31,29,7
+5,"Hot Corners",Dirk,Sportswood,3,,70,89,39,64,68,,,,31,35,6
+6,Sawteeth,Cathy,Culdesac,7,,50,52,64,88,48,,,,21,1,0
+7,Sawteeth,Junior,"Young Jr",3,,79,29,49,45,58,,,,19,0,1
+8,Sawteeth,Kira,Nutmeg,5,,44,93,52,55,72,,,,21,27,6
+9,Sawteeth,Jon,Ronero,6,,90,58,69,74,19,,,,28,8,7
+9,Sawteeth,Jon,Ronero,6,,90,58,69,74,19,,,,28,12,10
+10,Jacks,Alberto,Roberto,1,1,11,18,20,43,,16,72,64,37,22,21
+11,Sawteeth,Melody,Moods,1,1,20,26,15,55,,26,69,55,30,33,26
+12,Sawteeth,Doc,Simpleman,1,3,22,26,28,58,,61,53,53,37,19,7
+12,Sawteeth,Doc,Simpleman,1,3,22,26,28,58,,61,53,53,37,34,6
+13,Sawteeth,Pex,Flext,2,,62,73,15,69,75,,,,29,38,6
+14,Sawteeth,Maximo,Primo,1,4,9,22,13,71,,70,91,80,27,20,6
+15,Sawteeth,Hanso,Magikko,6,,37,41,57,91,80,,,,22,29,6
+17,Sawteeth,DP,Turner,4,,61,55,43,80,46,,,,32,36,6
+17,Sawteeth,DP,Turner,4,,61,55,43,80,46,,,,32,37,6
+18,Sawteeth,Junior,"Young Sr",2,,70,41,38,76,92,,,,42,1,1
+20,Sawteeth,Brick,Towers,1,3,2,24,48,46,,59,96,48,29,22,18
+21,Sirloins,Manny,Kays,1,1,11,2,67,88,,75,88,77,25,22,15
+22,Sirloins,Slip,"Van'Derwink",1,1,44,2,14,46,,60,76,71,30,18,7
+23,Sirloins,Bugsy,Snugs,1,1,18,6,15,37,,77,64,64,31,6,7
+25,Sirloins,Lloyd,Cook,4,,80,52,83,72,33,,,,32,3,2
+26,Sirloins,Hammer,Longballo,9,,99,78,60,58,75,,,,29,0,0
+26,Sirloins,Hammer,Longballo,9,,99,78,60,58,75,,,,29,10,8
+27,Sirloins,Willard,Wiggins,6,,66,50,64,46,68,,,,21,2,6
+27,Sirloins,Willard,Wiggins,6,,66,50,64,46,68,,,,21,37,6
+28,Sirloins,Filet,Jones,7,,97,41,44,55,25,,,,20,36,7
+30,"Hot Corners",Bobby,Bashe,5,,96,32,75,55,63,,,,24,10,9
+30,"Hot Corners",Bobby,Bashe,5,,96,32,75,55,63,,,,24,30,7
+31,Sirloins,Madoka,Hayata,5,,48,84,97,43,45,,,,36,30,7
+32,Sirloins,Damien,Rush,8,,89,12,93,57,70,,,,31,26,6
+32,Sirloins,Damien,Rush,8,,89,12,93,57,70,,,,31,29,6
+35,Sirloins,Javier,Cortez,7,,65,32,46,44,64,,,,27,8,6
+36,Sirloins,Mick,Steeyle,3,,84,35,45,28,21,,,,27,15,6
+37,Sirloins,Franz,Zilla,1,4,5,2,19,58,,85,39,25,32,7,6
+39,"Sand Cats",Kerwin,Arches,1,1,55,13,16,82,,60,62,80,35,23,6
+40,Sirloins,Shay,Dee,1,3,29,17,32,94,,84,51,95,31,19,7
+40,Sirloins,Shay,Dee,1,3,29,17,32,94,,84,51,95,31,35,6
+41,Grapplers,Bertram,"Haftberger III",1,1,14,18,35,58,,18,54,29,29,18,6
+42,Grapplers,Marco,Demarco,8,,71,37,86,67,66,,,,36,4,7
+42,Grapplers,Marco,Demarco,8,,71,37,86,67,66,,,,36,12,10
+43,"Hot Corners",Seymour,Socks,9,,7,58,85,62,94,,,,32,27,6
+43,"Hot Corners",Seymour,Socks,9,,7,58,85,62,94,,,,32,40,6
+44,Grapplers,Perd,Lovelorn,1,1,16,3,12,50,,30,90,86,29,19,7
+45,Grapplers,Eduardo,Electro,6,,60,8,81,76,78,,,,29,10,8
+46,Grapplers,Ali,Finderre,5,,60,92,66,61,80,,,,38,36,6
+47,Grapplers,Biff,Noggins,7,,61,42,55,37,73,,,,21,28,6
+48,Grapplers,Jefe,Manzano,7,,39,49,67,67,56,,,,37,4,6
+49,Grapplers,Joven,Bambino,9,,94,60,76,71,80,,,,27,8,7
+50,"Sand Cats",Jess,Fowl,3,,62,35,88,90,64,,,,22,3,3
+51,Grapplers,Hiro,Misano,1,1,5,23,49,63,,30,42,69,22,32,7
+52,Grapplers,Rallie,Overro,1,3,53,8,23,69,,85,77,98,32,20,6
+53,Grapplers,Tucker,Turlington,1,3,12,8,7,40,,53,85,51,37,22,21
+53,Grapplers,Tucker,Turlington,1,3,12,8,7,40,,53,85,51,37,32,6
+54,Grapplers,Grizz,Senioro,2,,15,32,63,71,90,,,,39,38,6
+55,Grapplers,Marla,Moore,2,,29,44,8,64,76,,,,27,33,25
+56,Jacks,Chico,Lapada,1,4,8,17,24,71,,79,96,62,31,6,7
+56,Jacks,Chico,Lapada,1,4,8,17,24,71,,79,96,62,31,18,7
+57,Grapplers,Zoom,Delacruz,4,,59,9,97,94,46,,,,28,12,11
+58,Grapplers,Ben,Kringer,3,,46,63,59,59,72,,,,27,13,6
+58,Grapplers,Ben,Kringer,3,,46,63,59,59,72,,,,27,26,7
+60,Grapplers,Mack,Gunn,1,3,11,7,17,79,,98,68,75,29,19,6
+60,Grapplers,Mack,Gunn,1,3,11,7,17,79,,98,68,75,29,22,16
+62,Freebooters,Sturdy,Woodman,3,,63,83,38,39,38,,,,38,34,6
+63,Freebooters,Stockton,Brickhouse,8,,76,94,53,27,49,,,,24,16,6
+64,Freebooters,Oakley,Stiffs,9,,87,67,43,29,80,,,,37,1,0
+64,Freebooters,Oakley,Stiffs,9,,87,67,43,29,80,,,,37,11,6
+65,Freebooters,Jermaine,Raines,2,,41,69,16,79,53,,,,29,14,6
+66,Freebooters,Patience,Evergreen,7,,54,79,54,52,45,,,,27,14,7
+67,Jacks,Downtown,Upton,3,,65,67,48,50,31,,,,37,1,0
+68,Freebooters,Steamboat,Wisselle,1,3,2,12,33,32,,86,79,62,28,19,6
+68,Freebooters,Steamboat,Wisselle,1,3,2,12,33,32,,86,79,62,28,22,14
+69,Freebooters,Badhop,Brown,5,,57,83,20,12,34,,,,26,29,7
+70,Freebooters,Gunns,Jackman,6,,93,84,47,46,54,,,,32,2,6
+70,Freebooters,Gunns,Jackman,6,,93,84,47,46,54,,,,32,33,25
+71,"Sand Cats",Maverick,McMann,1,3,5,15,53,58,,79,97,62,21,7,7
+72,Freebooters,Lana,Rhymes,1,1,50,5,29,46,,23,66,51,31,20,7
+73,Freebooters,Kache,Baskette,7,,41,50,58,53,72,,,,22,0,1
+73,Freebooters,Kache,Baskette,7,,41,50,58,53,72,,,,22,1,1
+74,Freebooters,Winnie,Noelle,1,1,21,27,17,60,,77,64,70,31,23,6
+76,Freebooters,Kay,Frequin,1,4,8,2,32,34,,99,84,97,31,7,6
+76,Freebooters,Kay,Frequin,1,4,8,2,32,34,,99,84,97,31,22,15
+77,Freebooters,Walker,Runs,4,,46,55,88,48,16,,,,20,13,6
+78,Freebooters,Landon,Fare,4,,44,42,49,67,55,,,,28,15,6
+79,Freebooters,Kent,Ratherswell,1,2,1,13,37,16,,35,60,74,29,25,6
+80,Freebooters,Grace,Loopinovich,1,3,2,2,32,50,,65,72,68,36,5,12
+80,Freebooters,Grace,Loopinovich,1,3,2,2,32,50,,65,72,68,36,22,16
+81,Blowfish,Bartholomew,Draculo,1,1,37,7,24,43,,65,45,79,37,19,7
+81,Blowfish,Bartholomew,Draculo,1,1,37,7,24,43,,65,45,79,37,33,26
+83,Blowfish,Wanda,Dregler,1,1,22,5,16,71,,51,59,95,32,20,7
+83,Blowfish,Wanda,Dregler,1,1,22,5,16,71,,51,59,95,32,22,19
+84,Blowfish,Shayanne,Hill,4,,35,83,91,70,21,,,,32,17,6
+85,Blowfish,Elvis,Stanley,6,,68,80,75,87,77,,,,28,32,6
+86,Blowfish,Julio,Huper,1,4,24,46,5,50,,55,77,39,25,5,12
+86,Blowfish,Julio,Huper,1,4,24,46,5,50,,55,77,39,25,22,16
+89,Blowfish,Rod,Forth,9,,18,97,95,36,42,,,,31,28,6
+90,Blowfish,Alfonzo,Delgado,5,,37,47,66,66,78,,,,27,27,6
+91,Blowfish,Nirub,Oowanga,9,,61,84,83,70,53,,,,28,14,7
+92,Blowfish,Keg,Gutterson,5,,70,97,39,39,68,,,,31,2,6
+93,Jacks,Batch,Wilson,8,,39,75,52,77,71,,,,38,11,6
+94,Heaters,Simba,Delano,1,3,12,12,53,24,,58,32,29,26,20,6
+95,"Hot Corners",Randy,Mann,4,,70,65,46,20,54,,,,27,12,11
+96,Blowfish,Harry,Backman,2,,95,71,58,33,39,,,,31,4,7
+97,Blowfish,Joanna,Heater,1,3,27,2,8,16,,97,10,69,22,22,14
+97,Blowfish,Joanna,Heater,1,3,27,2,8,16,,97,10,69,22,31,7
+98,Blowfish,Marvin,Steed,7,,74,79,86,65,27,,,,36,0,0
+98,Blowfish,Marvin,Steed,7,,74,79,86,65,27,,,,36,26,6
+100,Blowfish,Mindy,Marshwater,1,3,3,21,25,60,,33,41,45,26,22,20
+101,Buzzards,Erlang,Elwood,1,1,5,10,14,84,,52,41,46,29,22,15
+102,"Hot Corners",Geronimo,James,8,,18,74,76,97,80,,,,29,1,0
+104,Buzzards,Mario,Mustaccio,5,,72,63,69,88,79,,,,25,35,6
+104,Buzzards,Mario,Mustaccio,5,,72,63,69,88,79,,,,25,37,6
+105,Buzzards,Emilio,Idoya,4,,28,35,82,85,81,,,,31,3,5
+105,Buzzards,Emilio,Idoya,4,,28,35,82,85,81,,,,31,9,6
+106,Buzzards,Buttons,Bunterson,6,,46,99,92,92,82,,,,25,26,6
+106,Buzzards,Buttons,Bunterson,6,,46,99,92,92,82,,,,25,40,6
+108,Buzzards,Meat,Commonly,1,3,5,10,20,54,,69,20,18,38,31,7
+109,Buzzards,Rolf,Borgnar,7,,49,66,65,82,77,,,,37,2,7
+110,Buzzards,Joseph,Trunk,3,,68,77,67,77,42,,,,23,32,7
+111,Buzzards,Sebastian,Morrow,1,2,21,13,22,55,,55,53,54,28,5,13
+112,"Sand Cats",Kandi,Sweet,1,1,15,3,29,53,,50,45,35,30,18,6
+112,"Sand Cats",Kandi,Sweet,1,1,15,3,29,53,,50,45,35,30,19,6
+113,Heaters,Kimme,Smoke,2,,53,54,78,68,50,,,,25,33,26
+114,Buzzards,Meow,Bubbkins,1,1,4,26,16,77,,44,53,75,29,22,20
+114,Buzzards,Meow,Bubbkins,1,1,4,26,16,77,,44,53,75,29,33,26
+116,Buzzards,Leyla,Buckberger,1,4,19,14,23,68,,52,81,50,27,20,6
+117,Buzzards,Jacques,"O'Ften",2,,87,49,69,76,81,,,,36,14,6
+117,Buzzards,Jacques,"O'Ften",2,,87,49,69,76,81,,,,36,33,25
+118,Buzzards,Sloop,Whoopity,4,,29,73,83,58,53,,,,20,13,6
+120,Buzzards,Max,Texis,1,3,2,16,17,93,,85,76,57,37,21,7
+121,Moonstars,Alisha,Woodrow,1,1,30,4,23,64,,87,77,99,31,19,6
+123,Heaters,Elmo,Slayer,1,1,16,0,7,79,,72,94,95,23,7,6
+124,Moonstars,Pepe,Vinicio,4,,27,61,82,74,32,,,,22,11,6
+127,Moonstars,Lacky,Luster,9,,49,57,71,44,66,,,,29,8,7
+127,Moonstars,Lacky,Luster,9,,49,57,71,44,66,,,,29,26,7
+128,"Sand Cats",Rodney,Park,6,,27,77,69,61,72,,,,21,36,6
+129,Moonstars,Bert,Bergerer,1,3,15,1,10,21,,85,72,55,31,5,13
+130,Moonstars,Gustav,Gustavson,7,,83,57,27,30,45,,,,38,2,7
+130,Moonstars,Gustav,Gustavson,7,,83,57,27,30,45,,,,38,10,8
+131,Moonstars,Herbert,Hackman,5,,84,68,39,26,55,,,,28,12,10
+132,Moonstars,Clyde,Oliver,7,,37,65,34,64,35,,,,35,15,6
+133,Moonstars,Lil,Bupton,1,4,9,1,3,26,,54,96,64,32,7,6
+133,Moonstars,Lil,Bupton,1,4,9,1,3,26,,54,96,64,32,22,18
+134,Moonstars,Windy,Wheels,8,,47,58,94,63,46,,,,32,17,7
+134,Moonstars,Windy,Wheels,8,,47,58,94,63,46,,,,32,26,6
+135,Moonstars,Raffy,Slaps,5,,54,40,51,52,54,,,,29,38,6
+136,Moonstars,Clubber,Buff,2,,75,45,42,29,63,,,,36,12,11
+137,Moonstars,Taylor,McWhales,1,3,3,13,16,48,,99,51,62,31,20,6
+137,Moonstars,Taylor,McWhales,1,3,3,13,16,48,,99,51,62,31,34,6
+139,Moonstars,Durn,Wonderfloss,1,1,18,11,2,89,,54,72,39,37,21,7
+140,Moonstars,Deft,Weddums,1,2,11,14,4,58,,44,47,69,26,22,17
+140,Moonstars,Deft,Weddums,1,2,11,14,4,58,,44,47,69,26,25,6
+141,"Wild Pigs",Wes,Yogurt,1,1,8,3,33,17,,74,75,85,29,22,19
+142,"Wild Pigs",Hugs,Lovell,1,1,33,4,74,38,,52,55,70,36,22,20
+143,"Sand Cats",Stracy,Wickers,2,,71,23,55,42,44,,,,36,28,6
+145,"Wild Pigs",Enrique,Goyo,7,,51,46,73,49,25,,,,19,8,7
+145,"Wild Pigs",Enrique,Goyo,7,,51,46,73,49,25,,,,19,27,6
+146,"Wild Pigs",Mannon,Moon,8,,62,26,87,53,50,,,,32,0,0
+147,"Wild Pigs",Spanky,Wagnerd,3,,97,58,66,16,14,,,,28,14,6
+147,"Wild Pigs",Spanky,Wagnerd,3,,97,58,66,16,14,,,,28,29,7
+148,"Wild Pigs",Bloop,Michaels,6,,78,76,92,73,53,,,,25,11,6
+148,"Wild Pigs",Bloop,Michaels,6,,78,76,92,73,53,,,,25,13,6
+149,"Wild Pigs",Godfried,Storm,8,,48,37,55,35,83,,,,21,9,6
+150,"Wild Pigs",Rosy,Hardman,7,,93,30,47,36,31,,,,22,3,2
+151,Heaters,Theodore,Stiffner,5,,87,39,94,37,45,,,,25,29,7
+153,"Wild Pigs",Earnie,Blings,2,,85,40,31,40,34,,,,29,12,11
+156,"Wild Pigs",Roberto,Alba,5,,53,51,58,43,45,,,,36,32,6
+157,"Hot Corners",Sirloin,Jones,1,4,17,5,48,29,,87,61,59,37,21,7
+158,"Wild Pigs",Flash,Evans,9,,90,30,98,49,29,,,,30,37,6
+159,"Wild Pigs",Wiff,Smesson,1,1,2,39,13,44,,47,65,53,31,6,6
+159,"Wild Pigs",Wiff,Smesson,1,1,2,39,13,44,,47,65,53,31,22,21
+160,"Wild Pigs",Alana,Lantana,1,3,4,14,29,7,,62,94,94,29,7,6
+161,"Hot Corners",Terrok,Smith,1,1,11,13,28,48,,43,25,62,19,22,14
+162,Overdogs,Dick,Burger,5,,97,16,65,36,42,,,,29,38,6
+163,"Sand Cats",Marsha,Brown,9,,82,76,87,58,52,,,,22,4,6
+165,Overdogs,Chasey,Kim,1,1,17,6,50,39,,92,44,47,35,33,25
+166,Overdogs,Rhonda,Horne,5,,94,69,83,46,45,,,,29,4,7
+167,Overdogs,Kasha,Emyn,6,,64,77,86,67,44,,,,35,2,6
+168,Overdogs,Robbin,Yew,7,,62,51,78,83,32,,,,38,8,6
+168,Overdogs,Robbin,Yew,7,,62,51,78,83,32,,,,38,29,6
+169,Overdogs,Anton,Goodwood,2,,69,64,79,43,63,,,,31,26,7
+170,Overdogs,Casper,Stern,9,,50,54,48,68,74,,,,28,3,3
+170,Overdogs,Casper,Stern,9,,50,54,48,68,74,,,,28,17,6
+171,Overdogs,Larry,"La'Joy",1,1,3,4,30,32,,45,77,62,31,22,20
+172,Overdogs,David,Diggler,1,3,26,25,28,86,,87,64,30,29,6,7
+173,Overdogs,Rocket,Ramon,1,3,25,17,70,48,,74,69,25,27,22,14
+173,Overdogs,Rocket,Ramon,1,3,25,17,70,48,,74,69,25,27,39,7
+174,Overdogs,Samuel,Perez,2,,73,43,55,70,36,,,,31,15,6
+175,Overdogs,Elroy,Action,4,,37,89,98,38,37,,,,21,14,6
+176,Overdogs,Doug,Nerdwerd,1,3,11,31,18,71,,54,68,32,37,22,17
+177,Overdogs,Raphael,Gonzolo,3,,65,38,85,43,20,,,,28,1,0
+180,Overdogs,Brawn,Thunderchump,1,3,4,5,21,73,,53,82,68,27,32,7
+181,Herbisaurs,Olaff,Slakov,1,1,33,4,13,62,,83,20,72,36,22,14
+181,Herbisaurs,Olaff,Slakov,1,1,33,4,13,62,,83,20,72,36,33,26
+182,Herbisaurs,Tussker,Fuss,1,1,11,34,52,38,,68,44,75,29,39,7
+183,Herbisaurs,Chilli,Little,9,,73,29,47,49,69,,,,21,17,6
+184,Herbisaurs,Dick,Lukas,1,1,6,34,63,73,,46,73,66,21,19,6
+185,Herbisaurs,Fiona,Clark,2,,41,25,54,82,99,,,,24,0,1
+186,Herbisaurs,Annabella,Stokes,4,,22,70,92,98,66,,,,22,37,6
+187,"Sand Cats",Dolf,Steak,8,,42,68,87,87,88,,,,27,0,0
+187,"Sand Cats",Dolf,Steak,8,,42,68,87,87,88,,,,27,1,0
+188,Herbisaurs,Milo,Stewart,6,,26,68,73,97,96,,,,29,13,6
+189,Herbisaurs,Grunt,Manly,3,,65,77,66,69,69,,,,32,2,6
+190,Herbisaurs,Ralph,Blue,6,,77,54,42,60,60,,,,31,2,7
+190,Herbisaurs,Ralph,Blue,6,,77,54,42,60,60,,,,31,12,11
+191,Herbisaurs,Henry,Hampster,5,,62,64,88,80,86,,,,30,12,10
+192,Herbisaurs,Leonar,Ramiro,1,3,4,24,93,95,,72,35,30,37,20,7
+193,Herbisaurs,Elrick,Rippin,1,4,13,3,6,50,,82,8,36,38,7,7
+193,Herbisaurs,Elrick,Rippin,1,4,13,3,6,50,,82,8,36,38,20,6
+194,Herbisaurs,Nate,Hanky,2,,49,64,34,38,54,,,,31,38,6
+195,Herbisaurs,Morton,Stanberg,7,,60,64,86,72,85,,,,28,3,2
+195,Herbisaurs,Morton,Stanberg,7,,60,64,86,72,85,,,,28,36,6
+196,Herbisaurs,Omar,Chombo,1,3,5,5,25,46,,63,25,21,19,32,7
+197,Herbisaurs,Juan,Rojas,9,,60,57,71,84,87,,,,31,29,6
+198,Herbisaurs,Stevo,Reeves,7,,12,88,74,56,65,,,,29,15,6
+199,Herbisaurs,Gem,Qualita,1,1,19,74,33,94,,72,57,78,32,6,6
+199,Herbisaurs,Gem,Qualita,1,1,19,74,33,94,,72,57,78,32,18,7
+200,"Hot Corners",Grump,Everbright,1,3,8,16,14,75,,39,66,52,38,22,20
+201,Beewolves,Hurley,Bender,1,1,12,8,23,67,,73,99,86,23,22,17
+202,Beewolves,Steve,Monstur,2,,69,45,56,52,53,,,,32,14,6
+203,Beewolves,Bevis,Ortiz,1,1,4,7,65,70,,63,66,63,28,22,21
+204,Beewolves,Gina,Torrens,4,,25,87,91,80,20,,,,36,0,0
+204,Beewolves,Gina,Torrens,4,,25,87,91,80,20,,,,36,29,7
+205,Beewolves,Johnson,Swanson,2,,62,43,72,73,70,,,,31,12,11
+206,"Hot Corners",Yolanda,Cooper,1,1,7,34,19,50,,74,49,92,21,19,7
+207,Heaters,Buscha,Digman,6,,75,17,49,77,74,,,,31,1,1
+208,Beewolves,Buster,Bigs,7,,74,68,77,44,40,,,,31,27,7
+210,Beewolves,Poke,Foster,9,,25,76,24,68,66,,,,24,40,6
+212,Jacks,Kisha,Musharra,1,3,12,12,41,58,,68,13,32,26,22,19
+213,Beewolves,Smack,Avery,1,4,3,4,19,80,,72,36,40,20,7,6
+214,Beewolves,Freddie,Knox,4,,23,81,95,43,56,,,,38,11,6
+215,Beewolves,Ruby,Greene,3,,63,69,54,18,51,,,,26,17,6
+217,Beewolves,Benny,Balmer,7,,32,40,58,89,84,,,,29,32,6
+218,Beewolves,Bertha,Banks,5,,64,56,51,67,52,,,,29,12,10
+218,Beewolves,Bertha,Banks,5,,64,56,51,67,52,,,,29,26,7
+219,Beewolves,Fran,Gipani,1,1,2,38,35,98,,66,54,46,37,22,15
+219,Beewolves,Fran,Gipani,1,1,2,38,35,98,,66,54,46,37,33,26
+220,Beewolves,Tatts,Balfour,1,3,2,13,41,90,,49,64,40,37,6,7
+222,Moose,Rhiannon,Cannon,1,1,29,39,19,65,,83,49,70,32,22,14
+224,Moose,Heronimus,Jackson,8,,89,59,62,60,49,,,,31,3,5
+225,Moose,Sancha,Silvio,1,1,7,3,9,76,,68,42,89,21,31,7
+226,Moose,Roman,Rhoades,2,,64,27,35,72,61,,,,31,4,6
+227,Moose,Perry,Quaker,3,,88,60,40,31,44,,,,31,32,6
+228,Moose,Fred,Bobbit,4,,52,86,38,51,41,,,,31,26,6
+229,Heaters,Bubbles,Garcia,7,,78,47,37,47,45,,,,26,17,7
+230,Moose,Nacho,Crisp,6,,70,53,61,69,69,,,,27,28,6
+231,Moose,Rip,Dingers,5,,97,50,40,42,90,,,,25,0,1
+231,Moose,Rip,Dingers,5,,97,50,40,42,90,,,,25,3,3
+233,Moose,Klaus,"D'Gayme",1,4,28,7,15,42,,75,84,56,30,20,6
+234,Moose,Irene,Fast,9,,84,43,93,48,66,,,,38,14,7
+234,Moose,Irene,Fast,9,,84,43,93,48,66,,,,38,27,6
+236,Moose,Carla,Tolbert,1,3,4,2,8,43,,65,76,43,29,7,7
+237,Moose,Stallion,Johnson,7,,50,55,87,32,44,,,,21,10,9
+238,"Sand Cats",Winston,Draper,4,,68,35,52,79,33,,,,38,17,7
+239,Moose,Raul,Strikes,1,1,42,10,9,65,,38,64,71,28,19,6
+240,Moose,Charlie,Best,1,3,3,13,5,82,,74,93,86,31,22,17
+241,Platypi,Rufus,Zumar,1,2,7,40,10,64,,52,66,81,29,21,7
+242,Platypi,Scooter,Sandbrick,3,,62,76,67,59,49,,,,37,2,7
+243,Platypi,Rory,Crowds,7,,67,46,61,62,37,,,,23,3,4
+244,Platypi,Stooby,Tubrek,1,1,4,37,9,65,,57,46,87,31,22,19
+245,Platypi,Willy,Bacon,8,,51,82,71,73,56,,,,32,3,5
+246,Platypi,Beefcake,McStevens,5,,83,96,74,57,65,,,,27,0,1
+246,Platypi,Beefcake,McStevens,5,,83,96,74,57,65,,,,27,3,2
+247,Platypi,Kerry,Cartman,4,,39,60,84,60,64,,,,34,12,10
+248,Platypi,Muffin,Studwick,7,,52,87,59,74,47,,,,35,10,8
+248,Platypi,Muffin,Studwick,7,,52,87,59,74,47,,,,35,36,7
+249,Platypi,Charley,Lopez,6,,21,98,70,84,76,,,,38,16,6
+251,Jacks,Donk,Oh,1,1,29,48,5,63,,54,57,95,20,25,6
+254,Platypi,Herra,"O'Wuggliems",9,,44,84,40,82,76,,,,21,10,9
+254,Platypi,Herra,"O'Wuggliems",9,,44,84,40,82,76,,,,21,36,6
+255,Platypi,Chase,Tibuhle,2,,27,30,57,74,93,,,,37,14,6
+256,Platypi,Walt,Huckster,1,4,5,11,61,27,,55,25,59,29,7,7
+257,Platypi,Kitty,Kauffman,4,,32,94,93,51,52,,,,21,11,6
+258,"Hot Corners",Stu,Berko,3,,64,92,34,32,46,,,,35,14,6
+259,Platypi,Ace,"von Acesson",1,1,15,32,16,96,,65,84,78,29,7,6
+260,Platypi,Chance,Lotterbury,1,2,6,19,21,69,,6,20,40,37,5,13
+260,Platypi,Chance,Lotterbury,1,2,6,19,21,69,,6,20,40,37,33,26
+262,Crocodons,Evan,Chukov,2,,41,53,23,78,89,,,,20,14,6
+263,Crocodons,Maurice,Brick,1,1,16,15,13,81,,76,96,52,22,23,6
+263,Crocodons,Maurice,Brick,1,1,16,15,13,81,,76,96,52,22,33,26
+265,Crocodons,Clifford,Kane,8,,59,62,53,30,47,,,,37,17,7
+266,Crocodons,Juanita,Hernandez,9,,48,69,65,89,96,,,,31,36,6
+267,Crocodons,Andre,Candela,4,,67,72,71,76,22,,,,25,26,6
+267,Crocodons,Andre,Candela,4,,67,72,71,76,22,,,,25,33,25
+268,Heaters,Bishop,Fuller,1,1,5,47,54,52,,75,83,72,37,22,15
+269,Crocodons,Bubba,Blastman,7,,74,42,25,47,56,,,,30,4,7
+269,Crocodons,Bubba,Blastman,7,,74,42,25,47,56,,,,30,32,6
+270,Crocodons,Norton,Pickle,6,,33,79,69,78,73,,,,31,28,6
+272,Crocodons,Ricky,McFarland,1,4,3,22,20,36,,66,97,31,25,5,12
+273,Crocodons,Woody,Ano,1,3,5,30,10,76,,85,89,15,38,21,7
+274,Crocodons,Liane,Drive,3,,57,96,39,39,59,,,,27,17,6
+275,Jacks,Bruno,Adamo,4,,16,89,87,41,54,,,,31,28,6
+276,Crocodons,Tia,Mayfair,1,3,2,19,13,98,,73,48,24,32,7,7
+277,"Hot Corners",Nori,Miyoshi,7,,54,61,59,91,23,,,,30,1,1
+278,Crocodons,Terra,Lionerre,2,,74,60,39,50,63,,,,28,30,7
+280,Crocodons,Lou,DaBaziz,1,3,1,15,8,22,,39,29,43,26,19,7
+281,Wideloads,Holder,Close,1,2,22,10,9,54,,46,78,76,22,18,6
+281,Wideloads,Holder,Close,1,2,22,10,9,54,,46,78,76,22,22,17
+282,Wideloads,Masha,Donga,6,,73,92,48,56,65,,,,29,10,9
+283,Wideloads,Janus,Friedman,4,,75,62,57,81,50,,,,31,29,7
+284,Wideloads,Hack,Liner,5,,92,87,65,57,86,,,,31,12,10
+284,Wideloads,Hack,Liner,5,,92,87,65,57,86,,,,31,16,6
+285,Wideloads,Wade,Hobbes,8,,88,54,48,71,57,,,,37,14,6
+286,Wideloads,Harmony,Straus,2,,77,60,12,45,96,,,,28,10,8
+288,Wideloads,Ella,Roids,9,,80,52,23,71,79,,,,21,35,6
+289,Wideloads,Darcy,Hicks,3,,84,92,53,8,39,,,,38,3,4
+290,Wideloads,Chugg,Burbony,1,1,13,5,9,49,,79,58,92,23,19,7
+290,Wideloads,Chugg,Burbony,1,1,13,5,9,49,,79,58,92,23,25,6
+292,Heaters,Splash,Cashmore,1,3,18,2,50,52,,74,13,67,37,5,13
+294,Wideloads,Rogan,Balls,1,4,26,7,11,45,,82,43,34,29,22,16
+295,Jacks,Clutch,Cormen,2,,44,89,49,10,66,,,,37,32,6
+296,Wideloads,Molly,Pops,1,3,15,2,5,66,,60,60,48,27,20,7
+297,Wideloads,Olaf,Beerson,7,,79,36,29,86,25,,,,37,3,5
+298,Wideloads,Chimo,Gaspar,6,,89,53,56,89,72,,,,29,1,1
+298,Wideloads,Chimo,Gaspar,6,,89,53,56,89,72,,,,29,3,3
+299,Wideloads,Gerry,Rawner,1,1,40,29,53,72,,29,65,52,31,23,6
+299,Wideloads,Gerry,Rawner,1,1,40,29,53,72,,29,65,52,31,39,7
+300,Wideloads,Bale,Bozzer,1,3,24,3,29,65,,49,84,69,27,21,7
+301,Nemesis,Heidi,Mabettes,1,1,20,6,30,45,,47,51,86,38,22,18
+302,Nemesis,Brine,Pickleford,7,,69,54,70,63,34,,,,31,17,6
+303,Nemesis,Javy,Yatter,9,,81,81,35,89,81,,,,29,2,7
+303,Nemesis,Javy,Yatter,9,,81,81,35,89,81,,,,29,3,5
+305,Nemesis,Mark,Harbourmouth,1,1,77,17,8,82,,50,40,57,34,22,16
+306,Nemesis,Jock,Sports,6,,89,98,57,93,71,,,,29,36,6
+307,Nemesis,Jackie,Slam,8,,81,98,68,84,65,,,,31,2,6
+307,Nemesis,Jackie,Slam,8,,81,98,68,84,65,,,,31,16,6
+308,Jacks,Log,Freely,7,,77,66,49,57,71,,,,29,3,4
+310,Nemesis,Churl,Dangerfield,8,,54,40,65,78,95,,,,22,37,6
+311,Nemesis,Ansel,Carouse,1,1,32,11,28,71,,65,60,70,25,23,6
+312,Nemesis,Babette,Walkman,1,3,33,1,34,70,,49,51,17,26,6,7
+313,Heaters,Huck,Enduck,1,3,69,8,20,8,,43,35,42,23,31,7
+315,Nemesis,Hito,Moonshota,5,,98,68,30,88,93,,,,28,3,2
+316,Nemesis,Lawrence,Wimple,1,4,19,1,14,96,,68,50,39,19,19,6
+317,Nemesis,Javier,Hautier,4,,93,66,41,65,47,,,,21,4,7
+318,Nemesis,Stacy,Staples,2,,70,70,22,74,69,,,,37,26,7
+320,Nemesis,Lucy,Finnegans,1,3,25,28,43,60,,53,69,29,28,22,15
+322,Buzzards,Spits,McKinny,7,,30,84,69,75,56,,,,36,2,6
+323,Platypi,Linda,Hand,9,,53,38,82,60,95,,,,31,29,6
+324,Jacks,Rob,Glover,6,,10,78,83,83,54,,,,21,29,6
+325,Crocodons,Tarzan,Woodburn,3,,21,34,11,96,83,,,,26,12,10
+326,Beewolves,Handley,Dexterez,6,,63,87,87,97,74,,,,29,9,6
+326,Beewolves,Handley,Dexterez,6,,63,87,87,97,74,,,,29,10,8
+327,Moose,Lionel,Martinez,3,,56,45,31,91,40,,,,34,15,6
+328,Heaters,Maggie,Rags,4,,26,17,67,92,98,,,,28,9,6
+329,"Wild Pigs",Turbo,Miles,4,,40,56,91,27,25,,,,31,8,6
+330,Sirloins,Tish,Balin,8,,58,33,68,70,90,,,,22,9,6
+331,Moonstars,Dale,Nale,9,,57,68,18,50,63,,,,37,16,6
+332,Blowfish,Ricky,Quan,8,,30,45,70,92,91,,,,21,8,6
+333,Grapplers,Ian,Fielder,5,,45,70,60,57,63,,,,31,9,6
+334,Heaters,Murky,Nubswubbles,9,,57,29,64,15,65,,,,28,38,6
+335,Nemesis,Flash,Leathar,4,,51,22,64,95,80,,,,28,29,6
+336,"Sand Cats",Gia,Axelson,7,,33,76,59,43,32,,,,28,2,7
+337,Overdogs,Digg,Efforto,6,,7,27,31,87,69,,,,21,9,6
+337,Overdogs,Digg,Efforto,6,,7,27,31,87,69,,,,21,17,7
+338,Jacks,Juice,Jackson,5,,95,88,43,68,70,,,,22,10,9
+338,Jacks,Juice,Jackson,5,,95,88,43,68,70,,,,22,35,6
+339,Jacks,Yoyo,Yamamoto,5,,50,86,34,66,86,,,,29,16,6
+341,Moose,Buck,Swiner,7,,74,40,66,81,71,,,,25,33,26
+342,Jacks,Razi,Dazzler,8,,83,62,63,93,49,,,,27,4,6
+344,"Wild Pigs",Snag,Roper,6,,68,87,22,93,91,,,,38,29,6
+346,"Wild Pigs",Frank,Battery,2,,35,61,73,97,87,,,,27,27,7
+346,"Wild Pigs",Frank,Battery,2,,35,61,73,97,87,,,,27,34,6
+347,Wideloads,Fungo,Accuro,8,,38,97,72,58,35,,,,31,12,11
+348,Freebooters,Kenna,Quorn,9,,52,26,65,92,68,,,,31,26,6
+349,Jacks,Huffly,Buffler,4,,91,90,28,75,58,,,,25,26,7
+349,Jacks,Huffly,Buffler,4,,91,90,28,75,58,,,,25,36,7
+350,Overdogs,Werner,Bergenberg,1,1,5,23,50,61,,56,40,68,22,22,18
+351,Jacks,Bella,Mietballe,1,1,39,64,11,93,,14,25,34,32,39,7
+352,Blowfish,Geoffrey,Jenkins,1,2,20,10,0,67,,45,53,44,20,22,18
+353,Jacks,Barry,Ozone,1,1,30,5,18,59,,27,66,34,24,22,20
+354,Platypi,Remington,Sharp,1,3,8,8,27,66,,70,60,89,36,22,15
+356,Jacks,Immaculo,Spectaculo,1,3,2,12,11,56,,84,95,79,25,21,7
+358,Sawteeth,Lester,Bronco,9,,65,78,70,27,74,,,,31,4,6
+359,Blowfish,Hog,Porker,4,,71,58,38,78,52,,,,38,27,7
+361,"Hot Corners",Stan,Elyve,7,,84,81,68,18,25,,,,29,4,6
+362,"Hot Corners",Beau,Belter,8,,95,80,76,31,20,,,,29,10,8
+363,Freebooters,Pomp,Duchee,3,,81,42,87,54,65,,,,21,27,7
+363,Freebooters,Pomp,Duchee,3,,81,42,87,54,65,,,,21,38,6
+364,"Hot Corners",Tiny,deGrande,2,,84,46,39,32,68,,,,25,13,6
+365,"Hot Corners",Nora,Homes,6,,77,95,50,34,48,,,,31,26,6
+366,Blowfish,Pumper,Lumpkins,7,,49,28,49,75,38,,,,31,1,1
+367,Wideloads,Prince,Prize,2,,26,50,72,72,49,,,,32,40,6
+369,Grapplers,Kelby,King,9,,89,43,64,21,75,,,,31,17,6
+370,"Hot Corners",Jeb,Jumps,4,,85,92,62,34,12,,,,21,4,7
+370,"Hot Corners",Jeb,Jumps,4,,85,92,62,34,12,,,,21,8,6
+371,Sirloins,Kayo,Niomo,1,1,6,1,73,60,,70,49,56,38,18,6
+373,Platypi,Rusty,Nozzle,1,1,13,19,9,74,,56,42,51,28,34,7
+374,"Hot Corners",Noah,Kaiser,1,1,28,40,33,24,,62,67,85,22,34,7
+375,"Hot Corners",Joseph,Broseph,1,3,1,9,43,20,,88,66,58,37,6,6
+377,Freebooters,Ryder,McPride,1,3,11,7,9,97,,64,33,78,29,20,6
+377,Freebooters,Ryder,McPride,1,3,11,7,9,97,,64,33,78,29,32,6
+378,"Hot Corners",Amazo,Haze,1,3,41,4,13,11,,38,97,56,21,5,13
+379,Sawteeth,Sammie,Shigetani,4,,42,56,57,65,53,,,,29,35,6
+380,Nemesis,Gabby,Ganez,9,,50,63,74,49,29,,,,31,34,6
+381,Herbisaurs,Yoink,Sax,8,,50,39,91,89,95,,,,27,8,6
+382,Nemesis,Amy,Zoner,6,,28,58,57,65,68,,,,27,1,1
+382,Nemesis,Amy,Zoner,6,,28,58,57,65,68,,,,27,3,4
+383,Buzzards,Billy,Bronx,2,,46,28,38,61,74,,,,28,28,6
+384,"Sand Cats",Knox,Oxensocksen,2,,11,96,79,92,77,,,,29,12,11
+386,"Sand Cats",Chip,Duffers,4,,20,72,90,73,80,,,,37,14,7
+386,"Sand Cats",Chip,Duffers,4,,20,72,90,73,80,,,,37,29,6
+388,Crocodons,Runda,Thurd,5,,78,53,95,61,61,,,,31,27,6
+389,"Sand Cats",Kara,Kawaguchi,5,,44,42,90,60,90,,,,29,30,7
+390,"Sand Cats",Tigg,Tantrum,7,,41,32,85,37,65,,,,28,17,6
+391,"Sand Cats",Super,Sampson,8,,24,57,98,97,97,,,,29,33,25
+392,"Sand Cats",Beebee,Takabasei,1,1,6,16,21,57,,55,62,9,31,6,7
+395,Crocodons,Bae,Paul,1,1,7,28,33,75,,9,75,52,27,22,15
+396,"Sand Cats",Gasser,Morris,1,3,2,6,12,58,,95,56,79,31,5,12
+397,Nemesis,Binky,Stevens,1,3,3,2,18,13,,65,34,81,37,19,7
+398,"Sand Cats",Ice,Vainer,1,4,3,13,57,40,,87,93,46,31,6,6
+400,Moose,Hose,Tremendo,9,,61,53,64,85,98,,,,29,36,6
+401,Platypi,Sky,Rodriguez,5,,94,38,43,8,58,,,,27,1,1
+402,Moonstars,Boo,Louis,2,,47,68,46,86,81,,,,31,13,6
+403,Overdogs,Sakda,Song,3,,80,93,90,93,57,,,,25,0,0
+403,Overdogs,Sakda,Song,3,,80,93,90,93,57,,,,25,10,9
+404,Moonstars,Nance,Tools,6,,86,75,69,87,48,,,,29,8,6
+404,Moonstars,Nance,Tools,6,,86,75,69,87,48,,,,29,9,6
+406,Buzzards,Thurman,Colt,8,,70,45,83,31,49,,,,32,17,6
+407,Heaters,Slapper,Glute,7,,54,90,68,41,85,,,,31,12,11
+408,Heaters,Hank,Hart,2,,36,84,54,74,88,,,,37,14,7
+409,Heaters,Dion,Bass,4,,33,73,82,71,75,,,,31,2,7
+409,Heaters,Dion,Bass,4,,33,73,82,71,75,,,,31,27,6
+410,Heaters,Carlton,Starr,6,,42,84,71,85,73,,,,22,14,6
+411,Heaters,Raise,Ruffo,8,,49,89,78,84,79,,,,29,3,2
+411,Heaters,Raise,Ruffo,8,,49,89,78,84,79,,,,29,13,6
+412,Herbisaurs,Whopper,Batsman,4,,81,15,50,49,37,,,,23,4,6
+413,Moonstars,Vern,Turnburner,1,1,44,4,38,66,,94,60,44,22,22,19
+414,Sawteeth,Fabio,Fabulo,1,1,13,21,10,12,,59,38,82,31,22,21
+415,Heaters,Boris,Biggsworth,1,2,7,5,0,77,,52,35,34,26,33,25
+416,Heaters,Air,Lovestone,1,1,5,11,34,44,,39,42,72,36,22,21
+416,Heaters,Air,Lovestone,1,1,5,11,34,44,,39,42,72,36,23,6
+417,"Wild Pigs",Hander,"O'Speciallo",1,3,2,5,10,75,,23,70,51,30,5,12
+417,"Wild Pigs",Hander,"O'Speciallo",1,3,2,5,10,75,,23,70,51,30,20,7
+418,Heaters,Derr,Neverwocker,1,3,5,15,54,71,,90,87,73,21,6,6
+421,Wideloads,Danny,Deals,1,1,9,23,13,59,,77,78,56,21,7,6
+422,Buzzards,Punchie,Patterson,1,1,30,12,25,72,,89,89,34,27,7,6
+422,Buzzards,Punchie,Patterson,1,1,30,12,25,72,,89,89,34,27,18,7
+424,Overdogs,Slick,Pickman,1,2,15,11,5,39,,71,75,60,36,18,6
+425,Crocodons,Norm,Fenomeno,1,2,77,79,23,78,,54,76,67,23,22,14
+425,Crocodons,Norm,Fenomeno,1,2,77,79,23,78,,54,76,67,23,24,23
+426,Beewolves,Buzz,Pastimm,1,2,14,26,3,56,,87,29,65,31,5,12
+426,Beewolves,Buzz,Pastimm,1,2,14,26,3,56,,87,29,65,31,22,14
+427,Moose,Swirly,Cutstiff,1,2,18,44,37,57,,67,83,35,21,22,16
+427,Moose,Swirly,Cutstiff,1,2,18,44,37,57,,67,83,35,21,32,7
+429,"Wild Pigs",Cutter,Crackebarrel,1,2,24,28,4,30,,89,37,39,29,22,16
+430,Sirloins,Split,Seemerson,1,2,15,9,8,51,,35,65,55,21,22,21
+430,Sirloins,Split,Seemerson,1,2,15,9,8,51,,35,65,55,21,34,7
+432,Blowfish,Dwight,Breeze,1,2,7,7,44,17,,29,42,35,26,33,25
+434,Freebooters,Nic,Diegez,1,1,5,16,11,54,,60,58,90,25,6,6
+435,Grapplers,Ritonda,Black,1,1,54,7,5,45,,70,60,70,22,7,6
+436,Nemesis,Deuce,Stacker,1,1,22,22,12,42,,22,72,22,27,22,17
+437,Jacks,Stitch,Gripowski,1,2,13,42,16,47,,46,67,83,23,20,7
+437,Jacks,Stitch,Gripowski,1,2,13,42,16,47,,46,67,83,23,22,16
+438,"Hot Corners",Dot,Dacornas,1,1,27,11,23,37,,55,46,95,29,19,6
+439,"Sand Cats",Sergio,Slider,1,2,14,30,26,50,,76,85,55,31,22,18
+439,"Sand Cats",Sergio,Slider,1,2,14,30,26,50,,76,85,55,31,31,7
+739,Platypi,Shirley,Indiere,1,2,6,7,20,18,,56,31,72,29,19,6
+744,Moonstars,Testy,Osteroni,3,,91,55,65,31,80,,,,30,34,7
+757,Sawteeth,Lefty,Southpalm,1,1,12,16,31,44,,47,80,60,38,5,12
+757,Sawteeth,Lefty,Southpalm,1,1,12,16,31,44,,47,80,60,38,18,6
 t_achievement_completed_games_won            
 t_baseball_player_colors                     
 t_baseball_player_local_ids                  
