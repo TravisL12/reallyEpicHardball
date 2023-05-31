@@ -104,6 +104,7 @@ join t_teams team
     on tbp.teamGUID = team.GUID
 ```
 
+### Player Options
 Get player options by last name
 
 ```
@@ -114,3 +115,9 @@ join t_baseball_player_options opt2
   on opt.baseballPlayerLocalID = opt2.baseballPlayerLocalID
 where opt.optionValue = 'Avery';
 ```
+Option keys as discovered via the `.schema` within a database:
+- 54: Primary position
+- 55: Secondary Position
+- 57: Pitcher role
+- 66: First name
+- 67: Last name
