@@ -52,6 +52,14 @@ This works to get the trait and subType (and Local ID)
 finds 440
 
 ```
+select count(*) from v_baseball_player_info vbpi
+join t_baseball_players tbp
+    on vbpi.baseballPlayerGUID = tbp.GUID
+left join t_teams team
+    on tbp.teamGUID = team.GUID
+```
+
+```
 select
     team.teamName,
     vbpi.firstName,
@@ -70,7 +78,19 @@ select
 from v_baseball_player_info vbpi
 join t_baseball_players tbp
     on vbpi.baseballPlayerGUID = tbp.GUID
-join t_teams team
+left join t_teams team
+    on tbp.teamGUID = team.GUID
+```
+
+```
+select count(*) from v_baseball_player_info vbpi
+join t_baseball_players tbp
+    on vbpi.baseballPlayerGUID = tbp.GUID
+join t_baseball_player_local_ids loc
+    on tbp.GUID = loc.GUID
+left join t_baseball_player_traits trait
+    on loc.localID = trait.baseballPlayerLocalID
+left join t_teams team
     on tbp.teamGUID = team.GUID
 ```
 
@@ -100,11 +120,12 @@ join t_baseball_player_local_ids loc
     on tbp.GUID = loc.GUID
 left join t_baseball_player_traits trait
     on loc.localID = trait.baseballPlayerLocalID
-join t_teams team
+left join t_teams team
     on tbp.teamGUID = team.GUID
 ```
 
 ### Player Options
+
 Get player options by last name
 
 ```
@@ -115,9 +136,15 @@ join t_baseball_player_options opt2
   on opt.baseballPlayerLocalID = opt2.baseballPlayerLocalID
 where opt.optionValue = 'Avery';
 ```
+
 Option keys as discovered via the `.schema` within a database:
+
 - 54: Primary position
 - 55: Secondary Position
 - 57: Pitcher role
 - 66: First name
 - 67: Last name
+
+### The final process
+
+tbd

@@ -1,0 +1,372 @@
+[
+  {
+    "trait": 0,
+    "subtype": 0,
+    "Description": "POW vs RHP"
+  },
+  {
+    "trait": 0,
+    "subtype": 1,
+    "Description": "POW vs LHP"
+  },
+  {
+    "trait": 1,
+    "subtype": 0,
+    "Description": "CON vs RHP"
+  },
+  {
+    "trait": 1,
+    "subtype": 1,
+    "Description": "CON vs LHP"
+  },
+  {
+    "trait": 2,
+    "subtype": 6,
+    "Description": "RBI Hero"
+  },
+  {
+    "trait": 2,
+    "subtype": 7,
+    "Description": "RBI Zero"
+  },
+  {
+    "trait": 3,
+    "subtype": 2,
+    "Description": "High Pitch"
+  },
+  {
+    "trait": 3,
+    "subtype": 3,
+    "Description": "Low Pitch"
+  },
+  {
+    "trait": 3,
+    "subtype": 4,
+    "Description": "Inside Pitch"
+  },
+  {
+    "trait": 3,
+    "subtype": 5,
+    "Description": "Outside Pitch"
+  },
+  {
+    "trait": 4,
+    "subtype": 6,
+    "Description": "Tough Out"
+  },
+  {
+    "trait": 4,
+    "subtype": 7,
+    "Description": "Whiffer"
+  },
+  {
+    "trait": 5,
+    "subtype": 12,
+    "Description": "Specialist"
+  },
+  {
+    "trait": 5,
+    "subtype": 13,
+    "Description": "Reverse Splits"
+  },
+  {
+    "trait": 6,
+    "subtype": 6,
+    "Description": "Composed"
+  },
+  {
+    "trait": 6,
+    "subtype": 7,
+    "Description": "BB Prone"
+  },
+  {
+    "trait": 7,
+    "subtype": 6,
+    "Description": "K Collector"
+  },
+  {
+    "trait": 7,
+    "subtype": 7,
+    "Description": "K Neglecter"
+  },
+  {
+    "trait": 8,
+    "subtype": 6,
+    "Description": "Stealer"
+  },
+  {
+    "trait": 8,
+    "subtype": 7,
+    "Description": "Bad Jumps"
+  },
+  {
+    "trait": 9,
+    "subtype": 6,
+    "Description": "Utility"
+  },
+  {
+    "trait": 10,
+    "subtype": 8,
+    "Description": "Fastball Hitter"
+  },
+  {
+    "trait": 10,
+    "subtype": 9,
+    "Description": "Off-speed Hitter"
+  },
+  {
+    "trait": 11,
+    "subtype": 6,
+    "Description": "Bad Ball Hitter"
+  },
+  {
+    "trait": 12,
+    "subtype": 10,
+    "Description": "Big Hack"
+  },
+  {
+    "trait": 12,
+    "subtype": 11,
+    "Description": "Little Hack"
+  },
+  {
+    "trait": 13,
+    "subtype": 6,
+    "Description": "Rally Starter"
+  },
+  {
+    "trait": 14,
+    "subtype": 6,
+    "Description": "First Pitch Slayer"
+  },
+  {
+    "trait": 14,
+    "subtype": 7,
+    "Description": "First Pitch Prayer"
+  },
+  {
+    "trait": 15,
+    "subtype": 6,
+    "Description": "Pinch perfect"
+  },
+  {
+    "trait": 16,
+    "subtype": 6,
+    "Description": "Ace Exterminator"
+  },
+  {
+    "trait": 17,
+    "subtype": 6,
+    "Description": "Mind Gamer"
+  },
+  {
+    "trait": 17,
+    "subtype": 7,
+    "Description": "Easy Target"
+  },
+  {
+    "trait": 18,
+    "subtype": 6,
+    "Description": "Pick Officer"
+  },
+  {
+    "trait": 18,
+    "subtype": 7,
+    "Description": "Easy Jumps"
+  },
+  {
+    "trait": 19,
+    "subtype": 6,
+    "Description": "Gets Ahead"
+  },
+  {
+    "trait": 19,
+    "subtype": 7,
+    "Description": "Falls Behind"
+  },
+  {
+    "trait": 20,
+    "subtype": 6,
+    "Description": "Rally Stopper"
+  },
+  {
+    "trait": 20,
+    "subtype": 7,
+    "Description": "Surrounded"
+  },
+  {
+    "trait": 21,
+    "subtype": 7,
+    "Description": "Crossed Up"
+  },
+  {
+    "trait": 22,
+    "subtype": 14,
+    "Description": "Elite 4F"
+  },
+  {
+    "trait": 22,
+    "subtype": 15,
+    "Description": "Elite 2F"
+  },
+  {
+    "trait": 22,
+    "subtype": 16,
+    "Description": "Elite CF"
+  },
+  {
+    "trait": 22,
+    "subtype": 17,
+    "Description": "Elite CB"
+  },
+  {
+    "trait": 22,
+    "subtype": 18,
+    "Description": "Elite SL"
+  },
+  {
+    "trait": 22,
+    "subtype": 19,
+    "Description": "Elite CH"
+  },
+  {
+    "trait": 22,
+    "subtype": 20,
+    "Description": "Elite SB"
+  },
+  {
+    "trait": 22,
+    "subtype": 21,
+    "Description": "Elite FK"
+  },
+  {
+    "trait": 23,
+    "subtype": 6,
+    "Description": "Workhorse"
+  },
+  {
+    "trait": 24,
+    "subtype": 22,
+    "Description": "Two Way (OF)"
+  },
+  {
+    "trait": 24,
+    "subtype": 23,
+    "Description": "Two Way (IF)"
+  },
+  {
+    "trait": 25,
+    "subtype": 6,
+    "Description": "Metal Head"
+  },
+  {
+    "trait": 26,
+    "subtype": 6,
+    "Description": "Sprinter"
+  },
+  {
+    "trait": 26,
+    "subtype": 7,
+    "Description": "Slow Poke"
+  },
+  {
+    "trait": 27,
+    "subtype": 6,
+    "Description": "Base Rounder"
+  },
+  {
+    "trait": 27,
+    "subtype": 7,
+    "Description": "Base Jogger"
+  },
+  {
+    "trait": 28,
+    "subtype": 6,
+    "Description": "Distractor"
+  },
+  {
+    "trait": 29,
+    "subtype": 6,
+    "Description": "Magic Hands"
+  },
+  {
+    "trait": 29,
+    "subtype": 6,
+    "Description": "Butterfingers"
+  },
+  {
+    "trait": 30,
+    "subtype": 7,
+    "Description": "Wild Thrower"
+  },
+  {
+    "trait": 31,
+    "subtype": 7,
+    "Description": "Wild Thing"
+  },
+  {
+    "trait": 32,
+    "subtype": 6,
+    "Description": "Clutch"
+  },
+  {
+    "trait": 32,
+    "subtype": 7,
+    "Description": "Choker"
+  },
+  {
+    "trait": 33,
+    "subtype": 25,
+    "Description": "Consistent"
+  },
+  {
+    "trait": 33,
+    "subtype": 26,
+    "Description": "Volatile"
+  },
+  {
+    "trait": 34,
+    "subtype": 6,
+    "Description": "Durable"
+  },
+  {
+    "trait": 34,
+    "subtype": 7,
+    "Description": "Injury Prone"
+  },
+  {
+    "trait": 35,
+    "subtype": 6,
+    "Description": "Stimulated"
+  },
+  {
+    "trait": 36,
+    "subtype": 6,
+    "Description": "Cannon Arm"
+  },
+  {
+    "trait": 36,
+    "subtype": 7,
+    "Description": "Noodle Arm"
+  },
+  {
+    "trait": 37,
+    "subtype": 6,
+    "Description": "Dive Wizard"
+  },
+  {
+    "trait": 38,
+    "subtype": 6,
+    "Description": "Sign Stealer"
+  },
+  {
+    "trait": 39,
+    "subtype": 7,
+    "Description": "Meltdown"
+  },
+  {
+    "trait": 40,
+    "subtype": 6,
+    "Description": "Bunter"
+  }
+]
