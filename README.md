@@ -1,3 +1,5 @@
+More notes from the original repo: https://github.com/TravisL12/super_mega_baseball_charts
+
 These are the databases and what they do
 
 #### Legends league DB
