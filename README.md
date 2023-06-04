@@ -143,7 +143,20 @@ Option keys as discovered via the `.schema` within a database:
 
 - 54: Primary position
 - 55: Secondary Position
+- 56: empty for all?
 - 57: Pitcher role
+
+Pitch Arsenal
+
+- 58 4F
+- 59 2F
+- 60 SB
+- 61 CH
+- 62 FK
+- 63 CB
+- 64 SL
+- 65 CF
+
 - 66: First name
 - 67: Last name
 

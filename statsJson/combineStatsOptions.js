@@ -1,5 +1,7 @@
 const fs = require("fs");
 
+const traitDescriptions = require("./traitsDescription.json");
+
 const creatorsOptions = require("./creatorsOptions.json");
 const creatorsStats = require("./creatorsStats.json");
 
@@ -30,8 +32,45 @@ const superMega = {
 const addLeague = (item) => {
   return item.stats.map((s) => {
     const options = item.options[s.localID];
+    // options
+    const gender = options["0"]?.value;
+    const throws = options["4"]?.value;
+    const bats = options["5"]?.value;
     const secondaryPosition = options["55"]?.value;
-    return { ...s, secondaryPosition, league: item.league };
+    const rating = options["53"]?.value;
+
+    // Pitcher stuff
+    const fourSeamFastball = options["58"]?.value;
+    const twoSeamFastball = options["59"]?.value;
+    const screwball = options["60"]?.value;
+    const changeup = options["61"]?.value;
+    const forkball = options["62"]?.value;
+    const curveball = options["63"]?.value;
+    const slider = options["64"]?.value;
+    const cutFastball = options["65"]?.value;
+
+    const windup = options["48"]?.value;
+    const pitchAngle = options["49"]?.value;
+
+    return {
+      ...s,
+      secondaryPosition,
+      gender,
+      throws,
+      bats,
+      fourSeamFastball,
+      twoSeamFastball,
+      screwball,
+      changeup,
+      forkball,
+      curveball,
+      slider,
+      cutFastball,
+      windup,
+      pitchAngle,
+      rating,
+      league: item.league,
+    };
   });
 };
 const combineStats = () => {
@@ -47,37 +86,4 @@ const combineStats = () => {
     }
   );
 };
-// combineStats(); // stats only for CSV output
-
-const combineStatsOptionsData = (item) => {
-  return Object.keys(item.options).map((localId) => {
-    const playerStats = item.stats.find((stat) => {
-      return +stat.localID === +localId;
-    });
-
-    if (!playerStats) {
-      console.log(localId, "NO STATS!!!!!!");
-      return null;
-    }
-    const secondaryPosition = item.options[localId]["55"]?.value;
-    return {
-      ...playerStats,
-      secondaryPosition,
-      league: item.league,
-      options: item.options[localId],
-    };
-  });
-};
-
-const smb = combineStatsOptionsData(superMega);
-const creat = combineStatsOptionsData(creators);
-const leg = combineStatsOptionsData(legends);
-
-// // uncomment to create file // not sure what I'm doing with this output file yet
-// fs.writeFile(
-//   "./playerWithOptionsOut.json",
-//   JSON.stringify([...smb, ...creat, ...leg]),
-//   (err) => {
-//     err;
-//   }
-// );
+combineStats(); // stats only for CSV output

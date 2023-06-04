@@ -57,7 +57,7 @@ trait, subtype, Description
 27, 7, Base Jogger
 28, 6, Distractor
 29, 6, Magic Hands
-29, 6, Butterfingers
+29, 7, Butterfingers
 30, 7, Wild Thrower
 31, 7, Wild Thing
 32, 6, Clutch
