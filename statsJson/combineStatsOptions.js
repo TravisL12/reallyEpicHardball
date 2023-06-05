@@ -1,15 +1,17 @@
+// CONVERT TO CSV: npx json2csv -i playersComplete.json -o playersComplete.csv
+
 const fs = require("fs");
 
-const traitDescriptions = require("./traitsDescription.json");
+const traitDescriptions = require("./statsOptions/traitsDescription.json");
 
-const creatorsOptions = require("./creatorsOptions.json");
-const creatorsStats = require("./creatorsStats.json");
+const creatorsOptions = require("./statsOptions/creatorsOptions.json");
+const creatorsStats = require("./statsOptions/creatorsStats.json");
 
-const legendsOptions = require("./legendsOptions.json");
-const legendsStats = require("./legendsStats.json");
+const legendsOptions = require("./statsOptions/legendsOptions.json");
+const legendsStats = require("./statsOptions/legendsStats.json");
 
-const superMegaOptions = require("./superMegaOptions.json");
-const superMegaStats = require("./superMegaStats.json");
+const superMegaOptions = require("./statsOptions/superMegaOptions.json");
+const superMegaStats = require("./statsOptions/superMegaStats.json");
 
 const creators = {
   league: "creators",
@@ -30,8 +32,19 @@ const superMega = {
 };
 
 const addLeague = (item) => {
-  return item.stats.map((s) => {
-    const options = item.options[s.localID];
+  return item.stats.reduce((acc, s) => {
+    const localID = s.localID;
+    const traitId = `${s.trait}${s.subType}`;
+
+    if (acc[localID]) {
+      if (s.trait && s.subType) {
+        acc[localID].trait2 = traitDescriptions[traitId].description;
+        acc[localID].chemistry2 = traitDescriptions[traitId].chemistry;
+      }
+      return acc;
+    }
+
+    const options = item.options[localID];
     // options
     const gender = options["0"]?.value;
     const throws = options["4"]?.value;
@@ -52,7 +65,7 @@ const addLeague = (item) => {
     const windup = options["48"]?.value;
     const pitchAngle = options["49"]?.value;
 
-    return {
+    acc[localID] = {
       ...s,
       secondaryPosition,
       gender,
@@ -70,16 +83,22 @@ const addLeague = (item) => {
       pitchAngle,
       rating,
       league: item.league,
+      trait1: traitDescriptions[traitId]?.description,
+      chemistry1: traitDescriptions[traitId]?.chemistry,
+      trait2: "",
+      chemistry2: "",
     };
-  });
+
+    return acc;
+  }, {});
 };
 const combineStats = () => {
   fs.writeFile(
-    "./playerStatsOut.json",
+    "./playersComplete.json",
     JSON.stringify([
-      ...addLeague(superMega),
-      ...addLeague(creators),
-      ...addLeague(legends),
+      ...Object.values(addLeague(superMega)),
+      ...Object.values(addLeague(creators)),
+      ...Object.values(addLeague(legends)),
     ]),
     (err) => {
       err;
