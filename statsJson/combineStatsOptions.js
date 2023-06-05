@@ -1,4 +1,5 @@
-// CONVERT TO CSV: npx json2csv -i playersComplete.json -o playersComplete.csv
+// CONVERT TO CSV:
+// npx json2csv -i playersComplete.json -o playersComplete.csv
 
 const fs = require("fs");
 
@@ -36,57 +37,40 @@ const addLeague = (item) => {
     const localID = s.localID;
     const traitId = `${s.trait}${s.subType}`;
 
-    if (acc[localID]) {
-      if (s.trait && s.subType) {
-        acc[localID].trait2 = traitDescriptions[traitId].description;
-        acc[localID].chemistry2 = traitDescriptions[traitId].chemistry;
-      }
+    if (acc[localID] && s.trait && s.subType) {
+      acc[localID].trait2 = traitDescriptions[traitId].description;
+      acc[localID].chemistry2 = traitDescriptions[traitId].chemistry;
       return acc;
     }
 
     const options = item.options[localID];
     // options
-    const gender = options["0"]?.value;
-    const throws = options["4"]?.value;
-    const bats = options["5"]?.value;
-    const secondaryPosition = options["55"]?.value;
-    const rating = options["53"]?.value;
-
-    // Pitcher stuff
-    const fourSeamFastball = options["58"]?.value;
-    const twoSeamFastball = options["59"]?.value;
-    const screwball = options["60"]?.value;
-    const changeup = options["61"]?.value;
-    const forkball = options["62"]?.value;
-    const curveball = options["63"]?.value;
-    const slider = options["64"]?.value;
-    const cutFastball = options["65"]?.value;
-
-    const windup = options["48"]?.value;
-    const pitchAngle = options["49"]?.value;
 
     acc[localID] = {
       ...s,
-      secondaryPosition,
-      gender,
-      throws,
-      bats,
-      fourSeamFastball,
-      twoSeamFastball,
-      screwball,
-      changeup,
-      forkball,
-      curveball,
-      slider,
-      cutFastball,
-      windup,
-      pitchAngle,
-      rating,
       league: item.league,
+      gender: options["0"]?.value || "",
+      throws: options["4"]?.value || "",
+      bats: options["5"]?.value || "",
+      secondaryPosition: options["55"]?.value || "",
+      rating: options["53"]?.value || "",
       trait1: traitDescriptions[traitId]?.description,
       chemistry1: traitDescriptions[traitId]?.chemistry,
       trait2: "",
       chemistry2: "",
+      careerStart: options["112"]?.value || "",
+      careerEnd: options["113"]?.value || "",
+      // Pitcher stuff
+      fourSeamFastball: options["58"]?.value || "",
+      twoSeamFastball: options["59"]?.value || "",
+      screwball: options["60"]?.value || "",
+      changeup: options["61"]?.value || "",
+      forkball: options["62"]?.value || "",
+      curveball: options["63"]?.value || "",
+      slider: options["64"]?.value || "",
+      cutFastball: options["65"]?.value || "",
+      windup: options["48"]?.value || "",
+      pitchAngle: options["49"]?.value || "",
     };
 
     return acc;
