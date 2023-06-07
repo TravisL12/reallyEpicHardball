@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Player {
+  id                 Int     @id @default(autoincrement())
+  localID            String?
+  teamName           String?
+  firstName          String?
+  lastName           String?
+  primaryPosition    String?
+  pitcherRole        String?
+  power              String?
+  contact            String?
+  speed              String?
+  fielding           String?
+  arm                String?
+  velocity           String?
+  junk               String?
+  accuracy           String?
+  age                String?
+  trait              String?
+  subType            String?
+  league             String?
+  gender             String?
+  throws             String?
+  bats               String?
+  secondaryPosition  String?
+  rating             String?
+  trait1             String?
+  chemistry1         String?
+  trait2             String?
+  chemistry2         String?
+  careerStart        String?
+  careerEnd          String?
+  fourSeamFastball   String?
+  twoSeamFastball    String?
+  screwball          String?
+  changeup           String?
+  forkball           String?
+  curveball          String?
+  slider             String?
+  cutFastball        String?
+  windup             String?
+  pitchAngle         String?
+}
