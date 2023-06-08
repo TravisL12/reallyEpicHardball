@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "PORT=5005 nodemon ./bin/www"
   },
   "dependencies": {
     "@prisma/client": "4.15.0",

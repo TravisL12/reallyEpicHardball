@@ -1,5 +1,17 @@
 version: "3.9"
 services:
+  api:
+    stdin_open: true
+    build: ./server
+    volumes:
+      - ./server:/usr/src/app
+      - /usr/src/app/node_modules
+    env_file:
+      - ./server/.env
+    ports:
+      - 5005:5005
+    depends_on:
+      - db
   db:
     image: postgres:14.1-alpine
     restart: always
