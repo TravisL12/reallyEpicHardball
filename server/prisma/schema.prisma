@@ -10,6 +10,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// model League {}
+// model Team {}
+// model Trait {}
+// model Chemistry {}
+
 model Player {
   id                 Int     @id @default(autoincrement())
   localID            String?
