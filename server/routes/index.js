@@ -17,9 +17,14 @@ const seedPlayer = async () => {
   return count;
 };
 
-router.get("/seed", async function (req, res, next) {
-  const playerCount = await seedPlayer();
-  res.json({ title: "All seeded!", playerCount });
+router.get("/seed", async function (req, res) {
+  const { shouldSeed } = req.query;
+  if (Boolean(shouldSeed)) {
+    const playerCount = await seedPlayer();
+    res.json({ title: "All seeded!", playerCount });
+  } else {
+    res.json({ title: "Did not seed! set 'shouldSeed'" });
+  }
 });
 
 router.get("/", function (req, res, next) {
