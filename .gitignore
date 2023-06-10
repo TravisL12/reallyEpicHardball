@@ -1,4 +1,5 @@
 node_modules
 /Databases
+*/smb4_player_images_local_id
 *.sqlite
 .DS_Store

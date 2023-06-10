@@ -3,7 +3,11 @@
 
 const fs = require("fs");
 
+const completePlayers = require("./playersComplete.json");
+
+const salaries = require("./statsOptions/salaries.json");
 const traitDescriptions = require("./statsOptions/traitsDescription.json");
+const playerChemistry = require("./statsOptions/playerChemistry.json");
 
 const creatorsOptions = require("./statsOptions/creatorsOptions.json");
 const creatorsStats = require("./statsOptions/creatorsStats.json");
@@ -53,6 +57,9 @@ const addLeague = (item) => {
       throws: options["4"]?.value || "",
       bats: options["5"]?.value || "",
       secondaryPosition: options["55"]?.value || "",
+      jerseyNumber: options["20"]?.value
+        ? String(parseInt(options["20"]?.value) - 1)
+        : "",
       rating: options["53"]?.value || "",
       trait1: traitDescriptions[traitId]?.description,
       chemistry1: traitDescriptions[traitId]?.chemistry,
@@ -71,11 +78,16 @@ const addLeague = (item) => {
       cutFastball: options["65"]?.value || "",
       windup: options["48"]?.value || "",
       pitchAngle: options["49"]?.value || "",
+      playerChemistry: options["107"]?.value
+        ? playerChemistry[options["107"]?.value].name
+        : "",
+      salary: salaries[localID],
     };
 
     return acc;
   }, {});
 };
+
 const combineStats = () => {
   fs.writeFile(
     "./playersComplete.json",
@@ -89,4 +101,38 @@ const combineStats = () => {
     }
   );
 };
-combineStats(); // stats only for CSV output
+
+const sortTeamsPlayersByJersey = () => {
+  const teams = completePlayers.reduce((acc, player) => {
+    if (!acc[player.teamName]) {
+      acc[player.teamName] = [];
+    }
+
+    acc[player.teamName].push(player);
+
+    acc[player.teamName] = acc[player.teamName].sort((a, b) => {
+      return +a.jerseyNumber > +b.jerseyNumber ? 1 : -1;
+    });
+
+    return acc;
+  }, {});
+
+  const teamsPlayerNamesOnly = Object.keys(teams).reduce((acc, team) => {
+    acc[team] = teams[team].map(
+      // (player) => `${player.firstName} ${player.lastName}`
+      (player) => player.localID
+    );
+    return acc;
+  }, {});
+
+  fs.writeFile(
+    "./playersSortedByJersey.json",
+    JSON.stringify(teamsPlayerNamesOnly),
+    (err) => {
+      err;
+    }
+  );
+};
+
+// combineStats(); // stats only for CSV output
+// sortTeamsPlayersByJersey();
