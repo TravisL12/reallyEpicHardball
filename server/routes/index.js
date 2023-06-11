@@ -1,34 +1,10 @@
 const express = require("express");
 const { db } = require("../db");
 const router = express.Router();
-const playerJson = require("../seedData/playersComplete.json");
 
-const seedPlayer = async () => {
-  // make all attributes strings (probably should just migrate db and change this)
-  const formatted = playerJson.map((player) => {
-    return Object.keys(player).reduce((acc, key) => {
-      acc[key] = String(player[key]);
-      return acc;
-    }, {});
-  });
-  const count = await db.player.createMany({
-    data: formatted,
-  });
-  return count;
-};
-
-router.get("/seed", async function (req, res) {
-  const { shouldSeed } = req.query;
-  if (Boolean(shouldSeed)) {
-    const playerCount = await seedPlayer();
-    res.json({ title: "All seeded!", playerCount });
-  } else {
-    res.json({ title: "Did not seed! set 'shouldSeed'" });
-  }
-});
-
-router.get("/", function (req, res, next) {
-  res.json({ title: "HEY" });
+router.get("/", async function (req, res, next) {
+  const players = await db.player.findMany({ take: 50 });
+  res.json({ players });
 });
 
 module.exports = router;

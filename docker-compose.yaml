@@ -11,8 +11,8 @@ services:
     ports:
       - 5005:5005
     depends_on:
-      - db
-  db:
+      - postgresDb
+  postgresDb:
     image: postgres:14.1-alpine
     restart: always
     environment:
@@ -21,7 +21,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - db:/var/lib/postgresql/data
+      - postgresDb:/var/lib/postgresql/data
 volumes:
-  db:
+  postgresDb:
     driver: local

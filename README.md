@@ -1,3 +1,14 @@
+# Really Epic Hardball
+
+### A Super Mega Baseball 4 fan site
+
+#### Server notes
+
+Use `npx prisma db seed` to seed the database with player data
+Also `npx prisma migrate reset` will drop the db and re-seed
+
+### Previous SMB data extraction
+
 More notes from the original repo: https://github.com/TravisL12/super_mega_baseball_charts
 
 These are the databases and what they do
