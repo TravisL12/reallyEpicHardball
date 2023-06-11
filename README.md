@@ -152,6 +152,15 @@ where opt.optionValue = 'Avery';
 
 Option keys as discovered via the `.schema` within a database:
 
+- 0: gender
+- 4: throws
+- 5: bats
+
+- 20: Jersey number + 1 (not sure why, but you have to subtract 1 from this value to get the correct jersey number)
+
+- 48: Windup type
+- 49: pitch angle
+
 - 54: Primary position
 - 55: Secondary Position
 - 56: empty for all?
@@ -159,17 +168,21 @@ Option keys as discovered via the `.schema` within a database:
 
 Pitch Arsenal
 
-- 58 4F
-- 59 2F
-- 60 SB
-- 61 CH
-- 62 FK
-- 63 CB
-- 64 SL
-- 65 CF
+- 58: 4F (1 or null)
+- 59: 2F
+- 60: SB
+- 61: CH
+- 62: FK
+- 63: CB
+- 64: SL
+- 65: CF
 
 - 66: First name
 - 67: Last name
+
+- 107: Player Chemistry (not the same as "trait" chemistry)
+- 112: Career Start Year (for Legends only)
+- 113: Career End Year
 
 ### The final process
 
