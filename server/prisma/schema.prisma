@@ -12,51 +12,61 @@ datasource postgresDb {
 
 // model League {}
 // model Team {}
-// model Trait {}
-// model Chemistry {}
+
+model Trait {
+  id        Int     @id @default(autoincrement())
+  type      String?
+  chemistry String?
+}
+
+model Team {
+  id        Int     @id @default(autoincrement())
+  name      String?
+}
+
+model League {
+  id        Int     @id @default(autoincrement())
+  name      String?
+}
 
 model Player {
-  id                 Int     @id @default(autoincrement())
-localID String?
-teamName String?
-firstName String?
-lastName String?
-primaryPosition String?
-pitcherRole String?
-power String?
-contact String?
-speed String?
-fielding String?
-arm String?
-velocity String?
-junk String?
-accuracy String?
-age String?
-trait String?
-subType String?
-league String?
-gender String?
-throws String?
-bats String?
-secondaryPosition String?
-jerseyNumber String?
-rating String?
-trait1 String?
-chemistry1 String?
-trait2 String?
-chemistry2 String?
-careerStart String?
-careerEnd String?
-fourSeamFastball String?
-twoSeamFastball String?
-screwball String?
-changeup String?
-forkball String?
-curveball String?
-slider String?
-cutFastball String?
-windup String?
-pitchAngle String?
-playerChemistry String?
-salary String?
+  id               Int     @id @default(autoincrement())
+  localID          String?
+  teamId           String?
+  leagueId         String?
+  firstName        String?
+  lastName         String?
+  primaryPosition  String?
+  pitcherRole      String?
+  power            String?
+  contact          String?
+  speed            String?
+  fielding         String?
+  arm              String?
+  velocity         String?
+  junk             String?
+  accuracy         String?
+  age              String?
+  gender           String?
+  throws           String?
+  bats             String?
+  secondaryPosition String?
+  jerseyNumber     String?
+  rating           String?
+  traitId1         String?
+  traitId2         String?
+  careerStart      String?
+  careerEnd        String?
+  fourSeamFastball String?
+  twoSeamFastball  String?
+  screwball        String?
+  changeup         String?
+  forkball         String?
+  curveball        String?
+  slider           String?
+  cutFastball      String?
+  windup           String?
+  pitchAngle       String?
+  playerChemistry  String?
+  salary           String?
 }
