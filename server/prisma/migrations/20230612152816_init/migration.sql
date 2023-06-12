@@ -1,8 +1,34 @@
 -- CreateTable
+CREATE TABLE "Trait" (
+    "id" SERIAL NOT NULL,
+    "type" TEXT,
+    "chemistry" TEXT,
+
+    CONSTRAINT "Trait_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "Team" (
+    "id" SERIAL NOT NULL,
+    "name" TEXT,
+
+    CONSTRAINT "Team_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "League" (
+    "id" SERIAL NOT NULL,
+    "name" TEXT,
+
+    CONSTRAINT "League_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
 CREATE TABLE "Player" (
     "id" SERIAL NOT NULL,
     "localID" TEXT,
-    "teamName" TEXT,
+    "teamId" TEXT,
+    "leagueId" TEXT,
     "firstName" TEXT,
     "lastName" TEXT,
     "primaryPosition" TEXT,
@@ -16,18 +42,14 @@ CREATE TABLE "Player" (
     "junk" TEXT,
     "accuracy" TEXT,
     "age" TEXT,
-    "trait" TEXT,
-    "subType" TEXT,
-    "league" TEXT,
     "gender" TEXT,
     "throws" TEXT,
     "bats" TEXT,
     "secondaryPosition" TEXT,
+    "jerseyNumber" TEXT,
     "rating" TEXT,
-    "trait1" TEXT,
-    "chemistry1" TEXT,
-    "trait2" TEXT,
-    "chemistry2" TEXT,
+    "traitId1" TEXT,
+    "traitId2" TEXT,
     "careerStart" TEXT,
     "careerEnd" TEXT,
     "fourSeamFastball" TEXT,
@@ -40,6 +62,8 @@ CREATE TABLE "Player" (
     "cutFastball" TEXT,
     "windup" TEXT,
     "pitchAngle" TEXT,
+    "playerChemistry" TEXT,
+    "salary" TEXT,
 
     CONSTRAINT "Player_pkey" PRIMARY KEY ("id")
 );

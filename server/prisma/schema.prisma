@@ -10,9 +10,6 @@ datasource postgresDb {
   url      = env("DATABASE_URL_PRISMA")
 }
 
-// model League {}
-// model Team {}
-
 model Trait {
   id        Int     @id @default(autoincrement())
   type      String?
