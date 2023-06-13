@@ -7,7 +7,7 @@ generator client {
 
 datasource postgresDb {
   provider = "postgresql"
-  url      = env("DATABASE_URL_PRISMA")
+  url      = env("DATABASE_URL")
 }
 
 model Trait {
