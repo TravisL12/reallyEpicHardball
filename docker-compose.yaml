@@ -12,6 +12,7 @@ services:
       - 5005:5005
     depends_on:
       - postgresDb
+
   postgresDb:
     image: postgres:14.1-alpine
     restart: always
@@ -22,6 +23,24 @@ services:
       - "5432:5432"
     volumes:
       - postgresDb:/var/lib/postgresql/data
+
+  client:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build: ./client
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+
+  nginx:
+    depends_on:
+      - api
+      - client
+    restart: always
+    build: ./nginx
+    ports:
+      - "3050:80"
 volumes:
   postgresDb:
     driver: local
