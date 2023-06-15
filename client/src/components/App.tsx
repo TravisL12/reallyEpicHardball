@@ -1,59 +1,20 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { ITeam } from "../types";
-import { SContainer, SHeader } from "./styles";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  const [team, setTeam] = useState<ITeam | undefined>();
-  const [allTeams, setAllTeams] = useState<ITeam[] | undefined>();
+import { SContainer } from "./styles";
+import Teams from "./Teams";
+import PlayersView from "./PlayersView";
+import AppHeader from "./AppHeader";
 
-  const fetchAllTeams = async () => {
-    const { data } = await axios(`http://localhost:5005/teams`);
-    setAllTeams(data.teams);
-  };
-
-  const fetchTeam = async (teamName: string) => {
-    const { data } = await axios(`http://localhost:5005/team?name=${teamName}`);
-    setTeam(data.team);
-  };
-
-  useEffect(() => {
-    fetchAllTeams();
-    fetchTeam("Crocodons");
-  }, []);
-
+const App = () => {
   return (
     <SContainer>
-      <SHeader>Welcome to Really Epic Hardball</SHeader>
-      <div style={{ display: "flex" }}>
-        <div>
-          <ul>
-            {allTeams?.map((team) => {
-              return (
-                <li
-                  key={team.name}
-                  onClick={() => {
-                    fetchTeam(team.name);
-                  }}
-                >
-                  {team.name}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div>
-          <SHeader>{team?.name}</SHeader>
-          <ul>
-            {team?.players?.map((player) => {
-              const fullName = `${player.firstName} ${player.lastName}`;
-              return <li key={fullName}>{fullName}</li>;
-            })}
-          </ul>
-        </div>
-      </div>
+      <AppHeader />
+      <Routes>
+        <Route path="/" element={<PlayersView />} />
+        <Route path="/teams" element={<Teams />} />
+      </Routes>
     </SContainer>
   );
-}
+};
 
 export default App;

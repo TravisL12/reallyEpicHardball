@@ -31,10 +31,6 @@ const playerSelect = {
   pitchAngle: true,
   playerChemistry: true,
   salary: true,
-  team: { select: { name: true } },
-  league: { select: { name: true } },
-  trait1: { select: { type: true, chemistry: true } },
-  trait2: { select: { type: true, chemistry: true } },
 };
 
 module.exports = { playerSelect };

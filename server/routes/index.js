@@ -3,6 +3,7 @@ const { db } = require("../db");
 const router = express.Router();
 
 const { playerSelect } = require("./selectConstants");
+const { transformPlayer } = require("./helpers");
 
 router.get("/teams", async function (req, res, next) {
   const resp = await db.team.findMany();
@@ -20,10 +21,18 @@ router.get("/team", async function (req, res, next) {
   }
 
   if (team?.id !== undefined) {
-    team.players = await db.player.findMany({
-      select: playerSelect,
+    const players = await db.player.findMany({
+      select: {
+        ...playerSelect,
+        team: { select: { name: true } },
+        league: { select: { name: true } },
+        trait1: { select: { type: true, chemistry: true } },
+        trait2: { select: { type: true, chemistry: true } },
+      },
       where: { teamId: team.id },
     });
+
+    teams.players = players.map(transformPlayer);
     res.json({ team });
   } else {
     res.json({ response: "no team found!" });
@@ -31,10 +40,17 @@ router.get("/team", async function (req, res, next) {
 });
 
 router.get("/players", async function (req, res, next) {
-  const players = await db.player.findMany({
+  const selectedPlayers = await db.player.findMany({
     take: 100,
-    select: playerSelect,
+    select: {
+      ...playerSelect,
+      team: { select: { name: true } },
+      league: { select: { name: true } },
+      trait1: { select: { type: true, chemistry: true } },
+      trait2: { select: { type: true, chemistry: true } },
+    },
   });
+  const players = selectedPlayers.map(transformPlayer);
   res.json({ players });
 });
 

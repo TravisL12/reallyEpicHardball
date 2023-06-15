@@ -1,6 +1,5 @@
 export interface IPlayer {
-  firstName: string;
-  lastName: string;
+  [key: string]: any;
 }
 
 export interface ITeam {
