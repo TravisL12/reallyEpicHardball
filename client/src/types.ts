@@ -5,5 +5,5 @@ export interface IPlayer {
 
 export interface ITeam {
   name: string;
-  players: IPlayer[];
+  players?: IPlayer[];
 }
