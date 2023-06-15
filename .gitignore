@@ -1,6 +1,6 @@
 node_modules
-pre_development_data
-smb4_player_images_local_id
+player_images
+smb_databases
 *.sqlite
 
 # Keep environment variables out of version control
