@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { SContainer, SHeader } from "./styles";
+import { SHeader } from "./styles";
 import { useApi } from "../hooks/useApi";
 
 const Teams = () => {
@@ -10,8 +10,7 @@ const Teams = () => {
   }, []);
 
   return (
-    <SContainer>
-      <SHeader>Welcome to Really Epic Hardball</SHeader>
+    <>
       <div style={{ display: "flex" }}>
         <div>
           <ul>
@@ -39,7 +38,7 @@ const Teams = () => {
           </ul>
         </div>
       </div>
-    </SContainer>
+    </>
   );
 };
 

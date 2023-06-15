@@ -32,7 +32,7 @@ router.get("/team", async function (req, res, next) {
       where: { teamId: team.id },
     });
 
-    teams.players = players.map(transformPlayer);
+    team.players = players.map(transformPlayer);
     res.json({ team });
   } else {
     res.json({ response: "no team found!" });

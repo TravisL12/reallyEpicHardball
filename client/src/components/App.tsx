@@ -1,19 +1,21 @@
 import { Routes, Route } from "react-router-dom";
 
-import { SContainer } from "./styles";
+import { SAppContainer, SBodyContainer } from "./styles";
 import Teams from "./Teams";
 import PlayersView from "./PlayersView";
 import AppHeader from "./AppHeader";
 
 const App = () => {
   return (
-    <SContainer>
+    <SAppContainer direction="column">
       <AppHeader />
-      <Routes>
-        <Route path="/" element={<PlayersView />} />
-        <Route path="/teams" element={<Teams />} />
-      </Routes>
-    </SContainer>
+      <SBodyContainer>
+        <Routes>
+          <Route path="/" element={<PlayersView />} />
+          <Route path="/teams" element={<Teams />} />
+        </Routes>
+      </SBodyContainer>
+    </SAppContainer>
   );
 };
 
