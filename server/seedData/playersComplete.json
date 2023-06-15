@@ -41,7 +41,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6500000.00"
+    "salary": "6500000"
   },
   {
     "localID": 2,
@@ -85,7 +85,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 3,
@@ -129,7 +129,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "10400000.00"
+    "salary": "10400000"
   },
   {
     "localID": 4,
@@ -173,7 +173,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "15200000.00"
+    "salary": "15200000"
   },
   {
     "localID": 5,
@@ -217,7 +217,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8000000.00"
+    "salary": "8000000"
   },
   {
     "localID": 6,
@@ -261,7 +261,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 7,
@@ -305,7 +305,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 8,
@@ -349,7 +349,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 9,
@@ -393,7 +393,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 10,
@@ -437,7 +437,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 11,
@@ -481,7 +481,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5300000.00"
+    "salary": "5300000"
   },
   {
     "localID": 12,
@@ -525,7 +525,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13,
@@ -569,7 +569,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 14,
@@ -613,7 +613,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "10900000.00"
+    "salary": "10900000"
   },
   {
     "localID": 15,
@@ -657,7 +657,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4700000.00"
+    "salary": "4700000"
   },
   {
     "localID": 16,
@@ -699,7 +699,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 17,
@@ -743,7 +743,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 18,
@@ -787,7 +787,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6700000.00"
+    "salary": "6700000"
   },
   {
     "localID": 19,
@@ -829,7 +829,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 20,
@@ -873,7 +873,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 21,
@@ -917,7 +917,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "15700000.00"
+    "salary": "15700000"
   },
   {
     "localID": 22,
@@ -961,7 +961,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "10100000.00"
+    "salary": "10100000"
   },
   {
     "localID": 23,
@@ -1005,7 +1005,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 24,
@@ -1047,7 +1047,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6500000.00"
+    "salary": "6500000"
   },
   {
     "localID": 25,
@@ -1091,7 +1091,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 26,
@@ -1135,7 +1135,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "16500000.00"
+    "salary": "16500000"
   },
   {
     "localID": 27,
@@ -1179,7 +1179,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7400000.00"
+    "salary": "7400000"
   },
   {
     "localID": 28,
@@ -1223,7 +1223,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 29,
@@ -1265,7 +1265,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "3300000.00"
+    "salary": "3300000"
   },
   {
     "localID": 30,
@@ -1309,7 +1309,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 31,
@@ -1353,7 +1353,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 32,
@@ -1397,7 +1397,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7200000.00"
+    "salary": "7200000"
   },
   {
     "localID": 33,
@@ -1439,7 +1439,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 34,
@@ -1481,7 +1481,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "3200000.00"
+    "salary": "3200000"
   },
   {
     "localID": 35,
@@ -1525,7 +1525,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 36,
@@ -1569,7 +1569,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 37,
@@ -1613,7 +1613,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 38,
@@ -1655,7 +1655,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 39,
@@ -1699,7 +1699,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "11200000.00"
+    "salary": "11200000"
   },
   {
     "localID": 40,
@@ -1743,7 +1743,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "11100000.00"
+    "salary": "11100000"
   },
   {
     "localID": 41,
@@ -1831,7 +1831,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 43,
@@ -1875,7 +1875,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 44,
@@ -1919,7 +1919,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 45,
@@ -1963,7 +1963,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5300000.00"
+    "salary": "5300000"
   },
   {
     "localID": 46,
@@ -2007,7 +2007,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 47,
@@ -2051,7 +2051,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 48,
@@ -2095,7 +2095,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 49,
@@ -2139,7 +2139,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "11400000.00"
+    "salary": "11400000"
   },
   {
     "localID": 50,
@@ -2183,7 +2183,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 51,
@@ -2227,7 +2227,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4500000.00"
+    "salary": "4500000"
   },
   {
     "localID": 52,
@@ -2271,7 +2271,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "15300000.00"
+    "salary": "15300000"
   },
   {
     "localID": 53,
@@ -2315,7 +2315,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 54,
@@ -2359,7 +2359,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "3900000.00"
+    "salary": "3900000"
   },
   {
     "localID": 55,
@@ -2403,7 +2403,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3300000.00"
+    "salary": "3300000"
   },
   {
     "localID": 56,
@@ -2447,7 +2447,7 @@
     "windup": "",
     "pitchAngle": "",
     "playerChemistry": "Scholarly",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 57,
@@ -2491,7 +2491,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 58,
@@ -2535,7 +2535,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 59,
@@ -2577,7 +2577,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 60,
@@ -2621,7 +2621,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "14000000.00"
+    "salary": "14000000"
   },
   {
     "localID": 61,
@@ -2663,7 +2663,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "10500000.00"
+    "salary": "10500000"
   },
   {
     "localID": 62,
@@ -2707,7 +2707,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 63,
@@ -2751,7 +2751,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "9900000.00"
+    "salary": "9900000"
   },
   {
     "localID": 64,
@@ -2795,7 +2795,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8900000.00"
+    "salary": "8900000"
   },
   {
     "localID": 65,
@@ -2839,7 +2839,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 66,
@@ -2883,7 +2883,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 67,
@@ -2927,7 +2927,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6700000.00"
+    "salary": "6700000"
   },
   {
     "localID": 68,
@@ -2971,7 +2971,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "12000000.00"
+    "salary": "12000000"
   },
   {
     "localID": 69,
@@ -3015,7 +3015,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3900000.00"
+    "salary": "3900000"
   },
   {
     "localID": 70,
@@ -3059,7 +3059,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10600000.00"
+    "salary": "10600000"
   },
   {
     "localID": 71,
@@ -3103,7 +3103,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "11000000.00"
+    "salary": "11000000"
   },
   {
     "localID": 72,
@@ -3147,7 +3147,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 73,
@@ -3191,7 +3191,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5700000.00"
+    "salary": "5700000"
   },
   {
     "localID": 74,
@@ -3235,7 +3235,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "11900000.00"
+    "salary": "11900000"
   },
   {
     "localID": 75,
@@ -3277,7 +3277,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3400000.00"
+    "salary": "3400000"
   },
   {
     "localID": 76,
@@ -3321,7 +3321,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "16000000.00"
+    "salary": "16000000"
   },
   {
     "localID": 77,
@@ -3365,7 +3365,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 78,
@@ -3409,7 +3409,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3700000.00"
+    "salary": "3700000"
   },
   {
     "localID": 79,
@@ -3453,7 +3453,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 80,
@@ -3497,7 +3497,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "10600000.00"
+    "salary": "10600000"
   },
   {
     "localID": 81,
@@ -3541,7 +3541,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 82,
@@ -3583,7 +3583,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 83,
@@ -3627,7 +3627,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "10700000.00"
+    "salary": "10700000"
   },
   {
     "localID": 84,
@@ -3671,7 +3671,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 85,
@@ -3715,7 +3715,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "14700000.00"
+    "salary": "14700000"
   },
   {
     "localID": 86,
@@ -3759,7 +3759,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 87,
@@ -3801,7 +3801,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6500000.00"
+    "salary": "6500000"
   },
   {
     "localID": 88,
@@ -3843,7 +3843,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9800000.00"
+    "salary": "9800000"
   },
   {
     "localID": 89,
@@ -3887,7 +3887,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 90,
@@ -3931,7 +3931,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 91,
@@ -3975,7 +3975,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 92,
@@ -4019,7 +4019,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 93,
@@ -4063,7 +4063,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 94,
@@ -4107,7 +4107,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "2500000.00"
+    "salary": "2500000"
   },
   {
     "localID": 95,
@@ -4151,7 +4151,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6400000.00"
+    "salary": "6400000"
   },
   {
     "localID": 96,
@@ -4195,7 +4195,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "10000000.00"
+    "salary": "10000000"
   },
   {
     "localID": 97,
@@ -4239,7 +4239,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 98,
@@ -4283,7 +4283,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "12400000.00"
+    "salary": "12400000"
   },
   {
     "localID": 99,
@@ -4325,7 +4325,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 100,
@@ -4369,7 +4369,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "2900000.00"
+    "salary": "2900000"
   },
   {
     "localID": 101,
@@ -4413,7 +4413,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 102,
@@ -4457,7 +4457,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 103,
@@ -4499,7 +4499,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 104,
@@ -4543,7 +4543,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "10900000.00"
+    "salary": "10900000"
   },
   {
     "localID": 105,
@@ -4587,7 +4587,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 106,
@@ -4631,7 +4631,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "14100000.00"
+    "salary": "14100000"
   },
   {
     "localID": 107,
@@ -4673,7 +4673,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 108,
@@ -4717,7 +4717,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "2000000.00"
+    "salary": "2000000"
   },
   {
     "localID": 109,
@@ -4761,7 +4761,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7200000.00"
+    "salary": "7200000"
   },
   {
     "localID": 110,
@@ -4805,7 +4805,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8100000.00"
+    "salary": "8100000"
   },
   {
     "localID": 111,
@@ -4849,7 +4849,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "6300000.00"
+    "salary": "6300000"
   },
   {
     "localID": 112,
@@ -4893,7 +4893,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "4500000.00"
+    "salary": "4500000"
   },
   {
     "localID": 113,
@@ -4937,7 +4937,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 114,
@@ -4981,7 +4981,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 115,
@@ -5023,7 +5023,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 116,
@@ -5067,7 +5067,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 117,
@@ -5111,7 +5111,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "12300000.00"
+    "salary": "12300000"
   },
   {
     "localID": 118,
@@ -5155,7 +5155,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 119,
@@ -5197,7 +5197,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "2800000.00"
+    "salary": "2800000"
   },
   {
     "localID": 120,
@@ -5241,7 +5241,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9300000.00"
+    "salary": "9300000"
   },
   {
     "localID": 121,
@@ -5285,7 +5285,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "19700000.00"
+    "salary": "19700000"
   },
   {
     "localID": 122,
@@ -5327,7 +5327,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "17200000.00"
+    "salary": "17200000"
   },
   {
     "localID": 123,
@@ -5371,7 +5371,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "19300000.00"
+    "salary": "19300000"
   },
   {
     "localID": 124,
@@ -5415,7 +5415,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 125,
@@ -5457,7 +5457,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "2300000.00"
+    "salary": "2300000"
   },
   {
     "localID": 126,
@@ -5499,7 +5499,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 127,
@@ -5543,7 +5543,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4700000.00"
+    "salary": "4700000"
   },
   {
     "localID": 128,
@@ -5587,7 +5587,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 129,
@@ -5631,7 +5631,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "10000000.00"
+    "salary": "10000000"
   },
   {
     "localID": 130,
@@ -5675,7 +5675,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 131,
@@ -5719,7 +5719,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6300000.00"
+    "salary": "6300000"
   },
   {
     "localID": 132,
@@ -5763,7 +5763,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "3200000.00"
+    "salary": "3200000"
   },
   {
     "localID": 133,
@@ -5807,7 +5807,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 134,
@@ -5851,7 +5851,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 135,
@@ -5895,7 +5895,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 136,
@@ -5939,7 +5939,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 137,
@@ -5983,7 +5983,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 138,
@@ -6025,7 +6025,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 139,
@@ -6069,7 +6069,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 140,
@@ -6113,7 +6113,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 141,
@@ -6157,7 +6157,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "13200000.00"
+    "salary": "13200000"
   },
   {
     "localID": 142,
@@ -6201,7 +6201,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 143,
@@ -6245,7 +6245,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "3700000.00"
+    "salary": "3700000"
   },
   {
     "localID": 144,
@@ -6287,7 +6287,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 145,
@@ -6331,7 +6331,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 146,
@@ -6375,7 +6375,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6300000.00"
+    "salary": "6300000"
   },
   {
     "localID": 147,
@@ -6419,7 +6419,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 148,
@@ -6463,7 +6463,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "13800000.00"
+    "salary": "13800000"
   },
   {
     "localID": 149,
@@ -6507,7 +6507,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 150,
@@ -6551,7 +6551,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 151,
@@ -6595,7 +6595,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7200000.00"
+    "salary": "7200000"
   },
   {
     "localID": 152,
@@ -6637,7 +6637,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9200000.00"
+    "salary": "9200000"
   },
   {
     "localID": 153,
@@ -6681,7 +6681,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 154,
@@ -6723,7 +6723,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 155,
@@ -6765,7 +6765,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 156,
@@ -6809,7 +6809,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 157,
@@ -6853,7 +6853,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 158,
@@ -6897,7 +6897,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 159,
@@ -6941,7 +6941,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 160,
@@ -6985,7 +6985,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "13700000.00"
+    "salary": "13700000"
   },
   {
     "localID": 161,
@@ -7029,7 +7029,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "4000000.00"
+    "salary": "4000000"
   },
   {
     "localID": 162,
@@ -7073,7 +7073,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 163,
@@ -7117,7 +7117,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "13300000.00"
+    "salary": "13300000"
   },
   {
     "localID": 164,
@@ -7159,7 +7159,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 165,
@@ -7203,7 +7203,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 166,
@@ -7247,7 +7247,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "10500000.00"
+    "salary": "10500000"
   },
   {
     "localID": 167,
@@ -7291,7 +7291,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10300000.00"
+    "salary": "10300000"
   },
   {
     "localID": 168,
@@ -7335,7 +7335,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 169,
@@ -7379,7 +7379,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9800000.00"
+    "salary": "9800000"
   },
   {
     "localID": 170,
@@ -7423,7 +7423,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 171,
@@ -7467,7 +7467,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8000000.00"
+    "salary": "8000000"
   },
   {
     "localID": 172,
@@ -7511,7 +7511,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 173,
@@ -7555,7 +7555,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 174,
@@ -7599,7 +7599,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 175,
@@ -7643,7 +7643,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 176,
@@ -7687,7 +7687,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 177,
@@ -7731,7 +7731,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 178,
@@ -7773,7 +7773,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 179,
@@ -7815,7 +7815,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "3200000.00"
+    "salary": "3200000"
   },
   {
     "localID": 180,
@@ -7859,7 +7859,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 181,
@@ -7903,7 +7903,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 182,
@@ -7947,7 +7947,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 183,
@@ -7991,7 +7991,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 184,
@@ -8035,7 +8035,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "9600000.00"
+    "salary": "9600000"
   },
   {
     "localID": 185,
@@ -8079,7 +8079,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4500000.00"
+    "salary": "4500000"
   },
   {
     "localID": 186,
@@ -8123,7 +8123,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 187,
@@ -8167,7 +8167,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11500000.00"
+    "salary": "11500000"
   },
   {
     "localID": 188,
@@ -8211,7 +8211,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 189,
@@ -8255,7 +8255,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 190,
@@ -8299,7 +8299,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 191,
@@ -8343,7 +8343,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8900000.00"
+    "salary": "8900000"
   },
   {
     "localID": 192,
@@ -8387,7 +8387,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "3800000.00"
+    "salary": "3800000"
   },
   {
     "localID": 193,
@@ -8431,7 +8431,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "2300000.00"
+    "salary": "2300000"
   },
   {
     "localID": 194,
@@ -8475,7 +8475,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 195,
@@ -8519,7 +8519,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "11700000.00"
+    "salary": "11700000"
   },
   {
     "localID": 196,
@@ -8563,7 +8563,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "2000000.00"
+    "salary": "2000000"
   },
   {
     "localID": 197,
@@ -8607,7 +8607,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 198,
@@ -8651,7 +8651,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 199,
@@ -8695,7 +8695,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "11500000.00"
+    "salary": "11500000"
   },
   {
     "localID": 200,
@@ -8739,7 +8739,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 201,
@@ -8783,7 +8783,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "18700000.00"
+    "salary": "18700000"
   },
   {
     "localID": 202,
@@ -8827,7 +8827,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 203,
@@ -8871,7 +8871,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 204,
@@ -8915,7 +8915,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9000000.00"
+    "salary": "9000000"
   },
   {
     "localID": 205,
@@ -8959,7 +8959,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 206,
@@ -9003,7 +9003,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "9900000.00"
+    "salary": "9900000"
   },
   {
     "localID": 207,
@@ -9047,7 +9047,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4600000.00"
+    "salary": "4600000"
   },
   {
     "localID": 208,
@@ -9091,7 +9091,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 209,
@@ -9133,7 +9133,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 210,
@@ -9177,7 +9177,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 211,
@@ -9219,7 +9219,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 212,
@@ -9263,7 +9263,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "2600000.00"
+    "salary": "2600000"
   },
   {
     "localID": 213,
@@ -9307,7 +9307,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "3700000.00"
+    "salary": "3700000"
   },
   {
     "localID": 214,
@@ -9351,7 +9351,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 215,
@@ -9395,7 +9395,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 216,
@@ -9437,7 +9437,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 217,
@@ -9481,7 +9481,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 218,
@@ -9525,7 +9525,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 219,
@@ -9569,7 +9569,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "7400000.00"
+    "salary": "7400000"
   },
   {
     "localID": 220,
@@ -9613,7 +9613,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4200000.00"
+    "salary": "4200000"
   },
   {
     "localID": 221,
@@ -9655,7 +9655,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 222,
@@ -9699,7 +9699,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "11100000.00"
+    "salary": "11100000"
   },
   {
     "localID": 223,
@@ -9741,7 +9741,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 224,
@@ -9785,7 +9785,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9500000.00"
+    "salary": "9500000"
   },
   {
     "localID": 225,
@@ -9829,7 +9829,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 226,
@@ -9873,7 +9873,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 227,
@@ -9917,7 +9917,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 228,
@@ -9961,7 +9961,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 229,
@@ -10005,7 +10005,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 230,
@@ -10049,7 +10049,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 231,
@@ -10093,7 +10093,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 232,
@@ -10135,7 +10135,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 233,
@@ -10179,7 +10179,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 234,
@@ -10223,7 +10223,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 235,
@@ -10265,7 +10265,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4000000.00"
+    "salary": "4000000"
   },
   {
     "localID": 236,
@@ -10309,7 +10309,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 237,
@@ -10353,7 +10353,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 238,
@@ -10397,7 +10397,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 239,
@@ -10441,7 +10441,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 240,
@@ -10485,7 +10485,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "14900000.00"
+    "salary": "14900000"
   },
   {
     "localID": 241,
@@ -10529,7 +10529,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 242,
@@ -10573,7 +10573,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 243,
@@ -10617,7 +10617,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 244,
@@ -10661,7 +10661,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "9000000.00"
+    "salary": "9000000"
   },
   {
     "localID": 245,
@@ -10705,7 +10705,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9300000.00"
+    "salary": "9300000"
   },
   {
     "localID": 246,
@@ -10749,7 +10749,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "14600000.00"
+    "salary": "14600000"
   },
   {
     "localID": 247,
@@ -10793,7 +10793,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 248,
@@ -10837,7 +10837,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8500000.00"
+    "salary": "8500000"
   },
   {
     "localID": 249,
@@ -10881,7 +10881,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 250,
@@ -10923,7 +10923,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 251,
@@ -10967,7 +10967,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "10200000.00"
+    "salary": "10200000"
   },
   {
     "localID": 252,
@@ -11009,7 +11009,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "3100000.00"
+    "salary": "3100000"
   },
   {
     "localID": 253,
@@ -11051,7 +11051,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "2900000.00"
+    "salary": "2900000"
   },
   {
     "localID": 254,
@@ -11139,7 +11139,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4000000.00"
+    "salary": "4000000"
   },
   {
     "localID": 256,
@@ -11183,7 +11183,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "2800000.00"
+    "salary": "2800000"
   },
   {
     "localID": 257,
@@ -11227,7 +11227,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 258,
@@ -11271,7 +11271,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 259,
@@ -11315,7 +11315,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "14400000.00"
+    "salary": "14400000"
   },
   {
     "localID": 260,
@@ -11359,7 +11359,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "1500000.00"
+    "salary": "1500000"
   },
   {
     "localID": 261,
@@ -11401,7 +11401,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "19300000.00"
+    "salary": "19300000"
   },
   {
     "localID": 262,
@@ -11445,7 +11445,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 263,
@@ -11489,7 +11489,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "14300000.00"
+    "salary": "14300000"
   },
   {
     "localID": 264,
@@ -11531,7 +11531,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7200000.00"
+    "salary": "7200000"
   },
   {
     "localID": 265,
@@ -11575,7 +11575,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 266,
@@ -11619,7 +11619,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 267,
@@ -11663,7 +11663,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10900000.00"
+    "salary": "10900000"
   },
   {
     "localID": 268,
@@ -11707,7 +11707,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "14800000.00"
+    "salary": "14800000"
   },
   {
     "localID": 269,
@@ -11751,7 +11751,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 270,
@@ -11795,7 +11795,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 271,
@@ -11837,7 +11837,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 272,
@@ -11881,7 +11881,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 273,
@@ -11925,7 +11925,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 274,
@@ -11969,7 +11969,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 275,
@@ -12013,7 +12013,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 276,
@@ -12057,7 +12057,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "3500000.00"
+    "salary": "3500000"
   },
   {
     "localID": 277,
@@ -12101,7 +12101,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 278,
@@ -12145,7 +12145,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 279,
@@ -12187,7 +12187,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 280,
@@ -12231,7 +12231,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "1800000.00"
+    "salary": "1800000"
   },
   {
     "localID": 281,
@@ -12275,7 +12275,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 282,
@@ -12319,7 +12319,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "11200000.00"
+    "salary": "11200000"
   },
   {
     "localID": 283,
@@ -12363,7 +12363,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 284,
@@ -12407,7 +12407,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "13700000.00"
+    "salary": "13700000"
   },
   {
     "localID": 285,
@@ -12451,7 +12451,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9300000.00"
+    "salary": "9300000"
   },
   {
     "localID": 286,
@@ -12495,7 +12495,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 287,
@@ -12537,7 +12537,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "3900000.00"
+    "salary": "3900000"
   },
   {
     "localID": 288,
@@ -12581,7 +12581,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 289,
@@ -12625,7 +12625,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10000000.00"
+    "salary": "10000000"
   },
   {
     "localID": 290,
@@ -12669,7 +12669,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11800000.00"
+    "salary": "11800000"
   },
   {
     "localID": 291,
@@ -12711,7 +12711,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 292,
@@ -12755,7 +12755,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 293,
@@ -12797,7 +12797,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 294,
@@ -12841,7 +12841,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 295,
@@ -12885,7 +12885,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 296,
@@ -12929,7 +12929,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 297,
@@ -12973,7 +12973,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 298,
@@ -13017,7 +13017,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11200000.00"
+    "salary": "11200000"
   },
   {
     "localID": 299,
@@ -13061,7 +13061,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "5700000.00"
+    "salary": "5700000"
   },
   {
     "localID": 300,
@@ -13105,7 +13105,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "8100000.00"
+    "salary": "8100000"
   },
   {
     "localID": 301,
@@ -13149,7 +13149,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 302,
@@ -13193,7 +13193,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6500000.00"
+    "salary": "6500000"
   },
   {
     "localID": 303,
@@ -13237,7 +13237,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11300000.00"
+    "salary": "11300000"
   },
   {
     "localID": 304,
@@ -13279,7 +13279,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 305,
@@ -13323,7 +13323,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 306,
@@ -13367,7 +13367,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "17200000.00"
+    "salary": "17200000"
   },
   {
     "localID": 307,
@@ -13411,7 +13411,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "17200000.00"
+    "salary": "17200000"
   },
   {
     "localID": 308,
@@ -13455,7 +13455,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 309,
@@ -13497,7 +13497,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9500000.00"
+    "salary": "9500000"
   },
   {
     "localID": 310,
@@ -13541,7 +13541,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 311,
@@ -13585,7 +13585,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "10700000.00"
+    "salary": "10700000"
   },
   {
     "localID": 312,
@@ -13629,7 +13629,7 @@
     "windup": 4,
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "2500000.00"
+    "salary": "2500000"
   },
   {
     "localID": 313,
@@ -13673,7 +13673,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "2400000.00"
+    "salary": "2400000"
   },
   {
     "localID": 314,
@@ -13715,7 +13715,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 315,
@@ -13759,7 +13759,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "11300000.00"
+    "salary": "11300000"
   },
   {
     "localID": 316,
@@ -13803,7 +13803,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 317,
@@ -13847,7 +13847,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "9000000.00"
+    "salary": "9000000"
   },
   {
     "localID": 318,
@@ -13891,7 +13891,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 319,
@@ -13933,7 +13933,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "3500000.00"
+    "salary": "3500000"
   },
   {
     "localID": 320,
@@ -13977,7 +13977,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 321,
@@ -14019,7 +14019,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 322,
@@ -14063,7 +14063,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 323,
@@ -14107,7 +14107,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 324,
@@ -14151,7 +14151,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 325,
@@ -14195,7 +14195,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "2400000.00"
+    "salary": "2400000"
   },
   {
     "localID": 326,
@@ -14239,7 +14239,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "18700000.00"
+    "salary": "18700000"
   },
   {
     "localID": 327,
@@ -14283,7 +14283,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 328,
@@ -14327,7 +14327,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 329,
@@ -14371,7 +14371,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4700000.00"
+    "salary": "4700000"
   },
   {
     "localID": 330,
@@ -14415,7 +14415,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 331,
@@ -14459,7 +14459,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 332,
@@ -14503,7 +14503,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 333,
@@ -14547,7 +14547,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 334,
@@ -14591,7 +14591,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 335,
@@ -14635,7 +14635,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 336,
@@ -14679,7 +14679,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4500000.00"
+    "salary": "4500000"
   },
   {
     "localID": 337,
@@ -14723,7 +14723,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "1400000.00"
+    "salary": "1400000"
   },
   {
     "localID": 338,
@@ -14767,7 +14767,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "13500000.00"
+    "salary": "13500000"
   },
   {
     "localID": 339,
@@ -14811,7 +14811,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 340,
@@ -14853,7 +14853,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 341,
@@ -14897,7 +14897,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 342,
@@ -14941,7 +14941,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 343,
@@ -14983,7 +14983,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "10000000.00"
+    "salary": "10000000"
   },
   {
     "localID": 344,
@@ -15027,7 +15027,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "9200000.00"
+    "salary": "9200000"
   },
   {
     "localID": 345,
@@ -15069,7 +15069,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 346,
@@ -15113,7 +15113,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 347,
@@ -15157,7 +15157,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 348,
@@ -15201,7 +15201,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 349,
@@ -15289,7 +15289,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 351,
@@ -15333,7 +15333,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "3800000.00"
+    "salary": "3800000"
   },
   {
     "localID": 352,
@@ -15377,7 +15377,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 353,
@@ -15421,7 +15421,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "3900000.00"
+    "salary": "3900000"
   },
   {
     "localID": 354,
@@ -15465,7 +15465,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "10300000.00"
+    "salary": "10300000"
   },
   {
     "localID": 355,
@@ -15507,7 +15507,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11600000.00"
+    "salary": "11600000"
   },
   {
     "localID": 356,
@@ -15551,7 +15551,7 @@
     "windup": 4,
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "13400000.00"
+    "salary": "13400000"
   },
   {
     "localID": 357,
@@ -15593,7 +15593,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 358,
@@ -15637,7 +15637,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "9900000.00"
+    "salary": "9900000"
   },
   {
     "localID": 359,
@@ -15681,7 +15681,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 360,
@@ -15723,7 +15723,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "11000000.00"
+    "salary": "11000000"
   },
   {
     "localID": 361,
@@ -15767,7 +15767,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 362,
@@ -15811,7 +15811,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "12200000.00"
+    "salary": "12200000"
   },
   {
     "localID": 363,
@@ -15855,7 +15855,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7400000.00"
+    "salary": "7400000"
   },
   {
     "localID": 364,
@@ -15899,7 +15899,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6300000.00"
+    "salary": "6300000"
   },
   {
     "localID": 365,
@@ -15943,7 +15943,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9500000.00"
+    "salary": "9500000"
   },
   {
     "localID": 366,
@@ -15987,7 +15987,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "2900000.00"
+    "salary": "2900000"
   },
   {
     "localID": 367,
@@ -16031,7 +16031,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 368,
@@ -16073,7 +16073,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 369,
@@ -16117,7 +16117,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 370,
@@ -16161,7 +16161,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10300000.00"
+    "salary": "10300000"
   },
   {
     "localID": 371,
@@ -16205,7 +16205,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7400000.00"
+    "salary": "7400000"
   },
   {
     "localID": 372,
@@ -16247,7 +16247,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 373,
@@ -16291,7 +16291,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "4600000.00"
+    "salary": "4600000"
   },
   {
     "localID": 374,
@@ -16335,7 +16335,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "11000000.00"
+    "salary": "11000000"
   },
   {
     "localID": 375,
@@ -16379,7 +16379,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "9200000.00"
+    "salary": "9200000"
   },
   {
     "localID": 376,
@@ -16421,7 +16421,7 @@
     "windup": "",
     "pitchAngle": "",
     "playerChemistry": "Disciplined",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 377,
@@ -16465,7 +16465,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "6400000.00"
+    "salary": "6400000"
   },
   {
     "localID": 378,
@@ -16509,7 +16509,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 379,
@@ -16553,7 +16553,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 380,
@@ -16597,7 +16597,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 381,
@@ -16641,7 +16641,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 382,
@@ -16685,7 +16685,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 383,
@@ -16729,7 +16729,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3400000.00"
+    "salary": "3400000"
   },
   {
     "localID": 384,
@@ -16773,7 +16773,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "8500000.00"
+    "salary": "8500000"
   },
   {
     "localID": 385,
@@ -16815,7 +16815,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 386,
@@ -16859,7 +16859,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 387,
@@ -16901,7 +16901,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 388,
@@ -16945,7 +16945,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 389,
@@ -16989,7 +16989,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 390,
@@ -17033,7 +17033,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 391,
@@ -17077,7 +17077,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 392,
@@ -17121,7 +17121,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 393,
@@ -17163,7 +17163,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "2500000.00"
+    "salary": "2500000"
   },
   {
     "localID": 394,
@@ -17205,7 +17205,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "2500000.00"
+    "salary": "2500000"
   },
   {
     "localID": 395,
@@ -17249,7 +17249,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 396,
@@ -17293,7 +17293,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "12800000.00"
+    "salary": "12800000"
   },
   {
     "localID": 397,
@@ -17337,7 +17337,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 398,
@@ -17381,7 +17381,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 399,
@@ -17423,7 +17423,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 400,
@@ -17467,7 +17467,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 401,
@@ -17511,7 +17511,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5300000.00"
+    "salary": "5300000"
   },
   {
     "localID": 402,
@@ -17555,7 +17555,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 403,
@@ -17599,7 +17599,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "18000000.00"
+    "salary": "18000000"
   },
   {
     "localID": 404,
@@ -17643,7 +17643,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "12200000.00"
+    "salary": "12200000"
   },
   {
     "localID": 405,
@@ -17685,7 +17685,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 406,
@@ -17729,7 +17729,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 407,
@@ -17773,7 +17773,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 408,
@@ -17817,7 +17817,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 409,
@@ -17861,7 +17861,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 410,
@@ -17905,7 +17905,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10900000.00"
+    "salary": "10900000"
   },
   {
     "localID": 411,
@@ -17949,7 +17949,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "13700000.00"
+    "salary": "13700000"
   },
   {
     "localID": 412,
@@ -17993,7 +17993,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "3800000.00"
+    "salary": "3800000"
   },
   {
     "localID": 413,
@@ -18037,7 +18037,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "10600000.00"
+    "salary": "10600000"
   },
   {
     "localID": 414,
@@ -18081,7 +18081,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 415,
@@ -18125,7 +18125,7 @@
     "windup": 3,
     "pitchAngle": "",
     "playerChemistry": "Crafty",
-    "salary": "2800000.00"
+    "salary": "2800000"
   },
   {
     "localID": 416,
@@ -18169,7 +18169,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "6700000.00"
+    "salary": "6700000"
   },
   {
     "localID": 417,
@@ -18213,7 +18213,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 418,
@@ -18257,7 +18257,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "14600000.00"
+    "salary": "14600000"
   },
   {
     "localID": 419,
@@ -18299,7 +18299,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 420,
@@ -18341,7 +18341,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "3800000.00"
+    "salary": "3800000"
   },
   {
     "localID": 421,
@@ -18385,7 +18385,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "11300000.00"
+    "salary": "11300000"
   },
   {
     "localID": 422,
@@ -18429,7 +18429,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "11300000.00"
+    "salary": "11300000"
   },
   {
     "localID": 424,
@@ -18473,7 +18473,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "9500000.00"
+    "salary": "9500000"
   },
   {
     "localID": 425,
@@ -18517,7 +18517,7 @@
     "windup": 1,
     "pitchAngle": "",
     "playerChemistry": "Spirited",
-    "salary": "13500000.00"
+    "salary": "13500000"
   },
   {
     "localID": 426,
@@ -18561,7 +18561,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 427,
@@ -18605,7 +18605,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 428,
@@ -18647,7 +18647,7 @@
     "windup": 2,
     "pitchAngle": "",
     "playerChemistry": "Disciplined",
-    "salary": "11100000.00"
+    "salary": "11100000"
   },
   {
     "localID": 429,
@@ -18691,7 +18691,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 430,
@@ -18735,7 +18735,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 432,
@@ -18779,7 +18779,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "2100000.00"
+    "salary": "2100000"
   },
   {
     "localID": 434,
@@ -18823,7 +18823,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10600000.00"
+    "salary": "10600000"
   },
   {
     "localID": 435,
@@ -18867,7 +18867,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "10700000.00"
+    "salary": "10700000"
   },
   {
     "localID": 436,
@@ -18911,7 +18911,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "3300000.00"
+    "salary": "3300000"
   },
   {
     "localID": 437,
@@ -18955,7 +18955,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 438,
@@ -18999,7 +18999,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "10200000.00"
+    "salary": "10200000"
   },
   {
     "localID": 439,
@@ -19043,7 +19043,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "10100000.00"
+    "salary": "10100000"
   },
   {
     "localID": 440,
@@ -19085,7 +19085,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "2900000.00"
+    "salary": "2900000"
   },
   {
     "localID": 739,
@@ -19129,7 +19129,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 744,
@@ -19173,7 +19173,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 757,
@@ -19217,7 +19217,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9900000.00"
+    "salary": "9900000"
   },
   {
     "localID": 837,
@@ -22141,7 +22141,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 1173,
@@ -22183,7 +22183,7 @@
     "windup": 2,
     "pitchAngle": "",
     "playerChemistry": "Disciplined",
-    "salary": "11100000.00"
+    "salary": "11100000"
   },
   {
     "localID": 1206,
@@ -22313,7 +22313,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 1440,
@@ -22357,7 +22357,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "14900000.00"
+    "salary": "14900000"
   },
   {
     "localID": 1533,
@@ -22401,7 +22401,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "14400000.00"
+    "salary": "14400000"
   },
   {
     "localID": 1566,
@@ -22445,7 +22445,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 1573,
@@ -22489,7 +22489,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 1586,
@@ -25209,7 +25209,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "11300000.00"
+    "salary": "11300000"
   },
   {
     "localID": 11246,
@@ -25253,7 +25253,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "14100000.00"
+    "salary": "14100000"
   },
   {
     "localID": 11248,
@@ -25341,7 +25341,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "12300000.00"
+    "salary": "12300000"
   },
   {
     "localID": 11263,
@@ -25385,7 +25385,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "18000000.00"
+    "salary": "18000000"
   },
   {
     "localID": 11271,
@@ -25647,7 +25647,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "19300000.00"
+    "salary": "19300000"
   },
   {
     "localID": 11290,
@@ -25691,7 +25691,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "3800000.00"
+    "salary": "3800000"
   },
   {
     "localID": 11292,
@@ -25735,7 +25735,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "10400000.00"
+    "salary": "10400000"
   },
   {
     "localID": 11318,
@@ -25777,7 +25777,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9500000.00"
+    "salary": "9500000"
   },
   {
     "localID": 11331,
@@ -25821,7 +25821,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 11334,
@@ -25865,7 +25865,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "11100000.00"
+    "salary": "11100000"
   },
   {
     "localID": 11336,
@@ -25907,7 +25907,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4000000.00"
+    "salary": "4000000"
   },
   {
     "localID": 11344,
@@ -25951,7 +25951,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 11351,
@@ -25995,7 +25995,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "10000000.00"
+    "salary": "10000000"
   },
   {
     "localID": 11353,
@@ -26039,7 +26039,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "17200000.00"
+    "salary": "17200000"
   },
   {
     "localID": 11354,
@@ -26083,7 +26083,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 11364,
@@ -26127,7 +26127,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "16000000.00"
+    "salary": "16000000"
   },
   {
     "localID": 11375,
@@ -26171,7 +26171,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "10500000.00"
+    "salary": "10500000"
   },
   {
     "localID": 11380,
@@ -26215,7 +26215,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "19300000.00"
+    "salary": "19300000"
   },
   {
     "localID": 11381,
@@ -26259,7 +26259,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "18700000.00"
+    "salary": "18700000"
   },
   {
     "localID": 11384,
@@ -26303,7 +26303,7 @@
     "windup": 4,
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "13400000.00"
+    "salary": "13400000"
   },
   {
     "localID": 11395,
@@ -26345,7 +26345,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 11411,
@@ -26475,7 +26475,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "14600000.00"
+    "salary": "14600000"
   },
   {
     "localID": 11437,
@@ -26561,7 +26561,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "19700000.00"
+    "salary": "19700000"
   },
   {
     "localID": 11455,
@@ -26605,7 +26605,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "16500000.00"
+    "salary": "16500000"
   },
   {
     "localID": 11477,
@@ -26649,7 +26649,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 11494,
@@ -26693,7 +26693,7 @@
     "windup": "",
     "pitchAngle": "",
     "playerChemistry": "Scholarly",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 11497,
@@ -26737,7 +26737,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "13700000.00"
+    "salary": "13700000"
   },
   {
     "localID": 11508,
@@ -26781,7 +26781,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 11520,
@@ -26825,7 +26825,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "14600000.00"
+    "salary": "14600000"
   },
   {
     "localID": 11522,
@@ -26869,7 +26869,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "14300000.00"
+    "salary": "14300000"
   },
   {
     "localID": 11526,
@@ -26913,7 +26913,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "3800000.00"
+    "salary": "3800000"
   },
   {
     "localID": 11564,
@@ -26957,7 +26957,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "13500000.00"
+    "salary": "13500000"
   },
   {
     "localID": 11574,
@@ -27045,7 +27045,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "8500000.00"
+    "salary": "8500000"
   },
   {
     "localID": 11591,
@@ -27089,7 +27089,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 11592,
@@ -27175,7 +27175,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "10000000.00"
+    "salary": "10000000"
   },
   {
     "localID": 11608,
@@ -27263,7 +27263,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 11619,
@@ -27307,7 +27307,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 11630,
@@ -27351,7 +27351,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 11634,
@@ -27395,7 +27395,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 11637,
@@ -27439,7 +27439,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "14000000.00"
+    "salary": "14000000"
   },
   {
     "localID": 11639,
@@ -27483,7 +27483,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 11640,
@@ -27527,7 +27527,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 11643,
@@ -27571,7 +27571,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "18700000.00"
+    "salary": "18700000"
   },
   {
     "localID": 11648,
@@ -27615,7 +27615,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 11658,
@@ -27659,7 +27659,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 11669,
@@ -27703,7 +27703,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 11674,
@@ -29851,7 +29851,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13116,
@@ -29939,7 +29939,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9300000.00"
+    "salary": "9300000"
   },
   {
     "localID": 13118,
@@ -29981,7 +29981,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "3800000.00"
+    "salary": "3800000"
   },
   {
     "localID": 13119,
@@ -30025,7 +30025,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "10600000.00"
+    "salary": "10600000"
   },
   {
     "localID": 13120,
@@ -30113,7 +30113,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 13122,
@@ -30157,7 +30157,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13123,
@@ -30201,7 +30201,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "12000000.00"
+    "salary": "12000000"
   },
   {
     "localID": 13124,
@@ -30289,7 +30289,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 13126,
@@ -30333,7 +30333,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 13127,
@@ -30377,7 +30377,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 13128,
@@ -30421,7 +30421,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 13129,
@@ -30465,7 +30465,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 13130,
@@ -30509,7 +30509,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6300000.00"
+    "salary": "6300000"
   },
   {
     "localID": 13131,
@@ -30553,7 +30553,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 13132,
@@ -30597,7 +30597,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 13133,
@@ -30641,7 +30641,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6400000.00"
+    "salary": "6400000"
   },
   {
     "localID": 13134,
@@ -30685,7 +30685,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6300000.00"
+    "salary": "6300000"
   },
   {
     "localID": 13135,
@@ -30727,7 +30727,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "11000000.00"
+    "salary": "11000000"
   },
   {
     "localID": 13136,
@@ -30771,7 +30771,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "11500000.00"
+    "salary": "11500000"
   },
   {
     "localID": 13137,
@@ -30815,7 +30815,7 @@
     "windup": 1,
     "pitchAngle": "",
     "playerChemistry": "Spirited",
-    "salary": "13500000.00"
+    "salary": "13500000"
   },
   {
     "localID": 13138,
@@ -30859,7 +30859,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 13139,
@@ -30903,7 +30903,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 13140,
@@ -30991,7 +30991,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "12200000.00"
+    "salary": "12200000"
   },
   {
     "localID": 13142,
@@ -31035,7 +31035,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "11100000.00"
+    "salary": "11100000"
   },
   {
     "localID": 13143,
@@ -31123,7 +31123,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 13145,
@@ -31211,7 +31211,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4000000.00"
+    "salary": "4000000"
   },
   {
     "localID": 13147,
@@ -31255,7 +31255,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 13148,
@@ -31299,7 +31299,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13149,
@@ -31343,7 +31343,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 13150,
@@ -31385,7 +31385,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6500000.00"
+    "salary": "6500000"
   },
   {
     "localID": 13151,
@@ -31429,7 +31429,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11300000.00"
+    "salary": "11300000"
   },
   {
     "localID": 13152,
@@ -31473,7 +31473,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 13153,
@@ -31515,7 +31515,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 13154,
@@ -31559,7 +31559,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 13155,
@@ -31601,7 +31601,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13156,
@@ -31643,7 +31643,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9800000.00"
+    "salary": "9800000"
   },
   {
     "localID": 13157,
@@ -31731,7 +31731,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 13159,
@@ -31773,7 +31773,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13160,
@@ -31815,7 +31815,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9200000.00"
+    "salary": "9200000"
   },
   {
     "localID": 13161,
@@ -31859,7 +31859,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 13162,
@@ -31903,7 +31903,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 13163,
@@ -32035,7 +32035,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 13166,
@@ -32079,7 +32079,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8000000.00"
+    "salary": "8000000"
   },
   {
     "localID": 13167,
@@ -32123,7 +32123,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9500000.00"
+    "salary": "9500000"
   },
   {
     "localID": 13168,
@@ -32167,7 +32167,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 13169,
@@ -32209,7 +32209,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 13170,
@@ -32253,7 +32253,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 13171,
@@ -32297,7 +32297,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 13172,
@@ -32341,7 +32341,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "6700000.00"
+    "salary": "6700000"
   },
   {
     "localID": 13173,
@@ -32385,7 +32385,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 13174,
@@ -32429,7 +32429,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7400000.00"
+    "salary": "7400000"
   },
   {
     "localID": 13175,
@@ -32471,7 +32471,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 13176,
@@ -32513,7 +32513,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "10500000.00"
+    "salary": "10500000"
   },
   {
     "localID": 13177,
@@ -32555,7 +32555,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 13178,
@@ -32597,7 +32597,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 13179,
@@ -32641,7 +32641,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "15300000.00"
+    "salary": "15300000"
   },
   {
     "localID": 13180,
@@ -32685,7 +32685,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 13181,
@@ -32729,7 +32729,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "9000000.00"
+    "salary": "9000000"
   },
   {
     "localID": 13182,
@@ -32815,7 +32815,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 13184,
@@ -32859,7 +32859,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5300000.00"
+    "salary": "5300000"
   },
   {
     "localID": 13185,
@@ -32903,7 +32903,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 13186,
@@ -32947,7 +32947,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 13187,
@@ -32989,7 +32989,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7200000.00"
+    "salary": "7200000"
   },
   {
     "localID": 13188,
@@ -33033,7 +33033,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 13189,
@@ -33077,7 +33077,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "10100000.00"
+    "salary": "10100000"
   },
   {
     "localID": 13190,
@@ -33121,7 +33121,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "3500000.00"
+    "salary": "3500000"
   },
   {
     "localID": 13191,
@@ -34461,7 +34461,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11500000.00"
+    "salary": "11500000"
   },
   {
     "localID": 13222,
@@ -34505,7 +34505,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 13223,
@@ -34547,7 +34547,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 13224,
@@ -34591,7 +34591,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8000000.00"
+    "salary": "8000000"
   },
   {
     "localID": 13225,
@@ -34635,7 +34635,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 13226,
@@ -34723,7 +34723,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 13228,
@@ -34767,7 +34767,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 13229,
@@ -34811,7 +34811,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 13230,
@@ -34855,7 +34855,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 13231,
@@ -34899,7 +34899,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 13232,
@@ -34943,7 +34943,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9800000.00"
+    "salary": "9800000"
   },
   {
     "localID": 13233,
@@ -34987,7 +34987,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "9000000.00"
+    "salary": "9000000"
   },
   {
     "localID": 13234,
@@ -35031,7 +35031,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "11400000.00"
+    "salary": "11400000"
   },
   {
     "localID": 13235,
@@ -35075,7 +35075,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 13236,
@@ -35119,7 +35119,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 13237,
@@ -35163,7 +35163,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10900000.00"
+    "salary": "10900000"
   },
   {
     "localID": 13238,
@@ -35251,7 +35251,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "10200000.00"
+    "salary": "10200000"
   },
   {
     "localID": 13240,
@@ -35295,7 +35295,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11200000.00"
+    "salary": "11200000"
   },
   {
     "localID": 13241,
@@ -35383,7 +35383,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "12400000.00"
+    "salary": "12400000"
   },
   {
     "localID": 13243,
@@ -35427,7 +35427,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "10600000.00"
+    "salary": "10600000"
   },
   {
     "localID": 13244,
@@ -35469,7 +35469,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 13245,
@@ -35513,7 +35513,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13246,
@@ -35557,7 +35557,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "9900000.00"
+    "salary": "9900000"
   },
   {
     "localID": 13247,
@@ -35645,7 +35645,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "5700000.00"
+    "salary": "5700000"
   },
   {
     "localID": 13249,
@@ -35689,7 +35689,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 13250,
@@ -35733,7 +35733,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 13251,
@@ -36125,7 +36125,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 13260,
@@ -36169,7 +36169,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 13261,
@@ -36213,7 +36213,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "11000000.00"
+    "salary": "11000000"
   },
   {
     "localID": 13262,
@@ -36255,7 +36255,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 13263,
@@ -36341,7 +36341,7 @@
     "windup": "",
     "pitchAngle": "",
     "playerChemistry": "Disciplined",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 13265,
@@ -36385,7 +36385,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "2500000.00"
+    "salary": "2500000"
   },
   {
     "localID": 13266,
@@ -36427,7 +36427,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 13267,
@@ -36513,7 +36513,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4500000.00"
+    "salary": "4500000"
   },
   {
     "localID": 13269,
@@ -36557,7 +36557,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "10900000.00"
+    "salary": "10900000"
   },
   {
     "localID": 13270,
@@ -36601,7 +36601,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 13271,
@@ -36645,7 +36645,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 13272,
@@ -36687,7 +36687,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 13273,
@@ -36775,7 +36775,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 13275,
@@ -36907,7 +36907,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 13278,
@@ -36951,7 +36951,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11800000.00"
+    "salary": "11800000"
   },
   {
     "localID": 13279,
@@ -36995,7 +36995,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 13280,
@@ -37039,7 +37039,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "8100000.00"
+    "salary": "8100000"
   },
   {
     "localID": 13281,
@@ -37081,7 +37081,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "3300000.00"
+    "salary": "3300000"
   },
   {
     "localID": 13282,
@@ -37125,7 +37125,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 13283,
@@ -37167,7 +37167,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 13284,
@@ -37211,7 +37211,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6700000.00"
+    "salary": "6700000"
   },
   {
     "localID": 13285,
@@ -37255,7 +37255,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "6300000.00"
+    "salary": "6300000"
   },
   {
     "localID": 13286,
@@ -37299,7 +37299,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6500000.00"
+    "salary": "6500000"
   },
   {
     "localID": 13287,
@@ -37343,7 +37343,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 13288,
@@ -37387,7 +37387,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "10000000.00"
+    "salary": "10000000"
   },
   {
     "localID": 13289,
@@ -37431,7 +37431,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 13290,
@@ -37475,7 +37475,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "12800000.00"
+    "salary": "12800000"
   },
   {
     "localID": 13291,
@@ -37519,7 +37519,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 13292,
@@ -37605,7 +37605,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10600000.00"
+    "salary": "10600000"
   },
   {
     "localID": 13294,
@@ -37649,7 +37649,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 13295,
@@ -37693,7 +37693,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "10200000.00"
+    "salary": "10200000"
   },
   {
     "localID": 13296,
@@ -37737,7 +37737,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 13297,
@@ -37781,7 +37781,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7200000.00"
+    "salary": "7200000"
   },
   {
     "localID": 13298,
@@ -37825,7 +37825,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13299,
@@ -37869,7 +37869,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 13300,
@@ -37913,7 +37913,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4200000.00"
+    "salary": "4200000"
   },
   {
     "localID": 13301,
@@ -37957,7 +37957,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 13302,
@@ -38001,7 +38001,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10900000.00"
+    "salary": "10900000"
   },
   {
     "localID": 13303,
@@ -38043,7 +38043,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "2500000.00"
+    "salary": "2500000"
   },
   {
     "localID": 13304,
@@ -38087,7 +38087,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 13305,
@@ -38131,7 +38131,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4700000.00"
+    "salary": "4700000"
   },
   {
     "localID": 13306,
@@ -38175,7 +38175,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "9200000.00"
+    "salary": "9200000"
   },
   {
     "localID": 13307,
@@ -38263,7 +38263,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5300000.00"
+    "salary": "5300000"
   },
   {
     "localID": 13309,
@@ -38307,7 +38307,7 @@
     "windup": 3,
     "pitchAngle": "",
     "playerChemistry": "Crafty",
-    "salary": "2800000.00"
+    "salary": "2800000"
   },
   {
     "localID": 13310,
@@ -38349,7 +38349,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13311,
@@ -38393,7 +38393,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3400000.00"
+    "salary": "3400000"
   },
   {
     "localID": 13312,
@@ -38437,7 +38437,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 13313,
@@ -38481,7 +38481,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "13700000.00"
+    "salary": "13700000"
   },
   {
     "localID": 13314,
@@ -38525,7 +38525,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 13315,
@@ -38569,7 +38569,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 13316,
@@ -38613,7 +38613,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3900000.00"
+    "salary": "3900000"
   },
   {
     "localID": 13317,
@@ -38701,7 +38701,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "1800000.00"
+    "salary": "1800000"
   },
   {
     "localID": 13319,
@@ -38745,7 +38745,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "13700000.00"
+    "salary": "13700000"
   },
   {
     "localID": 13320,
@@ -38787,7 +38787,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 13321,
@@ -38831,7 +38831,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13322,
@@ -38875,7 +38875,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 13323,
@@ -38919,7 +38919,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 13324,
@@ -38963,7 +38963,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 13325,
@@ -39007,7 +39007,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 13326,
@@ -39051,7 +39051,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 13327,
@@ -39095,7 +39095,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 13328,
@@ -39139,7 +39139,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7200000.00"
+    "salary": "7200000"
   },
   {
     "localID": 13329,
@@ -39183,7 +39183,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "14700000.00"
+    "salary": "14700000"
   },
   {
     "localID": 13330,
@@ -39225,7 +39225,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13331,
@@ -39267,7 +39267,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6500000.00"
+    "salary": "6500000"
   },
   {
     "localID": 13332,
@@ -39311,7 +39311,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13333,
@@ -39355,7 +39355,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9300000.00"
+    "salary": "9300000"
   },
   {
     "localID": 13334,
@@ -39397,7 +39397,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "2900000.00"
+    "salary": "2900000"
   },
   {
     "localID": 13335,
@@ -39441,7 +39441,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "9200000.00"
+    "salary": "9200000"
   },
   {
     "localID": 13336,
@@ -39485,7 +39485,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 13337,
@@ -39573,7 +39573,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "2300000.00"
+    "salary": "2300000"
   },
   {
     "localID": 13339,
@@ -39617,7 +39617,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "3800000.00"
+    "salary": "3800000"
   },
   {
     "localID": 13340,
@@ -39661,7 +39661,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9900000.00"
+    "salary": "9900000"
   },
   {
     "localID": 13341,
@@ -39705,7 +39705,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13342,
@@ -39749,7 +39749,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10300000.00"
+    "salary": "10300000"
   },
   {
     "localID": 13343,
@@ -39793,7 +39793,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 13344,
@@ -39837,7 +39837,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10000000.00"
+    "salary": "10000000"
   },
   {
     "localID": 13345,
@@ -39879,7 +39879,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "11600000.00"
+    "salary": "11600000"
   },
   {
     "localID": 13346,
@@ -39921,7 +39921,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 13347,
@@ -39965,7 +39965,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 13348,
@@ -40009,7 +40009,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "11200000.00"
+    "salary": "11200000"
   },
   {
     "localID": 13349,
@@ -40097,7 +40097,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 13351,
@@ -40141,7 +40141,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 13352,
@@ -40185,7 +40185,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8500000.00"
+    "salary": "8500000"
   },
   {
     "localID": 13353,
@@ -40227,7 +40227,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "3200000.00"
+    "salary": "3200000"
   },
   {
     "localID": 13354,
@@ -40271,7 +40271,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 13355,
@@ -40315,7 +40315,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 13356,
@@ -40359,7 +40359,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13357,
@@ -40403,7 +40403,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 13358,
@@ -40491,7 +40491,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7400000.00"
+    "salary": "7400000"
   },
   {
     "localID": 13360,
@@ -40535,7 +40535,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 13361,
@@ -40579,7 +40579,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 13362,
@@ -40667,7 +40667,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 13364,
@@ -40711,7 +40711,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "2600000.00"
+    "salary": "2600000"
   },
   {
     "localID": 13365,
@@ -40753,7 +40753,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 13366,
@@ -40797,7 +40797,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13367,
@@ -40841,7 +40841,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 13368,
@@ -40885,7 +40885,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "15700000.00"
+    "salary": "15700000"
   },
   {
     "localID": 13369,
@@ -40927,7 +40927,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 13370,
@@ -40971,7 +40971,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13371,
@@ -41015,7 +41015,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 13372,
@@ -41059,7 +41059,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13373,
@@ -41103,7 +41103,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 13374,
@@ -41147,7 +41147,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8100000.00"
+    "salary": "8100000"
   },
   {
     "localID": 13375,
@@ -41191,7 +41191,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 13376,
@@ -41235,7 +41235,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "2400000.00"
+    "salary": "2400000"
   },
   {
     "localID": 13377,
@@ -41279,7 +41279,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 13378,
@@ -41323,7 +41323,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "10700000.00"
+    "salary": "10700000"
   },
   {
     "localID": 13379,
@@ -41367,7 +41367,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13380,
@@ -41411,7 +41411,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 13381,
@@ -41499,7 +41499,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13383,
@@ -41543,7 +41543,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13384,
@@ -41587,7 +41587,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 13385,
@@ -41629,7 +41629,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "3100000.00"
+    "salary": "3100000"
   },
   {
     "localID": 13386,
@@ -41673,7 +41673,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "11900000.00"
+    "salary": "11900000"
   },
   {
     "localID": 13387,
@@ -41717,7 +41717,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "13200000.00"
+    "salary": "13200000"
   },
   {
     "localID": 13388,
@@ -41761,7 +41761,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "2900000.00"
+    "salary": "2900000"
   },
   {
     "localID": 13389,
@@ -41805,7 +41805,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 13390,
@@ -41849,7 +41849,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4700000.00"
+    "salary": "4700000"
   },
   {
     "localID": 13391,
@@ -41893,7 +41893,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 13392,
@@ -41937,7 +41937,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 13393,
@@ -41981,7 +41981,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "6400000.00"
+    "salary": "6400000"
   },
   {
     "localID": 13394,
@@ -42023,7 +42023,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 13395,
@@ -42067,7 +42067,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "11300000.00"
+    "salary": "11300000"
   },
   {
     "localID": 13396,
@@ -42155,7 +42155,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 13398,
@@ -42199,7 +42199,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 13399,
@@ -42243,7 +42243,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 13400,
@@ -42331,7 +42331,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "10700000.00"
+    "salary": "10700000"
   },
   {
     "localID": 13402,
@@ -42375,7 +42375,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 13403,
@@ -42463,7 +42463,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 13405,
@@ -42507,7 +42507,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 13406,
@@ -42551,7 +42551,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 13407,
@@ -42595,7 +42595,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 13408,
@@ -42639,7 +42639,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "11000000.00"
+    "salary": "11000000"
   },
   {
     "localID": 13409,
@@ -42683,7 +42683,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "3900000.00"
+    "salary": "3900000"
   },
   {
     "localID": 13410,
@@ -42727,7 +42727,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "10700000.00"
+    "salary": "10700000"
   },
   {
     "localID": 13411,
@@ -42771,7 +42771,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 13412,
@@ -42815,7 +42815,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5300000.00"
+    "salary": "5300000"
   },
   {
     "localID": 13413,
@@ -42859,7 +42859,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13414,
@@ -42903,7 +42903,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 13415,
@@ -42989,7 +42989,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "3200000.00"
+    "salary": "3200000"
   },
   {
     "localID": 13417,
@@ -43121,7 +43121,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 13420,
@@ -43165,7 +43165,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 13421,
@@ -43253,7 +43253,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 13423,
@@ -43297,7 +43297,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "8900000.00"
+    "salary": "8900000"
   },
   {
     "localID": 13424,
@@ -43339,7 +43339,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 13425,
@@ -43383,7 +43383,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "7400000.00"
+    "salary": "7400000"
   },
   {
     "localID": 13426,
@@ -43427,7 +43427,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 13427,
@@ -43471,7 +43471,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "8700000.00"
+    "salary": "8700000"
   },
   {
     "localID": 13428,
@@ -43515,7 +43515,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "3900000.00"
+    "salary": "3900000"
   },
   {
     "localID": 13429,
@@ -43559,7 +43559,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "4600000.00"
+    "salary": "4600000"
   },
   {
     "localID": 13430,
@@ -43603,7 +43603,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "2900000.00"
+    "salary": "2900000"
   },
   {
     "localID": 13431,
@@ -43689,7 +43689,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "2800000.00"
+    "salary": "2800000"
   },
   {
     "localID": 13433,
@@ -43733,7 +43733,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 13434,
@@ -43777,7 +43777,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4700000.00"
+    "salary": "4700000"
   },
   {
     "localID": 13435,
@@ -43821,7 +43821,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 13436,
@@ -43865,7 +43865,7 @@
     "windup": 1,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 13437,
@@ -43909,7 +43909,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 13438,
@@ -43953,7 +43953,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 13439,
@@ -43997,7 +43997,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6800000.00"
+    "salary": "6800000"
   },
   {
     "localID": 13440,
@@ -44039,7 +44039,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "2300000.00"
+    "salary": "2300000"
   },
   {
     "localID": 13441,
@@ -44083,7 +44083,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "1400000.00"
+    "salary": "1400000"
   },
   {
     "localID": 13442,
@@ -44171,7 +44171,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "11300000.00"
+    "salary": "11300000"
   },
   {
     "localID": 13444,
@@ -44215,7 +44215,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 13445,
@@ -44257,7 +44257,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "4900000.00"
+    "salary": "4900000"
   },
   {
     "localID": 13446,
@@ -44301,7 +44301,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "3600000.00"
+    "salary": "3600000"
   },
   {
     "localID": 13447,
@@ -44345,7 +44345,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 13448,
@@ -44389,7 +44389,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 13449,
@@ -44433,7 +44433,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7500000.00"
+    "salary": "7500000"
   },
   {
     "localID": 13450,
@@ -44477,7 +44477,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 13451,
@@ -44521,7 +44521,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "2400000.00"
+    "salary": "2400000"
   },
   {
     "localID": 13452,
@@ -44565,7 +44565,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13453,
@@ -44609,7 +44609,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 13454,
@@ -44697,7 +44697,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "12200000.00"
+    "salary": "12200000"
   },
   {
     "localID": 13456,
@@ -44741,7 +44741,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4400000.00"
+    "salary": "4400000"
   },
   {
     "localID": 13457,
@@ -44785,7 +44785,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10300000.00"
+    "salary": "10300000"
   },
   {
     "localID": 13458,
@@ -44829,7 +44829,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "2000000.00"
+    "salary": "2000000"
   },
   {
     "localID": 13459,
@@ -44871,7 +44871,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13460,
@@ -44915,7 +44915,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 13461,
@@ -45003,7 +45003,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 13463,
@@ -45047,7 +45047,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 13464,
@@ -45091,7 +45091,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 13465,
@@ -45135,7 +45135,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 13466,
@@ -45179,7 +45179,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 13467,
@@ -45223,7 +45223,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "8400000.00"
+    "salary": "8400000"
   },
   {
     "localID": 13468,
@@ -45265,7 +45265,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "3900000.00"
+    "salary": "3900000"
   },
   {
     "localID": 13469,
@@ -45309,7 +45309,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13470,
@@ -45351,7 +45351,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6200000.00"
+    "salary": "6200000"
   },
   {
     "localID": 13471,
@@ -45395,7 +45395,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13472,
@@ -45483,7 +45483,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "13800000.00"
+    "salary": "13800000"
   },
   {
     "localID": 13474,
@@ -45527,7 +45527,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 13475,
@@ -45571,7 +45571,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3700000.00"
+    "salary": "3700000"
   },
   {
     "localID": 13476,
@@ -45615,7 +45615,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "3700000.00"
+    "salary": "3700000"
   },
   {
     "localID": 13477,
@@ -45659,7 +45659,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 13478,
@@ -45747,7 +45747,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "14800000.00"
+    "salary": "14800000"
   },
   {
     "localID": 13480,
@@ -45791,7 +45791,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 13481,
@@ -45833,7 +45833,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "17200000.00"
+    "salary": "17200000"
   },
   {
     "localID": 13482,
@@ -45877,7 +45877,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7400000.00"
+    "salary": "7400000"
   },
   {
     "localID": 13483,
@@ -45921,7 +45921,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Disciplined",
-    "salary": "4000000.00"
+    "salary": "4000000"
   },
   {
     "localID": 13484,
@@ -45965,7 +45965,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "2100000.00"
+    "salary": "2100000"
   },
   {
     "localID": 13485,
@@ -46009,7 +46009,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13486,
@@ -46097,7 +46097,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "8300000.00"
+    "salary": "8300000"
   },
   {
     "localID": 13488,
@@ -46141,7 +46141,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6300000.00"
+    "salary": "6300000"
   },
   {
     "localID": 13489,
@@ -46185,7 +46185,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "2800000.00"
+    "salary": "2800000"
   },
   {
     "localID": 13490,
@@ -46229,7 +46229,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 13491,
@@ -46315,7 +46315,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3400000.00"
+    "salary": "3400000"
   },
   {
     "localID": 13493,
@@ -46359,7 +46359,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "3700000.00"
+    "salary": "3700000"
   },
   {
     "localID": 13494,
@@ -46401,7 +46401,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 13495,
@@ -46443,7 +46443,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13496,
@@ -46487,7 +46487,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 13497,
@@ -46573,7 +46573,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5700000.00"
+    "salary": "5700000"
   },
   {
     "localID": 13499,
@@ -46617,7 +46617,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 13500,
@@ -46659,7 +46659,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "3500000.00"
+    "salary": "3500000"
   },
   {
     "localID": 13501,
@@ -46703,7 +46703,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "10900000.00"
+    "salary": "10900000"
   },
   {
     "localID": 13502,
@@ -46791,7 +46791,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13504,
@@ -46835,7 +46835,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 13505,
@@ -46879,7 +46879,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "8900000.00"
+    "salary": "8900000"
   },
   {
     "localID": 13506,
@@ -46923,7 +46923,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4600000.00"
+    "salary": "4600000"
   },
   {
     "localID": 13507,
@@ -46965,7 +46965,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 13508,
@@ -47009,7 +47009,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "7800000.00"
+    "salary": "7800000"
   },
   {
     "localID": 13509,
@@ -47053,7 +47053,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 13510,
@@ -47097,7 +47097,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9100000.00"
+    "salary": "9100000"
   },
   {
     "localID": 13511,
@@ -47141,7 +47141,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "10600000.00"
+    "salary": "10600000"
   },
   {
     "localID": 13512,
@@ -47227,7 +47227,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7700000.00"
+    "salary": "7700000"
   },
   {
     "localID": 13514,
@@ -47269,7 +47269,7 @@
     "windup": 2,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 13515,
@@ -47355,7 +47355,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 13517,
@@ -47399,7 +47399,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "11200000.00"
+    "salary": "11200000"
   },
   {
     "localID": 13518,
@@ -47441,7 +47441,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "10800000.00"
+    "salary": "10800000"
   },
   {
     "localID": 13519,
@@ -47485,7 +47485,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4500000.00"
+    "salary": "4500000"
   },
   {
     "localID": 13520,
@@ -47529,7 +47529,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 13521,
@@ -47573,7 +47573,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9300000.00"
+    "salary": "9300000"
   },
   {
     "localID": 13522,
@@ -47617,7 +47617,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "3300000.00"
+    "salary": "3300000"
   },
   {
     "localID": 13523,
@@ -47661,7 +47661,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "4500000.00"
+    "salary": "4500000"
   },
   {
     "localID": 13524,
@@ -47705,7 +47705,7 @@
     "windup": "",
     "pitchAngle": 2,
     "playerChemistry": "",
-    "salary": "10300000.00"
+    "salary": "10300000"
   },
   {
     "localID": 13525,
@@ -47749,7 +47749,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 13526,
@@ -47793,7 +47793,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 13527,
@@ -47835,7 +47835,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 13528,
@@ -47879,7 +47879,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "2000000.00"
+    "salary": "2000000"
   },
   {
     "localID": 13529,
@@ -47967,7 +47967,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "5100000.00"
+    "salary": "5100000"
   },
   {
     "localID": 13531,
@@ -48011,7 +48011,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "9900000.00"
+    "salary": "9900000"
   },
   {
     "localID": 13532,
@@ -48055,7 +48055,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6700000.00"
+    "salary": "6700000"
   },
   {
     "localID": 13533,
@@ -48097,7 +48097,7 @@
     "windup": 3,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7900000.00"
+    "salary": "7900000"
   },
   {
     "localID": 13534,
@@ -48141,7 +48141,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "7200000.00"
+    "salary": "7200000"
   },
   {
     "localID": 13535,
@@ -48185,7 +48185,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Spirited",
-    "salary": "9600000.00"
+    "salary": "9600000"
   },
   {
     "localID": 13536,
@@ -48229,7 +48229,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "3300000.00"
+    "salary": "3300000"
   },
   {
     "localID": 13537,
@@ -48273,7 +48273,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 13538,
@@ -48361,7 +48361,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6500000.00"
+    "salary": "6500000"
   },
   {
     "localID": 13540,
@@ -48405,7 +48405,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5900000.00"
+    "salary": "5900000"
   },
   {
     "localID": 13541,
@@ -48449,7 +48449,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9400000.00"
+    "salary": "9400000"
   },
   {
     "localID": 13542,
@@ -48493,7 +48493,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "17200000.00"
+    "salary": "17200000"
   },
   {
     "localID": 13543,
@@ -48537,7 +48537,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 13544,
@@ -48581,7 +48581,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 13545,
@@ -48625,7 +48625,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13546,
@@ -48669,7 +48669,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13547,
@@ -48711,7 +48711,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "5600000.00"
+    "salary": "5600000"
   },
   {
     "localID": 13548,
@@ -48841,7 +48841,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "3200000.00"
+    "salary": "3200000"
   },
   {
     "localID": 13551,
@@ -48885,7 +48885,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "1500000.00"
+    "salary": "1500000"
   },
   {
     "localID": 13552,
@@ -48927,7 +48927,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "7000000.00"
+    "salary": "7000000"
   },
   {
     "localID": 13553,
@@ -48971,7 +48971,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5500000.00"
+    "salary": "5500000"
   },
   {
     "localID": 13554,
@@ -49015,7 +49015,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "5400000.00"
+    "salary": "5400000"
   },
   {
     "localID": 13555,
@@ -49057,7 +49057,7 @@
     "windup": 1,
     "pitchAngle": 2,
     "playerChemistry": "Disciplined",
-    "salary": "2900000.00"
+    "salary": "2900000"
   },
   {
     "localID": 13556,
@@ -49101,7 +49101,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 13557,
@@ -49143,7 +49143,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "9700000.00"
+    "salary": "9700000"
   },
   {
     "localID": 13558,
@@ -49187,7 +49187,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "15200000.00"
+    "salary": "15200000"
   },
   {
     "localID": 13559,
@@ -49229,7 +49229,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6000000.00"
+    "salary": "6000000"
   },
   {
     "localID": 13560,
@@ -49273,7 +49273,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "9000000.00"
+    "salary": "9000000"
   },
   {
     "localID": 13561,
@@ -49317,7 +49317,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "4800000.00"
+    "salary": "4800000"
   },
   {
     "localID": 13562,
@@ -49361,7 +49361,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "6900000.00"
+    "salary": "6900000"
   },
   {
     "localID": 13563,
@@ -49449,7 +49449,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "6100000.00"
+    "salary": "6100000"
   },
   {
     "localID": 13565,
@@ -49493,7 +49493,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "4100000.00"
+    "salary": "4100000"
   },
   {
     "localID": 13566,
@@ -49537,7 +49537,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "10100000.00"
+    "salary": "10100000"
   },
   {
     "localID": 13567,
@@ -49581,7 +49581,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "7300000.00"
+    "salary": "7300000"
   },
   {
     "localID": 13568,
@@ -49625,7 +49625,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "11700000.00"
+    "salary": "11700000"
   },
   {
     "localID": 13569,
@@ -49667,7 +49667,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 13570,
@@ -49711,7 +49711,7 @@
     "windup": 1,
     "pitchAngle": 1,
     "playerChemistry": "Spirited",
-    "salary": "4500000.00"
+    "salary": "4500000"
   },
   {
     "localID": 13571,
@@ -49753,7 +49753,7 @@
     "windup": "",
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "2500000.00"
+    "salary": "2500000"
   },
   {
     "localID": 13572,
@@ -49795,7 +49795,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13573,
@@ -49881,7 +49881,7 @@
     "windup": 3,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "4300000.00"
+    "salary": "4300000"
   },
   {
     "localID": 13575,
@@ -49925,7 +49925,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13576,
@@ -49969,7 +49969,7 @@
     "windup": 2,
     "pitchAngle": 2,
     "playerChemistry": "Scholarly",
-    "salary": "8800000.00"
+    "salary": "8800000"
   },
   {
     "localID": 13577,
@@ -50013,7 +50013,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Spirited",
-    "salary": "9500000.00"
+    "salary": "9500000"
   },
   {
     "localID": 13578,
@@ -50057,7 +50057,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Disciplined",
-    "salary": "6600000.00"
+    "salary": "6600000"
   },
   {
     "localID": 13579,
@@ -50145,7 +50145,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "9500000.00"
+    "salary": "9500000"
   },
   {
     "localID": 13581,
@@ -50233,7 +50233,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "",
-    "salary": "7100000.00"
+    "salary": "7100000"
   },
   {
     "localID": 13583,
@@ -50409,7 +50409,7 @@
     "windup": 3,
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "7600000.00"
+    "salary": "7600000"
   },
   {
     "localID": 13587,
@@ -50497,7 +50497,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Crafty",
-    "salary": "13300000.00"
+    "salary": "13300000"
   },
   {
     "localID": 13589,
@@ -50541,7 +50541,7 @@
     "windup": "",
     "pitchAngle": 1,
     "playerChemistry": "Scholarly",
-    "salary": "8600000.00"
+    "salary": "8600000"
   },
   {
     "localID": 13590,
@@ -50585,7 +50585,7 @@
     "windup": 2,
     "pitchAngle": 1,
     "playerChemistry": "",
-    "salary": "9900000.00"
+    "salary": "9900000"
   },
   {
     "localID": 13591,
@@ -50627,7 +50627,7 @@
     "windup": 4,
     "pitchAngle": 2,
     "playerChemistry": "Crafty",
-    "salary": "5000000.00"
+    "salary": "5000000"
   },
   {
     "localID": 13592,
@@ -50671,7 +50671,7 @@
     "windup": 4,
     "pitchAngle": 1,
     "playerChemistry": "Crafty",
-    "salary": "2500000.00"
+    "salary": "2500000"
   },
   {
     "localID": 13593,
@@ -50801,7 +50801,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5800000.00"
+    "salary": "5800000"
   },
   {
     "localID": 13596,
@@ -50845,7 +50845,7 @@
     "windup": 4,
     "pitchAngle": 3,
     "playerChemistry": "Scholarly",
-    "salary": "5200000.00"
+    "salary": "5200000"
   },
   {
     "localID": 13597,

@@ -14,56 +14,63 @@ model Trait {
   id        Int     @id @default(autoincrement())
   type      String?
   chemistry String?
+  trait1  Player[] @relation("trait1")
+  trait2 Player[] @relation("trait2")
 }
 
 model Team {
   id        Int     @id @default(autoincrement())
   name      String?
+  team      Player[] @relation("team")
 }
 
 model League {
   id        Int     @id @default(autoincrement())
   name      String?
+  league      Player[] @relation("league")
 }
 
 model Player {
   id               Int     @id @default(autoincrement())
-  localID          String?
-  teamId           String?
-  leagueId         String?
+  localID          Int?
+  teamId           Int?
+  team             Team? @relation("team", fields: [teamId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  leagueId         Int?
+  league           League? @relation("league", fields: [leagueId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   firstName        String?
   lastName         String?
-  primaryPosition  String?
-  pitcherRole      String?
-  power            String?
-  contact          String?
-  speed            String?
-  fielding         String?
-  arm              String?
-  velocity         String?
-  junk             String?
-  accuracy         String?
-  age              String?
-  gender           String?
-  throws           String?
-  bats             String?
-  secondaryPosition String?
-  jerseyNumber     String?
-  rating           String?
-  traitId1         String?
-  traitId2         String?
-  careerStart      String?
-  careerEnd        String?
-  fourSeamFastball String?
-  twoSeamFastball  String?
-  screwball        String?
-  changeup         String?
-  forkball         String?
-  curveball        String?
-  slider           String?
-  cutFastball      String?
-  windup           String?
-  pitchAngle       String?
+  primaryPosition  Int?
+  pitcherRole      Int?
+  power            Int?
+  contact          Int?
+  speed            Int?
+  fielding         Int?
+  arm              Int?
+  velocity         Int?
+  junk             Int?
+  accuracy         Int?
+  age              Int?
+  gender           Int?
+  throws           Int?
+  bats             Int?
+  secondaryPosition Int?
+  jerseyNumber     Int?
+  trait1           Trait?  @relation("trait1", fields: [traitId1], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  traitId1         Int?
+  trait2           Trait?  @relation("trait2", fields: [traitId2], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  traitId2         Int?
+  careerStart      Int?
+  careerEnd        Int?
+  fourSeamFastball Int?
+  twoSeamFastball  Int?
+  screwball        Int?
+  changeup         Int?
+  forkball         Int?
+  curveball        Int?
+  slider           Int?
+  cutFastball      Int?
+  windup           Int?
+  pitchAngle       Int?
   playerChemistry  String?
-  salary           String?
+  salary           Int?
 }

@@ -7,44 +7,43 @@ const findTrait = (type, allTraits) => {
   return allTraits.find((t) => t.type === type);
 };
 
-const allow = [
-  "localID",
-  "firstName",
-  "lastName",
-  "primaryPosition",
-  "pitcherRole",
-  "power",
-  "contact",
-  "speed",
-  "fielding",
-  "arm",
-  "velocity",
-  "junk",
-  "accuracy",
-  "age",
-  "gender",
-  "throws",
-  "bats",
-  "secondaryPosition",
-  "jerseyNumber",
-  "rating",
-  "traitId1",
-  "traitId2",
-  "careerStart",
-  "careerEnd",
-  "fourSeamFastball",
-  "twoSeamFastball",
-  "screwball",
-  "changeup",
-  "forkball",
-  "curveball",
-  "slider",
-  "cutFastball",
-  "windup",
-  "pitchAngle",
-  "playerChemistry",
-  "salary",
-];
+const allow = {
+  localID: "int",
+  firstName: "string",
+  lastName: "string",
+  primaryPosition: "int",
+  pitcherRole: "int",
+  power: "int",
+  contact: "int",
+  speed: "int",
+  fielding: "int",
+  arm: "int",
+  velocity: "int",
+  junk: "int",
+  accuracy: "int",
+  age: "int",
+  gender: "int",
+  throws: "int",
+  bats: "int",
+  secondaryPosition: "int",
+  jerseyNumber: "int",
+  traitId1: "int",
+  traitId2: "int",
+  careerStart: "int",
+  careerEnd: "int",
+  fourSeamFastball: "int",
+  twoSeamFastball: "int",
+  screwball: "int",
+  changeup: "int",
+  forkball: "int",
+  curveball: "int",
+  slider: "int",
+  cutFastball: "int",
+  windup: "int",
+  pitchAngle: "int",
+  playerChemistry: "string",
+  salary: "int",
+};
 
 const main = async () => {
   const allTeamnames = uniqBy(
@@ -77,18 +76,19 @@ const main = async () => {
     return Object.keys(player).reduce((acc, key) => {
       if (key === "trait1") {
         const trait = findTrait(String(player[key]), allTraits);
-        acc.traitId1 = trait?.id ? String(trait.id) : undefined;
+        acc.traitId1 = trait?.id ? +trait.id : undefined;
       } else if (key === "trait2") {
         const trait = findTrait(String(player[key]), allTraits);
-        acc.traitId2 = trait?.id ? String(trait.id) : undefined;
+        acc.traitId2 = trait?.id ? +trait.id : undefined;
       } else if (key === "teamName") {
         const team = allTeams.find((t) => t.name === player[key]);
-        acc.teamId = team ? String(team.id) : undefined;
+        acc.teamId = team ? +team.id : undefined;
       } else if (key === "league") {
         const league = allLeagues.find((t) => t.name === player[key]);
-        acc.leagueId = league ? String(league.id) : undefined;
-      } else if (allow.includes(key)) {
-        acc[key] = String(player[key]);
+        acc.leagueId = league ? +league.id : undefined;
+      } else if (allow[key]) {
+        acc[key] =
+          allow[key] === "string" ? String(player[key]) : +player[key] || null;
       }
       return acc;
     }, {});

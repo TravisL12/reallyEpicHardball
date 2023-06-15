@@ -1,7 +1,7 @@
-import "./App.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { ITeam } from "./types";
+import { ITeam } from "../types";
+import { SContainer, SHeader } from "./styles";
 
 function App() {
   const [team, setTeam] = useState<ITeam | undefined>();
@@ -16,10 +16,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <SContainer>
       <header className="App-header">
         <p>Welcome to Really Epic Hardball</p>
-        <h3>{team?.name}</h3>
+        <SHeader>{team?.name}</SHeader>
         <ul>
           {team?.players?.map((player) => {
             const fullName = `${player.firstName} ${player.lastName}`;
@@ -27,7 +27,7 @@ function App() {
           })}
         </ul>
       </header>
-    </div>
+    </SContainer>
   );
 }
 

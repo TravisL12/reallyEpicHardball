@@ -4,34 +4,41 @@
 
 #### Server notes
 
-Use `npx prisma db seed` to seed the database with player data
-Also `npx prisma migrate reset` will drop the db and re-seed
+##### These commands have to be run inside the docker container:
 
-### Previous SMB data extraction
+- Use `npx prisma db seed` to seed the database with player data
+- Also `npx prisma migrate reset` will drop the db and re-seed
+
+##### Migration stuff:
+
+- Setting up joins in schema
+  - https://stackoverflow.com/questions/68761366/left-joins-and-aggregation-in-a-single-prisma-query
+
+#### Previous SMB data extraction
 
 More notes from the original repo: https://github.com/TravisL12/super_mega_baseball_charts
 
 These are the databases and what they do
 
-#### Legends league DB
+##### Legends league DB
 
 `league-1EE40D82-453A-4740-82E5-0827731C22E0.sqlite`
 
-#### Creators league
+##### Creators league
 
 `league-7CBC32B9-BD7F-48D7-AE01-44C6595CD5A6.sqlite`
 
-#### Super Mega league
+##### Super Mega league
 
 `league-99F30082-775B-4547-ADD8-8C7D2C94FCE5.sqlite`
 
-#### Unknown league
+##### Unknown league
 
 `league-template.sqlite`
 
 Appears to be empty?
 
-#### Master Database
+##### Master Database
 
 `master.sqlite`
 
@@ -137,7 +144,7 @@ left join t_teams team
     on tbp.teamGUID = team.GUID
 ```
 
-### Player Options
+#### Player Options
 
 Get player options by last name
 
@@ -183,7 +190,3 @@ Pitch Arsenal
 - 107: Player Chemistry (not the same as "trait" chemistry)
 - 112: Career Start Year (for Legends only)
 - 113: Career End Year
-
-### The final process
-
-tbd

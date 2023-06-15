@@ -2,6 +2,8 @@ const express = require("express");
 const { db } = require("../db");
 const router = express.Router();
 
+const { playerSelect } = require("./selectConstants");
+
 router.get("/teams", async function (req, res, next) {
   const resp = await db.team.findMany();
   res.json({ teams: resp });
@@ -19,7 +21,8 @@ router.get("/team", async function (req, res, next) {
 
   if (team?.id !== undefined) {
     team.players = await db.player.findMany({
-      where: { teamId: String(team.id) },
+      select: playerSelect,
+      where: { teamId: team.id },
     });
     res.json({ team });
   } else {
@@ -28,7 +31,10 @@ router.get("/team", async function (req, res, next) {
 });
 
 router.get("/players", async function (req, res, next) {
-  const players = await db.player.findMany();
+  const players = await db.player.findMany({
+    take: 100,
+    select: playerSelect,
+  });
   res.json({ players });
 });
 
