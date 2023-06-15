@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { PLAYER_ATTRIBUTES } from "../constants";
 
 import { SHeader } from "./styles";
 import { useApi } from "../hooks/useApi";
@@ -10,8 +11,6 @@ const PlayersView = () => {
     fetchAllPlayers();
   }, []);
 
-  const tableHeaders = players ? Object.keys(players[0]) : [];
-
   if (!players) {
     return <SHeader>loading</SHeader>;
   }
@@ -20,7 +19,7 @@ const PlayersView = () => {
     <table>
       <thead>
         <tr>
-          {tableHeaders.map((attributeKey) => {
+          {PLAYER_ATTRIBUTES.map((attributeKey) => {
             return <th>{attributeKey}</th>;
           })}
         </tr>
@@ -29,7 +28,7 @@ const PlayersView = () => {
         {players?.map((player: IPlayer) => {
           return (
             <tr key={player.firstName}>
-              {tableHeaders.map((attributeKey) => {
+              {PLAYER_ATTRIBUTES.map((attributeKey) => {
                 return <td>{player[attributeKey]}</td>;
               })}
             </tr>
