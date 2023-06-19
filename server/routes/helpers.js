@@ -60,9 +60,9 @@ const createArsenal = (player) => {
 
 const transformPlayer = (player) => {
   const { firstName, lastName, team, league, trait1, trait2 } = player;
-  const bats = player.bats === 0 ? "L" : player.bats === 1 ? "R" : "S";
-  const throws = player.throws === 0 ? "L" : "R";
-  const gender = player.bats === 1 ? "M" : "F";
+  const bats = player.bats === 1 ? "R" : player.bats === 2 ? "S" : "L";
+  const throws = player.throws === 1 ? "R" : "L";
+  const gender = player.gender === 1 ? "F" : "M";
 
   const primaryPosition = ALL_POSITIONS[player.primaryPosition];
   const primaryPositionShort = POSITIONS_ABBREV[primaryPosition];

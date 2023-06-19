@@ -1,8 +1,15 @@
 import { PLAYER_ATTRIBUTES, tableHeaders } from "../constants";
 
-import { SHeader } from "../styles/styles";
+import { SFlex, SHeader } from "../styles/styles";
 import { IPlayer } from "../types";
-import { STable } from "../styles/tableStyles";
+import {
+  STable,
+  SCol,
+  centeredColumns,
+  numberColumns,
+  SSkillCellText,
+} from "../styles/tableStyles";
+import SkillCell from "./SkillCell";
 
 const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
   if (!players) {
@@ -14,10 +21,15 @@ const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
       <thead>
         <tr>
           {PLAYER_ATTRIBUTES.map((attributeKey) => {
+            const isCentered = !!centeredColumns.includes(attributeKey);
             return (
-              <th key={`header-${attributeKey}`}>
+              <SCol
+                as="th"
+                key={`header-${attributeKey}`}
+                $isCentered={isCentered}
+              >
                 {tableHeaders[attributeKey] ?? attributeKey}
-              </th>
+              </SCol>
             );
           })}
         </tr>
@@ -27,8 +39,20 @@ const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
           return (
             <tr key={`${player.firstName}-${player.lastName}`}>
               {PLAYER_ATTRIBUTES.map((attributeKey) => {
+                const isCentered = !!centeredColumns.includes(attributeKey);
+                const isNumber = !!numberColumns.includes(attributeKey);
                 return (
-                  <td key={`column-${attributeKey}`}>{player[attributeKey]}</td>
+                  <SCol
+                    key={`column-${attributeKey}`}
+                    $isCentered={isCentered}
+                    $isNumber={isNumber}
+                  >
+                    {isNumber ? (
+                      <SkillCell value={+player[attributeKey]} />
+                    ) : (
+                      player[attributeKey]
+                    )}
+                  </SCol>
                 );
               })}
             </tr>

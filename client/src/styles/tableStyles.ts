@@ -1,32 +1,86 @@
 import styled from "styled-components";
 import { mainBgColor, tableEvenRow, tableOddRow } from "./colors";
+import { SKILLS } from "../constants";
+
+export const centeredColumns: string[] = [
+  SKILLS.primaryPositionShort,
+  SKILLS.secondaryPositionShort,
+  SKILLS.power,
+  SKILLS.contact,
+  SKILLS.speed,
+  SKILLS.fielding,
+  SKILLS.arm,
+  SKILLS.bats,
+  SKILLS.throws,
+  SKILLS.age,
+  SKILLS.pitcherRoleShort,
+  SKILLS.velocity,
+  SKILLS.junk,
+  SKILLS.accuracy,
+];
+
+export const numberColumns: string[] = [
+  SKILLS.power,
+  SKILLS.contact,
+  SKILLS.speed,
+  SKILLS.fielding,
+  SKILLS.arm,
+  SKILLS.velocity,
+  SKILLS.junk,
+  SKILLS.accuracy,
+];
+
+export const SSkillCell = styled.div`
+  flex: 1;
+  background: black;
+  border: 1px solid black;
+  height: 28px;
+`;
+
+export const SSkillCellInner = styled.div<{ width: number }>`
+  width: ${({ width }) => `${width}%`};
+  height: 100%;
+  background: #3e17a6;
+  color: white;
+`;
+
+export const SSkillCellText = styled.div`
+  position: absolute;
+  align-self: center;
+  width: 100%;
+  color: white;
+`;
 
 export const STable = styled.table`
   border-collapse: collapse;
   min-width: 1000px;
-  width: 100vw;
 
-  th,
-  td {
-    padding: 8px 12px;
-  }
+  tr {
+    th {
+      text-transform: uppercase;
+      position: sticky;
+      top: 0;
+      background: ${mainBgColor};
+    }
 
-  thead tr th {
-    text-transform: uppercase;
-    position: sticky;
-    top: 0;
-    background: ${mainBgColor};
-  }
+    &:nth-child(even) td {
+      background: ${tableEvenRow};
+    }
 
-  tbody tr:nth-child(even) td {
-    background: ${tableEvenRow};
-  }
-  tbody tr:nth-child(odd) td {
-    background: ${tableOddRow};
-  }
+    &:nth-child(odd) td {
+      background: ${tableOddRow};
+    }
 
-  tbody tr:hover td {
-    background: #b4b8d3;
-    color: black;
+    &:hover td {
+      background: #b4b8d3;
+      color: black;
+    }
   }
+`;
+
+export const SCol = styled.td<{ $isCentered?: boolean; $isNumber?: boolean }>`
+  white-space: nowrap;
+  padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 12px")};
+  width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};
+  text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
 `;
