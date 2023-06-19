@@ -20,8 +20,15 @@ export const useApi = () => {
     setPlayers(data.players);
   };
 
-  const fetchTeam = async (teamName: string) => {
-    const { data } = await axios(`${BASE_URL}/team?name=${teamName}`);
+  const fetchTeam = async ({
+    id,
+    teamName,
+  }: {
+    id?: number;
+    teamName?: string;
+  }) => {
+    const qs = teamName ? `name=${teamName}` : `id=${id}`;
+    const { data } = await axios(`${BASE_URL}/team?${qs}`);
     setTeam(data.team);
   };
 

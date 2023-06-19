@@ -20,16 +20,18 @@ const PlayersView = () => {
       <thead>
         <tr>
           {PLAYER_ATTRIBUTES.map((attributeKey) => {
-            return <th>{attributeKey}</th>;
+            return <th key={`th-${attributeKey}`}>{attributeKey}</th>;
           })}
         </tr>
       </thead>
       <tbody>
         {players?.map((player: IPlayer) => {
           return (
-            <tr key={player.firstName}>
+            <tr key={`${player.firstName}-${player.lastName}`}>
               {PLAYER_ATTRIBUTES.map((attributeKey) => {
-                return <td>{player[attributeKey]}</td>;
+                return (
+                  <td key={`td-${attributeKey}`}>{player[attributeKey]}</td>
+                );
               })}
             </tr>
           );

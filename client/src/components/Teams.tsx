@@ -19,7 +19,7 @@ const Teams = () => {
                 <li
                   key={team.name}
                   onClick={() => {
-                    fetchTeam(team.name);
+                    fetchTeam({ id: team.id });
                   }}
                 >
                   {team.name}
