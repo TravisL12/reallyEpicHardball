@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ITeam } from "../types";
 import axios from "axios";
+
+import { ITeam } from "../types";
 import { IPlayer } from "../types";
 
 const BASE_URL = "http://localhost:5005";

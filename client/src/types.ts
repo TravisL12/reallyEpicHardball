@@ -1,5 +1,5 @@
 export interface IPlayer {
-  [key: string]: any;
+  [key: string]: string;
 }
 
 export interface ITeam {

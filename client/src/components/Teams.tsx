@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { SHeader } from "./styles";
+import { SHeader } from "../styles/styles";
 import { useApi } from "../hooks/useApi";
 
 const Teams = () => {

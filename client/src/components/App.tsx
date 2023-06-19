@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 
-import { SAppContainer, SBodyContainer } from "./styles";
+import { SAppContainer, SBodyContainer } from "../styles/styles";
 import Teams from "./Teams";
-import PlayersView from "./PlayersView";
+import Players from "./Players";
 import AppHeader from "./AppHeader";
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       <AppHeader />
       <SBodyContainer>
         <Routes>
-          <Route path="/" element={<PlayersView />} />
+          <Route path="/" element={<Players />} />
           <Route path="/teams" element={<Teams />} />
         </Routes>
       </SBodyContainer>

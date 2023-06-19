@@ -1,3 +1,9 @@
+:root {
+  --main-bg-color: #282c34;
+  --table-even-row: #171a2e;
+  --table-odd-row: #303658;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+  background-color: var(--main-bg-color);
 }
 
 code {

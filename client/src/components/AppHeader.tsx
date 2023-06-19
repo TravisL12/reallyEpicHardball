@@ -1,4 +1,4 @@
-import { SFlex, SHeader, SLink } from "./styles";
+import { SFlex, SHeader, SLink } from "../styles/styles";
 
 const AppHeader = () => {
   return (
