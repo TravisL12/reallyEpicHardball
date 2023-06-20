@@ -1,6 +1,9 @@
 node_modules
 player_images
 smb_databases
+chemistry_logos 
+league_logos 
+smb4_team_logos
 *.sqlite
 
 # Keep environment variables out of version control
