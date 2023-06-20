@@ -1,4 +1,6 @@
 const playerSelect = {
+  id: true,
+  localID: true,
   firstName: true,
   lastName: true,
   primaryPosition: true,

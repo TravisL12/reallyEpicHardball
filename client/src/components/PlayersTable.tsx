@@ -1,7 +1,7 @@
 import { PLAYER_ATTRIBUTES, SKILLS, tableHeaders } from "../constants";
 
 import { SFlex, SHeader } from "../styles/styles";
-import { IPlayer, TChemistry } from "../types";
+import { IPlayer } from "../types";
 import {
   STable,
   SCol,
@@ -12,7 +12,7 @@ import {
 import SkillCell from "./SkillCell";
 import Image from "./Image";
 
-const getAttribute = (attribute: keyof IPlayer, value: any) => {
+const getAttribute = (attribute: string, value: any) => {
   if (!value) {
     return value;
   }
@@ -29,30 +29,40 @@ const getAttribute = (attribute: keyof IPlayer, value: any) => {
       return <SkillCell value={+value} />;
     case SKILLS.trait1:
     case SKILLS.trait2:
-      if (value?.chemistry && value?.type) {
-        const { type, chemistry } = value! as TChemistry;
-        return (
-          <SFlex align="center" gap="4px">
-            <Image
-              src={`${imageColumns[attribute]}${chemistry.toLowerCase()}.png`}
-              style={{ height: "30px", width: "20px" }}
-            />
-            <div>{type}</div>
-          </SFlex>
-        );
-      }
-    case SKILLS.playerChemistry:
-      if (value) {
-        return (
+      return value?.chemistry && value?.type ? (
+        <SFlex align="center" gap="4px">
           <Image
-            title={value as string}
-            src={`${imageColumns[attribute]}${(
-              value as string
-            ).toLowerCase()}.png`}
-            style={{ height: "30px" }}
+            title={value.chemistry as string}
+            src={`${
+              imageColumns[attribute]
+            }${value.chemistry.toLowerCase()}.png`}
+            style={{ height: "30px", width: "20px" }}
           />
-        );
-      }
+          <div>{value.type}</div>
+        </SFlex>
+      ) : (
+        value
+      );
+    case SKILLS.playerChemistry:
+      return (
+        <Image
+          title={value as string}
+          src={`${imageColumns[attribute]}${(
+            value as string
+          ).toLowerCase()}.png`}
+          style={{ height: "30px" }}
+        />
+      );
+    case SKILLS.league:
+      return (
+        <Image
+          title={value as string}
+          src={`${imageColumns[attribute]}${(
+            value as string
+          ).toLowerCase()}.png`}
+          style={{ height: "30px" }}
+        />
+      );
     default:
       return <div>{value}</div>;
   }
@@ -89,14 +99,15 @@ const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
               {PLAYER_ATTRIBUTES.map((attributeKey) => {
                 const isCentered = centeredColumns.includes(attributeKey);
                 const isNumber = numberColumns.includes(attributeKey);
+                // @ts-ignore
+                const value = player[attributeKey];
                 return (
                   <SCol
                     key={`column-${attributeKey}`}
                     $isCentered={isCentered}
                     $isNumber={isNumber}
                   >
-                    {/* @ts-expect-error */}
-                    {getAttribute(attributeKey, player[attributeKey])}
+                    {getAttribute(attributeKey, value)}
                   </SCol>
                 );
               })}

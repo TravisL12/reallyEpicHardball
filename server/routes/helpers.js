@@ -53,13 +53,11 @@ const PITCHES = [
 ];
 
 const createArsenal = (player) => {
-  return PITCHES.filter((pitch) => {
-    return player[pitch];
-  });
+  return PITCHES.filter((pitch) => player[pitch]);
 };
 
 const transformPlayer = (player) => {
-  const { firstName, lastName, team, league, trait1, trait2 } = player;
+  const { firstName, lastName, team, league } = player;
   const bats = player.bats === 1 ? "R" : player.bats === 2 ? "S" : "L";
   const throws = player.throws === 1 ? "R" : "L";
   const gender = player.gender === 1 ? "F" : "M";

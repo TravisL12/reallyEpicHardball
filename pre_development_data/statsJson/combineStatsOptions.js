@@ -134,5 +134,5 @@ const sortTeamsPlayersByJersey = () => {
   );
 };
 
-// combineStats(); // stats only for CSV output
-sortTeamsPlayersByJersey(); // doesn't snake case the team names BEWARE
+combineStats(); // stats only for CSV output
+// sortTeamsPlayersByJersey(); // doesn't snake case the team names BEWARE

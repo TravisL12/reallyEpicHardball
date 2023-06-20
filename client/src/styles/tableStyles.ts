@@ -18,12 +18,14 @@ export const centeredColumns: string[] = [
   SKILLS.junk,
   SKILLS.accuracy,
   SKILLS.playerChemistry,
+  SKILLS.league,
 ];
 
 export const imageColumns = {
-  [SKILLS.playerChemistry]: `${BASE_URL}/images/chemistry/player_chem_`,
-  [SKILLS.trait1]: `${BASE_URL}/images/chemistry/trait_chem_`,
-  [SKILLS.trait2]: `${BASE_URL}/images/chemistry/trait_chem_`,
+  [SKILLS.playerChemistry]: `${BASE_URL}/images/chemistry/player/`,
+  [SKILLS.trait1]: `${BASE_URL}/images/chemistry/trait/`,
+  [SKILLS.trait2]: `${BASE_URL}/images/chemistry/trait/`,
+  [SKILLS.league]: `${BASE_URL}/images/leagues/`,
 };
 
 export const numberColumns: string[] = [
@@ -86,7 +88,7 @@ export const STable = styled.table`
 
 export const SCol = styled.td<{ $isCentered?: boolean; $isNumber?: boolean }>`
   white-space: nowrap;
-  padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 12px")};
+  padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 10px")};
   width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};
   text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
 `;

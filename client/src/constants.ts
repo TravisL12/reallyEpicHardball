@@ -42,9 +42,10 @@ export const SKILLS = {
   salary: "salary",
 };
 
+// also used for the listed table headers
 export const PLAYER_ATTRIBUTES: string[] = [
   SKILLS.team,
-  // SKILLS.league,
+  SKILLS.league,
   SKILLS.fullName,
   SKILLS.primaryPositionShort,
   SKILLS.secondaryPositionShort,
@@ -79,8 +80,8 @@ export const PITCH_TYPE = {
 export const tableHeaders: { [key: string]: string } = {
   [SKILLS.team]: "team",
   [SKILLS.fullName]: "name",
-  [SKILLS.primaryPositionShort]: "p. pos",
-  [SKILLS.secondaryPositionShort]: "s. pos",
+  [SKILLS.primaryPositionShort]: "pos",
+  [SKILLS.secondaryPositionShort]: "pos2",
   [SKILLS.rating]: "rating",
   [SKILLS.power]: "pow",
   [SKILLS.contact]: "con",
@@ -99,4 +100,6 @@ export const tableHeaders: { [key: string]: string } = {
   [SKILLS.trait2]: "trait 2",
   [SKILLS.jerseyNumber]: "#",
   [SKILLS.playerChemistry]: "chem",
+  [SKILLS.careerStart]: "strt",
+  [SKILLS.salary]: "$",
 };
