@@ -37,10 +37,10 @@ export const SSkillCell = styled.div`
   height: 28px;
 `;
 
-export const SSkillCellInner = styled.div<{ width: number }>`
+export const SSkillCellInner = styled.div<{ width: number; color: string }>`
   width: ${({ width }) => `${width}%`};
   height: 100%;
-  background: #3e17a6;
+  background: ${({ color }) => color};
   color: white;
 `;
 

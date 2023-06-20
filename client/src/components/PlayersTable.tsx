@@ -27,6 +27,7 @@ const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
                 as="th"
                 key={`header-${attributeKey}`}
                 $isCentered={isCentered}
+                style={{ zIndex: 1 }}
               >
                 {tableHeaders[attributeKey] ?? attributeKey}
               </SCol>
