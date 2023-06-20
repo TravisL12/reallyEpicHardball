@@ -1,7 +1,7 @@
 import { PLAYER_ATTRIBUTES, SKILLS, tableHeaders } from "../constants";
 
 import { SFlex, SHeader } from "../styles/styles";
-import { IPlayer } from "../types";
+import { IPlayer, TChemistry } from "../types";
 import {
   STable,
   SCol,
@@ -12,8 +12,10 @@ import {
 import SkillCell from "./SkillCell";
 import Image from "./Image";
 
-const getAttribute = (attribute: string, player: IPlayer) => {
-  const value = player[attribute];
+const getAttribute = (attribute: keyof IPlayer, value: any) => {
+  if (!value) {
+    return value;
+  }
 
   switch (attribute) {
     case SKILLS.power:
@@ -28,7 +30,7 @@ const getAttribute = (attribute: string, player: IPlayer) => {
     case SKILLS.trait1:
     case SKILLS.trait2:
       if (value?.chemistry && value?.type) {
-        const { type, chemistry } = value;
+        const { type, chemistry } = value! as TChemistry;
         return (
           <SFlex align="center" gap="4px">
             <Image
@@ -43,14 +45,17 @@ const getAttribute = (attribute: string, player: IPlayer) => {
       if (value) {
         return (
           <Image
-            title={value}
-            src={`${imageColumns[attribute]}${value.toLowerCase()}.png`}
+            title={value as string}
+            src={`${imageColumns[attribute]}${(
+              value as string
+            ).toLowerCase()}.png`}
             style={{ height: "30px" }}
           />
         );
       }
+    default:
+      return <div>{value}</div>;
   }
-  return value;
 };
 
 const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
@@ -90,7 +95,8 @@ const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
                     $isCentered={isCentered}
                     $isNumber={isNumber}
                   >
-                    {getAttribute(attributeKey, player)}
+                    {/* @ts-expect-error */}
+                    {getAttribute(attributeKey, player[attributeKey])}
                   </SCol>
                 );
               })}

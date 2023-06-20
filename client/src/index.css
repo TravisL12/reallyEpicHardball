@@ -1,7 +1,7 @@
 :root {
   --main-bg-color: #282c34;
-  --table-even-row: #171a2e;
-  --table-odd-row: #303658;
+  --table-even-row: hsl(232, 33%, 14%);
+  --table-odd-row: hsl(231, 29%, 27%);
 }
 
 * {

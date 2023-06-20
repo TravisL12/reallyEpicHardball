@@ -79,8 +79,7 @@ export const STable = styled.table`
     }
 
     &:hover td {
-      background: #b4b8d3;
-      color: black;
+      background: hsl(231, 29%, 40%);
     }
   }
 `;
