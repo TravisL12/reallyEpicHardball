@@ -1,13 +1,12 @@
 import { PLAYER_ATTRIBUTES, tableHeaders } from "../constants";
 
-import { SFlex, SHeader } from "../styles/styles";
+import { SHeader } from "../styles/styles";
 import { IPlayer } from "../types";
 import {
   STable,
   SCol,
   centeredColumns,
   numberColumns,
-  SSkillCellText,
 } from "../styles/tableStyles";
 import SkillCell from "./SkillCell";
 
@@ -21,7 +20,7 @@ const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
       <thead>
         <tr>
           {PLAYER_ATTRIBUTES.map((attributeKey) => {
-            const isCentered = !!centeredColumns.includes(attributeKey);
+            const isCentered = centeredColumns.includes(attributeKey);
             return (
               <SCol
                 as="th"
@@ -40,8 +39,8 @@ const PlayersTable = ({ players }: { players?: IPlayer[] }) => {
           return (
             <tr key={`${player.firstName}-${player.lastName}`}>
               {PLAYER_ATTRIBUTES.map((attributeKey) => {
-                const isCentered = !!centeredColumns.includes(attributeKey);
-                const isNumber = !!numberColumns.includes(attributeKey);
+                const isCentered = centeredColumns.includes(attributeKey);
+                const isNumber = numberColumns.includes(attributeKey);
                 return (
                   <SCol
                     key={`column-${attributeKey}`}

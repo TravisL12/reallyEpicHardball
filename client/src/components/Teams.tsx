@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { SHeader } from "../styles/styles";
 import { useApi } from "../hooks/useApi";
+import PlayersTable from "./PlayersTable";
 
 const Teams = () => {
   const { fetchAllTeams, fetchTeam, team, allTeams } = useApi();
@@ -28,15 +28,7 @@ const Teams = () => {
             })}
           </ul>
         </div>
-        <div>
-          <SHeader>{team?.name}</SHeader>
-          <ul>
-            {team?.players?.map((player) => {
-              const fullName = `${player.firstName} ${player.lastName}`;
-              return <li key={fullName}>{fullName}</li>;
-            })}
-          </ul>
-        </div>
+        <div>{team?.players && <PlayersTable players={team.players} />}</div>
       </div>
     </>
   );
