@@ -1,15 +1,25 @@
 import { useEffect } from "react";
 
-import { useApi } from "../hooks/useApi";
+import { useApi } from "../utilities/useApi";
 import PlayersTable from "./PlayersTable";
+import { useInView } from "react-intersection-observer";
 
 const Players = () => {
-  const { fetchAllPlayers, players } = useApi();
+  const { loading, fetchPlayers, players } = useApi();
   useEffect(() => {
-    fetchAllPlayers();
+    fetchPlayers();
   }, []);
 
-  return <PlayersTable players={players} />;
+  const { ref } = useInView({
+    threshold: 0.25,
+    onChange: (inView) => {
+      if (inView && players.length > 0 && !loading.players) {
+        fetchPlayers();
+      }
+    },
+  });
+
+  return <PlayersTable players={players} loadMoreRef={ref} />;
 };
 
 export default Players;

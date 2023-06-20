@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useApi } from "../hooks/useApi";
+import { useApi } from "../utilities/useApi";
 import PlayersTable from "./PlayersTable";
 
 const Teams = () => {

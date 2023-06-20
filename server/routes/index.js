@@ -40,8 +40,10 @@ router.get("/team", async function (req, res, next) {
 });
 
 router.get("/players", async function (req, res, next) {
+  const { take, skip } = req.query;
   const selectedPlayers = await db.player.findMany({
-    take: 100,
+    skip: +skip,
+    take: +take,
     select: {
       ...playerSelect,
       team: { select: { name: true } },
