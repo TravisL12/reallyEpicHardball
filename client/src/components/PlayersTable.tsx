@@ -1,4 +1,8 @@
-import { PLAYER_ATTRIBUTES, tableHeaders } from "../constants";
+import {
+  PLAYER_ATTRIBUTES,
+  playerColumnSort,
+  tableHeaders,
+} from "../constants";
 import { SHeader } from "../styles/styles";
 import { IPlayer } from "../types";
 import {
@@ -12,9 +16,11 @@ import { getTableCell } from "../utilities/tableHelpers";
 const PlayersTable = ({
   players,
   loadMoreRef,
+  sort,
 }: {
   players?: IPlayer[];
-  loadMoreRef: (node?: Element | null | undefined) => void;
+  loadMoreRef?: (node?: Element | null) => void;
+  sort?: (sortAttr: string) => void;
 }) => {
   if (players?.length === 0) {
     return <SHeader>loading</SHeader>;
@@ -33,6 +39,13 @@ const PlayersTable = ({
                   key={`header-${attributeKey}`}
                   $isCentered={isCentered}
                   style={{ zIndex: 1 }}
+                  onClick={() => {
+                    if (!sort) {
+                      return;
+                    }
+                    const key = playerColumnSort[attributeKey] ?? attributeKey;
+                    sort(key);
+                  }}
                 >
                   {tableHeaders[attributeKey] ?? attributeKey}
                 </SCol>
@@ -41,9 +54,9 @@ const PlayersTable = ({
           </tr>
         </thead>
         <tbody>
-          {players?.map((player) => {
+          {players?.map((player, idx) => {
             return (
-              <tr key={`${player.firstName}-${player.lastName}`}>
+              <tr key={`${idx}-${player.firstName}-${player.lastName}`}>
                 {PLAYER_ATTRIBUTES.map((attributeKey) => {
                   const isCentered = centeredColumns.includes(attributeKey);
                   const isNumber = numberColumns.includes(attributeKey);

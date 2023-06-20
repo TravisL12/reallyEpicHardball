@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 import { ITeam } from "../types";
@@ -10,7 +10,12 @@ const PLAYER_SIZE = 100;
 export const useApi = () => {
   const [team, setTeam] = useState<ITeam | undefined>();
   const [allTeams, setAllTeams] = useState<ITeam[] | undefined>();
+
   const [players, setPlayers] = useState<IPlayer[]>([]);
+  const [playerSort, setPlayerSort] = useState<{
+    sortAttr: string;
+    isAsc: boolean;
+  }>({ sortAttr: "id", isAsc: true });
   const [playersPage, setPlayersPage] = useState<number>(0);
 
   const [loading, setLoading] = useState({
@@ -18,6 +23,10 @@ export const useApi = () => {
     team: false,
     teams: false,
   });
+
+  useEffect(() => {
+    fetchPlayers(true);
+  }, [playerSort]);
 
   const updateLoading = (attr: string, isLoading: boolean) => {
     setLoading({ ...loading, [attr]: isLoading });
@@ -30,13 +39,26 @@ export const useApi = () => {
     updateLoading("teams", false);
   };
 
-  const fetchPlayers = async () => {
+  const sortPlayers = (sortAttr: string) => {
+    setPlayersPage(0);
+    const isChangedSortAttr = sortAttr !== playerSort.sortAttr;
+    const isAsc = isChangedSortAttr ? playerSort.isAsc : !playerSort.isAsc;
+    setPlayerSort({ sortAttr, isAsc });
+  };
+
+  const fetchPlayers = async (shouldReset?: boolean) => {
+    const { sortAttr, isAsc } = playerSort;
     updateLoading("players", true);
     const { data } = await axios.get(`${BASE_URL}/players`, {
-      params: { skip: PLAYER_SIZE * playersPage, take: PLAYER_SIZE },
+      params: {
+        skip: PLAYER_SIZE * playersPage,
+        take: PLAYER_SIZE,
+        sortAttr,
+        isAsc,
+      },
     });
-    setPlayersPage(playersPage + 1);
-    setPlayers([...players, ...data.players]);
+    setPlayersPage(shouldReset ? 0 : playersPage + 1);
+    setPlayers(shouldReset ? data.players : [...players, ...data.players]);
     updateLoading("players", false);
   };
 
@@ -57,6 +79,7 @@ export const useApi = () => {
 
   return {
     loading,
+    sortPlayers,
     fetchPlayers,
     fetchAllTeams,
     fetchTeam,

@@ -40,7 +40,7 @@ router.get("/team", async function (req, res, next) {
 });
 
 router.get("/players", async function (req, res, next) {
-  const { take, skip } = req.query;
+  const { take, skip, sortAttr = "id", isAsc } = req.query;
   const selectedPlayers = await db.player.findMany({
     skip: +skip,
     take: +take,
@@ -50,6 +50,9 @@ router.get("/players", async function (req, res, next) {
       league: { select: { name: true } },
       trait1: { select: { type: true, chemistry: true } },
       trait2: { select: { type: true, chemistry: true } },
+    },
+    orderBy: {
+      [sortAttr]: isAsc === "true" ? "asc" : "desc",
     },
   });
   const players = selectedPlayers.map(transformPlayer);

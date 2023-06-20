@@ -5,7 +5,7 @@ import PlayersTable from "./PlayersTable";
 import { useInView } from "react-intersection-observer";
 
 const Players = () => {
-  const { loading, fetchPlayers, players } = useApi();
+  const { loading, fetchPlayers, players, sortPlayers } = useApi();
   useEffect(() => {
     fetchPlayers();
   }, []);
@@ -19,7 +19,9 @@ const Players = () => {
     },
   });
 
-  return <PlayersTable players={players} loadMoreRef={ref} />;
+  return (
+    <PlayersTable players={players} loadMoreRef={ref} sort={sortPlayers} />
+  );
 };
 
 export default Players;

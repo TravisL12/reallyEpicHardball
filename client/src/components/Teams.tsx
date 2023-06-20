@@ -3,11 +3,13 @@ import { useApi } from "../utilities/useApi";
 import PlayersTable from "./PlayersTable";
 
 const Teams = () => {
-  const { fetchAllTeams, fetchTeam, team, allTeams } = useApi();
+  const { fetchAllTeams, fetchTeam, team, allTeams, sortPlayers } = useApi();
 
   useEffect(() => {
     fetchAllTeams();
   }, []);
+
+  // sortPlayers is calling fetchPlayers, need to adjust for Teams view
 
   return (
     <>
@@ -28,7 +30,11 @@ const Teams = () => {
             })}
           </ul>
         </div>
-        <div>{team?.players && <PlayersTable players={team.players} />}</div>
+        <div>
+          {team?.players && (
+            <PlayersTable players={team.players} sort={sortPlayers} />
+          )}
+        </div>
       </div>
     </>
   );
