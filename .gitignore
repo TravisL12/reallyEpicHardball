@@ -4,6 +4,9 @@ smb_databases
 chemistry_logos 
 league_logos 
 smb4_team_logos
+
+server/public/images
+
 *.sqlite
 
 # Keep environment variables out of version control

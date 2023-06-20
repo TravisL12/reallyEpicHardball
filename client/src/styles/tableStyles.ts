@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { mainBgColor, tableEvenRow, tableOddRow } from "./colors";
-import { SKILLS } from "../constants";
+import { BASE_URL, SKILLS } from "../constants";
 
 export const centeredColumns: string[] = [
   SKILLS.primaryPositionShort,
@@ -17,7 +17,14 @@ export const centeredColumns: string[] = [
   SKILLS.velocity,
   SKILLS.junk,
   SKILLS.accuracy,
+  SKILLS.playerChemistry,
 ];
+
+export const imageColumns = {
+  [SKILLS.playerChemistry]: `${BASE_URL}/images/chemistry/player_chem_`,
+  [SKILLS.trait1]: `${BASE_URL}/images/chemistry/trait_chem_`,
+  [SKILLS.trait2]: `${BASE_URL}/images/chemistry/trait_chem_`,
+};
 
 export const numberColumns: string[] = [
   SKILLS.power,

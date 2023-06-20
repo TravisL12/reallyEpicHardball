@@ -9,6 +9,11 @@ const Spacing = {
   4: "16px",
 };
 
+export const SImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+`;
+
 export const SFlex = styled.div<{
   align?: string;
   direction?: string;

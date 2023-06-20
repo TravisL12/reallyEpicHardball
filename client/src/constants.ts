@@ -1,3 +1,5 @@
+export const BASE_URL = "http://localhost:5005";
+
 export const SKILLS = {
   arsenal: "arsenal",
   fullName: "fullName",

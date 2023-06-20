@@ -89,8 +89,6 @@ const transformPlayer = (player) => {
     pitcherRole,
     pitcherRoleShort,
     league: league?.name,
-    trait1: trait1?.type,
-    trait2: trait2?.type,
   };
 };
 
