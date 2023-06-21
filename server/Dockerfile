@@ -5,6 +5,6 @@ COPY prisma ./prisma/
 COPY .env ./
 COPY . .
 RUN yarn
-RUN npx prisma generate
+RUN yarn prisma generate
 EXPOSE 8080
 CMD ["yarn", "start"]

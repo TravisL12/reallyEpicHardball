@@ -68,11 +68,11 @@ export const PLAYER_ATTRIBUTES: string[] = [
 
 // for columns with abbreviated (short) names
 export const playerColumnSort = {
-  [SKILLS.team]: SKILLS.teamId,
   [SKILLS.fullName]: SKILLS.firstName,
   [SKILLS.primaryPositionShort]: SKILLS.primaryPosition,
   [SKILLS.secondaryPositionShort]: SKILLS.secondaryPosition,
   [SKILLS.pitcherRoleShort]: SKILLS.pitcherRole,
+  [SKILLS.team]: SKILLS.teamId,
   [SKILLS.league]: SKILLS.leagueId,
   [SKILLS.trait1]: SKILLS.traitId1,
   [SKILLS.trait2]: SKILLS.traitId2,

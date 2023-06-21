@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 
 import { ITeam } from "../types";
@@ -18,7 +18,7 @@ export const useApi = () => {
   }>({ sortAttr: "id", isAsc: true });
   const [playersPage, setPlayersPage] = useState<number>(0);
 
-  const [loading, setLoading] = useState({
+  const loading = useRef({
     players: false,
     team: false,
     teams: false,
@@ -29,7 +29,7 @@ export const useApi = () => {
   }, [playerSort]);
 
   const updateLoading = (attr: string, isLoading: boolean) => {
-    setLoading({ ...loading, [attr]: isLoading });
+    loading.current = { ...loading.current, [attr]: isLoading };
   };
 
   const fetchAllTeams = async () => {
@@ -57,7 +57,7 @@ export const useApi = () => {
         isAsc,
       },
     });
-    setPlayersPage(shouldReset ? 0 : playersPage + 1);
+    setPlayersPage(playersPage + 1);
     setPlayers(shouldReset ? data.players : [...players, ...data.players]);
     updateLoading("players", false);
   };
@@ -78,7 +78,7 @@ export const useApi = () => {
   };
 
   return {
-    loading,
+    loading: loading.current,
     sortPlayers,
     fetchPlayers,
     fetchAllTeams,
