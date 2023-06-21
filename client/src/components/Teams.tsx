@@ -16,25 +16,21 @@ const Teams = () => {
       <div style={{ display: "flex" }}>
         <div>
           <ul>
-            {allTeams?.map((team) => {
+            {allTeams?.map(({ team: teamName }) => {
               return (
                 <li
-                  key={team.name}
+                  key={teamName}
                   onClick={() => {
-                    fetchTeam({ id: team.id });
+                    fetchTeam({ teamName });
                   }}
                 >
-                  {team.name}
+                  {teamName}
                 </li>
               );
             })}
           </ul>
         </div>
-        <div>
-          {team?.players && (
-            <PlayersTable players={team.players} sort={sortPlayers} />
-          )}
-        </div>
+        <div>{team?.players && <PlayersTable players={team.players} />}</div>
       </div>
     </>
   );

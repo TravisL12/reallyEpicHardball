@@ -62,16 +62,10 @@ export const useApi = () => {
     updateLoading("players", false);
   };
 
-  const fetchTeam = async ({
-    id,
-    teamName,
-  }: {
-    id?: number;
-    teamName?: string;
-  }) => {
+  const fetchTeam = async ({ teamName }: { teamName: string }) => {
     updateLoading("team", true);
     const { data } = await axios.get(`${BASE_URL}/team`, {
-      params: { name: teamName, id },
+      params: { name: teamName },
     });
     setTeam(data.team);
     updateLoading("team", false);

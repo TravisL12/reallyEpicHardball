@@ -33,7 +33,6 @@ export interface IPlayer {
 }
 
 export interface ITeam {
-  id: number;
-  name: string;
+  team: string;
   players?: IPlayer[];
 }

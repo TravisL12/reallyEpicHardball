@@ -4,36 +4,28 @@ const router = express.Router();
 
 const { playerSelect } = require("./selectConstants");
 const { transformPlayer } = require("./helpers");
+const { uniqBy } = require("lodash");
 
-// router.get("/teams", async function (req, res, next) {
-//   const resp = await db.team.findMany();
-//   res.json({ teams: resp });
-// });
+router.get("/teams", async function (req, res, next) {
+  const resp = await db.player.findMany({ select: { team: true } });
+  const teams = uniqBy(resp, "team");
+  res.json({ teams });
+});
 
-// router.get("/team", async function (req, res, next) {
-//   const { id, name } = req.query;
-//   let team;
-//   if (id !== undefined) {
-//     team = await db.team.findUnique({ where: { id: +id } });
-//   } else if (name) {
-//     const resp = await db.team.findMany({ where: { name } });
-//     team = resp?.[0];
-//   }
+router.get("/team", async function (req, res, next) {
+  const { name } = req.query;
+  const players = await db.player.findMany({
+    where: { team: name },
+    orderBy: { firstName: "asc" },
+  });
 
-//   if (team?.id !== undefined) {
-//     const players = await db.player.findMany({
-//       select: {
-//         ...playerSelect,
-//       },
-//       where: { teamId: team.id },
-//     });
-
-//     team.players = players.map(transformPlayer);
-//     res.json({ team });
-//   } else {
-//     res.json({ response: "no team found!" });
-//   }
-// });
+  if (players) {
+    const teamPlayers = players.map(transformPlayer);
+    res.json({ team: { team: name, players: teamPlayers } });
+  } else {
+    res.json({ response: "no team found!" });
+  }
+});
 
 router.get("/players", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc } = req.query;
