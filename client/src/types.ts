@@ -36,3 +36,9 @@ export interface ITeam {
   team: string;
   players?: IPlayer[];
 }
+
+export interface ILoading {
+  players: boolean;
+  team: boolean;
+  teams: boolean;
+}

@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
-import { ITeam } from "../types";
-import { IPlayer } from "../types";
+import { ITeam, IPlayer, ILoading } from "../types";
 import { BASE_URL } from "../constants";
 
 const PLAYER_SIZE = 100;
@@ -18,7 +17,7 @@ export const useApi = () => {
   }>({ sortAttr: "team", isAsc: true });
   const [playersPage, setPlayersPage] = useState<number>(0);
 
-  const loading = useRef({
+  const [loading, setLoading] = useState<ILoading>({
     players: false,
     team: false,
     teams: false,
@@ -28,15 +27,10 @@ export const useApi = () => {
     fetchPlayers(true);
   }, [playerSort]);
 
-  const updateLoading = (attr: string, isLoading: boolean) => {
-    loading.current = { ...loading.current, [attr]: isLoading };
-  };
-
-  const fetchAllTeams = async () => {
-    updateLoading("teams", true);
-    const { data } = await axios(`${BASE_URL}/teams`);
-    setAllTeams(data.teams);
-    updateLoading("teams", false);
+  const updateLoading = async (attr: string, cb: () => Promise<void>) => {
+    setLoading({ ...loading, [attr]: true });
+    await cb();
+    setLoading({ ...loading, [attr]: false });
   };
 
   const sortPlayers = (sortAttr: string) => {
@@ -46,37 +40,44 @@ export const useApi = () => {
     setPlayerSort({ sortAttr, isAsc });
   };
 
-  const fetchPlayers = async (shouldReset?: boolean) => {
-    const { sortAttr, isAsc } = playerSort;
-    updateLoading("players", true);
-    const { data } = await axios.get(`${BASE_URL}/players`, {
-      params: {
-        skip: PLAYER_SIZE * playersPage,
-        take: PLAYER_SIZE,
-        sortAttr,
-        isAsc,
-      },
+  const fetchPlayers = (shouldReset?: boolean) => {
+    updateLoading("players", async () => {
+      const { sortAttr, isAsc } = playerSort;
+      const { data } = await axios.get(`${BASE_URL}/players`, {
+        params: {
+          skip: PLAYER_SIZE * playersPage,
+          take: PLAYER_SIZE,
+          sortAttr,
+          isAsc,
+        },
+      });
+      setPlayersPage(playersPage + 1);
+      setPlayers(shouldReset ? data.players : [...players, ...data.players]);
     });
-    setPlayersPage(playersPage + 1);
-    setPlayers(shouldReset ? data.players : [...players, ...data.players]);
-    updateLoading("players", false);
   };
 
-  const fetchTeam = async ({ teamName }: { teamName: string }) => {
-    updateLoading("team", true);
-    const { data } = await axios.get(`${BASE_URL}/team`, {
-      params: { name: teamName },
+  const fetchAllTeams = () => {
+    updateLoading("teams", async () => {
+      const { data } = await axios(`${BASE_URL}/teams`);
+      setAllTeams(data.teams);
     });
-    setTeam(data.team);
-    updateLoading("team", false);
+  };
+
+  const fetchSingleTeam = ({ teamName }: { teamName: string }) => {
+    updateLoading("team", async () => {
+      const { data } = await axios.get(`${BASE_URL}/team`, {
+        params: { name: teamName },
+      });
+      setTeam(data.team);
+    });
   };
 
   return {
-    loading: loading.current,
+    loading,
     sortPlayers,
     fetchPlayers,
     fetchAllTeams,
-    fetchTeam,
+    fetchSingleTeam,
     players,
     team,
     allTeams,

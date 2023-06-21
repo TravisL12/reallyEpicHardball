@@ -8,6 +8,7 @@ const PITCHER_ROLES = {
 };
 
 const ALL_POSITIONS = {
+  1: "Pitcher",
   2: "Catcher",
   3: "First Base",
   4: "Second Base",
@@ -23,6 +24,7 @@ const ALL_POSITIONS = {
 };
 
 const POSITIONS_ABBREV = {
+  [ALL_POSITIONS[1]]: "P",
   [ALL_POSITIONS[2]]: "C",
   [ALL_POSITIONS[3]]: "1B",
   [ALL_POSITIONS[4]]: "2B",

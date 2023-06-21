@@ -17,12 +17,14 @@ const PlayersTable = ({
   players,
   loadMoreRef,
   sort,
+  isLoading,
 }: {
   players?: IPlayer[];
   loadMoreRef?: (node?: Element | null) => void;
   sort?: (sortAttr: string) => void;
+  isLoading: boolean;
 }) => {
-  if (players?.length === 0) {
+  if (isLoading) {
     return <SHeader>loading</SHeader>;
   }
 

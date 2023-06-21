@@ -3,7 +3,7 @@ import { useApi } from "../utilities/useApi";
 import PlayersTable from "./PlayersTable";
 
 const Teams = () => {
-  const { fetchAllTeams, fetchTeam, team, allTeams, sortPlayers } = useApi();
+  const { fetchAllTeams, fetchSingleTeam, team, allTeams, loading } = useApi();
 
   useEffect(() => {
     fetchAllTeams();
@@ -21,7 +21,7 @@ const Teams = () => {
                 <li
                   key={teamName}
                   onClick={() => {
-                    fetchTeam({ teamName });
+                    fetchSingleTeam({ teamName });
                   }}
                 >
                   {teamName}
@@ -30,7 +30,11 @@ const Teams = () => {
             })}
           </ul>
         </div>
-        <div>{team?.players && <PlayersTable players={team.players} />}</div>
+        <div>
+          {team?.players && (
+            <PlayersTable players={team.players} isLoading={loading.team} />
+          )}
+        </div>
       </div>
     </>
   );

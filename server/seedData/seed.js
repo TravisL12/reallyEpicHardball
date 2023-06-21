@@ -6,7 +6,6 @@ const allow = {
   firstName: "string",
   lastName: "string",
   primaryPosition: "int",
-  pitcherRole: "int",
   power: "int",
   contact: "int",
   speed: "int",
@@ -21,8 +20,6 @@ const allow = {
   bats: "int",
   secondaryPosition: "int",
   jerseyNumber: "int",
-  traitId1: "int",
-  traitId2: "int",
   careerStart: "int",
   careerEnd: "int",
   fourSeamFastball: "int",
@@ -37,7 +34,6 @@ const allow = {
   pitchAngle: "int",
   playerChemistry: "string",
   salary: "int",
-  teamName: "string",
   league: "string",
   trait1: "string",
   trait2: "string",
@@ -46,12 +42,16 @@ const allow = {
 const main = async () => {
   const formatted = playerJson.map((player) => {
     return Object.keys(player).reduce((acc, key) => {
+      // any of these "if" keys don't need to be in `allow` above
       if (key === "teamName") {
         acc.team = player[key] ?? null;
       } else if (key === "chemistry1") {
         acc.traitChemistry1 = player[key] ?? null;
       } else if (key === "chemistry2") {
         acc.traitChemistry2 = player[key] ?? null;
+      } else if (key === "pitcherRole" && player.pitcherRole) {
+        acc[key] = +player[key];
+        acc.primaryPosition = null;
       } else if (allow[key]) {
         acc[key] =
           allow[key] === "string" ? String(player[key]) : +player[key] || null;

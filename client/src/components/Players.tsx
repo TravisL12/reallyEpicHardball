@@ -20,7 +20,12 @@ const Players = () => {
   });
 
   return (
-    <PlayersTable players={players} loadMoreRef={ref} sort={sortPlayers} />
+    <PlayersTable
+      players={players}
+      loadMoreRef={ref}
+      isLoading={loading.players}
+      sort={sortPlayers}
+    />
   );
 };
 
