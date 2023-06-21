@@ -42,24 +42,20 @@ router.get("/team", async function (req, res, next) {
 const relations = {
   team: "name",
   league: "name",
-  trait1: "name",
-  trait2: "name",
+  trait1: "type",
+  trait2: "type",
 };
 const sortRelation = (attr, direction) => {
-  // id doesn't work with "orderByNulls"
-  if (attr === "id") {
-    return { [attr]: direction };
-  }
   return { [attr]: { sort: direction, nulls: "last" } };
   // return relations[attr]
-  //   ? [{ [attr]: { [relations[attr]]: direction } }]
+  //   ? { [attr]: { [relations[attr]]: { sort: direction } } }
   //   : { [attr]: { sort: direction, nulls: "last" } };
 };
 
 router.get("/players", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc } = req.query;
   const direction = isAsc === "true" ? "asc" : "desc";
-  const orderBy = sortRelation(sortAttr, direction);
+  const orderBy = sortAttr === "id" ? {} : sortRelation(sortAttr, direction);
   const selectedPlayers = await db.player.findMany({
     skip: +skip,
     take: +take,

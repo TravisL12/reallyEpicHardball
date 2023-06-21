@@ -34,9 +34,9 @@ model Player {
   id               Int     @id @default(autoincrement())
   localID          Int?
   teamId           Int?
-  team             Team? @relation("team", fields: [teamId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  team             Team? @relation(name: "team", fields: [teamId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   leagueId         Int?
-  league           League? @relation("league", fields: [leagueId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  league           League? @relation(name: "league", fields: [leagueId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   firstName        String?
   lastName         String?
   primaryPosition  Int?
@@ -55,9 +55,9 @@ model Player {
   bats             Int?
   secondaryPosition Int?
   jerseyNumber     Int?
-  trait1           Trait?  @relation("trait1", fields: [traitId1], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  trait1           Trait?  @relation(name: "trait1", fields: [traitId1], references: [id], onDelete: Cascade, onUpdate: Cascade)
   traitId1         Int?
-  trait2           Trait?  @relation("trait2", fields: [traitId2], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  trait2           Trait?  @relation(name: "trait2", fields: [traitId2], references: [id], onDelete: Cascade, onUpdate: Cascade)
   traitId2         Int?
   careerStart      Int?
   careerEnd        Int?
