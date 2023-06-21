@@ -46,7 +46,6 @@ const main = async () => {
         acc[key] = +player[key] ?? 0;
       } else if (key === "power") {
         acc[key] = +player[key] ?? 0;
-      } else if (key === "chemistry1") {
       } else if (key === "gender") {
         acc[key] = +player[key] ?? 0;
       } else if (key === "chemistry1") {

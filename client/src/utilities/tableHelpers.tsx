@@ -19,8 +19,8 @@ export const getTableCell = (attribute: string, value: any) => {
     case SKILLS.junk:
     case SKILLS.accuracy:
       return <SkillCell value={+value} />;
-    case SKILLS.trait1:
     case SKILLS.trait2:
+    case SKILLS.trait1:
       return value?.chemistry && value?.type ? (
         <SFlex align="center" gap="4px">
           <Image
