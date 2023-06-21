@@ -3,7 +3,7 @@ import { useApi } from "../utilities/useApi";
 import PlayersTable from "./PlayersTable";
 
 const Teams = () => {
-  const { fetchAllTeams, fetchSingleTeam, team, allTeams, loading } = useApi();
+  const { fetchAllTeams, fetchSingleTeam, team, allTeams } = useApi();
 
   useEffect(() => {
     fetchAllTeams();
@@ -30,11 +30,7 @@ const Teams = () => {
             })}
           </ul>
         </div>
-        <div>
-          {team?.players && (
-            <PlayersTable players={team.players} isLoading={loading.team} />
-          )}
-        </div>
+        <div>{team?.players && <PlayersTable players={team.players} />}</div>
       </div>
     </>
   );

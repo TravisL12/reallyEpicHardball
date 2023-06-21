@@ -10,6 +10,7 @@ import {
   SCol,
   centeredColumns,
   numberColumns,
+  SHead,
 } from "../styles/tableStyles";
 import { getTableCell } from "../utilities/tableHelpers";
 
@@ -17,14 +18,12 @@ const PlayersTable = ({
   players,
   loadMoreRef,
   sort,
-  isLoading,
 }: {
   players?: IPlayer[];
   loadMoreRef?: (node?: Element | null) => void;
   sort?: (sortAttr: string) => void;
-  isLoading: boolean;
 }) => {
-  if (isLoading) {
+  if (players?.length === 0) {
     return <SHeader>loading</SHeader>;
   }
 
@@ -36,11 +35,9 @@ const PlayersTable = ({
             {PLAYER_ATTRIBUTES.map((attributeKey) => {
               const isCentered = centeredColumns.includes(attributeKey);
               return (
-                <SCol
-                  as="th"
+                <SHead
                   key={`header-${attributeKey}`}
                   $isCentered={isCentered}
-                  style={{ zIndex: 1 }}
                   onClick={() => {
                     if (!sort) {
                       return;
@@ -50,7 +47,7 @@ const PlayersTable = ({
                   }}
                 >
                   {tableHeaders[attributeKey] ?? attributeKey}
-                </SCol>
+                </SHead>
               );
             })}
           </tr>

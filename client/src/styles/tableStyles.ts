@@ -86,6 +86,18 @@ export const STable = styled.table`
   }
 `;
 
+export const SHead = styled.th<{ $isCentered?: boolean; $isNumber?: boolean }>`
+  white-space: nowrap;
+  z-index: 1;
+  cursor: pointer;
+  padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 10px")};
+  width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};
+  text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
+  &:hover {
+    color: #3176ac;
+  }
+`;
+
 export const SCol = styled.td<{ $isCentered?: boolean; $isNumber?: boolean }>`
   white-space: nowrap;
   padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 10px")};

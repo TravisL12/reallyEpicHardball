@@ -15,8 +15,6 @@ const allow = {
   junk: "int",
   accuracy: "int",
   age: "int",
-  gender: "int",
-  throws: "int",
   bats: "int",
   secondaryPosition: "int",
   jerseyNumber: "int",
@@ -45,6 +43,10 @@ const main = async () => {
       // any of these "if" keys don't need to be in `allow` above
       if (key === "teamName") {
         acc.team = player[key] ?? null;
+      } else if (key === "throws") {
+        acc[key] = +player[key] ?? 0;
+      } else if (key === "gender") {
+        acc[key] = +player[key] ?? 0;
       } else if (key === "chemistry1") {
         acc.traitChemistry1 = player[key] ?? null;
       } else if (key === "chemistry2") {
