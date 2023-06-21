@@ -56,7 +56,9 @@ const main = async () => {
         acc.primaryPosition = null;
       } else if (allow[key]) {
         acc[key] =
-          allow[key] === "string" ? String(player[key]) : +player[key] || null;
+          player[key] && allow[key] === "string"
+            ? String(player[key])
+            : +player[key] || null;
       }
       return acc;
     }, {});

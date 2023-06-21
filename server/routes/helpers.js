@@ -68,7 +68,6 @@ const transformPlayer = (player) => {
     traitChemistry2,
   } = player;
   const bats = player.bats === 1 ? "R" : player.bats === 2 ? "S" : "L";
-  console.log(player.throws);
   const throws = player.throws === 1 ? "R" : "L";
   const gender = player.gender === 1 ? "F" : "M";
 
