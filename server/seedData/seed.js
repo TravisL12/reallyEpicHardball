@@ -43,49 +43,47 @@ const allow = {
   pitchAngle: "int",
   playerChemistry: "string",
   salary: "int",
+  teamName: "string",
+  league: "string",
+  trait1: "string",
+  trait2: "string",
 };
 
 const main = async () => {
-  const allTeamnames = uniqBy(
-    playerJson.map(({ teamName }) => ({ name: teamName })),
-    "name"
-  );
+  // const allTeamnames = uniqBy(
+  //   playerJson.map(({ teamName }) => ({ name: teamName })),
+  //   "name"
+  // );
 
-  const leagues = uniqBy(
-    playerJson.map(({ league }) => ({ name: league })),
-    "name"
-  );
+  // const leagues = uniqBy(
+  //   playerJson.map(({ league }) => ({ name: league })),
+  //   "name"
+  // );
 
-  await db.trait.createMany({
-    data: Object.values(traitsJson),
-  });
+  // await db.trait.createMany({
+  //   data: Object.values(traitsJson),
+  // });
 
-  await db.team.createMany({
-    data: allTeamnames,
-  });
+  // await db.team.createMany({
+  //   data: allTeamnames,
+  // });
 
-  await db.league.createMany({
-    data: leagues,
-  });
+  // await db.league.createMany({
+  //   data: leagues,
+  // });
 
-  const allTraits = await db.trait.findMany();
-  const allTeams = await db.team.findMany();
-  const allLeagues = await db.league.findMany();
+  // const allTraits = await db.trait.findMany();
+  // const allTeams = await db.team.findMany();
+  // const allLeagues = await db.league.findMany();
 
   const formatted = playerJson.map((player) => {
     return Object.keys(player).reduce((acc, key) => {
-      if (key === "trait1") {
-        const trait = findTrait(String(player[key]), allTraits);
-        acc.traitId1 = trait?.id ? +trait.id : undefined;
-      } else if (key === "trait2") {
-        const trait = findTrait(String(player[key]), allTraits);
-        acc.traitId2 = trait?.id ? +trait.id : undefined;
-      } else if (key === "teamName") {
-        const team = allTeams.find((t) => t.name === player[key]);
-        acc.teamId = team ? +team.id : undefined;
-      } else if (key === "league") {
-        const league = allLeagues.find((t) => t.name === player[key]);
-        acc.leagueId = league ? +league.id : undefined;
+      if (key === "teamName") {
+        acc.team = player[key] ?? null;
+      } else if (key === "chemistry1") {
+        acc.traitChemistry1 = player[key] ?? null;
+      } else if (key === "chemistry2") {
+        acc.traitChemistry2 = player[key] ?? null;
       } else if (allow[key]) {
         acc[key] =
           allow[key] === "string" ? String(player[key]) : +player[key] || null;

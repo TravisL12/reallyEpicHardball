@@ -33,7 +33,7 @@ export const getTableCell = (attribute: string, value: any) => {
           <div>{value.type}</div>
         </SFlex>
       ) : (
-        value
+        value.type
       );
     case SKILLS.playerChemistry:
       return (

@@ -9,8 +9,8 @@ const db = new PrismaClient({
   ],
 });
 
-db.$on("query", (e) => {
-  console.log("Query: " + e.query);
-});
+// db.$on("query", (e) => {
+//   console.log("Query: " + e.query);
+// });
 
 module.exports = { db };
