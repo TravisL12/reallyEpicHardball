@@ -5,51 +5,38 @@ const router = express.Router();
 const { playerSelect } = require("./selectConstants");
 const { transformPlayer } = require("./helpers");
 
-router.get("/teams", async function (req, res, next) {
-  const resp = await db.team.findMany();
-  res.json({ teams: resp });
-});
+// router.get("/teams", async function (req, res, next) {
+//   const resp = await db.team.findMany();
+//   res.json({ teams: resp });
+// });
 
-router.get("/team", async function (req, res, next) {
-  const { id, name } = req.query;
-  let team;
-  if (id !== undefined) {
-    team = await db.team.findUnique({ where: { id: +id } });
-  } else if (name) {
-    const resp = await db.team.findMany({ where: { name } });
-    team = resp?.[0];
-  }
+// router.get("/team", async function (req, res, next) {
+//   const { id, name } = req.query;
+//   let team;
+//   if (id !== undefined) {
+//     team = await db.team.findUnique({ where: { id: +id } });
+//   } else if (name) {
+//     const resp = await db.team.findMany({ where: { name } });
+//     team = resp?.[0];
+//   }
 
-  if (team?.id !== undefined) {
-    const players = await db.player.findMany({
-      select: {
-        ...playerSelect,
-        team: { select: { name: true } },
-        league: { select: { name: true } },
-        trait1: { select: { type: true, chemistry: true } },
-        trait2: { select: { type: true, chemistry: true } },
-      },
-      where: { teamId: team.id },
-    });
+//   if (team?.id !== undefined) {
+//     const players = await db.player.findMany({
+//       select: {
+//         ...playerSelect,
+//       },
+//       where: { teamId: team.id },
+//     });
 
-    team.players = players.map(transformPlayer);
-    res.json({ team });
-  } else {
-    res.json({ response: "no team found!" });
-  }
-});
+//     team.players = players.map(transformPlayer);
+//     res.json({ team });
+//   } else {
+//     res.json({ response: "no team found!" });
+//   }
+// });
 
-const relations = {
-  team: "name",
-  league: "name",
-  trait1: "type",
-  trait2: "type",
-};
 const sortRelation = (attr, direction) => {
   return { [attr]: { sort: direction, nulls: "last" } };
-  // return relations[attr]
-  //   ? { [attr]: { [relations[attr]]: { sort: direction } } }
-  //   : { [attr]: { sort: direction, nulls: "last" } };
 };
 
 router.get("/players", async function (req, res, next) {
@@ -61,10 +48,6 @@ router.get("/players", async function (req, res, next) {
     take: +take,
     select: {
       ...playerSelect,
-      team: { select: { name: true } },
-      league: { select: { name: true } },
-      trait1: { select: { type: true, chemistry: true } },
-      trait2: { select: { type: true, chemistry: true } },
     },
     orderBy,
   });

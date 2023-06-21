@@ -57,7 +57,14 @@ const createArsenal = (player) => {
 };
 
 const transformPlayer = (player) => {
-  const { firstName, lastName, team, league } = player;
+  const {
+    firstName,
+    lastName,
+    trait1: t1,
+    trait2: t2,
+    traitChemistry1,
+    traitChemistry2,
+  } = player;
   const bats = player.bats === 1 ? "R" : player.bats === 2 ? "S" : "L";
   const throws = player.throws === 1 ? "R" : "L";
   const gender = player.gender === 1 ? "F" : "M";
@@ -72,11 +79,12 @@ const transformPlayer = (player) => {
   const pitcherRoleShort = POSITIONS_ABBREV[pitcherRole];
   const fullName = `${firstName} ${lastName}`;
   const arsenal = createArsenal(player);
+  const trait1 = { type: t1, chemistry: traitChemistry1 };
+  const trait2 = { type: t2, chemistry: traitChemistry2 };
   return {
-    ...omit(player, PITCHES),
+    ...omit(player, [...PITCHES, "traitChemistry1", "traitChemistry2"]),
     arsenal,
     fullName,
-    team: team?.name,
     bats,
     throws,
     gender,
@@ -86,7 +94,8 @@ const transformPlayer = (player) => {
     secondaryPositionShort,
     pitcherRole,
     pitcherRoleShort,
-    league: league?.name,
+    trait1,
+    trait2,
   };
 };
 

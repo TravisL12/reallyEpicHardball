@@ -72,10 +72,6 @@ export const playerColumnSort = {
   [SKILLS.primaryPositionShort]: SKILLS.primaryPosition,
   [SKILLS.secondaryPositionShort]: SKILLS.secondaryPosition,
   [SKILLS.pitcherRoleShort]: SKILLS.pitcherRole,
-  [SKILLS.team]: SKILLS.teamId,
-  [SKILLS.league]: SKILLS.leagueId,
-  [SKILLS.trait1]: SKILLS.traitId1,
-  [SKILLS.trait2]: SKILLS.traitId2,
 };
 
 export const PITCH_TYPE = {

@@ -33,6 +33,12 @@ const playerSelect = {
   pitchAngle: true,
   playerChemistry: true,
   salary: true,
+  team: true,
+  league: true,
+  trait1: true,
+  traitChemistry1: true,
+  trait2: true,
+  traitChemistry2: true,
 };
 
 module.exports = { playerSelect };
