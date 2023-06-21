@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { useApi } from "../utilities/useApi";
 import PlayersTable from "./PlayersTable";
+import { useAppContext } from "../AppContext";
 
 const Teams = () => {
-  const { fetchAllTeams, fetchSingleTeam, team, allTeams } = useApi();
+  const { fetchAllTeams, fetchSingleTeam, team, allTeams } = useAppContext();
 
   useEffect(() => {
     fetchAllTeams();

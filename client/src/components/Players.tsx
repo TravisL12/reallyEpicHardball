@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 
-import { useApi } from "../utilities/useApi";
 import PlayersTable from "./PlayersTable";
 import { useInView } from "react-intersection-observer";
+import { useAppContext } from "../AppContext";
 
 const Players = () => {
-  const { loading, fetchPlayers, players, sortPlayers } = useApi();
+  const { loading, fetchPlayers, players, sortPlayers } = useAppContext();
   useEffect(() => {
     fetchPlayers();
   }, []);

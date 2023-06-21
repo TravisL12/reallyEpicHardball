@@ -5,7 +5,7 @@ import Image from "../components/Image";
 import { imageColumns } from "../styles/tableStyles";
 
 export const getTableCell = (attribute: string, value: any) => {
-  if (!value) {
+  if ([undefined, null].includes(value)) {
     return value;
   }
 

@@ -42,3 +42,14 @@ export interface ILoading {
   team: boolean;
   teams: boolean;
 }
+
+export interface IAppContext {
+  loading: ILoading;
+  sortPlayers: any;
+  fetchPlayers: any;
+  fetchAllTeams: any;
+  fetchSingleTeam: any;
+  players: IPlayer[];
+  team?: ITeam;
+  allTeams?: ITeam[];
+}
