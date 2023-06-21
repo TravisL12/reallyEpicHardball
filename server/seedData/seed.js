@@ -1,11 +1,5 @@
-const { uniqBy } = require("lodash");
 const { db } = require("../db");
 const playerJson = require("./playersComplete.json");
-const traitsJson = require("./traitsDescription.json");
-
-const findTrait = (type, allTraits) => {
-  return allTraits.find((t) => t.type === type);
-};
 
 const allow = {
   localID: "int",
@@ -50,32 +44,6 @@ const allow = {
 };
 
 const main = async () => {
-  // const allTeamnames = uniqBy(
-  //   playerJson.map(({ teamName }) => ({ name: teamName })),
-  //   "name"
-  // );
-
-  // const leagues = uniqBy(
-  //   playerJson.map(({ league }) => ({ name: league })),
-  //   "name"
-  // );
-
-  // await db.trait.createMany({
-  //   data: Object.values(traitsJson),
-  // });
-
-  // await db.team.createMany({
-  //   data: allTeamnames,
-  // });
-
-  // await db.league.createMany({
-  //   data: leagues,
-  // });
-
-  // const allTraits = await db.trait.findMany();
-  // const allTeams = await db.team.findMany();
-  // const allLeagues = await db.league.findMany();
-
   const formatted = playerJson.map((player) => {
     return Object.keys(player).reduce((acc, key) => {
       if (key === "teamName") {

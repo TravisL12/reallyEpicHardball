@@ -35,14 +35,13 @@ const { transformPlayer } = require("./helpers");
 //   }
 // });
 
-const sortRelation = (attr, direction) => {
-  return { [attr]: { sort: direction, nulls: "last" } };
-};
-
 router.get("/players", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc } = req.query;
+
   const direction = isAsc === "true" ? "asc" : "desc";
-  const orderBy = sortAttr === "id" ? {} : sortRelation(sortAttr, direction);
+  const orderBy =
+    sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
+
   const selectedPlayers = await db.player.findMany({
     skip: +skip,
     take: +take,

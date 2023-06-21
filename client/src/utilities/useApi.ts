@@ -15,7 +15,7 @@ export const useApi = () => {
   const [playerSort, setPlayerSort] = useState<{
     sortAttr: string;
     isAsc: boolean;
-  }>({ sortAttr: "id", isAsc: true });
+  }>({ sortAttr: "team", isAsc: true });
   const [playersPage, setPlayersPage] = useState<number>(0);
 
   const loading = useRef({
