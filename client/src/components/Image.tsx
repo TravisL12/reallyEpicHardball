@@ -1,4 +1,4 @@
-import { SImage } from "../styles/styles";
+import { SFlex, SImage } from "../styles/styles";
 
 const Image = ({
   src,
@@ -12,13 +12,13 @@ const Image = ({
   style?: any;
 }) => {
   return (
-    <div style={style}>
+    <SFlex align="center" style={style}>
       <SImage
         src={src}
         alt={alt || String(Math.random() * 1000)}
         title={title}
       />
-    </div>
+    </SFlex>
   );
 };
 

@@ -4,6 +4,7 @@ export const SKILLS = {
   arsenal: "arsenal",
   fullName: "fullName",
   team: "team",
+  teamSlug: "teamSlug",
   bats: "bats",
   throws: "throws",
   gender: "gender",

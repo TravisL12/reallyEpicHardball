@@ -14,6 +14,7 @@ model Player {
   id               Int     @id @default(autoincrement())
   localID          Int?
   team             String?
+  teamSlug         String?
   league           String?
   firstName        String?
   lastName         String?

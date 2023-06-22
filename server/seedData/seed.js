@@ -1,3 +1,4 @@
+const { snakeCase } = require("lodash");
 const { db } = require("../db");
 const playerJson = require("./playersComplete.json");
 
@@ -43,6 +44,7 @@ const main = async () => {
       // any of these "if" keys don't need to be in `allow` above
       if (key === "teamName") {
         acc.team = player[key] ?? null;
+        acc.teamSlug = player[key] ? snakeCase(player[key]) : null;
       } else if (key === "throws") {
         acc[key] = +player[key] ?? 0;
       } else if (key === "gender") {

@@ -34,6 +34,7 @@ const playerSelect = {
   playerChemistry: true,
   salary: true,
   team: true,
+  teamSlug: true,
   league: true,
   trait1: true,
   traitChemistry1: true,

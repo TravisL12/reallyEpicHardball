@@ -25,6 +25,7 @@ export interface IPlayer {
   playerChemistry: string;
   salary: number;
   team: string;
+  teamSlug: string;
   league: string;
   trait1: TChemistry;
   trait2: null;

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { IPlayer } from "../types";
 import { imageColumns } from "../styles/tableStyles";
 import Image from "./Image";
+import { SKILLS } from "../constants";
+import { SFlex } from "../styles/styles";
 
 const PlayerInfo = () => {
   const { localId } = useParams();
@@ -25,12 +27,19 @@ const PlayerInfo = () => {
   }
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       I am {player.fullName} of the {player.team}
-      <Image
-        alt={player.fullName}
-        src={`${imageColumns.playerImage}${player.localID}.png`}
-      />
+      <SFlex justify="space-around">
+        <Image
+          alt={player.fullName}
+          src={`${imageColumns.playerImage}${player.localID}.png`}
+        />
+        <Image
+          style={{ height: "400px" }}
+          alt={player.team}
+          src={`${imageColumns[SKILLS.teamSlug]}${player.teamSlug}.png`}
+        />
+      </SFlex>
     </div>
   );
 };

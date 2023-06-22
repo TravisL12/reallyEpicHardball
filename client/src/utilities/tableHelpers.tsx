@@ -15,6 +15,17 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
   switch (attribute) {
     case SKILLS.fullName:
       return <SLink to={`/player/${player.localID}`}>{value}</SLink>;
+    case SKILLS.team:
+      return (
+        <SFlex align="center" gap="4px">
+          <Image
+            title={value}
+            src={`${imageColumns[SKILLS.teamSlug]}${player.teamSlug}.png`}
+            style={{ width: "30px" }}
+          />
+          <div>{value}</div>
+        </SFlex>
+      );
     case SKILLS.power:
     case SKILLS.contact:
     case SKILLS.speed:
