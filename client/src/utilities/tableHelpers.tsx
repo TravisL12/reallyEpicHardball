@@ -1,9 +1,8 @@
 import { SKILLS } from "../constants";
 import SkillCell from "../components/SkillCell";
-import { SFlex } from "../styles/styles";
+import { SFlex, SLink } from "../styles/styles";
 import Image from "../components/Image";
 import { imageColumns } from "../styles/tableStyles";
-import { Link } from "react-router-dom";
 import { IPlayer } from "../types";
 
 export const getTableCell = (attribute: string, player: IPlayer) => {
@@ -15,11 +14,7 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
 
   switch (attribute) {
     case SKILLS.fullName:
-      return (
-        <Link to={`/player/${player.localID}`} style={{ color: "white" }}>
-          {value}
-        </Link>
-      );
+      return <SLink to={`/player/${player.localID}`}>{value}</SLink>;
     case SKILLS.power:
     case SKILLS.contact:
     case SKILLS.speed:

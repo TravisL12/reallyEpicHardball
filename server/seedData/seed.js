@@ -34,6 +34,7 @@ const allow = {
   league: "string",
   trait1: "string",
   trait2: "string",
+  power: "int",
 };
 
 const main = async () => {
@@ -41,10 +42,8 @@ const main = async () => {
     return Object.keys(player).reduce((acc, key) => {
       // any of these "if" keys don't need to be in `allow` above
       if (key === "teamName") {
-        acc.team = player[key] ?? "Free Agent";
+        acc.team = player[key] ?? null;
       } else if (key === "throws") {
-        acc[key] = +player[key] ?? 0;
-      } else if (key === "power") {
         acc[key] = +player[key] ?? 0;
       } else if (key === "gender") {
         acc[key] = +player[key] ?? 0;

@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { mainBgColor, tableEvenRow, tableOddRow } from "./colors";
+import {
+  linkHoverColor,
+  rowHoverColor,
+  mainBgColor,
+  tableEvenRow,
+  tableOddRow,
+} from "./colors";
 import { BASE_URL, SKILLS } from "../constants";
 
 export const centeredColumns: string[] = [
@@ -82,7 +88,7 @@ export const STable = styled.table`
     }
 
     &:hover td {
-      background: hsl(231, 29%, 40%);
+      background: ${rowHoverColor};
     }
   }
 `;
@@ -95,7 +101,7 @@ export const SHead = styled.th<{ $isCentered?: boolean; $isNumber?: boolean }>`
   width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};
   text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
   &:hover {
-    color: #3176ac;
+    color: ${linkHoverColor};
   }
 `;
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { linkHoverColor } from "./colors";
 
 const Spacing = {
   0: "2px",
@@ -29,6 +30,10 @@ export const SFlex = styled.div<{
 
 export const SLink = styled(Link)`
   color: white;
+
+  &:hover {
+    color: ${linkHoverColor};
+  }
 `;
 
 export const SHeader = styled.h1`
