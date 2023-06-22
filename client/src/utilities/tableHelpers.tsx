@@ -3,13 +3,23 @@ import SkillCell from "../components/SkillCell";
 import { SFlex } from "../styles/styles";
 import Image from "../components/Image";
 import { imageColumns } from "../styles/tableStyles";
+import { Link } from "react-router-dom";
+import { IPlayer } from "../types";
 
-export const getTableCell = (attribute: string, value: any) => {
+export const getTableCell = (attribute: string, player: IPlayer) => {
+  // @ts-ignore
+  const value = player[attribute];
   if ([undefined, null].includes(value)) {
     return value;
   }
 
   switch (attribute) {
+    case SKILLS.fullName:
+      return (
+        <Link to={`/player/${player.localID}`} style={{ color: "white" }}>
+          {value}
+        </Link>
+      );
     case SKILLS.power:
     case SKILLS.contact:
     case SKILLS.speed:

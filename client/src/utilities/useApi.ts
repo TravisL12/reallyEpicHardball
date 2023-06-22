@@ -40,6 +40,18 @@ export const useApi = () => {
     setPlayerSort({ sortAttr, isAsc });
   };
 
+  const fetchSinglePlayer = async (localID: number) => {
+    const findPlayer = players.find((player) => +player.localID === +localID);
+    if (findPlayer) {
+      return Promise.resolve(findPlayer);
+    }
+
+    const { data } = await axios.get(`${BASE_URL}/player`, {
+      params: { localID },
+    });
+    return data.player;
+  };
+
   const fetchPlayers = (shouldReset?: boolean) => {
     updateLoading("players", async () => {
       const { sortAttr, isAsc } = playerSort;
@@ -81,5 +93,6 @@ export const useApi = () => {
     players,
     team,
     allTeams,
+    fetchSinglePlayer,
   };
 };

@@ -5,6 +5,7 @@ import Teams from "./Teams";
 import Players from "./Players";
 import AppHeader from "./AppHeader";
 import { AppContextProvider } from "../AppContext";
+import PlayerInfo from "./PlayerInfo";
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
         <AppHeader />
         <SBodyContainer>
           <Routes>
-            <Route path="/" element={<Players />} />
+            <Route path="/player/:localId" element={<PlayerInfo />} />
             <Route path="/teams" element={<Teams />} />
+            <Route path="/" element={<Players />} />
           </Routes>
         </SBodyContainer>
       </SAppContainer>

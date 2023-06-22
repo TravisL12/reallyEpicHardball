@@ -59,15 +59,13 @@ const PlayersTable = ({
                 {PLAYER_ATTRIBUTES.map((attributeKey) => {
                   const isCentered = centeredColumns.includes(attributeKey);
                   const isNumber = numberColumns.includes(attributeKey);
-                  // @ts-ignore
-                  const value = player[attributeKey];
                   return (
                     <SCol
                       key={`column-${attributeKey}`}
                       $isCentered={isCentered}
                       $isNumber={isNumber}
                     >
-                      {getTableCell(attributeKey, value)}
+                      {getTableCell(attributeKey, player)}
                     </SCol>
                   );
                 })}

@@ -1,6 +1,7 @@
 export type TChemistry = { type: string; chemistry: string };
 
 export interface IPlayer {
+  localID: number;
   firstName: string;
   lastName: string;
   pitcherRole: string;
@@ -49,6 +50,7 @@ export interface IAppContext {
   fetchPlayers: any;
   fetchAllTeams: any;
   fetchSingleTeam: any;
+  fetchSinglePlayer: any;
   players: IPlayer[];
   team?: ITeam;
   allTeams?: ITeam[];

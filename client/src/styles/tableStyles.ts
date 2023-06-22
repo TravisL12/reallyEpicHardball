@@ -26,6 +26,7 @@ export const imageColumns = {
   [SKILLS.trait1]: `${BASE_URL}/images/chemistry/trait/`,
   [SKILLS.trait2]: `${BASE_URL}/images/chemistry/trait/`,
   [SKILLS.league]: `${BASE_URL}/images/leagues/`,
+  playerImage: `${BASE_URL}/images/players/`,
 };
 
 export const numberColumns: string[] = [

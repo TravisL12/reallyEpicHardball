@@ -27,6 +27,20 @@ router.get("/team", async function (req, res, next) {
   }
 });
 
+router.get("/player", async function (req, res, next) {
+  const { localID } = req.query;
+  const player = await db.player.findFirst({
+    where: {
+      localID: +localID,
+    },
+    select: {
+      ...playerSelect,
+    },
+  });
+  const data = transformPlayer(player);
+  res.json({ player: data });
+});
+
 router.get("/players", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc } = req.query;
 

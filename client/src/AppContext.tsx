@@ -8,6 +8,7 @@ const AppContext = createContext<IAppContext>({
   fetchPlayers: undefined,
   fetchAllTeams: undefined,
   fetchSingleTeam: undefined,
+  fetchSinglePlayer: undefined,
   players: [],
   team: undefined,
   allTeams: undefined,
