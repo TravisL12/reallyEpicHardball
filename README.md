@@ -190,3 +190,7 @@ Pitch Arsenal
 - 107: Player Chemistry (not the same as "trait" chemistry)
 - 112: Career Start Year (for Legends only)
 - 113: Career End Year
+
+### Setting up DNS servers and domain
+
+`https://github.com/adamelliotfields/notes/blob/master/miscellaneous/2018-01-29-vultr-dns-setup-with-google-domains.md`
