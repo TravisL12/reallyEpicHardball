@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:5005";
+export const BASE_URL = `http://${location.hostname}:5005`;
 
 export const SKILLS = {
   arsenal: "arsenal",
