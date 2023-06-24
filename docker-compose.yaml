@@ -3,11 +3,11 @@ services:
   api:
     stdin_open: true
     build: ./server
+    environment:
+      - DATABASE_URL=postgresql://root:password@postgresDb:5432/mydb?schema=public
     volumes:
       - ./server:/usr/src/app
       - /usr/src/app/node_modules
-    env_file:
-      - ./server/.env
     ports:
       - 5005:5005
     depends_on:
