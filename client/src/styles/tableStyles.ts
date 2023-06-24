@@ -6,7 +6,7 @@ import {
   tableEvenRow,
   tableOddRow,
 } from "./colors";
-import { BASE_URL, SKILLS } from "../constants";
+import { IMAGE_AWS_URL, SKILLS } from "../constants";
 
 export const centeredColumns: string[] = [
   SKILLS.primaryPositionShort,
@@ -28,12 +28,12 @@ export const centeredColumns: string[] = [
 ];
 
 export const imageColumns = {
-  [SKILLS.playerChemistry]: `${BASE_URL}/images/chemistry/player/`,
-  [SKILLS.trait1]: `${BASE_URL}/images/chemistry/trait/`,
-  [SKILLS.trait2]: `${BASE_URL}/images/chemistry/trait/`,
-  [SKILLS.league]: `${BASE_URL}/images/leagues/`,
-  [SKILLS.teamSlug]: `${BASE_URL}/images/teams/`,
-  playerImage: `${BASE_URL}/images/players/`,
+  [SKILLS.playerChemistry]: `${IMAGE_AWS_URL}/chemistry/player/`,
+  [SKILLS.trait1]: `${IMAGE_AWS_URL}/chemistry/trait/`,
+  [SKILLS.trait2]: `${IMAGE_AWS_URL}/chemistry/trait/`,
+  [SKILLS.league]: `${IMAGE_AWS_URL}/leagues/`,
+  [SKILLS.teamSlug]: `${IMAGE_AWS_URL}/teams/`,
+  playerImage: `${IMAGE_AWS_URL}/players/`,
 };
 
 export const numberColumns: string[] = [

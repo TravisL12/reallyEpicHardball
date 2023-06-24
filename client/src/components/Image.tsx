@@ -12,13 +12,13 @@ const Image = ({
   style?: any;
 }) => {
   return (
-    <SFlex align="center" style={style}>
+    <div style={style}>
       <SImage
         src={src}
         alt={alt || String(Math.random() * 1000)}
         title={title}
       />
-    </SFlex>
+    </div>
   );
 };
 

@@ -65,9 +65,7 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
       return (
         <Image
           title={value as string}
-          src={`${imageColumns[attribute]}${(
-            value as string
-          ).toLowerCase()}.png`}
+          src={`${imageColumns[attribute]}${value as string}.png`}
           style={{ height: "30px" }}
         />
       );

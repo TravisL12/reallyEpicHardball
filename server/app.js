@@ -14,7 +14,9 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
+
+const cacheTime = 86400000 * 30; // image browser cache
+app.use(express.static(path.join(__dirname, "public"), { maxAge: cacheTime }));
 
 app.use("/", indexRouter);
 
