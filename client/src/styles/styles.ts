@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { linkHoverColor } from "./colors";
+import { checkedLabel, linkHoverColor } from "./colors";
 
 const Spacing = {
   0: "2px",
@@ -50,4 +50,22 @@ export const SBodyContainer = styled(SFlex)`
   width: 100%;
   flex: 1;
   overflow: auto;
+`;
+
+export const SCheckbox = styled.div`
+  label {
+    display: block;
+    padding: 4px 10px;
+    background: gray;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + label {
+    background: ${checkedLabel};
+    box-shadow: inset 0 0 0px 1px white;
+  }
 `;
