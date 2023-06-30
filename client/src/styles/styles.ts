@@ -69,3 +69,35 @@ export const SCheckbox = styled.div`
     box-shadow: inset 0 0 0px 1px white;
   }
 `;
+
+const skew = 40;
+export const SHeaderLink = styled(SLink)`
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 2px;
+  background: #30344c;
+  width: 200px;
+  height: 80px;
+  transform: skew(${skew * -1}deg, 0);
+  color: white;
+
+  &:hover {
+    color: white;
+    background: rgb(28, 35, 106);
+    background: linear-gradient(
+      ${skew}deg,
+      rgba(28, 35, 106, 1) 0%,
+      rgba(126, 70, 151, 1) 33%,
+      rgba(168, 39, 42, 1) 64%,
+      rgba(106, 20, 14, 1) 100%
+    );
+  }
+
+  & .text {
+    font-size: 30px;
+    transform: skew(${skew}deg, 0);
+  }
+`;

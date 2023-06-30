@@ -1,6 +1,7 @@
 import { useAppContext } from "../AppContext";
-import { SFlex, SHeader, SLink } from "../styles/styles";
+import { SFlex, SHeader } from "../styles/styles";
 import Filters from "./Filters";
+import HeaderLink from "./HeaderLink";
 
 const AppHeader = () => {
   const { loading } = useAppContext();
@@ -10,8 +11,8 @@ const AppHeader = () => {
       <SFlex gap="20px" align="center">
         <SHeader>Really Epic Hardball</SHeader>
         <SFlex gap="5px">
-          <SLink to="/">Players</SLink>
-          <SLink to="/teams">Teams</SLink>
+          <HeaderLink to="/" text="Players" />
+          <HeaderLink to="/teams" text="Teams" />
         </SFlex>
         <Filters />
       </SFlex>
