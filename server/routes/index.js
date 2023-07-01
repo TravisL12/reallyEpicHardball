@@ -42,7 +42,7 @@ router.get("/player", async function (req, res, next) {
 });
 
 router.get("/players", async function (req, res, next) {
-  const { take, skip, sortAttr = "id", isAsc } = req.query;
+  const { take, skip, sortAttr = "id", isAsc, league } = req.query;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
@@ -53,6 +53,11 @@ router.get("/players", async function (req, res, next) {
     take: +take,
     select: {
       ...playerSelect,
+    },
+    where: {
+      gender: { not: 0 },
+      bats: { not: null },
+      OR: [{ league: "superMega" }, { league: "creators" }],
     },
     orderBy,
   });

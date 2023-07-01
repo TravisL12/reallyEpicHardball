@@ -30,16 +30,16 @@ export const useFilters = () => {
 
   const setFilter = (type: string, value: TFilter) => {
     if (type === "gender") {
-      setGender((prev) => changeItem([...prev], value));
+      setGender(changeItem([...gender], value));
     }
     if (type === "bats") {
-      setBats((prev) => changeItem([...prev], value));
+      setBats(changeItem([...bats], value));
     }
     if (type === "throws") {
-      setThrows((prev) => changeItem([...prev], value));
+      setThrows(changeItem([...throws], value));
     }
     if (type === "league") {
-      setLeague((prev) => changeItem([...prev], value));
+      setLeague(changeItem([...league], value));
     }
   };
 

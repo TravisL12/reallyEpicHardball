@@ -4,9 +4,9 @@ import Checkbox from "./Checkbox";
 
 const Filters = () => {
   const { filters, setFilter } = useAppContext();
-  console.log(filters, "filters");
+
   return (
-    <SFlex gap="20px" style={{ margin: "10px 0" }}>
+    <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
       <SFlex align="center" gap="4px">
         <h4>League</h4>
         {filters?.league.map(({ name, checked }) => (
