@@ -1,29 +1,59 @@
+import { useAppContext } from "../../AppContext";
 import { SFlex } from "../../styles/styles";
 import Checkbox from "./Checkbox";
 
-const gender = ["M", "F"];
-const bats = ["R", "L", "S"];
-const throws = ["R", "L"];
-
 const Filters = () => {
+  const { filters, setFilter } = useAppContext();
+  console.log(filters, "filters");
   return (
-    <SFlex gap="20px">
+    <SFlex gap="20px" style={{ margin: "10px 0" }}>
       <SFlex align="center" gap="4px">
-        <h4>gender</h4>
-        {gender.map((value) => (
-          <Checkbox key={value} id={`gender-${value}`} value={value} />
+        <h4>League</h4>
+        {filters?.league.map(({ name, checked }) => (
+          <Checkbox
+            key={name}
+            checked={checked}
+            onChange={setFilter!}
+            type="league"
+            isImg={true}
+            value={name}
+          />
         ))}
       </SFlex>
       <SFlex align="center" gap="4px">
-        <h4>bats</h4>
-        {bats.map((value) => (
-          <Checkbox key={value} id={`bats-${value}`} value={value} />
+        <h4>Gender</h4>
+        {filters?.gender.map(({ name, checked }) => (
+          <Checkbox
+            key={name}
+            checked={checked}
+            onChange={setFilter!}
+            type="gender"
+            value={name}
+          />
         ))}
       </SFlex>
       <SFlex align="center" gap="4px">
-        <h4>throws</h4>
-        {throws.map((value) => (
-          <Checkbox key={value} id={`throws-${value}`} value={value} />
+        <h4>Bats</h4>
+        {filters?.bats.map(({ name, checked }) => (
+          <Checkbox
+            key={name}
+            checked={checked}
+            onChange={setFilter!}
+            type="bats"
+            value={name}
+          />
+        ))}
+      </SFlex>
+      <SFlex align="center" gap="4px">
+        <h4>Throws</h4>
+        {filters?.throws.map(({ name, checked }) => (
+          <Checkbox
+            key={name}
+            checked={checked}
+            onChange={setFilter!}
+            type="throws"
+            value={name}
+          />
         ))}
       </SFlex>
     </SFlex>

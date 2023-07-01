@@ -55,4 +55,13 @@ export interface IAppContext {
   players: IPlayer[];
   team?: ITeam;
   allTeams?: ITeam[];
+  filters?: {
+    gender: TFilter[];
+    bats: TFilter[];
+    throws: TFilter[];
+    league: TFilter[];
+  };
+  setFilter?: (type: string, value: TFilter) => void;
 }
+
+export type TFilter = { name: string; checked: boolean };

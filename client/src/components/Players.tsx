@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import PlayersTable from "./PlayersTable";
 import { useInView } from "react-intersection-observer";
 import { useAppContext } from "../AppContext";
+import Filters from "./Filters";
+import { SBodyContainer } from "../styles/styles";
 
 const Players = () => {
   const { loading, fetchPlayers, players, sortPlayers } = useAppContext();
@@ -20,7 +22,12 @@ const Players = () => {
   });
 
   return (
-    <PlayersTable players={players} loadMoreRef={ref} sort={sortPlayers} />
+    <>
+      <Filters />
+      <SBodyContainer>
+        <PlayersTable players={players} loadMoreRef={ref} sort={sortPlayers} />
+      </SBodyContainer>
+    </>
   );
 };
 

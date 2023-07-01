@@ -48,6 +48,7 @@ export const SAppContainer = styled(SFlex)`
 
 export const SBodyContainer = styled(SFlex)`
   width: 100%;
+  flex-direction: column;
   flex: 1;
   overflow: auto;
 `;
@@ -79,7 +80,7 @@ export const SHeaderLink = styled(NavLink)`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px 2px;
+  margin: 0 2px;
   background: #30344c;
   width: 200px;
   height: 50px;

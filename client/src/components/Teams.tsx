@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import PlayersTable from "./PlayersTable";
 import { useAppContext } from "../AppContext";
+import { SBodyContainer } from "../styles/styles";
 
 const Teams = () => {
   const { fetchAllTeams, fetchSingleTeam, team, allTeams } = useAppContext();
@@ -12,7 +13,7 @@ const Teams = () => {
   // sortPlayers is calling fetchPlayers, need to adjust for Teams view
 
   return (
-    <>
+    <SBodyContainer>
       <div style={{ display: "flex" }}>
         <div>
           <ul>
@@ -30,9 +31,9 @@ const Teams = () => {
             })}
           </ul>
         </div>
-        <div>{team?.players && <PlayersTable players={team.players} />}</div>
+        {team?.players && <PlayersTable players={team.players} />}
       </div>
-    </>
+    </SBodyContainer>
   );
 };
 
