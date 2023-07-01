@@ -4,6 +4,7 @@ import {
   mainBgColor,
   tableEvenRow,
   tableOddRow,
+  linkHoverColor,
 } from "./colors";
 import { IMAGE_AWS_URL, SKILLS } from "../constants";
 
@@ -102,7 +103,7 @@ export const SHead = styled.th<{ $isCentered?: boolean; $isNumber?: boolean }>`
   text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
   border-right: 2px solid ${mainBgColor};
   &:hover {
-    color: gray;
+    color: ${linkHoverColor};
   }
 `;
 
