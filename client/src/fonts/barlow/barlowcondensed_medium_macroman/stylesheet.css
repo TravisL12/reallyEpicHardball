@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlow_condensedmedium';
+    src: url('BarlowCondensed-Medium-webfont.eot');
+    src: url('BarlowCondensed-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BarlowCondensed-Medium-webfont.woff2') format('woff2'),
+         url('BarlowCondensed-Medium-webfont.woff') format('woff'),
+         url('BarlowCondensed-Medium-webfont.ttf') format('truetype'),
+         url('BarlowCondensed-Medium-webfont.svg#barlow_condensedmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

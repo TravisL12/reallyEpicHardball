@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {
-  linkHoverColor,
   rowHoverColor,
   mainBgColor,
   tableEvenRow,
@@ -77,7 +76,7 @@ export const STable = styled.table`
       text-transform: uppercase;
       position: sticky;
       top: 0;
-      background: ${mainBgColor};
+      background: black;
     }
 
     &:nth-child(even) td {
@@ -95,14 +94,15 @@ export const STable = styled.table`
 `;
 
 export const SHead = styled.th<{ $isCentered?: boolean; $isNumber?: boolean }>`
-  white-space: nowrap;
   z-index: 1;
   cursor: pointer;
+  white-space: nowrap;
   padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 10px")};
   width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};
   text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
+  border-right: 2px solid ${mainBgColor};
   &:hover {
-    color: ${linkHoverColor};
+    color: gray;
   }
 `;
 
@@ -111,4 +111,5 @@ export const SCol = styled.td<{ $isCentered?: boolean; $isNumber?: boolean }>`
   padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 10px")};
   width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};
   text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
+  border-right: 2px solid ${mainBgColor};
 `;

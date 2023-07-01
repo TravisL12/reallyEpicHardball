@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { checkedLabel, linkHoverColor } from "./colors";
 
@@ -71,7 +71,9 @@ export const SCheckbox = styled.div`
 `;
 
 const skew = 40;
-export const SHeaderLink = styled(SLink)`
+export const SHeaderLink = styled(NavLink)`
+  font-family: "barlow-bold-italic";
+  text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
   display: flex;
@@ -80,10 +82,11 @@ export const SHeaderLink = styled(SLink)`
   margin: 10px 2px;
   background: #30344c;
   width: 200px;
-  height: 80px;
+  height: 50px;
   transform: skew(${skew * -1}deg, 0);
   color: white;
 
+  &.active,
   &:hover {
     color: white;
     background: rgb(28, 35, 106);
@@ -97,7 +100,7 @@ export const SHeaderLink = styled(SLink)`
   }
 
   & .text {
-    font-size: 30px;
+    font-size: 28px;
     transform: skew(${skew}deg, 0);
   }
 `;

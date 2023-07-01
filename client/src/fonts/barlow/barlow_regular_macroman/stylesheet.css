@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlowregular';
+    src: url('Barlow-Regular-webfont.eot');
+    src: url('Barlow-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Barlow-Regular-webfont.woff2') format('woff2'),
+         url('Barlow-Regular-webfont.woff') format('woff'),
+         url('Barlow-Regular-webfont.ttf') format('truetype'),
+         url('Barlow-Regular-webfont.svg#barlowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
