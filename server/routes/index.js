@@ -5,10 +5,12 @@ const router = express.Router();
 const { playerSelect } = require("./selectConstants");
 const {
   transformPlayer,
-  REVERSE_POSITION,
   REVERSE_GENDER,
   REVERSE_THROWS,
   REVERSE_BATS,
+  REVERSE_PRIMARY_POS,
+  REVERSE_PITCHING,
+  REVERSE_SECOND_POS,
 } = require("./helpers");
 const { uniqBy } = require("lodash");
 
@@ -49,19 +51,30 @@ router.get("/player", async function (req, res, next) {
 
 router.get("/players", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const { gender, bats, throws, league } = filters;
+  const { gender, bats, throws, league, position, pitching, secondPosition } =
+    filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
-  console.log(league, "league");
+
   const where = {
     AND: [
       { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
       { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
       { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
       { OR: league?.map((i) => ({ league: i })) },
-      // { OR: [{ secondaryPosition: 10 }] },
+      {
+        OR: position?.map((i) => ({ primaryPosition: REVERSE_PRIMARY_POS[i] })),
+      },
+      {
+        OR: secondPosition?.map((i) => ({
+          secondaryPosition: REVERSE_SECOND_POS[i],
+        })),
+      },
+      {
+        OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
+      },
     ],
   };
 

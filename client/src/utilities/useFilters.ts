@@ -5,6 +5,16 @@ const ALL_GENDER = ["M", "F"];
 const ALL_BATS = ["R", "L", "S"];
 const ALL_THROWS = ["R", "L"];
 const ALL_LEAGUE = ["superMega", "legends", "creators"];
+const ALL_PITCHING = ["SP", "SP/RP", "RP", "CP"];
+const ALL_POSITIONS = ["P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF"];
+const SECOND_POSITIONS = [
+  ...ALL_POSITIONS,
+  "IF",
+  "OF",
+  "1B/OF",
+  "IF/OF",
+  "None",
+].slice(1); // remove "P"
 
 const changeItem = (cPrev: TFilter[], value: TFilter) => {
   const findName = cPrev.find((i) => i.name === value.name);
@@ -27,6 +37,15 @@ export const useFilters = () => {
   const [league, setLeague] = useState<TFilter[]>(
     ALL_LEAGUE.map((name) => ({ name, checked: true }))
   );
+  const [position, setPosition] = useState<TFilter[]>(
+    ALL_POSITIONS.map((name) => ({ name, checked: true }))
+  );
+  const [pitching, setPitching] = useState<TFilter[]>(
+    ALL_PITCHING.map((name) => ({ name, checked: false }))
+  );
+  const [secondPosition, setSecondPosition] = useState<TFilter[]>(
+    SECOND_POSITIONS.map((name) => ({ name, checked: true }))
+  );
 
   const setFilter = (type: string, value: TFilter) => {
     if (type === "gender") {
@@ -41,6 +60,15 @@ export const useFilters = () => {
     if (type === "league") {
       setLeague(changeItem([...league], value));
     }
+    if (type === "position") {
+      setPosition(changeItem([...position], value));
+    }
+    if (type === "pitching") {
+      setPitching(changeItem([...pitching], value));
+    }
+    if (type === "secondPosition") {
+      setSecondPosition(changeItem([...secondPosition], value));
+    }
   };
 
   return {
@@ -49,6 +77,9 @@ export const useFilters = () => {
       bats,
       throws,
       league,
+      position,
+      pitching,
+      secondPosition,
     },
     setFilter,
   };

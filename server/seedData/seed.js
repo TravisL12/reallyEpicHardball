@@ -57,7 +57,7 @@ const main = async () => {
         acc.traitChemistry2 = player[key] ?? null;
       } else if (key === "pitcherRole" && player.pitcherRole) {
         acc[key] = +player[key];
-        acc.primaryPosition = null;
+        acc.primaryPosition = 1;
       } else if (allow[key]) {
         acc[key] =
           player[key] && allow[key] === "string"

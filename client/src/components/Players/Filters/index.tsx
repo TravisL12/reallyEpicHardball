@@ -57,6 +57,44 @@ const Filters = ({ count }: { count?: number }) => {
           />
         ))}
       </SFlex>
+      <SFlex direction="column">
+        <SFlex align="center" gap="4px">
+          <h4>Position</h4>
+          {filters?.position.map(({ name, checked }) => (
+            <Checkbox
+              key={`position-${name}`}
+              checked={checked}
+              onChange={setFilter!}
+              type="position"
+              value={name}
+            />
+          ))}
+        </SFlex>
+        <SFlex align="center" gap="4px">
+          <h4>2nd Position</h4>
+          {filters?.secondPosition.map(({ name, checked }) => (
+            <Checkbox
+              key={`secondPosition-${name}`}
+              checked={checked}
+              onChange={setFilter!}
+              type="secondPosition"
+              value={name}
+            />
+          ))}
+        </SFlex>
+        <SFlex align="center" gap="4px">
+          <h4>Pitching</h4>
+          {filters?.pitching.map(({ name, checked }) => (
+            <Checkbox
+              key={`pitching-${name}`}
+              checked={checked}
+              onChange={setFilter!}
+              type="pitching"
+              value={name}
+            />
+          ))}
+        </SFlex>
+      </SFlex>
     </SFlex>
   );
 };

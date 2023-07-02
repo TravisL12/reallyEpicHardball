@@ -53,6 +53,33 @@ const POSITIONS_ABBREV = {
   [PITCHER_ROLES[3]]: "RP",
   [PITCHER_ROLES[4]]: "CP",
 };
+const REVERSE_PRIMARY_POS = {
+  P: 1,
+  C: 2,
+  "1B": 3,
+  "2B": 4,
+  "3B": 5,
+  SS: 6,
+  LF: 7,
+  CF: 8,
+  RF: 9,
+};
+
+const REVERSE_SECOND_POS = {
+  ...REVERSE_PRIMARY_POS,
+  IF: 10,
+  OF: 11,
+  "1B/OF": 12,
+  "IF/OF": 13,
+  None: null,
+};
+
+const REVERSE_PITCHING = {
+  SP: 1,
+  "SP/RP": 2,
+  RP: 3,
+  CP: 4,
+};
 
 const PITCHES = [
   "fourSeamFastball",
@@ -81,7 +108,6 @@ const BATS = {
   2: "S",
 };
 
-const REVERSE_POSITION = reverseMap(ALL_POSITIONS);
 const REVERSE_GENDER = reverseMap(GENDER);
 const REVERSE_THROWS = reverseMap(THROWS);
 const REVERSE_BATS = reverseMap(BATS);
@@ -131,8 +157,10 @@ const transformPlayer = (player) => {
 
 module.exports = {
   transformPlayer,
-  REVERSE_POSITION,
   REVERSE_GENDER,
   REVERSE_THROWS,
   REVERSE_BATS,
+  REVERSE_PRIMARY_POS,
+  REVERSE_PITCHING,
+  REVERSE_SECOND_POS,
 };
