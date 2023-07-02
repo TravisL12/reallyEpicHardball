@@ -7,7 +7,7 @@ const ALL_THROWS = ["R", "L"];
 const ALL_LEAGUE = ["superMega", "legends", "creators"];
 
 const changeItem = (cPrev: TFilter[], value: TFilter) => {
-  const findName = cPrev.find((i: any) => i.name === value.name);
+  const findName = cPrev.find((i) => i.name === value.name);
   if (findName) {
     findName.checked = value.checked;
   }

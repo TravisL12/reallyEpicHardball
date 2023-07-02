@@ -45,6 +45,8 @@ const main = async () => {
       if (key === "teamName") {
         acc.team = player[key] ?? null;
         acc.teamSlug = player[key] ? snakeCase(player[key]) : null;
+      } else if (key === "bats") {
+        acc[key] = +player[key] ?? 0;
       } else if (key === "throws") {
         acc[key] = +player[key] ?? 0;
       } else if (key === "gender") {

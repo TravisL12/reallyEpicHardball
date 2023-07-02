@@ -1,17 +1,18 @@
-import { useAppContext } from "../../AppContext";
-import { SFlex } from "../../styles/styles";
+import { useAppContext } from "../../../AppContext";
+import { SFlex } from "../../../styles/styles";
 import Checkbox from "./Checkbox";
 
-const Filters = () => {
+const Filters = ({ count }: { count?: number }) => {
   const { filters, setFilter } = useAppContext();
 
   return (
     <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
+      {!!count && count}
       <SFlex align="center" gap="4px">
         <h4>League</h4>
         {filters?.league.map(({ name, checked }) => (
           <Checkbox
-            key={name}
+            key={`league-${name}`}
             checked={checked}
             onChange={setFilter!}
             type="league"
@@ -24,7 +25,7 @@ const Filters = () => {
         <h4>Gender</h4>
         {filters?.gender.map(({ name, checked }) => (
           <Checkbox
-            key={name}
+            key={`gender-${name}`}
             checked={checked}
             onChange={setFilter!}
             type="gender"
@@ -36,7 +37,7 @@ const Filters = () => {
         <h4>Bats</h4>
         {filters?.bats.map(({ name, checked }) => (
           <Checkbox
-            key={name}
+            key={`bats-${name}`}
             checked={checked}
             onChange={setFilter!}
             type="bats"
@@ -48,7 +49,7 @@ const Filters = () => {
         <h4>Throws</h4>
         {filters?.throws.map(({ name, checked }) => (
           <Checkbox
-            key={name}
+            key={`throws-${name}`}
             checked={checked}
             onChange={setFilter!}
             type="throws"

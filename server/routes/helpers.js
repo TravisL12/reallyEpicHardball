@@ -23,6 +23,17 @@ const ALL_POSITIONS = {
   13: "Infield / Outfield",
 };
 
+const reverseMap = (items) => {
+  return Object.keys(items).reduce((acc, key) => {
+    acc[items[key]] = key;
+    return acc;
+  }, {});
+};
+
+const createArsenal = (player) => {
+  return PITCHES.filter((pitch) => player[pitch]);
+};
+
 const POSITIONS_ABBREV = {
   [ALL_POSITIONS[1]]: "P",
   [ALL_POSITIONS[2]]: "C",
@@ -54,9 +65,26 @@ const PITCHES = [
   "cutFastball",
 ];
 
-const createArsenal = (player) => {
-  return PITCHES.filter((pitch) => player[pitch]);
+const GENDER = {
+  0: "M",
+  1: "F",
 };
+
+const THROWS = {
+  0: "L",
+  1: "R",
+};
+
+const BATS = {
+  0: "L",
+  1: "R",
+  2: "S",
+};
+
+const REVERSE_POSITION = reverseMap(ALL_POSITIONS);
+const REVERSE_GENDER = reverseMap(GENDER);
+const REVERSE_THROWS = reverseMap(THROWS);
+const REVERSE_BATS = reverseMap(BATS);
 
 const transformPlayer = (player) => {
   const {
@@ -67,9 +95,9 @@ const transformPlayer = (player) => {
     traitChemistry1,
     traitChemistry2,
   } = player;
-  const bats = player.bats === 1 ? "R" : player.bats === 2 ? "S" : "L";
-  const throws = player.throws === 1 ? "R" : "L";
-  const gender = player.gender === 1 ? "F" : "M";
+  const bats = BATS[player.bats];
+  const throws = THROWS[player.throws];
+  const gender = GENDER[player.gender];
 
   const primaryPosition = ALL_POSITIONS[player.primaryPosition];
   const primaryPositionShort = POSITIONS_ABBREV[primaryPosition];
@@ -101,4 +129,10 @@ const transformPlayer = (player) => {
   };
 };
 
-module.exports = { transformPlayer };
+module.exports = {
+  transformPlayer,
+  REVERSE_POSITION,
+  REVERSE_GENDER,
+  REVERSE_THROWS,
+  REVERSE_BATS,
+};

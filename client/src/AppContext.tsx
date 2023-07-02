@@ -15,11 +15,13 @@ const AppContext = createContext<IAppContext>({
   allTeams: undefined,
   filters: undefined,
   setFilter: undefined,
+  hasMorePlayers: false,
+  playerCount: undefined,
 });
 
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const apiData = useApi();
   const { filters, setFilter } = useFilters();
+  const apiData = useApi(filters);
 
   return (
     <AppContext.Provider value={{ ...apiData, filters, setFilter }}>

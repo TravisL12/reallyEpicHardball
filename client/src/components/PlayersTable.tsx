@@ -18,10 +18,12 @@ const PlayersTable = ({
   players,
   loadMoreRef,
   sort,
+  hasMore,
 }: {
   players?: IPlayer[];
   loadMoreRef?: (node?: Element | null) => void;
   sort?: (sortAttr: string) => void;
+  hasMore?: boolean;
 }) => {
   if (players?.length === 0) {
     return <SHeader>loading</SHeader>;
@@ -74,7 +76,7 @@ const PlayersTable = ({
           })}
         </tbody>
       </STable>
-      {loadMoreRef && (
+      {hasMore && loadMoreRef && (
         <div ref={loadMoreRef}>
           <p>{`Loading more players`}</p>
         </div>

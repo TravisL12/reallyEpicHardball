@@ -45,6 +45,10 @@ export interface ILoading {
   teams: boolean;
 }
 
+export type TAllFilters = {
+  [key: string]: TFilter[];
+};
+
 export interface IAppContext {
   loading: ILoading;
   sortPlayers: any;
@@ -55,13 +59,10 @@ export interface IAppContext {
   players: IPlayer[];
   team?: ITeam;
   allTeams?: ITeam[];
-  filters?: {
-    gender: TFilter[];
-    bats: TFilter[];
-    throws: TFilter[];
-    league: TFilter[];
-  };
+  filters?: TAllFilters;
   setFilter?: (type: string, value: TFilter) => void;
+  hasMorePlayers: boolean;
+  playerCount?: number;
 }
 
 export type TFilter = { name: string; checked: boolean };

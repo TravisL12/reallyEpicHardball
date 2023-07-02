@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
-import { ITeam, IPlayer, ILoading } from "../types";
+import { ITeam, IPlayer, ILoading, TAllFilters } from "../types";
 import { BASE_URL } from "../constants";
 
 const PLAYER_SIZE = 100;
 
-export const useApi = () => {
+export const useApi = (filters: TAllFilters) => {
   const [team, setTeam] = useState<ITeam | undefined>();
   const [allTeams, setAllTeams] = useState<ITeam[] | undefined>();
 
+  const [hasMorePlayers, setHasMorePlayers] = useState<boolean>(true);
+  const [playerCount, setPlayerCount] = useState<number | undefined>();
   const [players, setPlayers] = useState<IPlayer[]>([]);
   const [playerSort, setPlayerSort] = useState<{
     sortAttr: string;
@@ -23,9 +25,18 @@ export const useApi = () => {
     teams: false,
   });
 
+  const apiFilters = useMemo(() => {
+    return Object.keys(filters).reduce((acc: any, filterKey) => {
+      acc[filterKey] = filters[filterKey]
+        .filter((f) => f.checked)
+        .map((f) => f.name);
+      return acc;
+    }, {});
+  }, [filters]);
+
   useEffect(() => {
     fetchPlayers(true);
-  }, [playerSort]);
+  }, [playerSort, JSON.stringify(apiFilters)]);
 
   const updateLoading = async (attr: string, cb: () => Promise<void>) => {
     setLoading({ ...loading, [attr]: true });
@@ -34,7 +45,6 @@ export const useApi = () => {
   };
 
   const sortPlayers = (sortAttr: string) => {
-    setPlayersPage(0);
     const isChangedSortAttr = sortAttr !== playerSort.sortAttr;
     const isAsc = isChangedSortAttr ? playerSort.isAsc : !playerSort.isAsc;
     setPlayerSort({ sortAttr, isAsc });
@@ -57,13 +67,16 @@ export const useApi = () => {
       const { sortAttr, isAsc } = playerSort;
       const { data } = await axios.get(`${BASE_URL}/players`, {
         params: {
-          skip: PLAYER_SIZE * playersPage,
+          skip: shouldReset ? 0 : PLAYER_SIZE * playersPage,
           take: PLAYER_SIZE,
           sortAttr,
           isAsc,
+          ...apiFilters,
         },
       });
-      setPlayersPage(playersPage + 1);
+      setPlayersPage(shouldReset ? 1 : playersPage + 1);
+      setHasMorePlayers(data.hasMore);
+      setPlayerCount(data.count);
       setPlayers(shouldReset ? data.players : [...players, ...data.players]);
     });
   };
@@ -85,14 +98,16 @@ export const useApi = () => {
   };
 
   return {
-    loading,
     sortPlayers,
     fetchPlayers,
     fetchAllTeams,
     fetchSingleTeam,
+    fetchSinglePlayer,
+    loading,
     players,
     team,
     allTeams,
-    fetchSinglePlayer,
+    hasMorePlayers,
+    playerCount,
   };
 };

@@ -3,7 +3,13 @@ const { db } = require("../db");
 const router = express.Router();
 
 const { playerSelect } = require("./selectConstants");
-const { transformPlayer } = require("./helpers");
+const {
+  transformPlayer,
+  REVERSE_POSITION,
+  REVERSE_GENDER,
+  REVERSE_THROWS,
+  REVERSE_BATS,
+} = require("./helpers");
 const { uniqBy } = require("lodash");
 
 router.get("/teams", async function (req, res, next) {
@@ -42,11 +48,27 @@ router.get("/player", async function (req, res, next) {
 });
 
 router.get("/players", async function (req, res, next) {
-  const { take, skip, sortAttr = "id", isAsc, league } = req.query;
+  const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
+  const { gender, bats, throws, league } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
+  console.log(league, "league");
+  const where = {
+    AND: [
+      { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
+      { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
+      { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
+      { OR: league?.map((i) => ({ league: i })) },
+      // { OR: [{ secondaryPosition: 10 }] },
+    ],
+  };
+
+  const count = await db.player.aggregate({
+    _count: true,
+    where,
+  });
 
   const selectedPlayers = await db.player.findMany({
     skip: +skip,
@@ -54,15 +76,12 @@ router.get("/players", async function (req, res, next) {
     select: {
       ...playerSelect,
     },
-    where: {
-      gender: { not: 0 },
-      bats: { not: null },
-      OR: [{ league: "superMega" }, { league: "creators" }],
-    },
+    where,
     orderBy,
   });
   const players = selectedPlayers.map(transformPlayer);
-  res.json({ players });
+  const hasMore = count._count > +take + +skip;
+  res.json({ players, count: count._count, hasMore });
 });
 
 module.exports = router;
