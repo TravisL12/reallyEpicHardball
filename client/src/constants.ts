@@ -76,6 +76,7 @@ export const PITCHER_ATTRIBUTES: string[] = [
   SKILLS.velocity,
   SKILLS.junk,
   SKILLS.accuracy,
+  SKILLS.arsenal,
   SKILLS.playerChemistry,
   SKILLS.trait1,
   SKILLS.trait2,
@@ -89,7 +90,7 @@ export const playerColumnSort = {
   [SKILLS.pitcherRoleShort]: SKILLS.pitcherRole,
 };
 
-export const PITCH_TYPE = {
+export const PITCH_TYPE: { [key: string]: { short: string; full: string } } = {
   fourSeamFastball: { short: "4F", full: "4-seam fastball" },
   twoSeamFastball: { short: "2F", full: "2-seam fastball" },
   cutFastball: { short: "CF", full: "Cut fastball" },

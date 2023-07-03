@@ -111,3 +111,10 @@ export const SFilterPositionTitle = styled.h4`
   width: 90px;
   text-align: right;
 `;
+
+export const SPitchCell = styled.div`
+  color: white;
+  background: black;
+  padding: 1px 2px;
+  border: 1px solid white;
+`;

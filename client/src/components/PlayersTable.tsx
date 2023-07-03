@@ -28,7 +28,7 @@ const PlayersTable = ({
   }
 
   return (
-    <div>
+    <>
       <STable>
         <thead>
           <tr>
@@ -79,7 +79,7 @@ const PlayersTable = ({
           <p>{`Loading more players`}</p>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

@@ -19,6 +19,7 @@ export const centeredColumns: string[] = [
   SKILLS.bats,
   SKILLS.throws,
   SKILLS.age,
+  SKILLS.arsenal,
   SKILLS.pitcherRoleShort,
   SKILLS.velocity,
   SKILLS.junk,
@@ -71,6 +72,7 @@ export const SSkillCellText = styled.div`
 export const STable = styled.table`
   border-collapse: collapse;
   min-width: 1000px;
+  width: 100%;
 
   tr {
     th {
