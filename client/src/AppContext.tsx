@@ -20,15 +20,18 @@ const AppContext = createContext<IAppContext>({
   hasMorePlayers: false,
   playerCount: undefined,
   isPitchers: false,
+  hasFreeAgents: true,
 });
 
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
   const isPitchers = !!useMatch("pitchers");
-  const { filters, setFilter } = useFilters();
-  const apiData = useApi(filters, isPitchers);
+  const { filters, setFilter, hasFreeAgents } = useFilters();
+  const apiData = useApi(filters, isPitchers, hasFreeAgents);
 
   return (
-    <AppContext.Provider value={{ ...apiData, filters, setFilter, isPitchers }}>
+    <AppContext.Provider
+      value={{ ...apiData, hasFreeAgents, filters, setFilter, isPitchers }}
+    >
       {children}
     </AppContext.Provider>
   );

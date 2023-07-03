@@ -9,7 +9,7 @@ const Filters = ({
   isPitcher?: boolean;
   count?: number;
 }) => {
-  const { filters, setFilter } = useAppContext();
+  const { filters, setFilter, hasFreeAgents } = useAppContext();
 
   return (
     <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
@@ -27,6 +27,15 @@ const Filters = ({
           />
         ))}
       </SFlex>
+      <SFlex align="center" gap="4px">
+        <h4>Free Agents</h4>
+        <Checkbox
+          checked={hasFreeAgents}
+          onChange={setFilter!}
+          type="freeAgents"
+          value="On"
+        />
+      </SFlex>
       {!isPitcher && (
         <SFlex align="center" gap="4px">
           <h4>Bats</h4>
@@ -41,31 +50,29 @@ const Filters = ({
           ))}
         </SFlex>
       )}
-      <SFlex direction="column" gap="5px">
-        <SFlex align="center" gap="4px">
-          <h4>Gender</h4>
-          {filters?.gender.map(({ name, checked }) => (
-            <Checkbox
-              key={`gender-${name}`}
-              checked={checked}
-              onChange={setFilter!}
-              type="gender"
-              value={name}
-            />
-          ))}
-        </SFlex>
-        <SFlex align="center" gap="4px">
-          <h4>Throws</h4>
-          {filters?.throws.map(({ name, checked }) => (
-            <Checkbox
-              key={`throws-${name}`}
-              checked={checked}
-              onChange={setFilter!}
-              type="throws"
-              value={name}
-            />
-          ))}
-        </SFlex>
+      <SFlex align="center" gap="4px">
+        <h4>Gender</h4>
+        {filters?.gender.map(({ name, checked }) => (
+          <Checkbox
+            key={`gender-${name}`}
+            checked={checked}
+            onChange={setFilter!}
+            type="gender"
+            value={name}
+          />
+        ))}
+      </SFlex>
+      <SFlex align="center" gap="4px">
+        <h4>Throws</h4>
+        {filters?.throws.map(({ name, checked }) => (
+          <Checkbox
+            key={`throws-${name}`}
+            checked={checked}
+            onChange={setFilter!}
+            type="throws"
+            value={name}
+          />
+        ))}
       </SFlex>
       {isPitcher ? (
         <SFlex align="center" gap="4px">

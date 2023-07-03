@@ -65,6 +65,7 @@ export interface IAppContext {
   hasMorePlayers: boolean;
   playerCount?: number;
   isPitchers: boolean;
+  hasFreeAgents: boolean;
 }
 
 export type TFilter = { name: string; checked: boolean };

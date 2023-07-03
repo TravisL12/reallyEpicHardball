@@ -25,6 +25,7 @@ const changeItem = (cPrev: TFilter[], value: TFilter) => {
 };
 
 export const useFilters = () => {
+  const [hasFreeAgents, setHasFreeAgents] = useState<boolean>(true);
   const [gender, setGender] = useState<TFilter[]>(
     ALL_GENDER.map((name) => ({ name, checked: true }))
   );
@@ -69,6 +70,9 @@ export const useFilters = () => {
     if (type === "secondPosition") {
       setSecondPosition(changeItem([...secondPosition], value));
     }
+    if (type === "freeAgents") {
+      setHasFreeAgents(value.checked);
+    }
   };
 
   return {
@@ -81,6 +85,7 @@ export const useFilters = () => {
       pitching,
       secondPosition,
     },
+    hasFreeAgents,
     setFilter,
   };
 };

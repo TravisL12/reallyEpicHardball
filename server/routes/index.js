@@ -52,13 +52,22 @@ router.get("/player", async function (req, res, next) {
 
 router.get("/players", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const { gender, bats, throws, league, position, secondPosition } = filters;
+  const {
+    gender,
+    bats,
+    throws,
+    league,
+    position,
+    secondPosition,
+    hasFreeAgents,
+  } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
 
   const where = {
+    NOT: hasFreeAgents === "false" ? { team: null } : {},
     AND: [
       { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
       { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
