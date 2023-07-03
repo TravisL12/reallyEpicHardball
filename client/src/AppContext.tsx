@@ -21,6 +21,7 @@ const AppContext = createContext<IAppContext>({
   playerCount: undefined,
   isPitchers: false,
   hasFreeAgents: true,
+  playerSort: { sortAttr: "", isAsc: true },
 });
 
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {

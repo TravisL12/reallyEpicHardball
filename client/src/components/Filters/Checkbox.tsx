@@ -1,5 +1,5 @@
+import { imageColumns } from "../../constants";
 import { SCheckbox } from "../../styles/styles";
-import { imageColumns } from "../../styles/tableStyles";
 import { TFilter } from "../../types";
 import Image from "../Image";
 

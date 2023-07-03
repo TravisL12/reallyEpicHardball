@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
-import { ITeam, IPlayer, ILoading, TAllFilters } from "../types";
+import { ITeam, IPlayer, ILoading, TAllFilters, TPlayerSort } from "../types";
 import { BASE_URL } from "../constants";
 
 const PLAYER_SIZE = 100;
@@ -17,10 +17,10 @@ export const useApi = (
   const [hasMorePlayers, setHasMorePlayers] = useState<boolean>(true);
   const [playerCount, setPlayerCount] = useState<number | undefined>();
   const [players, setPlayers] = useState<IPlayer[]>([]);
-  const [playerSort, setPlayerSort] = useState<{
-    sortAttr: string;
-    isAsc: boolean;
-  }>({ sortAttr: "team", isAsc: true });
+  const [playerSort, setPlayerSort] = useState<TPlayerSort>({
+    sortAttr: "team",
+    isAsc: true,
+  });
   const [playersPage, setPlayersPage] = useState<number>(0);
 
   const [loading, setLoading] = useState<ILoading>({
@@ -143,5 +143,6 @@ export const useApi = (
     allTeams,
     hasMorePlayers,
     playerCount,
+    playerSort,
   };
 };

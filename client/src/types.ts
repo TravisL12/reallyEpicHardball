@@ -49,6 +49,10 @@ export type TAllFilters = {
   [key: string]: TFilter[];
 };
 
+export type TPlayerSort = {
+  sortAttr: string;
+  isAsc: boolean;
+};
 export interface IAppContext {
   loading: ILoading;
   sortPlayers: any;
@@ -66,6 +70,7 @@ export interface IAppContext {
   playerCount?: number;
   isPitchers: boolean;
   hasFreeAgents: boolean;
+  playerSort: TPlayerSort;
 }
 
 export type TFilter = { name: string; checked: boolean };

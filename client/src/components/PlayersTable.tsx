@@ -1,14 +1,20 @@
-import { playerColumnSort, tableHeaders } from "../constants";
-import { SHeader } from "../styles/styles";
+import {
+  playerColumnSort,
+  tableHeaders,
+  centeredColumns,
+  numberColumns,
+} from "../constants";
+import { SFlex, SHeader } from "../styles/styles";
 import { IPlayer } from "../types";
 import {
   STable,
   SCol,
-  centeredColumns,
-  numberColumns,
   SHead,
+  SSortArrow,
+  SSortCell,
 } from "../styles/tableStyles";
 import { getTableCell } from "../utilities/tableHelpers";
+import { useAppContext } from "../AppContext";
 
 const PlayersTable = ({
   players,
@@ -23,6 +29,7 @@ const PlayersTable = ({
   hasMore?: boolean;
   columns: string[];
 }) => {
+  const { playerSort } = useAppContext();
   if (players?.length === 0) {
     return <SHeader>loading</SHeader>;
   }
@@ -34,10 +41,14 @@ const PlayersTable = ({
           <tr>
             {columns.map((attributeKey) => {
               const isCentered = centeredColumns.includes(attributeKey);
+              const isSort = [
+                attributeKey,
+                playerColumnSort[attributeKey],
+              ].includes(playerSort.sortAttr);
               return (
                 <SHead
                   key={`header-${attributeKey}`}
-                  $isCentered={isCentered}
+                  $isSort={isSort}
                   onClick={() => {
                     if (!sort) {
                       return;
@@ -46,7 +57,18 @@ const PlayersTable = ({
                     sort(key);
                   }}
                 >
-                  {tableHeaders[attributeKey] ?? attributeKey}
+                  <SSortCell
+                    gap="3px"
+                    align="center"
+                    justify={isCentered ? "center" : "flex-start"}
+                  >
+                    {tableHeaders[attributeKey] ?? attributeKey}
+                    {isSort && (
+                      <SSortArrow>
+                        {playerSort.isAsc ? "\u25B2" : "\u25BC"}
+                      </SSortArrow>
+                    )}
+                  </SSortCell>
                 </SHead>
               );
             })}

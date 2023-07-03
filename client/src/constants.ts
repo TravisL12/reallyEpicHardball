@@ -70,13 +70,13 @@ export const PITCHER_ATTRIBUTES: string[] = [
   SKILLS.team,
   SKILLS.league,
   SKILLS.fullName,
-  SKILLS.throws,
-  SKILLS.age,
   SKILLS.pitcherRoleShort,
   SKILLS.velocity,
   SKILLS.junk,
   SKILLS.accuracy,
   SKILLS.arsenal,
+  SKILLS.throws,
+  SKILLS.age,
   SKILLS.playerChemistry,
   SKILLS.trait1,
   SKILLS.trait2,
@@ -127,3 +127,43 @@ export const tableHeaders: { [key: string]: string } = {
   [SKILLS.careerStart]: "strt",
   [SKILLS.salary]: "$",
 };
+
+export const centeredColumns: string[] = [
+  SKILLS.primaryPositionShort,
+  SKILLS.secondaryPositionShort,
+  SKILLS.power,
+  SKILLS.contact,
+  SKILLS.speed,
+  SKILLS.fielding,
+  SKILLS.arm,
+  SKILLS.bats,
+  SKILLS.throws,
+  SKILLS.age,
+  SKILLS.arsenal,
+  SKILLS.pitcherRoleShort,
+  SKILLS.velocity,
+  SKILLS.junk,
+  SKILLS.accuracy,
+  SKILLS.playerChemistry,
+  SKILLS.league,
+];
+
+export const imageColumns = {
+  [SKILLS.playerChemistry]: `${IMAGE_BASE_URL}/chemistry/player/`,
+  [SKILLS.trait1]: `${IMAGE_BASE_URL}/chemistry/trait/`,
+  [SKILLS.trait2]: `${IMAGE_BASE_URL}/chemistry/trait/`,
+  [SKILLS.league]: `${IMAGE_BASE_URL}/leagues/`,
+  [SKILLS.teamSlug]: `${IMAGE_BASE_URL}/teams/`,
+  playerImage: `${IMAGE_BASE_URL}/players/`,
+};
+
+export const numberColumns: string[] = [
+  SKILLS.power,
+  SKILLS.contact,
+  SKILLS.speed,
+  SKILLS.fielding,
+  SKILLS.arm,
+  SKILLS.velocity,
+  SKILLS.junk,
+  SKILLS.accuracy,
+];

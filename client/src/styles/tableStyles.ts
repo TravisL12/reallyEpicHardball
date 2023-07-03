@@ -6,47 +6,7 @@ import {
   tableOddRow,
   linkHoverColor,
 } from "./colors";
-import { IMAGE_BASE_URL, SKILLS } from "../constants";
-
-export const centeredColumns: string[] = [
-  SKILLS.primaryPositionShort,
-  SKILLS.secondaryPositionShort,
-  SKILLS.power,
-  SKILLS.contact,
-  SKILLS.speed,
-  SKILLS.fielding,
-  SKILLS.arm,
-  SKILLS.bats,
-  SKILLS.throws,
-  SKILLS.age,
-  SKILLS.arsenal,
-  SKILLS.pitcherRoleShort,
-  SKILLS.velocity,
-  SKILLS.junk,
-  SKILLS.accuracy,
-  SKILLS.playerChemistry,
-  SKILLS.league,
-];
-
-export const imageColumns = {
-  [SKILLS.playerChemistry]: `${IMAGE_BASE_URL}/chemistry/player/`,
-  [SKILLS.trait1]: `${IMAGE_BASE_URL}/chemistry/trait/`,
-  [SKILLS.trait2]: `${IMAGE_BASE_URL}/chemistry/trait/`,
-  [SKILLS.league]: `${IMAGE_BASE_URL}/leagues/`,
-  [SKILLS.teamSlug]: `${IMAGE_BASE_URL}/teams/`,
-  playerImage: `${IMAGE_BASE_URL}/players/`,
-};
-
-export const numberColumns: string[] = [
-  SKILLS.power,
-  SKILLS.contact,
-  SKILLS.speed,
-  SKILLS.fielding,
-  SKILLS.arm,
-  SKILLS.velocity,
-  SKILLS.junk,
-  SKILLS.accuracy,
-];
+import { SFlex } from "./styles";
 
 export const SSkillCell = styled.div`
   flex: 1;
@@ -96,13 +56,18 @@ export const STable = styled.table`
   }
 `;
 
-export const SHead = styled.th<{ $isCentered?: boolean; $isNumber?: boolean }>`
+export const SHead = styled.th<{
+  $isCentered?: boolean;
+  $isNumber?: boolean;
+  $isSort?: boolean;
+}>`
   z-index: 1;
   cursor: pointer;
   white-space: nowrap;
   padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 10px")};
   width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};
   text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
+  font-weight: ${({ $isSort }) => ($isSort ? 700 : "normal")};
   border-right: 2px solid ${mainBgColor};
   &:hover {
     color: ${linkHoverColor};
@@ -115,4 +80,14 @@ export const SCol = styled.td<{ $isCentered?: boolean; $isNumber?: boolean }>`
   width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};
   text-align: ${({ $isCentered }) => ($isCentered ? "center" : "left")};
   border-right: 2px solid ${mainBgColor};
+`;
+
+export const SSortCell = styled(SFlex)`
+  position: relative;
+`;
+
+export const SSortArrow = styled.div`
+  position: absolute;
+  right: -5px;
+  font-size: 11px;
 `;

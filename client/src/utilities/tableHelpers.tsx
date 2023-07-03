@@ -1,8 +1,7 @@
-import { PITCH_TYPE, SKILLS } from "../constants";
+import { PITCH_TYPE, SKILLS, imageColumns } from "../constants";
 import SkillCell from "../components/SkillCell";
 import { SFlex, SLink, SPitchCell } from "../styles/styles";
 import Image from "../components/Image";
-import { imageColumns } from "../styles/tableStyles";
 import { IPlayer } from "../types";
 
 export const getTableCell = (attribute: string, player: IPlayer) => {
@@ -14,7 +13,11 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
 
   switch (attribute) {
     case SKILLS.fullName:
-      return <SLink to={`/player/${player.localID}`}>{value}</SLink>;
+      return (
+        <div style={{ width: "130px" }}>
+          <SLink to={`/player/${player.localID}`}>{value}</SLink>
+        </div>
+      );
     case SKILLS.arsenal:
       return (
         <SFlex gap="5px" justify="center">
@@ -25,7 +28,7 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
       );
     case SKILLS.team:
       return (
-        <SFlex align="center" gap="4px">
+        <SFlex align="center" gap="4px" style={{ width: "160px" }}>
           <Image
             title={value}
             src={`${imageColumns[SKILLS.teamSlug]}${player.teamSlug}.png`}
@@ -46,7 +49,7 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
     case SKILLS.trait2:
     case SKILLS.trait1:
       return value?.chemistry && value?.type ? (
-        <SFlex align="center" gap="4px">
+        <SFlex align="center" gap="4px" style={{ width: "150px" }}>
           <Image
             title={value.chemistry as string}
             src={`${
