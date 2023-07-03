@@ -105,13 +105,14 @@ router.get("/players", async function (req, res, next) {
 
 router.get("/pitchers", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const { gender, throws, league, pitching } = filters;
+  const { gender, throws, league, pitching, hasFreeAgents } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
 
   const where = {
+    NOT: hasFreeAgents === "false" ? { team: null } : {},
     AND: [
       { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
       { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
