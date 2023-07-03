@@ -1,5 +1,7 @@
 export const BASE_URL = `http://${window.location.hostname}:5005`;
-export const IMAGE_AWS_URL = `https://smb4.s3.us-west-2.amazonaws.com`;
+const IMAGES_LOCAL = `${BASE_URL}/images`;
+const IMAGE_AWS_URL = `https://smb4.s3.us-west-2.amazonaws.com`;
+export const IMAGE_BASE_URL = IMAGES_LOCAL;
 
 export const SKILLS = {
   arsenal: "arsenal",

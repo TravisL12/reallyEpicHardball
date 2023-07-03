@@ -6,7 +6,7 @@ import {
   tableOddRow,
   linkHoverColor,
 } from "./colors";
-import { IMAGE_AWS_URL, SKILLS } from "../constants";
+import { IMAGE_BASE_URL, SKILLS } from "../constants";
 
 export const centeredColumns: string[] = [
   SKILLS.primaryPositionShort,
@@ -28,12 +28,12 @@ export const centeredColumns: string[] = [
 ];
 
 export const imageColumns = {
-  [SKILLS.playerChemistry]: `${IMAGE_AWS_URL}/chemistry/player/`,
-  [SKILLS.trait1]: `${IMAGE_AWS_URL}/chemistry/trait/`,
-  [SKILLS.trait2]: `${IMAGE_AWS_URL}/chemistry/trait/`,
-  [SKILLS.league]: `${IMAGE_AWS_URL}/leagues/`,
-  [SKILLS.teamSlug]: `${IMAGE_AWS_URL}/teams/`,
-  playerImage: `${IMAGE_AWS_URL}/players/`,
+  [SKILLS.playerChemistry]: `${IMAGE_BASE_URL}/chemistry/player/`,
+  [SKILLS.trait1]: `${IMAGE_BASE_URL}/chemistry/trait/`,
+  [SKILLS.trait2]: `${IMAGE_BASE_URL}/chemistry/trait/`,
+  [SKILLS.league]: `${IMAGE_BASE_URL}/leagues/`,
+  [SKILLS.teamSlug]: `${IMAGE_BASE_URL}/teams/`,
+  playerImage: `${IMAGE_BASE_URL}/players/`,
 };
 
 export const numberColumns: string[] = [
