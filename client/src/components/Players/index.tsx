@@ -19,7 +19,7 @@ const Players = () => {
   } = useAppContext();
   useEffect(() => {
     if (!isPitchers) {
-      fetchPlayers();
+      fetchPlayers(true);
     }
   }, [isPitchers]);
 

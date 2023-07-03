@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import PlayersTable from "./PlayersTable";
 import { useAppContext } from "../AppContext";
 import { SBodyContainer } from "../styles/styles";
+import { PLAYER_ATTRIBUTES } from "../constants";
 
 const Teams = () => {
   const { fetchAllTeams, fetchSingleTeam, team, allTeams } = useAppContext();
@@ -31,7 +32,9 @@ const Teams = () => {
             })}
           </ul>
         </div>
-        {team?.players && <PlayersTable players={team.players} />}
+        {team?.players && (
+          <PlayersTable columns={PLAYER_ATTRIBUTES} players={team.players} />
+        )}
       </div>
     </SBodyContainer>
   );
