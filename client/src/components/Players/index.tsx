@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { useAppContext } from "../../AppContext";
 import Filters from "../Filters";
 import { SBodyContainer } from "../../styles/styles";
+import { PLAYER_ATTRIBUTES } from "../../constants";
 
 const Players = () => {
   const {
@@ -14,10 +15,13 @@ const Players = () => {
     sortPlayers,
     hasMorePlayers,
     playerCount,
+    isPitchers,
   } = useAppContext();
   useEffect(() => {
-    fetchPlayers();
-  }, []);
+    if (!isPitchers) {
+      fetchPlayers();
+    }
+  }, [isPitchers]);
 
   const { ref } = useInView({
     threshold: 0.25,
@@ -37,6 +41,7 @@ const Players = () => {
           loadMoreRef={ref}
           hasMore={hasMorePlayers}
           sort={sortPlayers}
+          columns={PLAYER_ATTRIBUTES}
         />
       </SBodyContainer>
     </>

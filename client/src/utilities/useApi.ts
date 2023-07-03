@@ -6,7 +6,7 @@ import { BASE_URL } from "../constants";
 
 const PLAYER_SIZE = 100;
 
-export const useApi = (filters: TAllFilters) => {
+export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
   const [team, setTeam] = useState<ITeam | undefined>();
   const [allTeams, setAllTeams] = useState<ITeam[] | undefined>();
 
@@ -35,7 +35,14 @@ export const useApi = (filters: TAllFilters) => {
   }, [filters]);
 
   useEffect(() => {
-    fetchPlayers(true);
+    if (players.length === 0) {
+      return;
+    }
+    if (isPitchers) {
+      fetchPitchers(true);
+    } else {
+      fetchPlayers(true);
+    }
   }, [playerSort, JSON.stringify(apiFilters)]);
 
   const updateLoading = async (attr: string, cb: () => Promise<void>) => {

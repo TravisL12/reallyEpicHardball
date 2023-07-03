@@ -41,7 +41,7 @@ export const useFilters = () => {
     ALL_POSITIONS.map((name) => ({ name, checked: true }))
   );
   const [pitching, setPitching] = useState<TFilter[]>(
-    ALL_PITCHING.map((name) => ({ name, checked: false }))
+    ALL_PITCHING.map((name) => ({ name, checked: true }))
   );
   const [secondPosition, setSecondPosition] = useState<TFilter[]>(
     SECOND_POSITIONS.map((name) => ({ name, checked: true }))

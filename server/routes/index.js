@@ -2,9 +2,10 @@ const express = require("express");
 const { db } = require("../db");
 const router = express.Router();
 
-const { playerSelect } = require("./selectConstants");
+const { playerSelect, pitcherSelect } = require("./selectConstants");
 const {
   transformPlayer,
+  transformPitcher,
   REVERSE_GENDER,
   REVERSE_THROWS,
   REVERSE_BATS,
@@ -51,8 +52,7 @@ router.get("/player", async function (req, res, next) {
 
 router.get("/players", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const { gender, bats, throws, league, position, pitching, secondPosition } =
-    filters;
+  const { gender, bats, throws, league, position, secondPosition } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
@@ -72,9 +72,6 @@ router.get("/players", async function (req, res, next) {
           secondaryPosition: REVERSE_SECOND_POS[i],
         })),
       },
-      {
-        OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
-      },
     ],
   };
 
@@ -93,6 +90,44 @@ router.get("/players", async function (req, res, next) {
     orderBy,
   });
   const players = selectedPlayers.map(transformPlayer);
+  const hasMore = count._count > +take + +skip;
+  res.json({ players, count: count._count, hasMore });
+});
+
+router.get("/pitchers", async function (req, res, next) {
+  const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
+  const { gender, throws, league, pitching } = filters;
+
+  const direction = isAsc === "true" ? "asc" : "desc";
+  const orderBy =
+    sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
+
+  const where = {
+    AND: [
+      { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
+      { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
+      { OR: league?.map((i) => ({ league: i })) },
+      {
+        OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
+      },
+    ],
+  };
+
+  const count = await db.player.aggregate({
+    _count: true,
+    where,
+  });
+
+  const selectedPlayers = await db.player.findMany({
+    skip: +skip,
+    take: +take,
+    select: {
+      ...pitcherSelect,
+    },
+    where,
+    orderBy,
+  });
+  const players = selectedPlayers.map(transformPitcher);
   const hasMore = count._count > +take + +skip;
   res.json({ players, count: count._count, hasMore });
 });

@@ -61,6 +61,17 @@ export const PLAYER_ATTRIBUTES: string[] = [
   SKILLS.bats,
   SKILLS.throws,
   SKILLS.age,
+  SKILLS.playerChemistry,
+  SKILLS.trait1,
+  SKILLS.trait2,
+];
+
+export const PITCHER_ATTRIBUTES: string[] = [
+  SKILLS.team,
+  SKILLS.league,
+  SKILLS.fullName,
+  SKILLS.throws,
+  SKILLS.age,
   SKILLS.pitcherRoleShort,
   SKILLS.velocity,
   SKILLS.junk,

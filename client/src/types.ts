@@ -64,6 +64,7 @@ export interface IAppContext {
   setFilter?: (type: string, value: TFilter) => void;
   hasMorePlayers: boolean;
   playerCount?: number;
+  isPitchers: boolean;
 }
 
 export type TFilter = { name: string; checked: boolean };
