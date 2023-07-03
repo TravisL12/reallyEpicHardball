@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlowextrabold_italic';
+    src: url('Barlow-Extra Bold Italic-webfont.eot');
+    src: url('Barlow-Extra Bold Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Barlow-Extra Bold Italic-webfont.woff2') format('woff2'),
+         url('Barlow-Extra Bold Italic-webfont.woff') format('woff'),
+         url('Barlow-Extra Bold Italic-webfont.ttf') format('truetype'),
+         url('Barlow-Extra Bold Italic-webfont.svg#barlowextrabold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

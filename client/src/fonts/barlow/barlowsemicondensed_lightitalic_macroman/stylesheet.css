@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlow_semi_condensedLtIt';
+    src: url('BarlowSemiCondensed-LightItalic-webfont.eot');
+    src: url('BarlowSemiCondensed-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('BarlowSemiCondensed-LightItalic-webfont.woff2') format('woff2'),
+         url('BarlowSemiCondensed-LightItalic-webfont.woff') format('woff'),
+         url('BarlowSemiCondensed-LightItalic-webfont.ttf') format('truetype'),
+         url('BarlowSemiCondensed-LightItalic-webfont.svg#barlow_semi_condensedLtIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

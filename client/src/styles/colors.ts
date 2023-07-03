@@ -5,8 +5,9 @@ const documentBody = getComputedStyle(document.documentElement);
 export const mainBgColor = documentBody.getPropertyValue("--main-bg-color");
 export const tableOddRow = documentBody.getPropertyValue("--table-odd-row");
 export const tableEvenRow = documentBody.getPropertyValue("--table-even-row");
-export const linkHoverColor = "#3176ac";
+export const linkHoverColor = "lightgray";
 export const rowHoverColor = "hsl(231, 29%, 40%)";
+export const checkedLabel = "#931C12";
 
 // the ratings colors are a gradient from 0 to 100
 const colorRange = [

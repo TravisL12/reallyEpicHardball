@@ -1,6 +1,6 @@
-import { SKILLS } from "../constants";
+import { PITCH_TYPE, SKILLS } from "../constants";
 import SkillCell from "../components/SkillCell";
-import { SFlex, SLink } from "../styles/styles";
+import { SFlex, SLink, SPitchCell } from "../styles/styles";
 import Image from "../components/Image";
 import { imageColumns } from "../styles/tableStyles";
 import { IPlayer } from "../types";
@@ -15,6 +15,14 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
   switch (attribute) {
     case SKILLS.fullName:
       return <SLink to={`/player/${player.localID}`}>{value}</SLink>;
+    case SKILLS.arsenal:
+      return (
+        <SFlex gap="5px" justify="center">
+          {value.map((pitch: string) => (
+            <SPitchCell>{PITCH_TYPE[pitch].short}</SPitchCell>
+          ))}
+        </SFlex>
+      );
     case SKILLS.team:
       return (
         <SFlex align="center" gap="4px">

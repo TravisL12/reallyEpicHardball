@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlowextralight';
+    src: url('Barlow-ExtraLight-webfont.eot');
+    src: url('Barlow-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Barlow-ExtraLight-webfont.woff2') format('woff2'),
+         url('Barlow-ExtraLight-webfont.woff') format('woff'),
+         url('Barlow-ExtraLight-webfont.ttf') format('truetype'),
+         url('Barlow-ExtraLight-webfont.svg#barlowextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

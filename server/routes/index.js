@@ -2,8 +2,17 @@ const express = require("express");
 const { db } = require("../db");
 const router = express.Router();
 
-const { playerSelect } = require("./selectConstants");
-const { transformPlayer } = require("./helpers");
+const { playerSelect, pitcherSelect } = require("./selectConstants");
+const {
+  transformPlayer,
+  transformPitcher,
+  REVERSE_GENDER,
+  REVERSE_THROWS,
+  REVERSE_BATS,
+  REVERSE_PRIMARY_POS,
+  REVERSE_PITCHING,
+  REVERSE_SECOND_POS,
+} = require("./helpers");
 const { uniqBy } = require("lodash");
 
 router.get("/teams", async function (req, res, next) {
@@ -42,11 +51,34 @@ router.get("/player", async function (req, res, next) {
 });
 
 router.get("/players", async function (req, res, next) {
-  const { take, skip, sortAttr = "id", isAsc } = req.query;
+  const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
+  const { gender, bats, throws, league, position, secondPosition } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
+
+  const where = {
+    AND: [
+      { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
+      { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
+      { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
+      { OR: league?.map((i) => ({ league: i })) },
+      {
+        OR: position?.map((i) => ({ primaryPosition: REVERSE_PRIMARY_POS[i] })),
+      },
+      {
+        OR: secondPosition?.map((i) => ({
+          secondaryPosition: REVERSE_SECOND_POS[i],
+        })),
+      },
+    ],
+  };
+
+  const count = await db.player.aggregate({
+    _count: true,
+    where,
+  });
 
   const selectedPlayers = await db.player.findMany({
     skip: +skip,
@@ -54,10 +86,50 @@ router.get("/players", async function (req, res, next) {
     select: {
       ...playerSelect,
     },
+    where,
     orderBy,
   });
   const players = selectedPlayers.map(transformPlayer);
-  res.json({ players });
+  const hasMore = count._count > +take + +skip;
+  res.json({ players, count: count._count, hasMore });
+});
+
+router.get("/pitchers", async function (req, res, next) {
+  const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
+  const { gender, throws, league, pitching } = filters;
+
+  const direction = isAsc === "true" ? "asc" : "desc";
+  const orderBy =
+    sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
+
+  const where = {
+    AND: [
+      { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
+      { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
+      { OR: league?.map((i) => ({ league: i })) },
+      {
+        OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
+      },
+    ],
+  };
+
+  const count = await db.player.aggregate({
+    _count: true,
+    where,
+  });
+
+  const selectedPlayers = await db.player.findMany({
+    skip: +skip,
+    take: +take,
+    select: {
+      ...pitcherSelect,
+    },
+    where,
+    orderBy,
+  });
+  const players = selectedPlayers.map(transformPitcher);
+  const hasMore = count._count > +take + +skip;
+  res.json({ players, count: count._count, hasMore });
 });
 
 module.exports = router;

@@ -8,10 +8,23 @@
   box-sizing: border-box;
 }
 
+/* https://www.fontsquirrel.com/fonts/barlow?utm_source=fontsquirrel.com&utm_medium=matcherator_link&utm_campaign=barlow */
+@font-face {
+  font-family: "barlow";
+  src: url("./fonts/barlow/barlow_regular_macroman/Barlow-Regular-webfont.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "barlow-bold-italic";
+  src: url("./fonts/barlow/barlow_bolditalic_macroman/Barlow-BoldItalic-webfont.woff")
+    format("woff");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: "barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

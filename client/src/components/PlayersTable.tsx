@@ -1,8 +1,4 @@
-import {
-  PLAYER_ATTRIBUTES,
-  playerColumnSort,
-  tableHeaders,
-} from "../constants";
+import { playerColumnSort, tableHeaders } from "../constants";
 import { SHeader } from "../styles/styles";
 import { IPlayer } from "../types";
 import {
@@ -18,21 +14,25 @@ const PlayersTable = ({
   players,
   loadMoreRef,
   sort,
+  hasMore,
+  columns,
 }: {
   players?: IPlayer[];
   loadMoreRef?: (node?: Element | null) => void;
   sort?: (sortAttr: string) => void;
+  hasMore?: boolean;
+  columns: string[];
 }) => {
   if (players?.length === 0) {
     return <SHeader>loading</SHeader>;
   }
 
   return (
-    <div>
+    <>
       <STable>
         <thead>
           <tr>
-            {PLAYER_ATTRIBUTES.map((attributeKey) => {
+            {columns.map((attributeKey) => {
               const isCentered = centeredColumns.includes(attributeKey);
               return (
                 <SHead
@@ -56,7 +56,7 @@ const PlayersTable = ({
           {players?.map((player, idx) => {
             return (
               <tr key={`${idx}-${player.firstName}-${player.lastName}`}>
-                {PLAYER_ATTRIBUTES.map((attributeKey) => {
+                {columns.map((attributeKey) => {
                   const isCentered = centeredColumns.includes(attributeKey);
                   const isNumber = numberColumns.includes(attributeKey);
                   return (
@@ -74,12 +74,12 @@ const PlayersTable = ({
           })}
         </tbody>
       </STable>
-      {loadMoreRef && (
+      {hasMore && loadMoreRef && (
         <div ref={loadMoreRef}>
           <p>{`Loading more players`}</p>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

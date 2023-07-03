@@ -1,5 +1,7 @@
-export const BASE_URL = `http://${location.hostname}:5005`;
-export const IMAGE_AWS_URL = `https://smb4.s3.us-west-2.amazonaws.com`;
+export const BASE_URL = `http://${window.location.hostname}:5005`;
+const IMAGES_LOCAL = `${BASE_URL}/images`;
+const IMAGE_AWS_URL = `https://smb4.s3.us-west-2.amazonaws.com`;
+export const IMAGE_BASE_URL = IMAGES_LOCAL;
 
 export const SKILLS = {
   arsenal: "arsenal",
@@ -59,10 +61,22 @@ export const PLAYER_ATTRIBUTES: string[] = [
   SKILLS.bats,
   SKILLS.throws,
   SKILLS.age,
+  SKILLS.playerChemistry,
+  SKILLS.trait1,
+  SKILLS.trait2,
+];
+
+export const PITCHER_ATTRIBUTES: string[] = [
+  SKILLS.team,
+  SKILLS.league,
+  SKILLS.fullName,
+  SKILLS.throws,
+  SKILLS.age,
   SKILLS.pitcherRoleShort,
   SKILLS.velocity,
   SKILLS.junk,
   SKILLS.accuracy,
+  SKILLS.arsenal,
   SKILLS.playerChemistry,
   SKILLS.trait1,
   SKILLS.trait2,
@@ -76,7 +90,7 @@ export const playerColumnSort = {
   [SKILLS.pitcherRoleShort]: SKILLS.pitcherRole,
 };
 
-export const PITCH_TYPE = {
+export const PITCH_TYPE: { [key: string]: { short: string; full: string } } = {
   fourSeamFastball: { short: "4F", full: "4-seam fastball" },
   twoSeamFastball: { short: "2F", full: "2-seam fastball" },
   cutFastball: { short: "CF", full: "Cut fastball" },

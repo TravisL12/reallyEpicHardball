@@ -45,14 +45,26 @@ export interface ILoading {
   teams: boolean;
 }
 
+export type TAllFilters = {
+  [key: string]: TFilter[];
+};
+
 export interface IAppContext {
   loading: ILoading;
   sortPlayers: any;
   fetchPlayers: any;
+  fetchPitchers: any;
   fetchAllTeams: any;
   fetchSingleTeam: any;
   fetchSinglePlayer: any;
   players: IPlayer[];
   team?: ITeam;
   allTeams?: ITeam[];
+  filters?: TAllFilters;
+  setFilter?: (type: string, value: TFilter) => void;
+  hasMorePlayers: boolean;
+  playerCount?: number;
+  isPitchers: boolean;
 }
+
+export type TFilter = { name: string; checked: boolean };

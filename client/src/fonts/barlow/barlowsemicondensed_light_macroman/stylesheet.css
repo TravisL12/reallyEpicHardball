@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlow_semi_condensedlight';
+    src: url('barlowsemicondensed-light-webfont.eot');
+    src: url('barlowsemicondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('barlowsemicondensed-light-webfont.woff2') format('woff2'),
+         url('barlowsemicondensed-light-webfont.woff') format('woff'),
+         url('barlowsemicondensed-light-webfont.ttf') format('truetype'),
+         url('barlowsemicondensed-light-webfont.svg#barlow_semi_condensedlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

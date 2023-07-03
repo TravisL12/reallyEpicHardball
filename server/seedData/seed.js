@@ -45,6 +45,8 @@ const main = async () => {
       if (key === "teamName") {
         acc.team = player[key] ?? null;
         acc.teamSlug = player[key] ? snakeCase(player[key]) : null;
+      } else if (key === "bats") {
+        acc[key] = +player[key] ?? 0;
       } else if (key === "throws") {
         acc[key] = +player[key] ?? 0;
       } else if (key === "gender") {
@@ -55,7 +57,7 @@ const main = async () => {
         acc.traitChemistry2 = player[key] ?? null;
       } else if (key === "pitcherRole" && player.pitcherRole) {
         acc[key] = +player[key];
-        acc.primaryPosition = null;
+        acc.primaryPosition = 1;
       } else if (allow[key]) {
         acc[key] =
           player[key] && allow[key] === "string"

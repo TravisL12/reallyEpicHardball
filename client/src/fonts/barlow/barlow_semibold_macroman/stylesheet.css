@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlowsemibold';
+    src: url('Barlow-SemiBold-webfont.eot');
+    src: url('Barlow-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Barlow-SemiBold-webfont.woff2') format('woff2'),
+         url('Barlow-SemiBold-webfont.woff') format('woff'),
+         url('Barlow-SemiBold-webfont.ttf') format('truetype'),
+         url('Barlow-SemiBold-webfont.svg#barlowsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

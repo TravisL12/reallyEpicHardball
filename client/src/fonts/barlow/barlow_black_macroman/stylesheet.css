@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'barlowblack';
+    src: url('Barlow-Black-webfont.eot');
+    src: url('Barlow-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Barlow-Black-webfont.woff2') format('woff2'),
+         url('Barlow-Black-webfont.woff') format('woff'),
+         url('Barlow-Black-webfont.ttf') format('truetype'),
+         url('Barlow-Black-webfont.svg#barlowblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
