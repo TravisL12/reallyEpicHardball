@@ -81,6 +81,25 @@ export const useApi = (filters: TAllFilters) => {
     });
   };
 
+  const fetchPitchers = (shouldReset?: boolean) => {
+    updateLoading("players", async () => {
+      const { sortAttr, isAsc } = playerSort;
+      const { data } = await axios.get(`${BASE_URL}/pitchers`, {
+        params: {
+          skip: shouldReset ? 0 : PLAYER_SIZE * playersPage,
+          take: PLAYER_SIZE,
+          sortAttr,
+          isAsc,
+          ...apiFilters,
+        },
+      });
+      setPlayersPage(shouldReset ? 1 : playersPage + 1);
+      setHasMorePlayers(data.hasMore);
+      setPlayerCount(data.count);
+      setPlayers(shouldReset ? data.players : [...players, ...data.players]);
+    });
+  };
+
   const fetchAllTeams = () => {
     updateLoading("teams", async () => {
       const { data } = await axios(`${BASE_URL}/teams`);
@@ -100,6 +119,7 @@ export const useApi = (filters: TAllFilters) => {
   return {
     sortPlayers,
     fetchPlayers,
+    fetchPitchers,
     fetchAllTeams,
     fetchSingleTeam,
     fetchSinglePlayer,

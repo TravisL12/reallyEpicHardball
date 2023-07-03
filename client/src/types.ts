@@ -53,6 +53,7 @@ export interface IAppContext {
   loading: ILoading;
   sortPlayers: any;
   fetchPlayers: any;
+  fetchPitchers: any;
   fetchAllTeams: any;
   fetchSingleTeam: any;
   fetchSinglePlayer: any;

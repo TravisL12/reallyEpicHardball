@@ -11,6 +11,7 @@ const AppHeader = () => {
       <SFlex gap="20px" align="center">
         <SFlex gap="5px" style={{ marginLeft: "20px" }}>
           <HeaderLink to="/" text="Players" />
+          <HeaderLink to="/pitchers" text="Pitchers" />
           <HeaderLink to="/teams" text="Teams" />
         </SFlex>
       </SFlex>

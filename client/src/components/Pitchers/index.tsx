@@ -6,31 +6,31 @@ import { useAppContext } from "../../AppContext";
 import Filters from "../Filters";
 import { SBodyContainer } from "../../styles/styles";
 
-const Players = () => {
+const Pitchers = () => {
   const {
     loading,
-    fetchPlayers,
+    fetchPitchers,
     players,
     sortPlayers,
     hasMorePlayers,
     playerCount,
   } = useAppContext();
   useEffect(() => {
-    fetchPlayers();
+    fetchPitchers(true);
   }, []);
 
   const { ref } = useInView({
     threshold: 0.25,
     onChange: (inView) => {
       if (inView && players.length > 0 && !loading.players && hasMorePlayers) {
-        fetchPlayers();
+        fetchPitchers();
       }
     },
   });
 
   return (
     <>
-      <Filters count={playerCount} />
+      <Filters isPitcher={true} count={playerCount} />
       <SBodyContainer>
         <PlayersTable
           players={players}
@@ -43,4 +43,4 @@ const Players = () => {
   );
 };
 
-export default Players;
+export default Pitchers;

@@ -1,9 +1,9 @@
-import { SCheckbox } from "../../../styles/styles";
-import { imageColumns } from "../../../styles/tableStyles";
-import { TFilter } from "../../../types";
-import Image from "../../Image";
+import { SCheckbox } from "../../styles/styles";
+import { imageColumns } from "../../styles/tableStyles";
+import { TFilter } from "../../types";
+import Image from "../Image";
 
-const Checkbox = ({
+const FilterCheckbox = ({
   type,
   checked,
   onChange,
@@ -45,4 +45,4 @@ const Checkbox = ({
   );
 };
 
-export default Checkbox;
+export default FilterCheckbox;

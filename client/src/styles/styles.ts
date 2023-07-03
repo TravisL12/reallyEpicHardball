@@ -56,8 +56,9 @@ export const SBodyContainer = styled(SFlex)`
 export const SCheckbox = styled.div`
   label {
     display: block;
-    padding: 4px 10px;
+    padding: 4px 6px;
     background: gray;
+    min-width: 32px;
     cursor: pointer;
   }
 
@@ -104,4 +105,9 @@ export const SHeaderLink = styled(NavLink)`
     font-size: 28px;
     transform: skew(${skew}deg, 0);
   }
+`;
+
+export const SFilterPositionTitle = styled.h4`
+  width: 90px;
+  text-align: right;
 `;

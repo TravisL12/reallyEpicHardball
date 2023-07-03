@@ -6,15 +6,15 @@ const ALL_BATS = ["R", "L", "S"];
 const ALL_THROWS = ["R", "L"];
 const ALL_LEAGUE = ["superMega", "legends", "creators"];
 const ALL_PITCHING = ["SP", "SP/RP", "RP", "CP"];
-const ALL_POSITIONS = ["P", "C", "1B", "2B", "3B", "SS", "LF", "CF", "RF"];
+const ALL_POSITIONS = ["C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "P"];
 const SECOND_POSITIONS = [
-  ...ALL_POSITIONS,
+  ...ALL_POSITIONS.slice(0, -1), // remove "P"
   "IF",
   "OF",
   "1B/OF",
   "IF/OF",
   "None",
-].slice(1); // remove "P"
+];
 
 const changeItem = (cPrev: TFilter[], value: TFilter) => {
   const findName = cPrev.find((i) => i.name === value.name);

@@ -6,6 +6,7 @@ import Players from "./Players";
 import AppHeader from "./AppHeader";
 import { AppContextProvider } from "../AppContext";
 import PlayerInfo from "./PlayerInfo";
+import Pitchers from "./Pitchers";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/player/:localId" element={<PlayerInfo />} />
           <Route path="/teams" element={<Teams />} />
           <Route path="/" element={<Players />} />
+          <Route path="/pitchers" element={<Pitchers />} />
         </Routes>
       </SAppContainer>
     </AppContextProvider>
