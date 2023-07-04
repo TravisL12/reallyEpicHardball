@@ -12,7 +12,7 @@ const AppContext = createContext<IAppContext>({
   fetchAllTeams: undefined,
   fetchSingleTeam: undefined,
   fetchSinglePlayer: undefined,
-  players: [],
+  players: undefined,
   team: undefined,
   allTeams: undefined,
   filters: undefined,
@@ -30,7 +30,7 @@ const AppContext = createContext<IAppContext>({
 });
 
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const isPitchers = !!useMatch("pitchers");
+  const isPitchers = !!useMatch("/pitchers*");
   const { filters, setFilter, hasFreeAgents, setAllFilters } = useFilters();
   const apiData = useApi(filters, isPitchers, hasFreeAgents);
 

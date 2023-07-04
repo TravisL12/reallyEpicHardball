@@ -61,7 +61,7 @@ export interface IAppContext {
   fetchAllTeams: any;
   fetchSingleTeam: any;
   fetchSinglePlayer: any;
-  players: IPlayer[];
+  players?: IPlayer[];
   team?: ITeam;
   allTeams?: ITeam[];
   filters?: TAllFilters;

@@ -15,6 +15,7 @@ import {
 import { getTableCell } from "../utilities/tableHelpers";
 import { useAppContext } from "../AppContext";
 import BaseballLoader from "./BaseballLoader";
+import { SFlex } from "../styles/styles";
 
 const PlayersTable = ({
   players,
@@ -29,13 +30,13 @@ const PlayersTable = ({
   hasMore?: boolean;
   columns: string[];
 }) => {
-  const { playerSort } = useAppContext();
+  const { playerSort, isPitchers } = useAppContext();
   if (!players) {
     return <BaseballLoader />;
   }
 
   return (
-    <>
+    <SFlex direction="column" style={{ width: "100%" }}>
       <STable>
         <thead>
           <tr>
@@ -88,7 +89,7 @@ const PlayersTable = ({
                         $isCentered={isCentered}
                         $isNumber={isNumber}
                       >
-                        {getTableCell(attributeKey, player)}
+                        {getTableCell(attributeKey, player, isPitchers)}
                       </SCol>
                     );
                   })}
@@ -109,7 +110,7 @@ const PlayersTable = ({
           <p>{`Loading more players`}</p>
         </div>
       )}
-    </>
+    </SFlex>
   );
 };
 

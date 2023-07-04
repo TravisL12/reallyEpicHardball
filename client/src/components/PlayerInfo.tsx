@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import { IPlayer } from "../types";
 import Image from "./Image";
 import { SKILLS, imageColumns } from "../constants";
-import { SFlex } from "../styles/styles";
+import { SFlex, SLink } from "../styles/styles";
 
 const PlayerInfo = () => {
   const { localId } = useParams();
-  const { fetchSinglePlayer } = useAppContext();
+  const { fetchSinglePlayer, isPitchers } = useAppContext();
 
   const [player, setPlayer] = useState<IPlayer | undefined>();
 
@@ -27,7 +27,10 @@ const PlayerInfo = () => {
 
   return (
     <div style={{ width: "100%" }}>
-      I am {player.fullName} of the {player.team}
+      <SLink to={isPitchers ? "/pitchers" : "/"}>Close</SLink>
+      <h3>
+        I am {player.fullName} of the {player.team}
+      </h3>
       <SFlex justify="space-around">
         {player.team ? (
           <>

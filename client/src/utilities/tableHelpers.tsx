@@ -4,7 +4,11 @@ import { SFlex, SLink, SPitchCell } from "../styles/styles";
 import Image from "../components/Image";
 import { IPlayer } from "../types";
 
-export const getTableCell = (attribute: string, player: IPlayer) => {
+export const getTableCell = (
+  attribute: string,
+  player: IPlayer,
+  isPitchers: boolean
+) => {
   // @ts-ignore
   const value = player[attribute];
   if ([undefined, null].includes(value)) {
@@ -13,9 +17,10 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
 
   switch (attribute) {
     case SKILLS.fullName:
+      const link = isPitchers ? "/pitchers/player" : "/player";
       return (
         <div style={{ width: "130px" }}>
-          <SLink to={`/player/${player.localID}`}>{value}</SLink>
+          <SLink to={`${link}/${player.localID}`}>{value}</SLink>
         </div>
       );
     case SKILLS.arsenal:

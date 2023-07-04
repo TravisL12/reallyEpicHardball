@@ -48,7 +48,6 @@ export const SAppContainer = styled(SFlex)`
 
 export const SBodyContainer = styled(SFlex)`
   width: 100%;
-  flex-direction: column;
   flex: 1;
   overflow: auto;
 `;

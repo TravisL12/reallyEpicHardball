@@ -6,6 +6,7 @@ import { useAppContext } from "../../AppContext";
 import Filters from "../Filters";
 import { SBodyContainer } from "../../styles/styles";
 import { PITCHER_ATTRIBUTES } from "../../constants";
+import { Outlet } from "react-router-dom";
 
 const Pitchers = () => {
   const {
@@ -26,7 +27,7 @@ const Pitchers = () => {
   const { ref } = useInView({
     threshold: 0.25,
     onChange: (inView) => {
-      if (inView && players.length > 0 && !loading.players && hasMorePlayers) {
+      if (inView && !!players && !loading.players && hasMorePlayers) {
         fetchPitchers();
       }
     },
@@ -35,7 +36,8 @@ const Pitchers = () => {
   return (
     <>
       <Filters isPitcher={true} count={playerCount} />
-      <SBodyContainer>
+      <SBodyContainer direction="row">
+        <Outlet />
         <PlayersTable
           players={players}
           loadMoreRef={ref}

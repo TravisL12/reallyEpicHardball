@@ -14,10 +14,13 @@ const App = () => {
       <SAppContainer direction="column">
         <AppHeader />
         <Routes>
-          <Route path="/player/:localId" element={<PlayerInfo />} />
           <Route path="/teams" element={<Teams />} />
-          <Route path="/" element={<Players />} />
-          <Route path="/pitchers" element={<Pitchers />} />
+          <Route path="/" element={<Players />}>
+            <Route path="player/:localId" element={<PlayerInfo />} />
+          </Route>
+          <Route path="/pitchers" element={<Pitchers />}>
+            <Route path="player/:localId" element={<PlayerInfo />} />
+          </Route>
         </Routes>
       </SAppContainer>
     </AppContextProvider>
