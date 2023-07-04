@@ -1,4 +1,4 @@
-import { SFlex, SImage } from "../styles/styles";
+import { SImage } from "../styles/styles";
 
 const Image = ({
   src,

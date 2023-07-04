@@ -22,7 +22,7 @@ export const getTableCell = (attribute: string, player: IPlayer) => {
       return (
         <SFlex gap="5px" justify="center">
           {value.map((pitch: string) => (
-            <SPitchCell>{PITCH_TYPE[pitch].short}</SPitchCell>
+            <SPitchCell key={pitch}>{PITCH_TYPE[pitch].short}</SPitchCell>
           ))}
         </SFlex>
       );

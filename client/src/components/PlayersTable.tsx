@@ -4,7 +4,6 @@ import {
   centeredColumns,
   numberColumns,
 } from "../constants";
-import { SFlex, SHeader } from "../styles/styles";
 import { IPlayer } from "../types";
 import {
   STable,
@@ -15,6 +14,7 @@ import {
 } from "../styles/tableStyles";
 import { getTableCell } from "../utilities/tableHelpers";
 import { useAppContext } from "../AppContext";
+import BaseballLoader from "./BaseballLoader";
 
 const PlayersTable = ({
   players,
@@ -31,7 +31,7 @@ const PlayersTable = ({
 }) => {
   const { playerSort } = useAppContext();
   if (players?.length === 0) {
-    return <SHeader>loading</SHeader>;
+    return <BaseballLoader />;
   }
 
   return (
