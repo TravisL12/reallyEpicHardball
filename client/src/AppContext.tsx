@@ -30,7 +30,7 @@ const AppContext = createContext<IAppContext>({
 });
 
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const isPitchers = !!useMatch("/pitchers*");
+  const isPitchers = !!useMatch("/pitchers/*");
   const { filters, setFilter, hasFreeAgents, setAllFilters } = useFilters();
   const apiData = useApi(filters, isPitchers, hasFreeAgents);
 
