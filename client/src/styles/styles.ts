@@ -15,6 +15,24 @@ export const SImage = styled.img`
   max-height: 100%;
 `;
 
+export const SBox = styled.div<{
+  width?: string;
+  height?: string;
+  margin?: string;
+  mt?: string;
+  mb?: string;
+  mr?: string;
+  ml?: string;
+}>`
+  width: ${({ width }) => width ?? undefined};
+  height: ${({ height }) => height ?? undefined};
+  margin: ${({ margin }) => margin ?? undefined};
+  margin-top: ${({ mt }) => mt ?? undefined};
+  margin-bottom: ${({ mb }) => mb ?? undefined};
+  margin-right: ${({ mr }) => mr ?? undefined};
+  margin-left: ${({ ml }) => ml ?? undefined};
+`;
+
 export const SFlex = styled.div<{
   align?: string;
   direction?: string;

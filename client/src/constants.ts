@@ -1,7 +1,7 @@
 export const BASE_URL = `http://${window.location.hostname}:5005`;
 const IMAGES_LOCAL = `${BASE_URL}/images`;
 const IMAGE_AWS_URL = `https://smb4.s3.us-west-2.amazonaws.com`;
-export const IMAGE_BASE_URL = IMAGE_AWS_URL;
+export const IMAGE_BASE_URL = IMAGES_LOCAL;
 
 export const SKILLS = {
   arsenal: "arsenal",
@@ -150,6 +150,7 @@ export const centeredColumns: string[] = [
 
 export const imageColumns = {
   [SKILLS.playerChemistry]: `${IMAGE_BASE_URL}/chemistry/player/`,
+  trait: `${IMAGE_BASE_URL}/chemistry/trait/`,
   [SKILLS.trait1]: `${IMAGE_BASE_URL}/chemistry/trait/`,
   [SKILLS.trait2]: `${IMAGE_BASE_URL}/chemistry/trait/`,
   [SKILLS.league]: `${IMAGE_BASE_URL}/leagues/`,

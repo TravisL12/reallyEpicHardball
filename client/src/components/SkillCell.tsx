@@ -4,7 +4,7 @@ import {
   SSkillCell,
   SSkillCellInner,
   SSkillCellText,
-} from "../styles/tableStyles";
+} from "../styles/playerTable.styles";
 
 const SkillCell = ({ value }: { value: number }) => {
   const color = getSkillColor(value);

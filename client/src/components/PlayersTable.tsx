@@ -12,11 +12,10 @@ import {
   SSortArrow,
   SSortCell,
   SPlayerTableContainer,
-} from "../styles/tableStyles";
+} from "../styles/playerTable.styles";
 import { getTableCell } from "../utilities/tableHelpers";
 import { useAppContext } from "../AppContext";
 import BaseballLoader from "./BaseballLoader";
-import { SFlex } from "../styles/styles";
 import { useParams } from "react-router-dom";
 
 const PlayersTable = ({
