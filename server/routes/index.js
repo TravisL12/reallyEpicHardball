@@ -12,6 +12,7 @@ const {
   REVERSE_PRIMARY_POS,
   REVERSE_PITCHING,
   REVERSE_SECOND_POS,
+  REVERSE_PITCHES,
 } = require("./helpers");
 const { uniqBy } = require("lodash");
 
@@ -105,7 +106,7 @@ router.get("/players", async function (req, res, next) {
 
 router.get("/pitchers", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const { gender, throws, league, pitching, hasFreeAgents } = filters;
+  const { gender, throws, league, pitching, pitches, hasFreeAgents } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
@@ -119,6 +120,9 @@ router.get("/pitchers", async function (req, res, next) {
       { OR: league?.map((i) => ({ league: i })) },
       {
         OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
+      },
+      {
+        AND: pitches?.map((i) => ({ [REVERSE_PITCHES[i]]: 1 })),
       },
     ],
   };

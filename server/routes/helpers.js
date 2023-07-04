@@ -111,7 +111,16 @@ const BATS = {
 const REVERSE_GENDER = reverseMap(GENDER);
 const REVERSE_THROWS = reverseMap(THROWS);
 const REVERSE_BATS = reverseMap(BATS);
-
+const REVERSE_PITCHES = {
+  "4F": "fourSeamFastball",
+  "2F": "twoSeamFastball",
+  CF: "cutFastball",
+  CB: "curveball",
+  SL: "slider",
+  SB: "screwball",
+  CH: "changeup",
+  FK: "forkball",
+};
 const sharedTransform = (player) => {
   const {
     firstName,
@@ -186,4 +195,5 @@ module.exports = {
   REVERSE_PRIMARY_POS,
   REVERSE_PITCHING,
   REVERSE_SECOND_POS,
+  REVERSE_PITCHES,
 };

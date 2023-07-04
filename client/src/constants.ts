@@ -167,3 +167,31 @@ export const numberColumns: string[] = [
   SKILLS.junk,
   SKILLS.accuracy,
 ];
+
+export const ALL_GENDER = ["M", "F"];
+export const ALL_BATS = ["R", "L", "S"];
+export const ALL_THROWS = ["R", "L"];
+export const ALL_LEAGUE = ["superMega", "legends", "creators"];
+export const ALL_PITCHING = ["SP", "SP/RP", "RP", "CP"];
+export const ALL_POSITIONS = [
+  "C",
+  "1B",
+  "2B",
+  "3B",
+  "SS",
+  "LF",
+  "CF",
+  "RF",
+  "P",
+];
+export const SECOND_POSITIONS = [
+  ...ALL_POSITIONS.slice(0, -1), // remove "P"
+  "IF",
+  "OF",
+  "1B/OF",
+  "IF/OF",
+  "None",
+];
+export const ALL_PITCHES = Object.keys(PITCH_TYPE).map((pitchKey) => {
+  return PITCH_TYPE[pitchKey].short;
+});

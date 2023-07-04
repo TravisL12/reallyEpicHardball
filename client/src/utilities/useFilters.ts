@@ -1,20 +1,15 @@
 import { useState } from "react";
 import { TFilter } from "../types";
-
-const ALL_GENDER = ["M", "F"];
-const ALL_BATS = ["R", "L", "S"];
-const ALL_THROWS = ["R", "L"];
-const ALL_LEAGUE = ["superMega", "legends", "creators"];
-const ALL_PITCHING = ["SP", "SP/RP", "RP", "CP"];
-const ALL_POSITIONS = ["C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "P"];
-const SECOND_POSITIONS = [
-  ...ALL_POSITIONS.slice(0, -1), // remove "P"
-  "IF",
-  "OF",
-  "1B/OF",
-  "IF/OF",
-  "None",
-];
+import {
+  ALL_GENDER,
+  ALL_BATS,
+  ALL_THROWS,
+  ALL_LEAGUE,
+  ALL_PITCHING,
+  ALL_POSITIONS,
+  ALL_PITCHES,
+  SECOND_POSITIONS,
+} from "../constants";
 
 const changeItem = (cPrev: TFilter[], value: TFilter) => {
   const findName = cPrev.find((i) => i.name === value.name);
@@ -47,6 +42,9 @@ export const useFilters = () => {
   const [secondPosition, setSecondPosition] = useState<TFilter[]>(
     SECOND_POSITIONS.map((name) => ({ name, checked: true }))
   );
+  const [pitches, setPitches] = useState<TFilter[]>(
+    ALL_PITCHES.map((name) => ({ name, checked: false }))
+  );
 
   const setFilter = (type: string, value: TFilter) => {
     if (type === "gender") {
@@ -70,6 +68,9 @@ export const useFilters = () => {
     if (type === "secondPosition") {
       setSecondPosition(changeItem([...secondPosition], value));
     }
+    if (type === "pitches") {
+      setPitches(changeItem([...pitches], value));
+    }
     if (type === "freeAgents") {
       setHasFreeAgents(value.checked);
     }
@@ -84,6 +85,7 @@ export const useFilters = () => {
       position,
       pitching,
       secondPosition,
+      pitches,
     },
     hasFreeAgents,
     setFilter,

@@ -60,6 +60,7 @@ export const SCheckbox = styled.div`
     background: gray;
     min-width: 32px;
     cursor: pointer;
+    box-shadow: inset 0 0 0px 1px white;
   }
 
   input[type="checkbox"] {
@@ -68,7 +69,6 @@ export const SCheckbox = styled.div`
 
   input[type="checkbox"]:checked + label {
     background: ${checkedLabel};
-    box-shadow: inset 0 0 0px 1px white;
   }
 `;
 
@@ -107,8 +107,8 @@ export const SHeaderLink = styled(NavLink)`
   }
 `;
 
-export const SFilterPositionTitle = styled.h4`
-  width: 90px;
+export const SFilterPositionTitle = styled.h4<{ width?: string }>`
+  width: ${({ width }) => width ?? "90px"};
   text-align: right;
 `;
 
