@@ -46,6 +46,25 @@ export const useFilters = () => {
     ALL_PITCHES.map((name) => ({ name, checked: false }))
   );
 
+  const setAllFilters = (type: string, isOn: boolean) => {
+    if (type === "position") {
+      const values = position.map((item) => ({ ...item, checked: isOn }));
+      setPosition(values);
+    }
+    if (type === "pitching") {
+      const values = pitching.map((item) => ({ ...item, checked: isOn }));
+      setPitching(values);
+    }
+    if (type === "secondPosition") {
+      const values = secondPosition.map((item) => ({ ...item, checked: isOn }));
+      setSecondPosition(values);
+    }
+    if (type === "pitches") {
+      const values = pitches.map((item) => ({ ...item, checked: isOn }));
+      setPitches(values);
+    }
+  };
+
   const setFilter = (type: string, value: TFilter) => {
     if (type === "gender") {
       setGender(changeItem([...gender], value));
@@ -89,5 +108,6 @@ export const useFilters = () => {
     },
     hasFreeAgents,
     setFilter,
+    setAllFilters,
   };
 };

@@ -118,3 +118,13 @@ export const SPitchCell = styled.div`
   padding: 1px 2px;
   border: 1px solid white;
 `;
+
+export const SFilterAllNone = styled(SFlex)`
+  font-size: 14px;
+  width: 100%;
+
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`;
