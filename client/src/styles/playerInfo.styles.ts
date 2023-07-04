@@ -25,3 +25,7 @@ export const SInfo = styled(SFlex)`
 export const SAbilities = styled(SFlex)`
   padding: 20px;
 `;
+
+export const STraits = styled(SFlex)`
+  padding: 0 20px 20px;
+`;

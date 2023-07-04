@@ -10,6 +10,7 @@ import {
   SAttrContainer,
   SInfo,
   SPlayerInfoContainer,
+  STraits,
 } from "../styles/playerInfo.styles";
 import SkillCell from "./SkillCell";
 import BaseballLoader from "./BaseballLoader";
@@ -99,10 +100,14 @@ const PlayerInfo = () => {
             </SAbilities>
           )}
         </SFlex>
-        <SBox>
-          <SFlex>
+        <STraits direction="column">
+          <SFlex
+            align="center"
+            gap="8px"
+            style={{ paddingLeft: "40px", width: "100%" }}
+          >
             <span>CHEMISTRY</span>
-            <SFlex>
+            <SFlex align="center" gap="4px">
               <Image
                 title={player.playerChemistry}
                 src={`${
@@ -113,23 +118,28 @@ const PlayerInfo = () => {
               <p>{player.playerChemistry}</p>
             </SFlex>
           </SFlex>
-          {[player.trait1, player.trait2].map((trait) => {
-            if (!trait) {
-              return null;
-            }
-            const { type, chemistry } = trait;
-            return (
-              <SFlex align="center" gap="4px" style={{ width: "150px" }}>
-                <Image
-                  title={chemistry}
-                  src={`${imageColumns.trait}${chemistry.toLowerCase()}.png`}
-                  style={{ height: "30px", width: "20px" }}
-                />
-                <div>{type}</div>
-              </SFlex>
-            );
-          })}
-        </SBox>
+          <SFlex
+            direction="column"
+            style={{ paddingLeft: "40px", width: "100%" }}
+          >
+            {[player.trait1, player.trait2].map((trait) => {
+              if (!trait?.type) {
+                return null;
+              }
+              const { type, chemistry } = trait;
+              return (
+                <SFlex align="center" gap="4px">
+                  <Image
+                    title={chemistry}
+                    src={`${imageColumns.trait}${chemistry.toLowerCase()}.png`}
+                    style={{ height: "30px", width: "20px" }}
+                  />
+                  <div>{type}</div>
+                </SFlex>
+              );
+            })}
+          </SFlex>
+        </STraits>
       </SAttrContainer>
     </SPlayerInfoContainer>
   );
