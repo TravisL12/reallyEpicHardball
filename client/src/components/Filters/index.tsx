@@ -5,6 +5,7 @@ import {
   SFlex,
 } from "../../styles/styles";
 import Checkbox from "./Checkbox";
+import FilterCheckbox from "./FilterCheckbox";
 
 const Filters = ({
   isPitcher,
@@ -18,19 +19,14 @@ const Filters = ({
   return (
     <SFlex justify="space-between" align="center" style={{ width: "100%" }}>
       <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
-        <SFlex align="center" gap="4px">
-          <h4>League</h4>
-          {filters?.league.map(({ name, checked }) => (
-            <Checkbox
-              key={`league-${name}`}
-              checked={checked}
-              onChange={setFilter!}
-              type="league"
-              isImg={true}
-              value={name}
-            />
-          ))}
-        </SFlex>
+        <FilterCheckbox
+          title="League"
+          titleWidth="50px"
+          type="league"
+          isImgType={true}
+          setFilter={setFilter}
+          filterItem={filters?.league}
+        />
         <SFlex direction="column" gap="5px">
           <SFlex align="center" gap="4px">
             <h4>Free Agents</h4>
@@ -41,175 +37,68 @@ const Filters = ({
               value="On"
             />
           </SFlex>
-          <SFlex align="center" gap="4px">
-            <h4>Gender</h4>
-            {filters?.gender.map(({ name, checked }) => (
-              <Checkbox
-                key={`gender-${name}`}
-                checked={checked}
-                onChange={setFilter!}
-                type="gender"
-                value={name}
-              />
-            ))}
-          </SFlex>
+          <FilterCheckbox
+            title="Gender"
+            titleWidth="50px"
+            type="gender"
+            setFilter={setFilter}
+            filterItem={filters?.gender}
+          />
         </SFlex>
         <SFlex direction="column" gap="5px">
           {!isPitcher && (
-            <SFlex align="center" gap="4px">
-              <SFilterPositionTitle width="50px">Bats</SFilterPositionTitle>
-              {filters?.bats.map(({ name, checked }) => (
-                <Checkbox
-                  key={`bats-${name}`}
-                  checked={checked}
-                  onChange={setFilter!}
-                  type="bats"
-                  value={name}
-                />
-              ))}
-            </SFlex>
+            <FilterCheckbox
+              title="Bats"
+              titleWidth="50px"
+              type="bats"
+              setFilter={setFilter}
+              filterItem={filters?.bats}
+            />
           )}
-          <SFlex align="center" gap="4px">
-            <SFilterPositionTitle width="50px">Throws</SFilterPositionTitle>
-            {filters?.throws.map(({ name, checked }) => (
-              <Checkbox
-                key={`throws-${name}`}
-                checked={checked}
-                onChange={setFilter!}
-                type="throws"
-                value={name}
-              />
-            ))}
-          </SFlex>
+          <FilterCheckbox
+            title="Throws"
+            titleWidth="50px"
+            type="throws"
+            setFilter={setFilter}
+            filterItem={filters?.throws}
+          />
         </SFlex>
         <SFlex direction="column" gap="5px">
           {isPitcher ? (
             <>
-              <SFlex align="center" gap="4px">
-                <SFlex direction="column">
-                  <SFilterPositionTitle width="55px">Role</SFilterPositionTitle>
-                  <SFilterAllNone gap="5px" justify="flex-end">
-                    <span
-                      onClick={() => {
-                        setAllFilters("pitching", true);
-                      }}
-                    >
-                      All
-                    </span>
-                    <span
-                      onClick={() => {
-                        setAllFilters("pitching", false);
-                      }}
-                    >
-                      None
-                    </span>
-                  </SFilterAllNone>
-                </SFlex>
-                {filters?.pitching.map(({ name, checked }) => (
-                  <Checkbox
-                    key={`pitching-${name}`}
-                    checked={checked}
-                    onChange={setFilter!}
-                    type="pitching"
-                    value={name}
-                  />
-                ))}
-              </SFlex>
-              <SFlex align="center" gap="4px">
-                <SFlex direction="column">
-                  <SFilterPositionTitle width="55px">
-                    Pitches
-                  </SFilterPositionTitle>
-                  <SFilterAllNone gap="5px" justify="flex-end">
-                    <span
-                      onClick={() => {
-                        setAllFilters("pitches", true);
-                      }}
-                    >
-                      All
-                    </span>
-                    <span
-                      onClick={() => {
-                        setAllFilters("pitches", false);
-                      }}
-                    >
-                      None
-                    </span>
-                  </SFilterAllNone>
-                </SFlex>
-                {filters?.pitches.map(({ name, checked }) => (
-                  <Checkbox
-                    key={`pitches-${name}`}
-                    checked={checked}
-                    onChange={setFilter!}
-                    type="pitches"
-                    value={name}
-                  />
-                ))}
-              </SFlex>
+              <FilterCheckbox
+                title="Role"
+                titleWidth="55px"
+                type="pitching"
+                setFilter={setFilter}
+                setAllFilters={setAllFilters}
+                filterItem={filters?.pitching}
+              />
+              <FilterCheckbox
+                title="Pitches"
+                titleWidth="55px"
+                type="pitches"
+                setFilter={setFilter}
+                setAllFilters={setAllFilters}
+                filterItem={filters?.pitches}
+              />
             </>
           ) : (
             <>
-              <SFlex align="center" gap="4px">
-                <SFlex direction="column">
-                  <SFilterPositionTitle>Position</SFilterPositionTitle>
-                  <SFilterAllNone gap="5px" justify="flex-end">
-                    <span
-                      onClick={() => {
-                        setAllFilters("position", true);
-                      }}
-                    >
-                      All
-                    </span>
-                    <span
-                      onClick={() => {
-                        setAllFilters("position", false);
-                      }}
-                    >
-                      None
-                    </span>
-                  </SFilterAllNone>
-                </SFlex>
-                {filters?.position.map(({ name, checked }) => (
-                  <Checkbox
-                    key={`position-${name}`}
-                    checked={checked}
-                    onChange={setFilter!}
-                    type="position"
-                    value={name}
-                  />
-                ))}
-              </SFlex>
-              <SFlex align="center" gap="4px">
-                <SFlex direction="column">
-                  <SFilterPositionTitle>2nd Position</SFilterPositionTitle>
-                  <SFilterAllNone gap="5px" justify="flex-end">
-                    <span
-                      onClick={() => {
-                        setAllFilters("secondPosition", true);
-                      }}
-                    >
-                      All
-                    </span>
-                    <span
-                      onClick={() => {
-                        setAllFilters("secondPosition", false);
-                      }}
-                    >
-                      None
-                    </span>
-                  </SFilterAllNone>
-                </SFlex>
-                {filters?.secondPosition.map(({ name, checked }) => (
-                  <Checkbox
-                    key={`secondPosition-${name}`}
-                    checked={checked}
-                    onChange={setFilter!}
-                    type="secondPosition"
-                    value={name}
-                  />
-                ))}
-              </SFlex>
+              <FilterCheckbox
+                title="Position"
+                type="position"
+                setFilter={setFilter}
+                setAllFilters={setAllFilters}
+                filterItem={filters?.position}
+              />
+              <FilterCheckbox
+                title="2nd Position"
+                type="secondPosition"
+                setFilter={setFilter}
+                setAllFilters={setAllFilters}
+                filterItem={filters?.secondPosition}
+              />
             </>
           )}
         </SFlex>

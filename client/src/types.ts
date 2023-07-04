@@ -65,7 +65,7 @@ export interface IAppContext {
   team?: ITeam;
   allTeams?: ITeam[];
   filters?: TAllFilters;
-  setFilter?: (type: string, value: TFilter) => void;
+  setFilter: (type: string, value: TFilter) => void;
   setAllFilters: (type: string, isOn: boolean) => void;
   hasMorePlayers: boolean;
   playerCount?: number;

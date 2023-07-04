@@ -16,7 +16,7 @@ export const useApi = (
 
   const [hasMorePlayers, setHasMorePlayers] = useState<boolean>(true);
   const [playerCount, setPlayerCount] = useState<number | undefined>();
-  const [players, setPlayers] = useState<IPlayer[]>([]);
+  const [players, setPlayers] = useState<IPlayer[] | undefined>(undefined);
   const [playerSort, setPlayerSort] = useState<TPlayerSort>({
     sortAttr: "team",
     isAsc: true,
@@ -42,7 +42,7 @@ export const useApi = (
   }, [filters, hasFreeAgents]);
 
   useEffect(() => {
-    if (players.length === 0) {
+    if (!players) {
       return;
     }
     if (isPitchers) {
@@ -65,7 +65,7 @@ export const useApi = (
   };
 
   const fetchSinglePlayer = async (localID: number) => {
-    const findPlayer = players.find((player) => +player.localID === +localID);
+    const findPlayer = players?.find((player) => +player.localID === +localID);
     if (findPlayer) {
       return Promise.resolve(findPlayer);
     }
@@ -91,7 +91,9 @@ export const useApi = (
       setPlayersPage(shouldReset ? 1 : playersPage + 1);
       setHasMorePlayers(data.hasMore);
       setPlayerCount(data.count);
-      setPlayers(shouldReset ? data.players : [...players, ...data.players]);
+      setPlayers(
+        shouldReset ? data.players : [...(players || []), ...data.players]
+      );
     });
   };
 
@@ -110,7 +112,9 @@ export const useApi = (
       setPlayersPage(shouldReset ? 1 : playersPage + 1);
       setHasMorePlayers(data.hasMore);
       setPlayerCount(data.count);
-      setPlayers(shouldReset ? data.players : [...players, ...data.players]);
+      setPlayers(
+        shouldReset ? data.players : [...(players || []), ...data.players]
+      );
     });
   };
 

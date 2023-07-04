@@ -30,7 +30,7 @@ const PlayersTable = ({
   columns: string[];
 }) => {
   const { playerSort } = useAppContext();
-  if (players?.length === 0) {
+  if (!players) {
     return <BaseballLoader />;
   }
 
@@ -75,25 +75,33 @@ const PlayersTable = ({
           </tr>
         </thead>
         <tbody>
-          {players?.map((player, idx) => {
-            return (
-              <tr key={`${idx}-${player.firstName}-${player.lastName}`}>
-                {columns.map((attributeKey) => {
-                  const isCentered = centeredColumns.includes(attributeKey);
-                  const isNumber = numberColumns.includes(attributeKey);
-                  return (
-                    <SCol
-                      key={`column-${attributeKey}`}
-                      $isCentered={isCentered}
-                      $isNumber={isNumber}
-                    >
-                      {getTableCell(attributeKey, player)}
-                    </SCol>
-                  );
-                })}
-              </tr>
-            );
-          })}
+          {players.length > 0 ? (
+            players?.map((player, idx) => {
+              return (
+                <tr key={`${idx}-${player.firstName}-${player.lastName}`}>
+                  {columns.map((attributeKey) => {
+                    const isCentered = centeredColumns.includes(attributeKey);
+                    const isNumber = numberColumns.includes(attributeKey);
+                    return (
+                      <SCol
+                        key={`column-${attributeKey}`}
+                        $isCentered={isCentered}
+                        $isNumber={isNumber}
+                      >
+                        {getTableCell(attributeKey, player)}
+                      </SCol>
+                    );
+                  })}
+                </tr>
+              );
+            })
+          ) : (
+            <tr>
+              <SCol colSpan={columns.length} style={{ textAlign: "center" }}>
+                No Players found
+              </SCol>
+            </tr>
+          )}
         </tbody>
       </STable>
       {hasMore && loadMoreRef && (
