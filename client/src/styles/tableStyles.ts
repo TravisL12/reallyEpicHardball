@@ -5,6 +5,7 @@ import {
   tableEvenRow,
   tableOddRow,
   linkHoverColor,
+  checkedLabel,
 } from "./colors";
 import { SFlex } from "./styles";
 
@@ -56,6 +57,12 @@ export const STable = styled.table`
   }
 `;
 
+export const SPlayerTableContainer = styled(SFlex)`
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+`;
+
 export const SHead = styled.th<{
   $isCentered?: boolean;
   $isNumber?: boolean;
@@ -74,7 +81,13 @@ export const SHead = styled.th<{
   }
 `;
 
-export const SCol = styled.td<{ $isCentered?: boolean; $isNumber?: boolean }>`
+export const SCol = styled.td<{
+  $isCentered?: boolean;
+  $isNumber?: boolean;
+  $isSelected?: boolean;
+}>`
+  background: ${({ $isSelected }) =>
+    $isSelected ? `${checkedLabel} !important` : "inherit"};
   white-space: nowrap;
   padding: ${({ $isNumber }) => ($isNumber ? "0 2px" : "8px 10px")};
   width: ${({ $isNumber }) => ($isNumber ? "80px" : undefined)};

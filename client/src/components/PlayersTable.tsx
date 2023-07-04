@@ -11,10 +11,13 @@ import {
   SHead,
   SSortArrow,
   SSortCell,
+  SPlayerTableContainer,
 } from "../styles/tableStyles";
 import { getTableCell } from "../utilities/tableHelpers";
 import { useAppContext } from "../AppContext";
 import BaseballLoader from "./BaseballLoader";
+import { SFlex } from "../styles/styles";
+import { useParams } from "react-router-dom";
 
 const PlayersTable = ({
   players,
@@ -29,13 +32,14 @@ const PlayersTable = ({
   hasMore?: boolean;
   columns: string[];
 }) => {
-  const { playerSort } = useAppContext();
+  const { localId } = useParams();
+  const { playerSort, isPitchers } = useAppContext();
   if (!players) {
     return <BaseballLoader />;
   }
 
   return (
-    <>
+    <SPlayerTableContainer direction="column">
       <STable>
         <thead>
           <tr>
@@ -77,6 +81,7 @@ const PlayersTable = ({
         <tbody>
           {players.length > 0 ? (
             players?.map((player, idx) => {
+              const isSelected = !!localId && player.localID === +localId;
               return (
                 <tr key={`${idx}-${player.firstName}-${player.lastName}`}>
                   {columns.map((attributeKey) => {
@@ -85,10 +90,11 @@ const PlayersTable = ({
                     return (
                       <SCol
                         key={`column-${attributeKey}`}
+                        $isSelected={isSelected}
                         $isCentered={isCentered}
                         $isNumber={isNumber}
                       >
-                        {getTableCell(attributeKey, player)}
+                        {getTableCell(attributeKey, player, isPitchers)}
                       </SCol>
                     );
                   })}
@@ -109,7 +115,7 @@ const PlayersTable = ({
           <p>{`Loading more players`}</p>
         </div>
       )}
-    </>
+    </SPlayerTableContainer>
   );
 };
 

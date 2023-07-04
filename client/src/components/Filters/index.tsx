@@ -1,9 +1,5 @@
 import { useAppContext } from "../../AppContext";
-import {
-  SFilterAllNone,
-  SFilterPositionTitle,
-  SFlex,
-} from "../../styles/styles";
+import { SFlex } from "../../styles/styles";
 import Checkbox from "./Checkbox";
 import FilterCheckbox from "./FilterCheckbox";
 
@@ -27,24 +23,22 @@ const Filters = ({
           setFilter={setFilter}
           filterItem={filters?.league}
         />
-        <SFlex direction="column" gap="5px">
-          <SFlex align="center" gap="4px">
-            <h4>Free Agents</h4>
-            <Checkbox
-              checked={hasFreeAgents}
-              onChange={setFilter!}
-              type="freeAgents"
-              value="On"
-            />
-          </SFlex>
-          <FilterCheckbox
-            title="Gender"
-            titleWidth="50px"
-            type="gender"
-            setFilter={setFilter}
-            filterItem={filters?.gender}
+        <SFlex align="center" gap="4px">
+          <h4>Free Agents</h4>
+          <Checkbox
+            checked={hasFreeAgents}
+            onChange={setFilter!}
+            type="freeAgents"
+            value="On"
           />
         </SFlex>
+        <FilterCheckbox
+          title="Gender"
+          titleWidth="50px"
+          type="gender"
+          setFilter={setFilter}
+          filterItem={filters?.gender}
+        />
         <SFlex direction="column" gap="5px">
           {!isPitcher && (
             <FilterCheckbox

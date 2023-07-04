@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Outlet } from "react-router-dom";
 
 import PlayersTable from "../PlayersTable";
 import { useInView } from "react-intersection-observer";
@@ -26,7 +27,7 @@ const Players = () => {
   const { ref } = useInView({
     threshold: 0.25,
     onChange: (inView) => {
-      if (inView && players.length > 0 && !loading.players && hasMorePlayers) {
+      if (inView && !!players && !loading.players && hasMorePlayers) {
         fetchPlayers();
       }
     },
@@ -36,6 +37,7 @@ const Players = () => {
     <>
       <Filters count={playerCount} />
       <SBodyContainer>
+        <Outlet />
         <PlayersTable
           players={players}
           loadMoreRef={ref}

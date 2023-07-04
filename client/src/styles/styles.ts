@@ -44,13 +44,14 @@ export const SAppContainer = styled(SFlex)`
   height: 100vh;
   padding: ${Spacing[3]};
   color: white;
+  overflow: auto;
 `;
 
 export const SBodyContainer = styled(SFlex)`
   width: 100%;
-  flex-direction: column;
   flex: 1;
   overflow: auto;
+  gap: 12px;
 `;
 
 export const SCheckbox = styled.div`
