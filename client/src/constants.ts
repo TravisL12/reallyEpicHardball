@@ -115,7 +115,7 @@ export const tableHeaders: { [key: string]: string } = {
   [SKILLS.bats]: "bat",
   [SKILLS.throws]: "thr",
   [SKILLS.age]: "age",
-  [SKILLS.pitcherRoleShort]: "pitch",
+  [SKILLS.pitcherRoleShort]: "role",
   [SKILLS.arsenal]: "arsenal",
   [SKILLS.velocity]: "vel",
   [SKILLS.junk]: "jnk",
