@@ -21,6 +21,14 @@ export const SSkillCellInner = styled.div<{ width: number; color: string }>`
   height: 100%;
   background: ${({ color }) => color};
   color: white;
+  &:after {
+    content: "";
+    position: absolute;
+    left: ${({ width }) => `${width - 4}%`};
+    width: 3px;
+    height: calc(100% - 2px);
+    background: rgba(255, 255, 255, 0.3);
+  }
 `;
 
 export const SSkillCellText = styled.div`
