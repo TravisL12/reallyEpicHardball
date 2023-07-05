@@ -3,7 +3,7 @@ import { checkedLabel } from "../../styles/colors";
 import { SFlex } from "../../styles/styles";
 import Checkbox from "./Checkbox";
 import FilterCheckbox from "./FilterCheckbox";
-import Multiselect from "multiselect-react-dropdown";
+import FilterDropdown from "./FilterDropdown";
 
 const Filters = ({
   isPitcher,
@@ -81,33 +81,19 @@ const Filters = ({
             </>
           ) : (
             <>
-              <Multiselect
+              <FilterDropdown
+                title="Position"
+                type="position"
                 options={filters?.position}
-                selectedValues={filters?.position.filter(
-                  ({ checked }) => checked
-                )}
-                onSelect={(_, selected) => {
-                  setFilter("position", { ...selected, checked: true });
-                }}
-                onRemove={(_, selected) => {
-                  setFilter("position", { ...selected, checked: false });
-                }}
-                displayValue="name"
-                style={{
-                  multiselectContainer: {
-                    width: "400px",
-                  },
-                  searchBox: {
-                    border: "none",
-                  },
-                  chips: {
-                    background: checkedLabel,
-                    borderRadius: 0,
-                    border: "1px solid white",
-                  },
-                  option: { color: "black" },
-                }}
+                setFilter={setFilter}
               />
+              {/* <FilterCheckbox
+                title="Position"
+                type="position"
+                setFilter={setFilter}
+                setAllFilters={setAllFilters}
+                filterItem={filters?.position}
+              /> */}
               <FilterCheckbox
                 title="2nd Position"
                 type="secondPosition"
