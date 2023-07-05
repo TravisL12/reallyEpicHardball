@@ -1,7 +1,9 @@
+import Select from "react-select";
 import { useAppContext } from "../../AppContext";
 import { SFlex } from "../../styles/styles";
 import Checkbox from "./Checkbox";
 import FilterCheckbox from "./FilterCheckbox";
+import Multiselect from "multiselect-react-dropdown";
 
 const Filters = ({
   isPitcher,
@@ -79,12 +81,18 @@ const Filters = ({
             </>
           ) : (
             <>
-              <FilterCheckbox
-                title="Position"
-                type="position"
-                setFilter={setFilter}
-                setAllFilters={setAllFilters}
-                filterItem={filters?.position}
+              <Multiselect
+                options={filters?.position}
+                selectedValues={filters?.position.filter(
+                  ({ checked }) => checked
+                )}
+                onSelect={(_, selected) => {
+                  setFilter("position", { ...selected, checked: true });
+                }}
+                onRemove={(_, selected) => {
+                  setFilter("position", { ...selected, checked: false });
+                }}
+                displayValue="name"
               />
               <FilterCheckbox
                 title="2nd Position"
