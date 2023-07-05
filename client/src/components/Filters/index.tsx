@@ -1,4 +1,3 @@
-import Select from "react-select";
 import { useAppContext } from "../../AppContext";
 import { SFlex } from "../../styles/styles";
 import Checkbox from "./Checkbox";
