@@ -1,4 +1,5 @@
 import { useAppContext } from "../../AppContext";
+import { checkedLabel } from "../../styles/colors";
 import { SFlex } from "../../styles/styles";
 import Checkbox from "./Checkbox";
 import FilterCheckbox from "./FilterCheckbox";
@@ -92,6 +93,20 @@ const Filters = ({
                   setFilter("position", { ...selected, checked: false });
                 }}
                 displayValue="name"
+                style={{
+                  multiselectContainer: {
+                    width: "400px",
+                  },
+                  searchBox: {
+                    border: "none",
+                  },
+                  chips: {
+                    background: checkedLabel,
+                    borderRadius: 0,
+                    border: "1px solid white",
+                  },
+                  option: { color: "black" },
+                }}
               />
               <FilterCheckbox
                 title="2nd Position"
