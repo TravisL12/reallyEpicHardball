@@ -3,7 +3,7 @@ import { SCheckbox } from "../../styles/styles";
 import { TFilter } from "../../types";
 import Image from "../Image";
 
-const FilterCheckbox = ({
+const Checkbox = ({
   type,
   checked,
   onChange,
@@ -45,4 +45,4 @@ const FilterCheckbox = ({
   );
 };
 
-export default FilterCheckbox;
+export default Checkbox;

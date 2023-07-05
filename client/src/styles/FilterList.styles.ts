@@ -9,29 +9,6 @@ export const FilterPortalDropdown = styled.div`
   background: white;
 `;
 
-export const FilterPortalDropdownTitle = styled.div`
-  display: flex;
-  box-shadow: inset 0 0 0px 1px white;
-  justify-content: space-between;
-  background: pink;
-  padding: 5px 10px;
-  color: white;
-  font-size: 12px;
-`;
-
-export const FilterDropdownCheckbox = styled.div`
-  display: flex;
-  padding: 4px;
-  background: pink;
-  box-shadow: inset 0 0 0px 1px white;
-  color: white;
-
-  label {
-    cursor: pointer;
-    flex: 1;
-  }
-`;
-
 export const FilterDropdownContainer = styled.div`
   position: relative;
   display: flex;
@@ -81,7 +58,7 @@ export const FilterListContainer = styled(SBox)`
   grid-row: 2;
   gap: 10px;
   padding: 0 10px;
-  background: pink;
+  background: lightblue;
   overflow: hidden;
   font-size: 14px;
 
@@ -96,7 +73,7 @@ export const FilterListContainer = styled(SBox)`
       height: 100%;
       font-size: inherit;
       padding: 4px 8px;
-      background: pink;
+      background: lightblue;
       color: white;
       &::placeholder {
         font-weight: 300;
@@ -121,12 +98,12 @@ export const FilterListContainer = styled(SBox)`
   label {
     display: block;
     padding: 4px 10px;
-    background: pink;
+    background: lightblue;
     cursor: pointer;
     transition: 0.05s linear background;
 
     &:hover {
-      background: pink;
+      background: lightblue;
     }
   }
 
@@ -135,7 +112,7 @@ export const FilterListContainer = styled(SBox)`
   }
 
   input[type="checkbox"]:checked + label {
-    background: pink;
+    background: lightblue;
     box-shadow: inset 0 0 0px 1px white;
   }
 `;
@@ -171,6 +148,7 @@ export const StyledTeamFilter = styled.div`
 `;
 
 export const ToggleItemLink = styled.div`
+  font-size: 14px;
   text-decoration: underline;
   cursor: pointer;
 `;

@@ -5,6 +5,7 @@ import {
 } from "../../styles/styles";
 import { TFilter } from "../../types";
 import Checkbox from "./Checkbox";
+import FilterAllNone from "./FilterAllNone";
 
 type TProps = {
   title: string;
@@ -30,22 +31,7 @@ const FilterCheckbox = ({
       <SFlex direction="column">
         <SFilterPositionTitle width={titleWidth}>{title}</SFilterPositionTitle>
         {setAllFilters && (
-          <SFilterAllNone gap="5px" justify="flex-end">
-            <span
-              onClick={() => {
-                setAllFilters(type, true);
-              }}
-            >
-              All
-            </span>
-            <span
-              onClick={() => {
-                setAllFilters(type, false);
-              }}
-            >
-              None
-            </span>
-          </SFilterAllNone>
+          <FilterAllNone setAllFilters={setAllFilters} type={type} />
         )}
       </SFlex>
       {filterItem?.map(({ name, checked }) => (

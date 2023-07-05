@@ -86,20 +86,14 @@ const Filters = ({
                 type="position"
                 options={filters?.position}
                 setFilter={setFilter}
-              />
-              {/* <FilterCheckbox
-                title="Position"
-                type="position"
-                setFilter={setFilter}
                 setAllFilters={setAllFilters}
-                filterItem={filters?.position}
-              /> */}
-              <FilterCheckbox
+              />
+              <FilterDropdown
                 title="2nd Position"
                 type="secondPosition"
+                options={filters?.secondPosition}
                 setFilter={setFilter}
                 setAllFilters={setAllFilters}
-                filterItem={filters?.secondPosition}
               />
             </>
           )}
