@@ -112,23 +112,25 @@ const PlayerInfo = () => {
           )}
         </SAbilities>
         <STraits direction="column">
-          <SFlex
-            align="center"
-            gap="8px"
-            style={{ paddingLeft: "40px", width: "100%" }}
-          >
-            <span>CHEMISTRY</span>
-            <SFlex align="center" gap="4px">
-              <Image
-                title={player.playerChemistry}
-                src={`${
-                  imageColumns.playerChemistry
-                }${player.playerChemistry.toLowerCase()}.png`}
-                style={{ height: "30px" }}
-              />
-              <p>{player.playerChemistry}</p>
+          {player.playerChemistry && (
+            <SFlex
+              align="center"
+              gap="8px"
+              style={{ paddingLeft: "40px", width: "100%" }}
+            >
+              <span>CHEMISTRY</span>
+              <SFlex align="center" gap="4px">
+                <Image
+                  title={player.playerChemistry}
+                  src={`${
+                    imageColumns.playerChemistry
+                  }${player.playerChemistry.toLowerCase()}.png`}
+                  style={{ height: "30px" }}
+                />
+                <p>{player.playerChemistry}</p>
+              </SFlex>
             </SFlex>
-          </SFlex>
+          )}
           <SFlex
             direction="column"
             style={{ paddingLeft: "40px", width: "100%" }}
