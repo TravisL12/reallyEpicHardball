@@ -12,6 +12,7 @@ export const SAttrContainer = styled.div`
 
 export const SInfo = styled(SFlex)`
   background: #090d17;
+  margin-bottom: 20px;
   p {
     flex: 1;
     padding: 8px;
@@ -22,10 +23,15 @@ export const SInfo = styled(SFlex)`
   }
 `;
 
-export const SAbilities = styled(SFlex)`
-  padding: 20px;
+export const SArsenal = styled(SFlex)`
+  padding: 0 20px;
+  margin-bottom: 20px;
 `;
 
-export const STraits = styled(SFlex)`
+export const SAbilities = styled(SFlex)`
+  padding: 0 20px 20px;
+`;
+
+export const STraits = styled(SAbilities)`
   padding: 0 20px 20px;
 `;

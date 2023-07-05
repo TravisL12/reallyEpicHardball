@@ -1,4 +1,4 @@
-const sharedSelect = {
+const playerSelect = {
   id: true,
   localID: true,
   firstName: true,
@@ -10,6 +10,17 @@ const sharedSelect = {
   contact: true,
   speed: true,
   fielding: true,
+  velocity: true,
+  junk: true,
+  accuracy: true,
+  fourSeamFastball: true,
+  twoSeamFastball: true,
+  screwball: true,
+  changeup: true,
+  forkball: true,
+  curveball: true,
+  slider: true,
+  cutFastball: true,
   jerseyNumber: true,
   careerStart: true,
   careerEnd: true,
@@ -22,10 +33,6 @@ const sharedSelect = {
   traitChemistry1: true,
   trait2: true,
   traitChemistry2: true,
-};
-
-const playerSelect = {
-  ...sharedSelect,
   primaryPosition: true,
   arm: true,
   age: true,
@@ -34,24 +41,9 @@ const playerSelect = {
   bats: true,
   secondaryPosition: true,
   jerseyNumber: true,
-};
-
-const pitcherSelect = {
-  ...sharedSelect,
   pitcherRole: true,
-  velocity: true,
-  junk: true,
-  accuracy: true,
-  fourSeamFastball: true,
-  twoSeamFastball: true,
-  screwball: true,
-  changeup: true,
-  forkball: true,
-  curveball: true,
-  slider: true,
-  cutFastball: true,
   windup: true,
   pitchAngle: true,
 };
 
-module.exports = { playerSelect, pitcherSelect };
+module.exports = { playerSelect };

@@ -121,7 +121,8 @@ const REVERSE_PITCHES = {
   CH: "changeup",
   FK: "forkball",
 };
-const sharedTransform = (player) => {
+
+const transformPlayer = (player) => {
   const {
     firstName,
     lastName,
@@ -135,23 +136,17 @@ const sharedTransform = (player) => {
   const gender = GENDER[player.gender];
   const trait1 = { type: t1, chemistry: traitChemistry1 };
   const trait2 = { type: t2, chemistry: traitChemistry2 };
-  return {
-    fullName,
-    throws,
-    gender,
-    trait1,
-    trait2,
-  };
-};
-
-const transformPlayer = (player) => {
-  const { fullName, throws, gender, trait1, trait2 } = sharedTransform(player);
 
   const bats = BATS[player.bats];
   const primaryPosition = ALL_POSITIONS[player.primaryPosition];
   const primaryPositionShort = POSITIONS_ABBREV[primaryPosition];
   const secondaryPosition = ALL_POSITIONS[player.secondaryPosition];
   const secondaryPositionShort = POSITIONS_ABBREV[secondaryPosition];
+
+  const pitcherRole = PITCHER_ROLES[player.pitcherRole];
+  const pitcherRoleShort = POSITIONS_ABBREV[pitcherRole];
+  const arsenal = createArsenal(player);
+
   return {
     ...omit(player, [...PITCHES, "traitChemistry1", "traitChemistry2"]),
     fullName,
@@ -162,23 +157,7 @@ const transformPlayer = (player) => {
     primaryPositionShort,
     secondaryPosition,
     secondaryPositionShort,
-    trait1,
-    trait2,
-  };
-};
-
-const transformPitcher = (player) => {
-  const { fullName, throws, gender, trait1, trait2 } = sharedTransform(player);
-
-  const pitcherRole = PITCHER_ROLES[player.pitcherRole];
-  const pitcherRoleShort = POSITIONS_ABBREV[pitcherRole];
-  const arsenal = createArsenal(player);
-  return {
-    ...omit(player, [...PITCHES, "traitChemistry1", "traitChemistry2"]),
     arsenal,
-    fullName,
-    throws,
-    gender,
     pitcherRole,
     pitcherRoleShort,
     trait1,
@@ -188,7 +167,6 @@ const transformPitcher = (player) => {
 
 module.exports = {
   transformPlayer,
-  transformPitcher,
   REVERSE_GENDER,
   REVERSE_THROWS,
   REVERSE_BATS,

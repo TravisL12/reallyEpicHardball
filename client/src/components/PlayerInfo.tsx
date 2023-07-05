@@ -3,10 +3,11 @@ import { useAppContext } from "../AppContext";
 import { useCallback, useEffect, useState } from "react";
 import { IPlayer } from "../types";
 import Image from "./Image";
-import { SKILLS, imageColumns, tableHeaders } from "../constants";
-import { SBox, SFlex, SLink } from "../styles/styles";
+import { PITCH_TYPE, SKILLS, imageColumns, tableHeaders } from "../constants";
+import { SBox, SFlex, SLink, SPitchCell } from "../styles/styles";
 import {
   SAbilities,
+  SArsenal,
   SAttrContainer,
   SInfo,
   SPlayerInfoContainer,
@@ -68,8 +69,18 @@ const PlayerInfo = () => {
           <p>THR</p>
           <p className="attrValue">{player.throws}</p>
         </SInfo>
-        <SFlex justify="space-around">
-          <SAbilities direction="column" gap="8px" align="center">
+        {hasPitcherRole && (
+          <SArsenal gap="8px" align="center" justify="space-between">
+            <SBox>ARSENAL</SBox>
+            <SFlex gap="5px" justify="center">
+              {player.arsenal.map((pitch: string) => (
+                <SPitchCell key={pitch}>{PITCH_TYPE[pitch].short}</SPitchCell>
+              ))}
+            </SFlex>
+          </SArsenal>
+        )}
+        <SAbilities justify={hasPitcherRole ? "space-between" : "center"}>
+          <SFlex direction="column" gap="8px" align="center">
             {playerAttr.map((attr) => {
               // @ts-expect-error
               if (!player[attr]) {
@@ -85,9 +96,9 @@ const PlayerInfo = () => {
                 </SFlex>
               );
             })}
-          </SAbilities>
+          </SFlex>
           {hasPitcherRole && (
-            <SAbilities direction="column" gap="8px" align="center">
+            <SFlex direction="column" gap="8px" align="center">
               {pitcherAttr.map((attr) => (
                 <SFlex gap="8px" align="center">
                   <SBox>{tableHeaders[attr].toUpperCase()}</SBox>
@@ -97,9 +108,9 @@ const PlayerInfo = () => {
                   </SBox>
                 </SFlex>
               ))}
-            </SAbilities>
+            </SFlex>
           )}
-        </SFlex>
+        </SAbilities>
         <STraits direction="column">
           <SFlex
             align="center"
@@ -128,7 +139,7 @@ const PlayerInfo = () => {
               }
               const { type, chemistry } = trait;
               return (
-                <SFlex align="center" gap="4px">
+                <SFlex align="center" gap="4px" key={trait.type}>
                   <Image
                     title={chemistry}
                     src={`${imageColumns.trait}${chemistry.toLowerCase()}.png`}

@@ -2,10 +2,9 @@ const express = require("express");
 const { db } = require("../db");
 const router = express.Router();
 
-const { playerSelect, pitcherSelect } = require("./selectConstants");
+const { playerSelect } = require("./selectConstants");
 const {
   transformPlayer,
-  transformPitcher,
   REVERSE_GENDER,
   REVERSE_THROWS,
   REVERSE_BATS,
@@ -136,12 +135,12 @@ router.get("/pitchers", async function (req, res, next) {
     skip: +skip,
     take: +take,
     select: {
-      ...pitcherSelect,
+      ...playerSelect,
     },
     where,
     orderBy,
   });
-  const players = selectedPlayers.map(transformPitcher);
+  const players = selectedPlayers.map(transformPlayer);
   const hasMore = count._count > +take + +skip;
   res.json({ players, count: count._count, hasMore });
 });
