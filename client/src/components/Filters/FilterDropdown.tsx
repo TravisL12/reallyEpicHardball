@@ -9,7 +9,8 @@ import Portal from "./FilterPortal";
 import { usePortal } from "../../utilities/usePortal";
 import FilterCheckbox from "./Checkbox";
 import FilterAllNone from "./FilterAllNone";
-import { SFlex } from "../../styles/styles";
+import { SBox, SFlex } from "../../styles/styles";
+import { TFilter } from "../../types";
 
 const FILTER_PERCENT_DISPLAY = 0.6;
 
@@ -19,7 +20,13 @@ const FilterDropdown = ({
   options,
   setFilter,
   setAllFilters,
-}: any) => {
+}: {
+  title: string;
+  type: string;
+  options: TFilter[];
+  setAllFilters: (type: string, isOn: boolean) => void;
+  setFilter: (type: string, value: TFilter) => void;
+}) => {
   const [showCheckboxes, setShowCheckboxes] = useState(false);
   const [coords, setPortalCoordinates] = usePortal({ top: 35 }) as any;
 
@@ -51,7 +58,10 @@ const FilterDropdown = ({
       {showCheckboxes && (
         <Portal>
           <FilterPortalDropdown style={{ ...coords }}>
-            <SFlex justify="space-between" style={{ padding: "4px 8px" }}>
+            <SFlex
+              justify="space-between"
+              style={{ padding: "4px 8px", flex: 1, width: "100%" }}
+            >
               <FilterAllNone setAllFilters={setAllFilters} type={type} />
               <ToggleItemLink
                 onClick={() => {
@@ -61,18 +71,21 @@ const FilterDropdown = ({
                 Close
               </ToggleItemLink>
             </SFlex>
-            {Object.keys(options).map((attrKey) => {
-              const { name, checked } = options[attrKey];
-              return (
-                <FilterCheckbox
-                  key={`${type}-${name}`}
-                  checked={checked}
-                  onChange={setFilter!}
-                  type={type}
-                  value={name}
-                />
-              );
-            })}
+            <SBox style={{ height: "100%", width: "100%", overflow: "auto" }}>
+              {Object.keys(options).map((attrKey) => {
+                // @ts-expect-error
+                const { name, checked } = options[attrKey];
+                return (
+                  <FilterCheckbox
+                    key={`${type}-${name}`}
+                    checked={checked}
+                    onChange={setFilter!}
+                    type={type}
+                    value={name}
+                  />
+                );
+              })}
+            </SBox>
           </FilterPortalDropdown>
         </Portal>
       )}

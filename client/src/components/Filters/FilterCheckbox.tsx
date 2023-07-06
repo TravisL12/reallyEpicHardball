@@ -1,8 +1,4 @@
-import {
-  SFilterAllNone,
-  SFilterPositionTitle,
-  SFlex,
-} from "../../styles/styles";
+import { SFilterPositionTitle, SFlex } from "../../styles/styles";
 import { TFilter } from "../../types";
 import Checkbox from "./Checkbox";
 import FilterAllNone from "./FilterAllNone";
@@ -12,7 +8,7 @@ type TProps = {
   titleWidth?: string;
   type: string;
   isImgType?: boolean;
-  filterItem?: TFilter[];
+  filterItem: TFilter[];
   setFilter?: (type: string, value: TFilter) => void;
   setAllFilters?: (type: string, isOn: boolean) => void;
 };
@@ -34,7 +30,7 @@ const FilterCheckbox = ({
           <FilterAllNone setAllFilters={setAllFilters} type={type} />
         )}
       </SFlex>
-      {filterItem?.map(({ name, checked }) => (
+      {filterItem.map(({ name, checked }) => (
         <Checkbox
           key={`${type}-${name}`}
           checked={checked}

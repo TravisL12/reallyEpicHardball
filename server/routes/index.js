@@ -62,6 +62,7 @@ router.get("/players", async function (req, res, next) {
     hasFreeAgents,
     traits,
     traits2,
+    playerChemistry,
   } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
@@ -75,6 +76,7 @@ router.get("/players", async function (req, res, next) {
       { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
       { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
       { OR: league?.map((i) => ({ league: i })) },
+      { OR: playerChemistry?.map((i) => ({ playerChemistry: i })) },
       { OR: traits?.map((i) => ({ trait1: i === "None" ? null : i })) },
       { OR: traits2?.map((i) => ({ trait2: i === "None" ? null : i })) },
       {
@@ -118,6 +120,7 @@ router.get("/pitchers", async function (req, res, next) {
     hasFreeAgents,
     traits,
     traits2,
+    playerChemistry,
   } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
@@ -130,6 +133,7 @@ router.get("/pitchers", async function (req, res, next) {
       { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
       { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
       { OR: league?.map((i) => ({ league: i })) },
+      { OR: playerChemistry?.map((i) => ({ playerChemistry: i })) },
       { OR: traits?.map((i) => ({ trait1: i === "None" ? null : i })) },
       { OR: traits2?.map((i) => ({ trait2: i === "None" ? null : i })) },
       {

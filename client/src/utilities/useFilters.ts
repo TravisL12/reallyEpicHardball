@@ -9,6 +9,7 @@ import {
   ALL_POSITIONS,
   ALL_PITCHES,
   ALL_TRAITS,
+  ALL_CHEMISTRY,
   SECOND_POSITIONS,
 } from "../constants";
 
@@ -52,6 +53,9 @@ export const useFilters = () => {
   const [traits2, setTraits2] = useState<TFilter[]>(
     ALL_TRAITS.map((name) => ({ name, checked: true }))
   );
+  const [playerChemistry, setPlayerChemistry] = useState<TFilter[]>(
+    ALL_CHEMISTRY.map((name) => ({ name, checked: true }))
+  );
 
   const setAllFilters = (type: string, isOn: boolean) => {
     if (type === "position") {
@@ -69,6 +73,13 @@ export const useFilters = () => {
     if (type === "pitches") {
       const values = pitches.map((item) => ({ ...item, checked: isOn }));
       setPitches(values);
+    }
+    if (type === "playerChemistry") {
+      const values = playerChemistry.map((item) => ({
+        ...item,
+        checked: isOn,
+      }));
+      setPlayerChemistry(values);
     }
     if (type === "traits") {
       const values = traits.map((item) => ({ ...item, checked: isOn }));
@@ -114,6 +125,9 @@ export const useFilters = () => {
     if (type === "traits2") {
       setTraits2(changeItem([...traits2], value));
     }
+    if (type === "playerChemistry") {
+      setPlayerChemistry(changeItem([...playerChemistry], value));
+    }
   };
 
   return {
@@ -128,6 +142,7 @@ export const useFilters = () => {
       pitches,
       traits,
       traits2,
+      playerChemistry,
     },
     hasFreeAgents,
     setFilter,

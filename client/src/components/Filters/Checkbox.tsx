@@ -34,7 +34,7 @@ const Checkbox = ({
         {isImg ? (
           <Image
             title={value}
-            src={`${imageColumns.league}${value}.png`}
+            src={`${imageColumns[type]}${value}.png`}
             style={{ height: "30px" }}
           />
         ) : (

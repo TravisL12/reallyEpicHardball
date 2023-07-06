@@ -186,18 +186,27 @@ export const ALL_POSITIONS = [
   "P",
 ];
 export const SECOND_POSITIONS = [
+  "None",
   ...ALL_POSITIONS.slice(0, -1), // remove "P"
   "IF",
   "OF",
   "1B/OF",
   "IF/OF",
-  "None",
 ];
 export const ALL_PITCHES = Object.keys(PITCH_TYPE).map((pitchKey) => {
   return PITCH_TYPE[pitchKey].short;
 });
 
+export const ALL_CHEMISTRY = [
+  "Competitive",
+  "Crafty",
+  "Disciplined",
+  "Scholarly",
+  "Spirited",
+];
+
 export const ALL_TRAITS = [
+  "None",
   "POW vs RHP",
   "POW vs LHP",
   "CON vs RHP",
@@ -273,5 +282,4 @@ export const ALL_TRAITS = [
   "Sign Stealer",
   "Meltdown",
   "Bunter",
-  "None",
 ];

@@ -15,7 +15,7 @@ const AppContext = createContext<IAppContext>({
   players: undefined,
   team: undefined,
   allTeams: undefined,
-  filters: undefined,
+  filters: {},
   setFilter: () => {
     return false;
   },

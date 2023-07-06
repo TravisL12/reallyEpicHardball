@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-import { SBox } from "./styles";
+import { SBox, SFlex } from "./styles";
 
-export const FilterPortalDropdown = styled.div`
+export const FilterPortalDropdown = styled(SFlex)`
   position: absolute;
   z-index: 10;
+  flex-direction: column;
   width: 200px;
   background: white;
+  max-height: 400px;
 `;
 
 export const FilterDropdownContainer = styled.div`
