@@ -23,13 +23,6 @@ const Filters = ({
           setFilter={setFilter}
           filterItem={filters.league}
         />
-        <FilterDropdown
-          title="Teams"
-          type="teams"
-          options={filters.teams}
-          setFilter={setFilter}
-          setAllFilters={setAllFilters}
-        />
         <FilterCheckbox
           title="Gender"
           titleWidth="50px"
@@ -96,6 +89,13 @@ const Filters = ({
         </SFlex>
         <SFlex direction="column" gap="5px">
           <SFlex gap="5px">
+            <FilterDropdown
+              title="Teams"
+              type="teams"
+              options={filters.teams}
+              setFilter={setFilter}
+              setAllFilters={setAllFilters}
+            />
             <FilterDropdown
               title="Trait"
               type="traits"
