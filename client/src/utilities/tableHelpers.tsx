@@ -69,13 +69,16 @@ export const getTableCell = (
       );
     case SKILLS.playerChemistry:
       return (
-        <Image
-          title={value as string}
-          src={`${imageColumns[attribute]}${(
-            value as string
-          ).toLowerCase()}.png`}
-          style={{ height: "30px" }}
-        />
+        <SFlex align="center" gap="4px">
+          <Image
+            title={value as string}
+            src={`${imageColumns[attribute]}${(
+              value as string
+            ).toLowerCase()}.png`}
+            style={{ height: "30px", width: "30px" }}
+          />
+          <div>{value}</div>
+        </SFlex>
       );
     case SKILLS.league:
       return (

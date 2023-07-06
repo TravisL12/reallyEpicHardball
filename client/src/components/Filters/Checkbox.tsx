@@ -3,7 +3,7 @@ import { SCheckbox } from "../../styles/styles";
 import { TFilter } from "../../types";
 import Image from "../Image";
 
-const FilterCheckbox = ({
+const Checkbox = ({
   type,
   checked,
   onChange,
@@ -17,6 +17,7 @@ const FilterCheckbox = ({
   value: string;
 }) => {
   const id = `${type}-${value}`;
+
   return (
     <SCheckbox>
       <input
@@ -34,7 +35,7 @@ const FilterCheckbox = ({
         {isImg ? (
           <Image
             title={value}
-            src={`${imageColumns.league}${value}.png`}
+            src={`${imageColumns[type]}${value}.png`}
             style={{ height: "30px" }}
           />
         ) : (
@@ -45,4 +46,4 @@ const FilterCheckbox = ({
   );
 };
 
-export default FilterCheckbox;
+export default Checkbox;

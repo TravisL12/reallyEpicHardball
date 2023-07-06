@@ -64,13 +64,12 @@ export interface IAppContext {
   players?: IPlayer[];
   team?: ITeam;
   allTeams?: ITeam[];
-  filters?: TAllFilters;
+  filters: TAllFilters;
   setFilter: (type: string, value: TFilter) => void;
   setAllFilters: (type: string, isOn: boolean) => void;
   hasMorePlayers: boolean;
   playerCount?: number;
   isPitchers: boolean;
-  hasFreeAgents: boolean;
   playerSort: TPlayerSort;
 }
 

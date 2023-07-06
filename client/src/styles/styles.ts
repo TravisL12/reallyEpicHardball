@@ -74,6 +74,7 @@ export const SBodyContainer = styled(SFlex)`
 
 export const SCheckbox = styled.div`
   label {
+    color: white;
     display: block;
     padding: 4px 6px;
     background: gray;
