@@ -8,6 +8,7 @@ import {
   ALL_PITCHING,
   ALL_POSITIONS,
   ALL_PITCHES,
+  ALL_TRAITS,
   SECOND_POSITIONS,
 } from "../constants";
 
@@ -45,6 +46,12 @@ export const useFilters = () => {
   const [pitches, setPitches] = useState<TFilter[]>(
     ALL_PITCHES.map((name) => ({ name, checked: false }))
   );
+  const [traits, setTraits] = useState<TFilter[]>(
+    ALL_TRAITS.map((name) => ({ name, checked: true }))
+  );
+  const [traits2, setTraits2] = useState<TFilter[]>(
+    ALL_TRAITS.map((name) => ({ name, checked: true }))
+  );
 
   const setAllFilters = (type: string, isOn: boolean) => {
     if (type === "position") {
@@ -62,6 +69,14 @@ export const useFilters = () => {
     if (type === "pitches") {
       const values = pitches.map((item) => ({ ...item, checked: isOn }));
       setPitches(values);
+    }
+    if (type === "traits") {
+      const values = traits.map((item) => ({ ...item, checked: isOn }));
+      setTraits(values);
+    }
+    if (type === "traits2") {
+      const values = traits2.map((item) => ({ ...item, checked: isOn }));
+      setTraits2(values);
     }
   };
 
@@ -93,6 +108,12 @@ export const useFilters = () => {
     if (type === "freeAgents") {
       setHasFreeAgents(value.checked);
     }
+    if (type === "traits") {
+      setTraits(changeItem([...traits], value));
+    }
+    if (type === "traits2") {
+      setTraits2(changeItem([...traits2], value));
+    }
   };
 
   return {
@@ -105,6 +126,8 @@ export const useFilters = () => {
       pitching,
       secondPosition,
       pitches,
+      traits,
+      traits2,
     },
     hasFreeAgents,
     setFilter,

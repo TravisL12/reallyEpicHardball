@@ -98,6 +98,22 @@ const Filters = ({
             </>
           )}
         </SFlex>
+        <SFlex direction="column" gap="5px">
+          <FilterDropdown
+            title="Trait"
+            type="traits"
+            options={filters?.traits}
+            setFilter={setFilter}
+            setAllFilters={setAllFilters}
+          />
+          <FilterDropdown
+            title="Trait 2"
+            type="traits2"
+            options={filters?.traits2}
+            setFilter={setFilter}
+            setAllFilters={setAllFilters}
+          />
+        </SFlex>
       </SFlex>
       {!!count && (
         <span>

@@ -60,6 +60,8 @@ router.get("/players", async function (req, res, next) {
     position,
     secondPosition,
     hasFreeAgents,
+    traits,
+    traits2,
   } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
@@ -73,6 +75,8 @@ router.get("/players", async function (req, res, next) {
       { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
       { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
       { OR: league?.map((i) => ({ league: i })) },
+      { OR: traits?.map((i) => ({ trait1: i === "None" ? null : i })) },
+      { OR: traits2?.map((i) => ({ trait2: i === "None" ? null : i })) },
       {
         OR: position?.map((i) => ({ primaryPosition: REVERSE_PRIMARY_POS[i] })),
       },
@@ -105,7 +109,16 @@ router.get("/players", async function (req, res, next) {
 
 router.get("/pitchers", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const { gender, throws, league, pitching, pitches, hasFreeAgents } = filters;
+  const {
+    gender,
+    throws,
+    league,
+    pitching,
+    pitches,
+    hasFreeAgents,
+    traits,
+    traits2,
+  } = filters;
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
@@ -117,6 +130,8 @@ router.get("/pitchers", async function (req, res, next) {
       { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
       { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
       { OR: league?.map((i) => ({ league: i })) },
+      { OR: traits?.map((i) => ({ trait1: i === "None" ? null : i })) },
+      { OR: traits2?.map((i) => ({ trait2: i === "None" ? null : i })) },
       {
         OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
       },
