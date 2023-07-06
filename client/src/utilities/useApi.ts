@@ -6,11 +6,7 @@ import { BASE_URL } from "../constants";
 
 const PLAYER_SIZE = 100;
 
-export const useApi = (
-  filters: TAllFilters,
-  isPitchers: boolean,
-  hasFreeAgents: boolean
-) => {
+export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
   const [team, setTeam] = useState<ITeam | undefined>();
   const [allTeams, setAllTeams] = useState<ITeam[] | undefined>();
 
@@ -30,16 +26,13 @@ export const useApi = (
   });
 
   const apiFilters = useMemo(() => {
-    return Object.keys(filters).reduce(
-      (acc: any, filterKey) => {
-        acc[filterKey] = filters[filterKey]
-          .filter((f) => f.checked)
-          .map((f) => f.name);
-        return acc;
-      },
-      { hasFreeAgents }
-    );
-  }, [filters, hasFreeAgents]);
+    return Object.keys(filters).reduce((acc: any, filterKey) => {
+      acc[filterKey] = filters[filterKey]
+        .filter((f) => f.checked)
+        .map((f) => f.name);
+      return acc;
+    }, {});
+  }, [filters]);
 
   useEffect(() => {
     if (!players) {

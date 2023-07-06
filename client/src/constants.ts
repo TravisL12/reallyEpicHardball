@@ -198,11 +198,52 @@ export const ALL_PITCHES = Object.keys(PITCH_TYPE).map((pitchKey) => {
 });
 
 export const ALL_CHEMISTRY = [
+  "None",
   "Competitive",
   "Crafty",
   "Disciplined",
   "Scholarly",
   "Spirited",
+];
+
+export const ALL_TEAMS = [
+  "Free Agent",
+  "Sawteeth",
+  "Hot Corners",
+  "Jacks",
+  "Sirloins",
+  "Sand Cats",
+  "Grapplers",
+  "Freebooters",
+  "Blowfish",
+  "Heaters",
+  "Buzzards",
+  "Moonstars",
+  "Wild Pigs",
+  "Overdogs",
+  "Herbisaurs",
+  "Beewolves",
+  "Moose",
+  "Platypi",
+  "Crocodons",
+  "Wideloads",
+  "Nemesis",
+  "Jomboy Media",
+  "Prime Time",
+  "Pinstripe Strong",
+  "We Got Ice",
+  "Girls & Co.",
+  "Goat Herd",
+  "Can O' Corns",
+  "Mashing Monsters",
+  "Boomers",
+  "Joyriders",
+  "Spirit",
+  "Mammotanks",
+  "Empire",
+  "Originators",
+  "Thrillers",
+  "Rakers",
 ];
 
 export const ALL_TRAITS = [

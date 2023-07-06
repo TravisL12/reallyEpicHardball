@@ -36,7 +36,7 @@ const FilterCheckbox = ({
           checked={checked}
           onChange={setFilter!}
           type={type}
-          isImg={isImgType}
+          isImg={isImgType && name !== "None"}
           value={name}
         />
       ))}

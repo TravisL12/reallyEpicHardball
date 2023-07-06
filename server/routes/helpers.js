@@ -23,6 +23,25 @@ const ALL_POSITIONS = {
   13: "Infield / Outfield",
 };
 
+const sharedWhereQuery = (filters) => {
+  const { gender, league, playerChemistry, teams, throws, traits, traits2 } =
+    filters;
+
+  return [
+    { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
+    { OR: league?.map((i) => ({ league: i })) },
+    {
+      OR: playerChemistry?.map((i) => ({
+        playerChemistry: i === "None" ? null : i,
+      })),
+    },
+    { OR: teams?.map((i) => ({ team: i === "Free Agent" ? null : i })) },
+    { OR: traits?.map((i) => ({ trait1: i === "None" ? null : i })) },
+    { OR: traits2?.map((i) => ({ trait2: i === "None" ? null : i })) },
+    { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
+  ];
+};
+
 const reverseMap = (items) => {
   return Object.keys(items).reduce((acc, key) => {
     acc[items[key]] = key;
@@ -167,6 +186,7 @@ const transformPlayer = (player) => {
 
 module.exports = {
   transformPlayer,
+  sharedWhereQuery,
   REVERSE_GENDER,
   REVERSE_THROWS,
   REVERSE_BATS,

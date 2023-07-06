@@ -10,6 +10,7 @@ import {
   ALL_PITCHES,
   ALL_TRAITS,
   ALL_CHEMISTRY,
+  ALL_TEAMS,
   SECOND_POSITIONS,
 } from "../constants";
 
@@ -22,7 +23,6 @@ const changeItem = (cPrev: TFilter[], value: TFilter) => {
 };
 
 export const useFilters = () => {
-  const [hasFreeAgents, setHasFreeAgents] = useState<boolean>(true);
   const [gender, setGender] = useState<TFilter[]>(
     ALL_GENDER.map((name) => ({ name, checked: true }))
   );
@@ -55,6 +55,9 @@ export const useFilters = () => {
   );
   const [playerChemistry, setPlayerChemistry] = useState<TFilter[]>(
     ALL_CHEMISTRY.map((name) => ({ name, checked: true }))
+  );
+  const [teams, setTeams] = useState<TFilter[]>(
+    ALL_TEAMS.map((name) => ({ name, checked: true }))
   );
 
   const setAllFilters = (type: string, isOn: boolean) => {
@@ -89,6 +92,10 @@ export const useFilters = () => {
       const values = traits2.map((item) => ({ ...item, checked: isOn }));
       setTraits2(values);
     }
+    if (type === "teams") {
+      const values = teams.map((item) => ({ ...item, checked: isOn }));
+      setTeams(values);
+    }
   };
 
   const setFilter = (type: string, value: TFilter) => {
@@ -116,9 +123,6 @@ export const useFilters = () => {
     if (type === "pitches") {
       setPitches(changeItem([...pitches], value));
     }
-    if (type === "freeAgents") {
-      setHasFreeAgents(value.checked);
-    }
     if (type === "traits") {
       setTraits(changeItem([...traits], value));
     }
@@ -127,6 +131,9 @@ export const useFilters = () => {
     }
     if (type === "playerChemistry") {
       setPlayerChemistry(changeItem([...playerChemistry], value));
+    }
+    if (type === "teams") {
+      setTeams(changeItem([...teams], value));
     }
   };
 
@@ -143,8 +150,8 @@ export const useFilters = () => {
       traits,
       traits2,
       playerChemistry,
+      teams,
     },
-    hasFreeAgents,
     setFilter,
     setAllFilters,
   };

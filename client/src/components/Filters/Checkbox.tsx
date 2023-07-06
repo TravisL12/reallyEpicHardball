@@ -17,6 +17,7 @@ const Checkbox = ({
   value: string;
 }) => {
   const id = `${type}-${value}`;
+
   return (
     <SCheckbox>
       <input

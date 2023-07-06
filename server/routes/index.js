@@ -5,8 +5,7 @@ const router = express.Router();
 const { playerSelect } = require("./selectConstants");
 const {
   transformPlayer,
-  REVERSE_GENDER,
-  REVERSE_THROWS,
+  sharedWhereQuery,
   REVERSE_BATS,
   REVERSE_PRIMARY_POS,
   REVERSE_PITCHING,
@@ -52,33 +51,17 @@ router.get("/player", async function (req, res, next) {
 
 router.get("/players", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const {
-    gender,
-    bats,
-    throws,
-    league,
-    position,
-    secondPosition,
-    hasFreeAgents,
-    traits,
-    traits2,
-    playerChemistry,
-  } = filters;
+  const { bats, position, secondPosition } = filters;
+  const sharedWhere = sharedWhereQuery(filters);
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
 
   const where = {
-    NOT: hasFreeAgents === "false" ? { team: null } : {},
     AND: [
-      { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
+      ...sharedWhere,
       { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
-      { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
-      { OR: league?.map((i) => ({ league: i })) },
-      { OR: playerChemistry?.map((i) => ({ playerChemistry: i })) },
-      { OR: traits?.map((i) => ({ trait1: i === "None" ? null : i })) },
-      { OR: traits2?.map((i) => ({ trait2: i === "None" ? null : i })) },
       {
         OR: position?.map((i) => ({ primaryPosition: REVERSE_PRIMARY_POS[i] })),
       },
@@ -111,31 +94,16 @@ router.get("/players", async function (req, res, next) {
 
 router.get("/pitchers", async function (req, res, next) {
   const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const {
-    gender,
-    throws,
-    league,
-    pitching,
-    pitches,
-    hasFreeAgents,
-    traits,
-    traits2,
-    playerChemistry,
-  } = filters;
+  const { pitching, pitches } = filters;
+  const sharedWhere = sharedWhereQuery(filters);
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
 
   const where = {
-    NOT: hasFreeAgents === "false" ? { team: null } : {},
     AND: [
-      { OR: gender?.map((i) => ({ gender: +REVERSE_GENDER[i] })) },
-      { OR: throws?.map((i) => ({ throws: +REVERSE_THROWS[i] })) },
-      { OR: league?.map((i) => ({ league: i })) },
-      { OR: playerChemistry?.map((i) => ({ playerChemistry: i })) },
-      { OR: traits?.map((i) => ({ trait1: i === "None" ? null : i })) },
-      { OR: traits2?.map((i) => ({ trait2: i === "None" ? null : i })) },
+      ...sharedWhere,
       {
         OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
       },

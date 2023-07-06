@@ -70,7 +70,6 @@ export interface IAppContext {
   hasMorePlayers: boolean;
   playerCount?: number;
   isPitchers: boolean;
-  hasFreeAgents: boolean;
   playerSort: TPlayerSort;
 }
 
