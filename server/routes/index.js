@@ -107,6 +107,7 @@ router.get("/pitchers", async function (req, res, next) {
       {
         OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
       },
+      { OR: { NOT: { pitcherRole: null } } },
       {
         AND: pitches?.map((i) => ({ [REVERSE_PITCHES[i]]: 1 })),
       },

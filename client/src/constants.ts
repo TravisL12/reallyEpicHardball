@@ -144,7 +144,6 @@ export const centeredColumns: string[] = [
   SKILLS.velocity,
   SKILLS.junk,
   SKILLS.accuracy,
-  SKILLS.playerChemistry,
   SKILLS.league,
 ];
 
