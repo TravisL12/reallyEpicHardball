@@ -9,9 +9,11 @@ import {
   SAbilities,
   SArsenal,
   SAttrContainer,
+  SImageContainer,
   SInfo,
   SPlayerInfoContainer,
   STraits,
+  SCloseButton,
 } from "../styles/playerInfo.styles";
 import SkillCell from "./SkillCell";
 import BaseballLoader from "./BaseballLoader";
@@ -47,19 +49,20 @@ const PlayerInfo = () => {
 
   return (
     <SPlayerInfoContainer>
-      <SBox mb="8px" style={{ textAlign: "right" }}>
+      <SCloseButton mb="8px" style={{ textAlign: "right" }}>
         <SLink to={isPitchers ? "/pitchers" : "/"}>Close</SLink>
-      </SBox>
-      <SBox>
+      </SCloseButton>
+      <SImageContainer>
         {player.team ? (
           <Image
             alt={player.fullName}
             src={`${imageColumns.playerImage}${player.localID}.png`}
+            style={{ height: "100%" }}
           />
         ) : (
           <div>Free Agents don't have pictures</div>
         )}
-      </SBox>
+      </SImageContainer>
       <SAttrContainer>
         <SInfo>
           <p>AGE</p>
@@ -122,9 +125,7 @@ const PlayerInfo = () => {
               <SFlex align="center" gap="4px">
                 <Image
                   title={player.playerChemistry}
-                  src={`${
-                    imageColumns.playerChemistry
-                  }${player.playerChemistry.toLowerCase()}.png`}
+                  src={`${imageColumns.playerChemistry}${player.playerChemistry}.png`}
                   style={{ height: "30px" }}
                 />
                 <p>{player.playerChemistry}</p>

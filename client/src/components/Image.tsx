@@ -12,7 +12,7 @@ const Image = ({
   style?: any;
 }) => {
   return (
-    <div style={style}>
+    <div style={style} className="img-component">
       <SImage
         src={src}
         alt={alt || String(Math.random() * 1000)}

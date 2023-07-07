@@ -1,7 +1,7 @@
 export const BASE_URL = `http://${window.location.hostname}:5005`;
-const IMAGES_LOCAL = `${BASE_URL}/images`;
-const IMAGE_AWS_URL = `https://smb4.s3.us-west-2.amazonaws.com`;
-export const IMAGE_BASE_URL = IMAGES_LOCAL;
+const IMAGE_URL = `${BASE_URL}/images`;
+const IMAGE_URL_AWS = `https://smb4.s3.us-west-2.amazonaws.com`;
+export const IMAGE_BASE_URL = IMAGE_URL;
 
 export const SKILLS = {
   arsenal: "arsenal",
@@ -259,7 +259,6 @@ const SHARED_TRAITS = [
 ];
 
 export const PITCHING_TRAITS = [
-  ...SHARED_TRAITS,
   "BB Prone",
   "Composed",
   "Crossed Up",
@@ -288,7 +287,6 @@ export const PITCHING_TRAITS = [
 ];
 
 export const HITTER_TRAITS = [
-  ...SHARED_TRAITS,
   "Ace Exterminator",
   "Bad Ball Hitter",
   "Bad Jumps",

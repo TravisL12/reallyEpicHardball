@@ -1,8 +1,27 @@
 import styled from "styled-components";
-import { SFlex } from "./styles";
+import { SBox, SFlex } from "./styles";
+import { devices } from "./responsiveStyles";
+import { mainBgColor } from "./colors";
 
 export const SPlayerInfoContainer = styled.div`
-  width: 300px;
+  width: 100%;
+
+  @media ${devices.laptop} {
+    width: 300px;
+  }
+`;
+
+export const SCloseButton = styled(SBox)`
+  position: sticky;
+  background: ${mainBgColor};
+  top: 0;
+  padding: 10px;
+`;
+
+export const SImageContainer = styled(SBox)`
+  @media ${devices.laptop} {
+    width: 300px;
+  }
 `;
 
 export const SAttrContainer = styled.div`

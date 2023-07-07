@@ -3,6 +3,7 @@ import SkillCell from "../components/SkillCell";
 import { SFlex, SLink, SPitchCell } from "../styles/styles";
 import Image from "../components/Image";
 import { IPlayer } from "../types";
+import { SFullNameCell, STeamCell } from "../styles/playerTable.styles";
 
 export const getTableCell = (
   attribute: string,
@@ -19,9 +20,16 @@ export const getTableCell = (
     case SKILLS.fullName:
       const link = isPitchers ? "/pitchers/player" : "/player";
       return (
-        <div style={{ width: "130px" }}>
+        <SFullNameCell align="center">
+          {player.teamSlug && (
+            <Image
+              title={value}
+              src={`${imageColumns[SKILLS.teamSlug]}${player.teamSlug}.png`}
+              style={{ width: "30px" }}
+            />
+          )}
           <SLink to={`${link}/${player.localID}`}>{value}</SLink>
-        </div>
+        </SFullNameCell>
       );
     case SKILLS.arsenal:
       return (
@@ -33,14 +41,14 @@ export const getTableCell = (
       );
     case SKILLS.team:
       return (
-        <SFlex align="center" gap="4px" style={{ width: "160px" }}>
+        <STeamCell align="center" gap="4px">
           <Image
             title={value}
             src={`${imageColumns[SKILLS.teamSlug]}${player.teamSlug}.png`}
             style={{ width: "30px" }}
           />
           <div>{value}</div>
-        </SFlex>
+        </STeamCell>
       );
     case SKILLS.power:
     case SKILLS.contact:
@@ -72,9 +80,7 @@ export const getTableCell = (
         <SFlex align="center" gap="4px">
           <Image
             title={value as string}
-            src={`${imageColumns[attribute]}${(
-              value as string
-            ).toLowerCase()}.png`}
+            src={`${imageColumns[attribute]}${value as string}.png`}
             style={{ height: "30px", width: "30px" }}
           />
           <div>{value}</div>
