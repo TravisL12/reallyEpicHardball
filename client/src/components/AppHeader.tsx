@@ -17,13 +17,14 @@ const AppHeader = () => {
         <HeaderLink to="/pitchers" text="Pitchers" />
         <HeaderLink to="/teams" text="Teams" />
       </SLinksContainer>
-      {loading.players && (
-        <div style={{ justifySelf: "flex-end" }}>loading players</div>
-      )}
       <SFlex gap="5px" align="center">
         <SHeader>Really Epic</SHeader>
         <Image
-          src={`${process.env.PUBLIC_URL}/baseball-120.png`}
+          src={
+            loading.players
+              ? `${process.env.PUBLIC_URL}/baseball-ball.gif`
+              : `${process.env.PUBLIC_URL}/baseball-120.png`
+          }
           style={{ height: "30px" }}
         />
       </SFlex>

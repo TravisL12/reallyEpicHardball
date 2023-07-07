@@ -16,10 +16,11 @@ export const SLinksContainer = styled(SFlex)<{ $isOpen?: boolean }>`
   position: fixed;
   top: 40px;
   right: ${({ $isOpen }) => ($isOpen ? "0" : "-100%")};
-  z-index: 2;
+  z-index: 3;
   flex-direction: column;
   background: gray;
   padding: 24px 40px;
+  transition: 0.2s linear right;
 
   @media ${devices.laptop} {
     position: unset;
