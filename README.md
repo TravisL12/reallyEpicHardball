@@ -191,6 +191,35 @@ Pitch Arsenal
 - 112: Career Start Year (for Legends only)
 - 113: Career End Year
 
+### ChatGPT evaluation for ranking of players:
+
+Pow Con Spd Fld Arm
+Pow:25 Con:87 Spd:91 Fld:80 Arm:20
+
+Rank = (Pow \* 0.3) + (Con \* 0.2) + (Spd \* 0.2) + (Fld \* 0.2) + (Arm \* 0.1)
+
+Rank = (Pow \* w1) + (Con \* w2) + (Spd \* w3) + (Fld \* w4) + (Arm \* w5)
+w1 = 0.25 (weight for Pow)
+w2 = 0.15 (weight for Con)
+w3 = 0.15 (weight for Spd)
+w4 = 0.2 (weight for Fld)
+w5 = 0.25 (weight for Arm)
+
+Rank Pow Con Spd Fld Arm
+Rank:B+ Pow:25 Con:87 Spd:91 Fld:80 Arm:20
+Rank:S Pow:63 Con:87 Spd:87 Fld:97 Arm:74
+Rank:B Pow:95 Con:27 Spd:51 Fld:68 Arm:63
+Rank:B Pow:74 Con:68 Spd:77 Fld:44 Arm:40
+Rank:B Pow:56 Con:74 Spd:28 Fld:73 Arm:97
+Rank:B Pow:56 Con:40 Spd:87 Fld:61 Arm:69
+Rank:B- Pow:64 Con:56 Spd:51 Fld:67 Arm:52
+Rank:B- Pow:62 Con:43 Spd:72 Fld:73 Arm:70
+Rank:B- Pow:23 Con:81 Spd:95 Fld:43 Arm:56
+Rank:B Pow:63 Con:69 Spd:54 Fld:18 Arm:51
+Rank:B- Pow:69 Con:45 Spd:56 Fld:52 Arm:53
+Rank:C+ Pow:32 Con:40 Spd:58 Fld:89 Arm:84
+Rank:C Pow:25 Con:76 Spd:24 Fld:68 Arm:66
+
 ### Setting up DNS servers and domain
 
 `https://github.com/adamelliotfields/notes/blob/master/miscellaneous/2018-01-29-vultr-dns-setup-with-google-domains.md`

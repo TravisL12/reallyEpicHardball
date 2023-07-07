@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TFilter } from "../types";
 import {
   ALL_GENDER,
@@ -12,6 +12,8 @@ import {
   ALL_CHEMISTRY,
   ALL_TEAMS,
   SECOND_POSITIONS,
+  PITCHING_TRAITS,
+  HITTER_TRAITS,
 } from "../constants";
 
 const changeItem = (cPrev: TFilter[], value: TFilter) => {
@@ -22,7 +24,7 @@ const changeItem = (cPrev: TFilter[], value: TFilter) => {
   return cPrev;
 };
 
-export const useFilters = () => {
+export const useFilters = (isPitchers: boolean) => {
   const [gender, setGender] = useState<TFilter[]>(
     ALL_GENDER.map((name) => ({ name, checked: true }))
   );
@@ -59,6 +61,12 @@ export const useFilters = () => {
   const [teams, setTeams] = useState<TFilter[]>(
     ALL_TEAMS.map((name) => ({ name, checked: true }))
   );
+
+  useEffect(() => {
+    const playerTraits = isPitchers ? PITCHING_TRAITS : HITTER_TRAITS;
+    setTraits(playerTraits.map((name) => ({ name, checked: true })));
+    setTraits2(playerTraits.map((name) => ({ name, checked: true })));
+  }, [isPitchers]);
 
   const setAllFilters = (type: string, isOn: boolean) => {
     if (type === "position") {
