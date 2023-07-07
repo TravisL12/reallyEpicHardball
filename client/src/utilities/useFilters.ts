@@ -56,17 +56,21 @@ export const useFilters = (isPitchers: boolean) => {
     ALL_TRAITS.map((name) => ({ name, checked: true }))
   );
   const [playerChemistry, setPlayerChemistry] = useState<TFilter[]>(
-    ALL_CHEMISTRY.map((name) => ({ name, checked: true }))
+    ALL_CHEMISTRY.map((name) => ({
+      name,
+      checked: true,
+    }))
   );
   const [teams, setTeams] = useState<TFilter[]>(
     ALL_TEAMS.map((name) => ({ name, checked: true }))
   );
 
-  useEffect(() => {
-    const playerTraits = isPitchers ? PITCHING_TRAITS : HITTER_TRAITS;
-    setTraits(playerTraits.map((name) => ({ name, checked: true })));
-    setTraits2(playerTraits.map((name) => ({ name, checked: true })));
-  }, [isPitchers]);
+  // changing between player/pitchers causes weird queries
+  // useEffect(() => {
+  //   const playerTraits = isPitchers ? PITCHING_TRAITS : HITTER_TRAITS;
+  //   setTraits(playerTraits.map((name) => ({ name, checked: true })));
+  //   setTraits2(playerTraits.map((name) => ({ name, checked: true })));
+  // }, [isPitchers]);
 
   const setAllFilters = (type: string, isOn: boolean) => {
     if (type === "position") {

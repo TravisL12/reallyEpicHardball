@@ -80,9 +80,7 @@ export const getTableCell = (
         <SFlex align="center" gap="4px">
           <Image
             title={value as string}
-            src={`${imageColumns[attribute]}${(
-              value as string
-            ).toLowerCase()}.png`}
+            src={`${imageColumns[attribute]}${value as string}.png`}
             style={{ height: "30px", width: "30px" }}
           />
           <div>{value}</div>

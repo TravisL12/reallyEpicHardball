@@ -125,9 +125,7 @@ const PlayerInfo = () => {
               <SFlex align="center" gap="4px">
                 <Image
                   title={player.playerChemistry}
-                  src={`${
-                    imageColumns.playerChemistry
-                  }${player.playerChemistry.toLowerCase()}.png`}
+                  src={`${imageColumns.playerChemistry}${player.playerChemistry}.png`}
                   style={{ height: "30px" }}
                 />
                 <p>{player.playerChemistry}</p>

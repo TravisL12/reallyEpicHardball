@@ -198,11 +198,11 @@ export const ALL_PITCHES = Object.keys(PITCH_TYPE).map((pitchKey) => {
 
 export const ALL_CHEMISTRY = [
   "None",
-  "competitive",
-  "crafty",
-  "disciplined",
-  "scholarly",
-  "spirited",
+  "Competitive",
+  "Crafty",
+  "Disciplined",
+  "Scholarly",
+  "Spirited",
 ];
 
 export const ALL_TEAMS = [
@@ -259,7 +259,6 @@ const SHARED_TRAITS = [
 ];
 
 export const PITCHING_TRAITS = [
-  ...SHARED_TRAITS,
   "BB Prone",
   "Composed",
   "Crossed Up",
@@ -288,7 +287,6 @@ export const PITCHING_TRAITS = [
 ];
 
 export const HITTER_TRAITS = [
-  ...SHARED_TRAITS,
   "Ace Exterminator",
   "Bad Ball Hitter",
   "Bad Jumps",
