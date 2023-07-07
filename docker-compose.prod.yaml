@@ -1,0 +1,48 @@
+version: "3.9"
+services:
+  api:
+    restart: always
+    stdin_open: true
+    build: ./server
+    environment:
+      - DATABASE_URL=postgresql://root:password@postgresDb:5432/mydb?schema=public
+    volumes:
+      - ./server:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - 5005:5005
+    depends_on:
+      - postgresDb
+
+  postgresDb:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_DB=mydb
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresDb:/var/lib/postgresql/data
+
+  client:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build: ./client
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+
+  nginx:
+    depends_on:
+      - api
+      - client
+    restart: always
+    build: ./nginx
+    ports:
+      - "3050:80"
+volumes:
+  postgresDb:
+    driver: local
