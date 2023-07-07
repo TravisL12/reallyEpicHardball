@@ -21,11 +21,13 @@ export const getTableCell = (
       const link = isPitchers ? "/pitchers/player" : "/player";
       return (
         <SFullNameCell align="center">
-          <Image
-            title={value}
-            src={`${imageColumns[SKILLS.teamSlug]}${player.teamSlug}.png`}
-            style={{ width: "30px" }}
-          />
+          {player.teamSlug && (
+            <Image
+              title={value}
+              src={`${imageColumns[SKILLS.teamSlug]}${player.teamSlug}.png`}
+              style={{ width: "30px" }}
+            />
+          )}
           <SLink to={`${link}/${player.localID}`}>{value}</SLink>
         </SFullNameCell>
       );
