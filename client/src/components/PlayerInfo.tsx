@@ -87,7 +87,7 @@ const PlayerInfo = () => {
                 return null;
               }
               return (
-                <SFlex gap="8px" align="center">
+                <SFlex gap="8px" align="center" key={attr}>
                   <SBox>{tableHeaders[attr].toUpperCase()}</SBox>
                   <SBox width="80px" style={{ textAlign: "center" }}>
                     {/* @ts-expect-error */}
@@ -100,7 +100,7 @@ const PlayerInfo = () => {
           {hasPitcherRole && (
             <SFlex direction="column" gap="8px" align="center">
               {pitcherAttr.map((attr) => (
-                <SFlex gap="8px" align="center">
+                <SFlex gap="8px" align="center" key={`pitcher-${attr}`}>
                   <SBox>{tableHeaders[attr].toUpperCase()}</SBox>
                   <SBox width="80px" style={{ textAlign: "center" }}>
                     {/* @ts-expect-error */}
