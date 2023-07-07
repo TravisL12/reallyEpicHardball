@@ -1,6 +1,14 @@
 import styled from "styled-components";
 
 import { SBox, SFlex } from "./styles";
+import { devices } from "./responsiveStyles";
+
+export const SFilterContainer = styled(SFlex)`
+  display: none;
+  @media ${devices.laptop} {
+    width: 100%;
+  }
+`;
 
 export const FilterPortalDropdown = styled(SFlex)`
   position: absolute;

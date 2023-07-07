@@ -1,4 +1,5 @@
 import { useAppContext } from "../../AppContext";
+import { SFilterContainer } from "../../styles/FilterList.styles";
 import { SFlex } from "../../styles/styles";
 import FilterCheckbox from "./FilterCheckbox";
 import FilterDropdown from "./FilterDropdown";
@@ -13,7 +14,7 @@ const Filters = ({
   const { filters, setFilter, setAllFilters } = useAppContext();
 
   return (
-    <SFlex justify="space-between" align="center" style={{ width: "100%" }}>
+    <SFilterContainer justify="space-between" align="center">
       <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
         <FilterCheckbox
           title="League"
@@ -127,7 +128,7 @@ const Filters = ({
           {count} {isPitcher ? "Pitchers" : "Players"}
         </span>
       )}
-    </SFlex>
+    </SFilterContainer>
   );
 };
 

@@ -1,4 +1,5 @@
 import { useAppContext } from "../AppContext";
+import { SAppHeader, SLinksContainer } from "../styles/header.styles";
 import { SFlex, SHeader } from "../styles/styles";
 import HeaderLink from "./HeaderLink";
 import Image from "./Image";
@@ -7,14 +8,12 @@ const AppHeader = () => {
   const { loading } = useAppContext();
 
   return (
-    <SFlex align="center" justify="space-between" style={{ width: "100%" }}>
-      <SFlex gap="20px" align="center">
-        <SFlex gap="5px" style={{ marginLeft: "20px" }}>
-          <HeaderLink to="/" text="Players" />
-          <HeaderLink to="/pitchers" text="Pitchers" />
-          <HeaderLink to="/teams" text="Teams" />
-        </SFlex>
-      </SFlex>
+    <SAppHeader align="center" justify="space-between">
+      <SLinksContainer gap="5px">
+        <HeaderLink to="/" text="Players" />
+        <HeaderLink to="/pitchers" text="Pitchers" />
+        <HeaderLink to="/teams" text="Teams" />
+      </SLinksContainer>
       {loading.players && (
         <div style={{ justifySelf: "flex-end" }}>loading players</div>
       )}
@@ -25,7 +24,7 @@ const AppHeader = () => {
           style={{ height: "30px" }}
         />
       </SFlex>
-    </SFlex>
+    </SAppHeader>
   );
 };
 

@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { checkedLabel, linkHoverColor } from "./colors";
+import { devices } from "./responsiveStyles";
 
 const Spacing = {
   0: "2px",
@@ -60,9 +61,12 @@ export const SHeader = styled.h1`
 
 export const SAppContainer = styled(SFlex)`
   height: 100vh;
-  padding: ${Spacing[3]};
   color: white;
   overflow: auto;
+  width: 100%;
+  @media ${devices.laptop} {
+    padding: ${Spacing[3]};
+  }
 `;
 
 export const SBodyContainer = styled(SFlex)`
