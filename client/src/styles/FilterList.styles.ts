@@ -6,6 +6,7 @@ import { devices } from "./responsiveStyles";
 export const SFilterContainer = styled(SFlex)`
   display: none;
   @media ${devices.laptop} {
+    display: flex;
     width: 100%;
   }
 `;
