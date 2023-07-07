@@ -7,7 +7,7 @@ import {
   linkHoverColor,
   checkedLabel,
 } from "./colors";
-import { SFlex } from "./styles";
+import { SBox, SFlex } from "./styles";
 import { devices } from "./responsiveStyles";
 
 export const SSkillCell = styled.div`
@@ -92,10 +92,14 @@ export const STeamCell = styled(SFlex)`
   }
 `;
 
-export const SPlayerTableContainer = styled(SFlex)`
+export const SPlayerTableContainer = styled(SFlex)<{ $hasOutlet: boolean }>`
+  display: ${({ $hasOutlet }) => ($hasOutlet ? "none" : "flex")};
   flex: 1;
   height: 100%;
   overflow: auto;
+  @media ${devices.laptop} {
+    display: flex;
+  }
 `;
 
 export const SHead = styled.th<{

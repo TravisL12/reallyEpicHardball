@@ -60,11 +60,13 @@ export const SHeader = styled.h1`
 `;
 
 export const SAppContainer = styled(SFlex)`
-  height: 100vh;
+  height: calc(100vh - 100px);
   color: white;
   overflow: auto;
   width: 100%;
+
   @media ${devices.laptop} {
+    height: 100vh;
     padding: ${Spacing[3]};
   }
 `;
@@ -73,7 +75,10 @@ export const SBodyContainer = styled(SFlex)`
   width: 100%;
   flex: 1;
   overflow: auto;
-  gap: 12px;
+
+  @media ${devices.laptop} {
+    gap: 12px;
+  }
 `;
 
 export const SCheckbox = styled.div`

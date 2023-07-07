@@ -38,7 +38,7 @@ const PlayersTable = ({
   }
 
   return (
-    <SPlayerTableContainer direction="column">
+    <>
       <STable>
         <thead>
           <tr>
@@ -114,7 +114,7 @@ const PlayersTable = ({
           <p>{`Loading more players`}</p>
         </div>
       )}
-    </SPlayerTableContainer>
+    </>
   );
 };
 

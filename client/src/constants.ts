@@ -1,7 +1,7 @@
 export const BASE_URL = `http://${window.location.hostname}:5005`;
-const IMAGES_LOCAL = `${BASE_URL}/images`;
-const IMAGE_AWS_URL = `https://smb4.s3.us-west-2.amazonaws.com`;
-export const IMAGE_BASE_URL = IMAGES_LOCAL;
+const IMAGE_URL = `${BASE_URL}/images`;
+const IMAGE_URL_AWS = `https://smb4.s3.us-west-2.amazonaws.com`;
+export const IMAGE_BASE_URL = IMAGE_URL;
 
 export const SKILLS = {
   arsenal: "arsenal",
@@ -198,11 +198,11 @@ export const ALL_PITCHES = Object.keys(PITCH_TYPE).map((pitchKey) => {
 
 export const ALL_CHEMISTRY = [
   "None",
-  "Competitive",
-  "Crafty",
-  "Disciplined",
-  "Scholarly",
-  "Spirited",
+  "competitive",
+  "crafty",
+  "disciplined",
+  "scholarly",
+  "spirited",
 ];
 
 export const ALL_TEAMS = [
