@@ -9,10 +9,13 @@ const AppHeader = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const { loading } = useAppContext();
 
+  const close = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <SAppHeader align="center" justify="space-between">
-      <SMenuBtn onClick={() => setIsOpen(!isOpen)}>x</SMenuBtn>
-      <SLinksContainer gap="5px" $isOpen={isOpen}>
+    <SAppHeader align="center">
+      <SLinksContainer gap="5px" $isOpen={isOpen} onClick={() => close()}>
         <HeaderLink to="/" text="Players" />
         <HeaderLink to="/pitchers" text="Pitchers" />
         <HeaderLink to="/teams" text="Teams" />
@@ -28,6 +31,17 @@ const AppHeader = () => {
           style={{ height: "30px" }}
         />
       </SFlex>
+      <SMenuBtn
+        onClick={() => setIsOpen(!isOpen)}
+        $isOpen={isOpen}
+        direction="column"
+        justify="space-between"
+        gap="5px"
+      >
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </SMenuBtn>
     </SAppHeader>
   );
 };

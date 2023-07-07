@@ -2,11 +2,14 @@ import styled from "styled-components";
 import { SFlex } from "./styles";
 import { devices } from "./responsiveStyles";
 import { NavLink } from "react-router-dom";
+import { rowHoverColor } from "./colors";
 
 export const SAppHeader = styled(SFlex)`
-  flex-direction: column;
   width: 100%;
+  padding: 20px 0;
+  justify-content: center;
   @media ${devices.laptop} {
+    justify-content: space-between;
     flex-direction: row;
     padding: 0 20px;
   }
@@ -14,7 +17,7 @@ export const SAppHeader = styled(SFlex)`
 
 export const SLinksContainer = styled(SFlex)<{ $isOpen?: boolean }>`
   position: fixed;
-  top: 40px;
+  top: 60px;
   right: ${({ $isOpen }) => ($isOpen ? "0" : "-100%")};
   z-index: 3;
   flex-direction: column;
@@ -30,9 +33,33 @@ export const SLinksContainer = styled(SFlex)<{ $isOpen?: boolean }>`
   }
 `;
 
-export const SMenuBtn = styled.button`
-  align-self: flex-end;
-  margin: 10px 10px 0 0;
+export const SMenuBtn = styled(SFlex)<{ $isOpen?: boolean }>`
+  cursor: pointer;
+  position: absolute;
+  right: ${({ $isOpen }) => ($isOpen ? "10px" : "10px")};
+  box-sizing: unset;
+  background: ${rowHoverColor};
+  padding: 10px;
+  width: 30px;
+  height: 20px;
+
+  .line {
+    width: 30px;
+    height: 2px;
+    background: red;
+    top: 20px;
+    position: ${({ $isOpen }) => ($isOpen ? "absolute" : "")};
+    &:nth-child(1) {
+      transform: ${({ $isOpen }) => ($isOpen ? "rotate(45deg)" : "")};
+    }
+    &:nth-child(2) {
+      transform: ${({ $isOpen }) => ($isOpen ? "rotate(-45deg)" : "")};
+    }
+    &:nth-child(3) {
+      display: ${({ $isOpen }) => ($isOpen ? "none" : "")};
+    }
+  }
+
   @media ${devices.laptop} {
     display: none;
   }
