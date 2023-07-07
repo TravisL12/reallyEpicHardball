@@ -1,4 +1,4 @@
-import { SHeaderLink } from "../styles/styles";
+import { SHeaderLink } from "../styles/header.styles";
 
 const HeaderLink = ({ text, to }: { text: string; to: string }) => {
   return (
