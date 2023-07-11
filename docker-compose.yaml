@@ -42,7 +42,7 @@ services:
     restart: always
     build:
       context: ./nginx
-      target: "base"
+      target: "dev"
     ports:
       - 80:80
 volumes:
