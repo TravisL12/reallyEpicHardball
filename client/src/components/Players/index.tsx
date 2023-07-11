@@ -46,7 +46,7 @@ const Players = () => {
 
   return (
     <>
-      <Filters count={playerCount} />
+      <Filters count={playerCount} isPitcher={isPitchers} />
       <SBodyContainer>
         {outlet}
         <SPlayerTableContainer direction="column" $hasOutlet={!!outlet}>

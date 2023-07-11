@@ -3,6 +3,7 @@ import {
   tableHeaders,
   centeredColumns,
   numberColumns,
+  NO_SORT_COLUMNS,
 } from "../constants";
 import { IPlayer } from "../types";
 import {
@@ -53,7 +54,7 @@ const PlayersTable = ({
                   key={`header-${attributeKey}`}
                   $isSort={isSort}
                   onClick={() => {
-                    if (!sort) {
+                    if (!sort || NO_SORT_COLUMNS.includes(attributeKey)) {
                       return;
                     }
                     const key = playerColumnSort[attributeKey] ?? attributeKey;

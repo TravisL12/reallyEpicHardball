@@ -8,7 +8,6 @@ import {
   ALL_PITCHING,
   ALL_POSITIONS,
   ALL_PITCHES,
-  ALL_TRAITS,
   ALL_CHEMISTRY,
   ALL_TEAMS,
   SECOND_POSITIONS,
@@ -26,51 +25,47 @@ const changeItem = (cPrev: TFilter[], value: TFilter) => {
 
 export const useFilters = (isPitchers: boolean) => {
   const [gender, setGender] = useState<TFilter[]>(
-    ALL_GENDER.map((name) => ({ name, checked: true }))
+    ALL_GENDER.map((name) => ({ name, checked: false }))
   );
   const [bats, setBats] = useState<TFilter[]>(
-    ALL_BATS.map((name) => ({ name, checked: true }))
+    ALL_BATS.map((name) => ({ name, checked: false }))
   );
   const [throws, setThrows] = useState<TFilter[]>(
-    ALL_THROWS.map((name) => ({ name, checked: true }))
+    ALL_THROWS.map((name) => ({ name, checked: false }))
   );
   const [league, setLeague] = useState<TFilter[]>(
-    ALL_LEAGUE.map((name) => ({ name, checked: true }))
+    ALL_LEAGUE.map((name) => ({ name, checked: false }))
   );
   const [position, setPosition] = useState<TFilter[]>(
-    ALL_POSITIONS.map((name) => ({ name, checked: true }))
+    ALL_POSITIONS.map((name) => ({ name, checked: false }))
   );
   const [pitching, setPitching] = useState<TFilter[]>(
-    ALL_PITCHING.map((name) => ({ name, checked: true }))
+    ALL_PITCHING.map((name) => ({ name, checked: false }))
   );
   const [secondPosition, setSecondPosition] = useState<TFilter[]>(
-    SECOND_POSITIONS.map((name) => ({ name, checked: true }))
+    SECOND_POSITIONS.map((name) => ({ name, checked: false }))
   );
   const [pitches, setPitches] = useState<TFilter[]>(
     ALL_PITCHES.map((name) => ({ name, checked: false }))
   );
-  const [traits, setTraits] = useState<TFilter[]>(
-    ALL_TRAITS.map((name) => ({ name, checked: true }))
-  );
-  const [traits2, setTraits2] = useState<TFilter[]>(
-    ALL_TRAITS.map((name) => ({ name, checked: true }))
-  );
+  const [traits, setTraits] = useState<TFilter[]>([]);
+  const [traits2, setTraits2] = useState<TFilter[]>([]);
   const [playerChemistry, setPlayerChemistry] = useState<TFilter[]>(
     ALL_CHEMISTRY.map((name) => ({
       name,
-      checked: true,
+      checked: false,
     }))
   );
   const [teams, setTeams] = useState<TFilter[]>(
-    ALL_TEAMS.map((name) => ({ name, checked: true }))
+    ALL_TEAMS.map((name) => ({ name, checked: false }))
   );
 
   // changing between player/pitchers causes weird queries
-  // useEffect(() => {
-  //   const playerTraits = isPitchers ? PITCHING_TRAITS : HITTER_TRAITS;
-  //   setTraits(playerTraits.map((name) => ({ name, checked: true })));
-  //   setTraits2(playerTraits.map((name) => ({ name, checked: true })));
-  // }, [isPitchers]);
+  useEffect(() => {
+    const playerTraits = isPitchers ? PITCHING_TRAITS : HITTER_TRAITS;
+    setTraits(playerTraits.map((name) => ({ name, checked: false })));
+    setTraits2(playerTraits.map((name) => ({ name, checked: false })));
+  }, [isPitchers]);
 
   const setAllFilters = (type: string, isOn: boolean) => {
     if (type === "position") {

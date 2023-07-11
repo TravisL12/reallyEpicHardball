@@ -82,6 +82,8 @@ export const PITCHER_ATTRIBUTES: string[] = [
   SKILLS.trait2,
 ];
 
+export const NO_SORT_COLUMNS = [SKILLS.arsenal];
+
 // for columns with abbreviated (short) names
 export const playerColumnSort = {
   [SKILLS.fullName]: SKILLS.firstName,
@@ -259,6 +261,7 @@ const SHARED_TRAITS = [
 ];
 
 export const PITCHING_TRAITS = [
+  ...SHARED_TRAITS,
   "BB Prone",
   "Composed",
   "Crossed Up",
@@ -287,6 +290,7 @@ export const PITCHING_TRAITS = [
 ];
 
 export const HITTER_TRAITS = [
+  ...SHARED_TRAITS,
   "Ace Exterminator",
   "Bad Ball Hitter",
   "Bad Jumps",
