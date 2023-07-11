@@ -50,7 +50,7 @@ services:
       - 80:80
       # - 443:443
     volumes:
-      - ./client/build:/var/www/html
+      - ./client/build:/var/www/reallyepichardball/public_html
       # - client:/etc/nginx/templates:ro
       # - ./etc/letsencrypt:/etc/letsencrypt:ro
 
