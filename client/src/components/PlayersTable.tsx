@@ -12,7 +12,6 @@ import {
   SHead,
   SSortArrow,
   SSortCell,
-  SPlayerTableContainer,
 } from "../styles/playerTable.styles";
 import { getTableCell } from "../utilities/tableHelpers";
 import { useAppContext } from "../AppContext";

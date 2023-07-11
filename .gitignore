@@ -22,7 +22,7 @@ server/public/images
 /coverage
 
 # production
-/build
+*/build
 
 # misc
 .DS_Store

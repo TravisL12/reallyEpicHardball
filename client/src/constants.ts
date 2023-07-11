@@ -1,7 +1,8 @@
 export const BASE_URL = `http://${window.location.hostname}:5005`;
 const IMAGE_URL = `${BASE_URL}/images`;
 const IMAGE_URL_AWS = `https://smb4.s3.us-west-2.amazonaws.com`;
-export const IMAGE_BASE_URL = IMAGE_URL;
+export const IMAGE_BASE_URL =
+  process.env.NODE_ENV === "production" ? IMAGE_URL_AWS : IMAGE_URL;
 
 export const SKILLS = {
   arsenal: "arsenal",

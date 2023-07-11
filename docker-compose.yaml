@@ -30,7 +30,10 @@ services:
     stdin_open: true
     environment:
       - CHOKIDAR_USEPOLLING=true
-    build: ./client
+      - REACT_APP_API_PORT=5005
+    build:
+      context: ./client
+      target: "client_dev"
     volumes:
       - /app/node_modules
       - ./client:/app

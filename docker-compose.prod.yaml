@@ -30,8 +30,10 @@ services:
   client:
     stdin_open: true
     environment:
-      - CHOKIDAR_USEPOLLING=true
-    build: ./client
+      - REACT_APP_API_PORT=5005
+    build:
+      context: ./client
+      target: "client_prod"
     volumes:
       - /app/node_modules
       - ./client:/app
@@ -46,24 +48,27 @@ services:
       target: "prod"
     ports:
       - 80:80
-      - 443:443
+      # - 443:443
     volumes:
-      - ./etc/nginx/templates:/etc/nginx/templates:ro
-      - ./etc/letsencrypt:/etc/letsencrypt:ro
+      - ./client/build:/usr/share/nginx/html
+      # - client:/etc/nginx/templates:ro
+      # - ./etc/letsencrypt:/etc/letsencrypt:ro
 
-  certbot:
-    container_name: certbot
-    image: certbot/certbot:latest
-    depends_on:
-      - nginx
-    command: >-
-      certonly --reinstall --webroot --webroot-path=/var/www/certbot
-      --email admin@reallyepichardball.com --agree-tos --no-eff-email
-      -d reallyepichardball.com
-    volumes:
-      - ./etc/letsencrypt:/etc/letsencrypt
-      - ./certbot/data:/var/www/certbot
+  # certbot:
+  #   container_name: certbot
+  #   image: certbot/certbot:latest
+  #   depends_on:
+  #     - nginx
+  #   command: >-
+  #     certonly --reinstall --webroot --webroot-path=/var/www/certbot
+  #     --email admin@reallyepichardball.com --agree-tos --no-eff-email
+  #     -d reallyepichardball.com
+  #   volumes:
+  #     - ./etc/letsencrypt:/etc/letsencrypt
+  #     - ./certbot/data:/var/www/certbot
 
 volumes:
+  client:
+    driver: local
   postgresDb:
     driver: local
