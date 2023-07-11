@@ -13,3 +13,5 @@ COPY yarn.lock ./
 RUN yarn
 COPY ./ ./
 RUN yarn build
+
+#  PREBUILD IT FIRST AND THEN LET IT COPY, HACKY BUT IT WORKS!
