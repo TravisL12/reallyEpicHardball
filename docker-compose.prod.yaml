@@ -1,3 +1,4 @@
+# PRODUCTION!!!!!!!!!!!!!!
 version: "3.9"
 services:
   api:
@@ -22,7 +23,7 @@ services:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=password
     ports:
-      - "5432:5432"
+      - 5432:5432
     volumes:
       - postgresDb:/var/lib/postgresql/data
 
@@ -40,9 +41,14 @@ services:
       - api
       - client
     restart: always
+    environment:
+      - VIRTUAL_HOST=reallyepichardball.com
+      - LETSENCRYPT_HOST=reallyepichardball.com
+      - LETSENCRYPT_EMAIL=admin@reallyepichardball.com
     build: ./nginx
     ports:
-      - "3050:80"
+      - 80:80
+      - 443:443
 volumes:
   postgresDb:
     driver: local
