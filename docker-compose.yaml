@@ -40,7 +40,9 @@ services:
       - api
       - client
     restart: always
-    build: ./nginx
+    build:
+      context: ./nginx
+      target: "base"
     ports:
       - 80:80
 volumes:
