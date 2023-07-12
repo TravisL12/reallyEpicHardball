@@ -37,7 +37,6 @@ const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
     <AppContext.Provider
       value={{
         ...apiData,
-
         filters,
         setFilter,
         setAllFilters,

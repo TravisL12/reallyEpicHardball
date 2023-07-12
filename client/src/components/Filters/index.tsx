@@ -16,14 +16,28 @@ const Filters = ({
   return (
     <SFilterContainer justify="space-between" align="center">
       <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
-        <FilterCheckbox
-          title="League"
-          titleWidth="72px"
-          type="league"
-          isImgType={true}
-          setFilter={setFilter}
-          filterItem={filters.league}
-        />
+        <SFlex direction="column" gap="5px">
+          <div>
+            <label htmlFor="nameQuery">Player Search</label>
+            <input
+              type="text"
+              id="nameQuery"
+              placeholder="Search by player name"
+              value={filters.nameQuery || ""}
+              onChange={(e) => {
+                setFilter();
+              }}
+            />
+          </div>
+          <FilterCheckbox
+            title="League"
+            titleWidth="72px"
+            type="league"
+            isImgType={true}
+            setFilter={setFilter}
+            filterItem={filters.league}
+          />
+        </SFlex>
         <FilterCheckbox
           title="Gender"
           titleWidth="50px"
