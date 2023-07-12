@@ -25,25 +25,25 @@ const changeItem = (cPrev: TFilter[], value: TFilter) => {
 
 export const useFilters = (isPitchers: boolean) => {
   const [gender, setGender] = useState<TFilter[]>(
-    ALL_GENDER.map((name) => ({ name, checked: false }))
+    ALL_GENDER.map((name) => ({ name, checked: true }))
   );
   const [bats, setBats] = useState<TFilter[]>(
-    ALL_BATS.map((name) => ({ name, checked: false }))
+    ALL_BATS.map((name) => ({ name, checked: true }))
   );
   const [throws, setThrows] = useState<TFilter[]>(
-    ALL_THROWS.map((name) => ({ name, checked: false }))
+    ALL_THROWS.map((name) => ({ name, checked: true }))
   );
   const [league, setLeague] = useState<TFilter[]>(
-    ALL_LEAGUE.map((name) => ({ name, checked: false }))
+    ALL_LEAGUE.map((name) => ({ name, checked: true }))
   );
   const [position, setPosition] = useState<TFilter[]>(
-    ALL_POSITIONS.map((name) => ({ name, checked: false }))
+    ALL_POSITIONS.map((name) => ({ name, checked: true }))
   );
   const [pitching, setPitching] = useState<TFilter[]>(
-    ALL_PITCHING.map((name) => ({ name, checked: false }))
+    ALL_PITCHING.map((name) => ({ name, checked: true }))
   );
   const [secondPosition, setSecondPosition] = useState<TFilter[]>(
-    SECOND_POSITIONS.map((name) => ({ name, checked: false }))
+    SECOND_POSITIONS.map((name) => ({ name, checked: true }))
   );
   const [pitches, setPitches] = useState<TFilter[]>(
     ALL_PITCHES.map((name) => ({ name, checked: false }))
@@ -53,18 +53,18 @@ export const useFilters = (isPitchers: boolean) => {
   const [playerChemistry, setPlayerChemistry] = useState<TFilter[]>(
     ALL_CHEMISTRY.map((name) => ({
       name,
-      checked: false,
+      checked: true,
     }))
   );
   const [teams, setTeams] = useState<TFilter[]>(
-    ALL_TEAMS.map((name) => ({ name, checked: false }))
+    ALL_TEAMS.map((name) => ({ name, checked: true }))
   );
 
   // changing between player/pitchers causes weird queries
   useEffect(() => {
     const playerTraits = isPitchers ? PITCHING_TRAITS : HITTER_TRAITS;
-    setTraits(playerTraits.map((name) => ({ name, checked: false })));
-    setTraits2(playerTraits.map((name) => ({ name, checked: false })));
+    setTraits(playerTraits.map((name) => ({ name, checked: true })));
+    setTraits2(playerTraits.map((name) => ({ name, checked: true })));
   }, [isPitchers]);
 
   const setAllFilters = (type: string, isOn: boolean) => {
