@@ -21,17 +21,18 @@ const Players = () => {
     playerCount,
     isPitchers,
   } = useAppContext();
-  const getPlayers = useCallback(() => {
+
+  const getPlayers = (shouldReset?: boolean) => {
     if (!isPitchers) {
-      fetchPlayers(true);
+      fetchPlayers(shouldReset);
     } else {
-      fetchPitchers(true);
+      fetchPitchers(shouldReset);
     }
-  }, [isPitchers]);
+  };
 
   useEffect(() => {
-    getPlayers();
-  }, [getPlayers]);
+    getPlayers(true);
+  }, [isPitchers]);
 
   const { ref } = useInView({
     threshold: 0.25,
