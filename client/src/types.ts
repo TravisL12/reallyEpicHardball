@@ -55,7 +55,6 @@ export interface IAppContext {
   loading: ILoading;
   sortPlayers: any;
   fetchPlayers: any;
-  searchPlayers: any;
   fetchAllTeams: any;
   fetchSingleTeam: any;
   fetchSinglePlayer: any;
@@ -64,7 +63,7 @@ export interface IAppContext {
   allTeams?: ITeam[];
   filters: TAllFilters;
   setFilter: (type: string, value: TFilter, nameQuery?: string) => void;
-  setAllFilters: (type: string, isOn: boolean) => void;
+  setAllFilters: (type: string, isOn: boolean, nameQuery?: string) => void;
   hasMorePlayers: boolean;
   playerCount?: number;
   isPitchers: boolean;

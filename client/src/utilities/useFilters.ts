@@ -68,7 +68,7 @@ export const useFilters = (isPitchers: boolean) => {
     setTraits2(playerTraits.map((name) => ({ name, checked: true })));
   }, [isPitchers]);
 
-  const setAllFilters = (type: string, isOn: boolean) => {
+  const setAllFilters = (type: string, isOn: boolean, nameQuery?: string) => {
     if (type === "position") {
       const values = position.map((item) => ({ ...item, checked: isOn }));
       setPosition(values);
@@ -103,6 +103,9 @@ export const useFilters = (isPitchers: boolean) => {
     if (type === "teams") {
       const values = teams.map((item) => ({ ...item, checked: isOn }));
       setTeams(values);
+    }
+    if (nameQuery !== undefined) {
+      setNameFilter(nameQuery);
     }
   };
 

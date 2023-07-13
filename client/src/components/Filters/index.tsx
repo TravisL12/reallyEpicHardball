@@ -20,6 +20,10 @@ const Filters = ({
     setFilter(type, value, nameQuery);
   };
 
+  const submitAllFilters = (type: string, isOn: boolean) => {
+    setAllFilters(type, isOn, nameQuery);
+  };
+
   return (
     <SFilterContainer justify="space-between" align="center">
       <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
@@ -85,7 +89,7 @@ const Filters = ({
                 titleWidth="55px"
                 type="pitching"
                 setFilter={submitFilters}
-                setAllFilters={setAllFilters}
+                setAllFilters={submitAllFilters}
                 filterItem={filters.pitching}
               />
               <FilterCheckbox
@@ -93,7 +97,7 @@ const Filters = ({
                 titleWidth="55px"
                 type="pitches"
                 setFilter={submitFilters}
-                setAllFilters={setAllFilters}
+                setAllFilters={submitAllFilters}
                 filterItem={filters.pitches}
               />
             </>
@@ -104,14 +108,14 @@ const Filters = ({
                 type="position"
                 options={filters.position}
                 setFilter={submitFilters}
-                setAllFilters={setAllFilters}
+                setAllFilters={submitAllFilters}
               />
               <FilterDropdown
                 title="2nd Position"
                 type="secondPosition"
                 options={filters.secondPosition}
                 setFilter={submitFilters}
-                setAllFilters={setAllFilters}
+                setAllFilters={submitAllFilters}
               />
             </>
           )}
@@ -123,21 +127,21 @@ const Filters = ({
               type="teams"
               options={filters.teams}
               setFilter={submitFilters}
-              setAllFilters={setAllFilters}
+              setAllFilters={submitAllFilters}
             />
             <FilterDropdown
               title="Trait"
               type="traits"
               options={filters.traits}
               setFilter={submitFilters}
-              setAllFilters={setAllFilters}
+              setAllFilters={submitAllFilters}
             />
             <FilterDropdown
               title="Trait 2"
               type="traits2"
               options={filters.traits2}
               setFilter={submitFilters}
-              setAllFilters={setAllFilters}
+              setAllFilters={submitAllFilters}
             />
           </SFlex>
           <FilterCheckbox
@@ -146,7 +150,7 @@ const Filters = ({
             type="playerChemistry"
             isImgType={true}
             setFilter={submitFilters}
-            setAllFilters={setAllFilters}
+            setAllFilters={submitAllFilters}
             filterItem={filters.playerChemistry}
           />
         </SFlex>
