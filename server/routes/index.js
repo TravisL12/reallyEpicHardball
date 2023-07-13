@@ -68,9 +68,11 @@ router.get("/players", async function (req, res, next) {
   const where = {
     firstName: {
       contains: nameQuery,
+      mode: "insensitive",
     },
     lastName: {
       contains: nameQuery,
+      mode: "insensitive",
     },
     AND: [
       ...sharedWhere,
