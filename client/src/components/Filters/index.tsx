@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAppContext } from "../../AppContext";
-import { SFilterContainer } from "../../styles/FilterList.styles";
+import { SFilterContainer, SSearchForm } from "../../styles/FilterList.styles";
 import { SFlex } from "../../styles/styles";
 import FilterCheckbox from "./FilterCheckbox";
 import FilterDropdown from "./FilterDropdown";
@@ -28,14 +28,13 @@ const Filters = ({
     <SFilterContainer justify="space-between" align="center">
       <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
         <SFlex direction="column" gap="5px">
-          <form
+          <SSearchForm
             id="search-player-form"
             onSubmit={(e) => {
               e.preventDefault();
               submitFilters("name", {} as TFilter);
             }}
           >
-            <label htmlFor="nameQuery">Player Search</label>
             <input
               type="text"
               id="nameQuery"
@@ -46,7 +45,7 @@ const Filters = ({
               }}
             />
             <button>Search</button>
-          </form>
+          </SSearchForm>
           <FilterCheckbox
             title="League"
             titleWidth="72px"

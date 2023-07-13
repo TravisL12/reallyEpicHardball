@@ -11,6 +11,33 @@ export const SFilterContainer = styled(SFlex)`
   }
 `;
 
+export const SSearchForm = styled.form`
+  position: relative;
+  min-width: 300px;
+  height: 30px;
+  font-size: 16px;
+
+  input[type="text"] {
+    width: 100%;
+    height: 100%;
+    font-size: inherit;
+    padding: 4px 8px;
+    background: black;
+    color: white;
+    &::placeholder {
+      font-weight: 300;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+  }
+`;
+
 export const FilterPortalDropdown = styled(SFlex)`
   position: absolute;
   z-index: 10;
@@ -72,33 +99,6 @@ export const FilterListContainer = styled(SBox)`
   background: lightblue;
   overflow: hidden;
   font-size: 14px;
-
-  .search-input {
-    position: relative;
-    min-width: 400px;
-    height: 30px;
-    font-size: 16px;
-
-    input[type="text"] {
-      width: 100%;
-      height: 100%;
-      font-size: inherit;
-      padding: 4px 8px;
-      background: lightblue;
-      color: white;
-      &::placeholder {
-        font-weight: 300;
-      }
-    }
-
-    button {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      height: 100%;
-    }
-  }
 
   .all-items {
     cursor: pointer;
