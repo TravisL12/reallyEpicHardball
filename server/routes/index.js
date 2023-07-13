@@ -50,7 +50,14 @@ router.get("/player", async function (req, res, next) {
 });
 
 router.get("/players", async function (req, res, next) {
-  const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
+  const {
+    take,
+    skip,
+    sortAttr = "id",
+    isAsc,
+    nameQuery,
+    ...filters
+  } = req.query;
   const { bats, position, secondPosition } = filters;
   const sharedWhere = sharedWhereQuery(filters);
 
@@ -59,6 +66,12 @@ router.get("/players", async function (req, res, next) {
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
 
   const where = {
+    firstName: {
+      contains: nameQuery,
+    },
+    lastName: {
+      contains: nameQuery,
+    },
     AND: [
       ...sharedWhere,
       { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
