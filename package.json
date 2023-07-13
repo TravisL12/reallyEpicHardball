@@ -1,0 +1,14 @@
+{
+  "name": "smb4_site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TravisL12/reallyEpicHardball.git",
+  "author": "Travis Lawrence <travis.lawrence12@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "run-prod-build": "yarn --cwd ./client build && docker compose -f docker-compose.yaml -f docker-compose.prod.yaml up --build",
+    "run-prod": "yarn --cwd ./client build && docker compose -f docker-compose.yaml -f docker-compose.prod.yaml up",
+    "run-dev-build": "docker compose up --build",
+    "run-dev": "docker compose up"
+  }
+}

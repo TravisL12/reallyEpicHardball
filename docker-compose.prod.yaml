@@ -68,5 +68,4 @@ services:
   #     - ./certbot/data:/var/www/certbot
 
 volumes:
-  client:
   postgresDb:
