@@ -11,13 +11,18 @@ const Filters = ({
   isPitcher?: boolean;
   count?: number;
 }) => {
-  const { filters, setFilter, setAllFilters } = useAppContext();
+  const { filters, searchPlayers, setFilter, setAllFilters } = useAppContext();
 
   return (
     <SFilterContainer justify="space-between" align="center">
       <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
         <SFlex direction="column" gap="5px">
-          <div>
+          <form
+            id="search-player-form"
+            onSubmit={() => {
+              searchPlayers(filters.nameQuery);
+            }}
+          >
             <label htmlFor="nameQuery">Player Search</label>
             <input
               type="text"
@@ -25,17 +30,18 @@ const Filters = ({
               placeholder="Search by player name"
               value={filters.nameQuery || ""}
               onChange={(e) => {
-                setFilter();
+                searchPlayers();
               }}
             />
-          </div>
+            <button>Search</button>
+          </form>
           <FilterCheckbox
             title="League"
             titleWidth="72px"
             type="league"
             isImgType={true}
             setFilter={setFilter}
-            filterItem={filters.league}
+            filterItem={filters.checkbox.league}
           />
         </SFlex>
         <FilterCheckbox
@@ -43,7 +49,7 @@ const Filters = ({
           titleWidth="50px"
           type="gender"
           setFilter={setFilter}
-          filterItem={filters.gender}
+          filterItem={filters.checkbox.gender}
         />
         <SFlex direction="column" gap="5px">
           {!isPitcher && (
@@ -52,7 +58,7 @@ const Filters = ({
               titleWidth="50px"
               type="bats"
               setFilter={setFilter}
-              filterItem={filters.bats}
+              filterItem={filters.checkbox.bats}
             />
           )}
           <FilterCheckbox
@@ -60,7 +66,7 @@ const Filters = ({
             titleWidth="50px"
             type="throws"
             setFilter={setFilter}
-            filterItem={filters.throws}
+            filterItem={filters.checkbox.throws}
           />
         </SFlex>
         <SFlex direction="column" gap="5px">
@@ -72,7 +78,7 @@ const Filters = ({
                 type="pitching"
                 setFilter={setFilter}
                 setAllFilters={setAllFilters}
-                filterItem={filters.pitching}
+                filterItem={filters.checkbox.pitching}
               />
               <FilterCheckbox
                 title="Pitches"
@@ -80,7 +86,7 @@ const Filters = ({
                 type="pitches"
                 setFilter={setFilter}
                 setAllFilters={setAllFilters}
-                filterItem={filters.pitches}
+                filterItem={filters.checkbox.pitches}
               />
             </>
           ) : (
@@ -88,14 +94,14 @@ const Filters = ({
               <FilterDropdown
                 title="Position"
                 type="position"
-                options={filters.position}
+                options={filters.checkbox.position}
                 setFilter={setFilter}
                 setAllFilters={setAllFilters}
               />
               <FilterDropdown
                 title="2nd Position"
                 type="secondPosition"
-                options={filters.secondPosition}
+                options={filters.checkbox.secondPosition}
                 setFilter={setFilter}
                 setAllFilters={setAllFilters}
               />
@@ -107,21 +113,21 @@ const Filters = ({
             <FilterDropdown
               title="Teams"
               type="teams"
-              options={filters.teams}
+              options={filters.checkbox.teams}
               setFilter={setFilter}
               setAllFilters={setAllFilters}
             />
             <FilterDropdown
               title="Trait"
               type="traits"
-              options={filters.traits}
+              options={filters.checkbox.traits}
               setFilter={setFilter}
               setAllFilters={setAllFilters}
             />
             <FilterDropdown
               title="Trait 2"
               type="traits2"
-              options={filters.traits2}
+              options={filters.checkbox.traits2}
               setFilter={setFilter}
               setAllFilters={setAllFilters}
             />
@@ -133,7 +139,7 @@ const Filters = ({
             isImgType={true}
             setFilter={setFilter}
             setAllFilters={setAllFilters}
-            filterItem={filters.playerChemistry}
+            filterItem={filters.checkbox.playerChemistry}
           />
         </SFlex>
       </SFlex>

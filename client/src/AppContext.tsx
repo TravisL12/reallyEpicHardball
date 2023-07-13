@@ -8,14 +8,14 @@ const AppContext = createContext<IAppContext>({
   loading: { players: false, team: false, teams: false },
   sortPlayers: undefined,
   fetchPlayers: undefined,
-  fetchPitchers: undefined,
+  searchPlayers: undefined,
   fetchAllTeams: undefined,
   fetchSingleTeam: undefined,
   fetchSinglePlayer: undefined,
   players: undefined,
   team: undefined,
   allTeams: undefined,
-  filters: {},
+  filters: { checkbox: {}, nameQuery: "" },
   setFilter: () => {
     return false;
   },

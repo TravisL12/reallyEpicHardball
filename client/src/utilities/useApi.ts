@@ -26,23 +26,19 @@ export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
   });
 
   const apiFilters = useMemo(() => {
-    return Object.keys(filters).reduce((acc: any, filterKey) => {
-      acc[filterKey] = filters[filterKey]
+    return Object.keys(filters.checkbox).reduce((acc: any, filterKey) => {
+      acc[filterKey] = filters.checkbox[filterKey]
         .filter((f) => f.checked)
         .map((f) => f.name);
       return acc;
     }, {});
-  }, [filters]);
+  }, [filters.checkbox]);
 
   useEffect(() => {
     if (!players) {
       return;
     }
-    if (isPitchers) {
-      fetchPitchers(true);
-    } else {
-      fetchPlayers(true);
-    }
+    fetchPlayers(true);
   }, [playerSort, JSON.stringify(apiFilters)]);
 
   const updateLoading = async (attr: string, cb: () => Promise<void>) => {
@@ -57,6 +53,10 @@ export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
     setPlayerSort({ sortAttr, isAsc });
   };
 
+  const searchPlayers = () => {
+    fetchPlayers(true, true);
+  };
+
   const fetchSinglePlayer = async (localID: number) => {
     const findPlayer = players?.find((player) => +player.localID === +localID);
     if (findPlayer) {
@@ -69,39 +69,24 @@ export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
     return data.player;
   };
 
-  const fetchPlayers = (shouldReset?: boolean) => {
+  const fetchPlayers = (
+    shouldReset?: boolean,
+    isNameSearch: boolean = false
+  ) => {
     updateLoading("players", async () => {
       const { sortAttr, isAsc } = playerSort;
-      const { data } = await axios.get(`${BASE_URL}/players`, {
-        params: {
-          skip: shouldReset ? 0 : PLAYER_SIZE * playersPage,
-          take: PLAYER_SIZE,
-          sortAttr,
-          isAsc,
-          ...apiFilters,
-        },
-      });
-      setPlayersPage(shouldReset ? 1 : playersPage + 1);
-      setHasMorePlayers(data.hasMore);
-      setPlayerCount(data.count);
-      setPlayers(
-        shouldReset ? data.players : [...(players || []), ...data.players]
+      const { data } = await axios.get(
+        `${BASE_URL}/${isPitchers ? "pitchers" : "players"}`,
+        {
+          params: {
+            skip: shouldReset ? 0 : PLAYER_SIZE * playersPage,
+            take: PLAYER_SIZE,
+            sortAttr,
+            isAsc,
+            ...apiFilters,
+          },
+        }
       );
-    });
-  };
-
-  const fetchPitchers = (shouldReset?: boolean) => {
-    updateLoading("players", async () => {
-      const { sortAttr, isAsc } = playerSort;
-      const { data } = await axios.get(`${BASE_URL}/pitchers`, {
-        params: {
-          skip: shouldReset ? 0 : PLAYER_SIZE * playersPage,
-          take: PLAYER_SIZE,
-          sortAttr,
-          isAsc,
-          ...apiFilters,
-        },
-      });
       setPlayersPage(shouldReset ? 1 : playersPage + 1);
       setHasMorePlayers(data.hasMore);
       setPlayerCount(data.count);
@@ -130,10 +115,10 @@ export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
   return {
     sortPlayers,
     fetchPlayers,
-    fetchPitchers,
     fetchAllTeams,
     fetchSingleTeam,
     fetchSinglePlayer,
+    searchPlayers,
     loading,
     players,
     team,

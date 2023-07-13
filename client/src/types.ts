@@ -46,7 +46,8 @@ export interface ILoading {
 }
 
 export type TAllFilters = {
-  [key: string]: TFilter[];
+  checkbox: { [key: string]: TFilter[] };
+  nameQuery: string;
 };
 
 export type TPlayerSort = {
@@ -57,7 +58,7 @@ export interface IAppContext {
   loading: ILoading;
   sortPlayers: any;
   fetchPlayers: any;
-  fetchPitchers: any;
+  searchPlayers: any;
   fetchAllTeams: any;
   fetchSingleTeam: any;
   fetchSinglePlayer: any;
