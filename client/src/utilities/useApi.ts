@@ -7,12 +7,13 @@ import { BASE_URL } from "../constants";
 const PLAYER_SIZE = 100;
 
 export const useApi = ({
-  filters,
+  allFilters,
   isPitchers,
 }: {
-  filters: TAllFilters;
+  allFilters: { filters: TAllFilters; nameFilter?: string };
   isPitchers: boolean;
 }) => {
+  const { filters, nameFilter } = allFilters;
   const [team, setTeam] = useState<ITeam | undefined>();
   const [allTeams, setAllTeams] = useState<ITeam[] | undefined>();
 
@@ -45,7 +46,7 @@ export const useApi = ({
       return;
     }
     fetchPlayers(true);
-  }, [playerSort, JSON.stringify(apiFilters)]);
+  }, [playerSort, nameFilter, JSON.stringify(apiFilters)]);
 
   const updateLoading = async (attr: string, cb: () => Promise<void>) => {
     setLoading({ ...loading, [attr]: true });
@@ -57,10 +58,6 @@ export const useApi = ({
     const isChangedSortAttr = sortAttr !== playerSort.sortAttr;
     const isAsc = isChangedSortAttr ? playerSort.isAsc : !playerSort.isAsc;
     setPlayerSort({ sortAttr, isAsc });
-  };
-
-  const searchPlayers = (nameQuery: string) => {
-    fetchPlayers(true, nameQuery);
   };
 
   const fetchSinglePlayer = async (localID: number) => {
@@ -75,7 +72,7 @@ export const useApi = ({
     return data.player;
   };
 
-  const fetchPlayers = (shouldReset?: boolean, nameQuery?: string) => {
+  const fetchPlayers = (shouldReset?: boolean) => {
     updateLoading("players", async () => {
       const { sortAttr, isAsc } = playerSort;
       const { data } = await axios.get(
@@ -86,7 +83,7 @@ export const useApi = ({
             take: PLAYER_SIZE,
             sortAttr,
             isAsc,
-            nameQuery,
+            nameQuery: nameFilter,
             ...apiFilters,
           },
         }
@@ -122,7 +119,6 @@ export const useApi = ({
     fetchAllTeams,
     fetchSingleTeam,
     fetchSinglePlayer,
-    searchPlayers,
     loading,
     players,
     team,

@@ -24,6 +24,7 @@ const changeItem = (cPrev: TFilter[], value: TFilter) => {
 };
 
 export const useFilters = (isPitchers: boolean) => {
+  const [nameFilter, setNameFilter] = useState<string>("");
   const [gender, setGender] = useState<TFilter[]>(
     ALL_GENDER.map((name) => ({ name, checked: true }))
   );
@@ -105,7 +106,7 @@ export const useFilters = (isPitchers: boolean) => {
     }
   };
 
-  const setFilter = (type: string, value: TFilter) => {
+  const setFilter = (type: string, value: TFilter, nameQuery?: string) => {
     if (type === "gender") {
       setGender(changeItem([...gender], value));
     }
@@ -142,6 +143,9 @@ export const useFilters = (isPitchers: boolean) => {
     if (type === "teams") {
       setTeams(changeItem([...teams], value));
     }
+    if (nameQuery !== undefined) {
+      setNameFilter(nameQuery);
+    }
   };
 
   return {
@@ -159,6 +163,7 @@ export const useFilters = (isPitchers: boolean) => {
       playerChemistry,
       teams,
     },
+    nameFilter,
     setFilter,
     setAllFilters,
   };
