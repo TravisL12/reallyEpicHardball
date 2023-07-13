@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { useAppContext } from "../../AppContext";
 import { SFilterContainer } from "../../styles/FilterList.styles";
 import { SFlex } from "../../styles/styles";
 import FilterCheckbox from "./FilterCheckbox";
 import FilterDropdown from "./FilterDropdown";
+import { TFilter } from "../../types";
 
 const Filters = ({
   isPitcher,
@@ -11,24 +13,54 @@ const Filters = ({
   isPitcher?: boolean;
   count?: number;
 }) => {
+  const [nameQuery, setNameQuery] = useState<string>("");
   const { filters, setFilter, setAllFilters } = useAppContext();
+
+  const submitFilters = (type: string, value: TFilter) => {
+    setFilter(type, value, nameQuery);
+  };
+
+  const submitAllFilters = (type: string, isOn: boolean) => {
+    setAllFilters(type, isOn, nameQuery);
+  };
 
   return (
     <SFilterContainer justify="space-between" align="center">
       <SFlex gap="20px" align="center" style={{ margin: "10px 0" }}>
-        <FilterCheckbox
-          title="League"
-          titleWidth="72px"
-          type="league"
-          isImgType={true}
-          setFilter={setFilter}
-          filterItem={filters.league}
-        />
+        <SFlex direction="column" gap="5px">
+          <form
+            id="search-player-form"
+            onSubmit={(e) => {
+              e.preventDefault();
+              submitFilters("name", {} as TFilter);
+            }}
+          >
+            <label htmlFor="nameQuery">Player Search</label>
+            <input
+              type="text"
+              id="nameQuery"
+              placeholder="Search by player name"
+              value={nameQuery || ""}
+              onChange={(e) => {
+                setNameQuery(e.target.value);
+              }}
+            />
+            <button>Search</button>
+          </form>
+          <FilterCheckbox
+            title="League"
+            titleWidth="72px"
+            type="league"
+            isImgType={true}
+            setFilter={submitFilters}
+            filterItem={filters.league}
+          />
+        </SFlex>
         <FilterCheckbox
           title="Gender"
           titleWidth="50px"
           type="gender"
-          setFilter={setFilter}
+          setFilter={submitFilters}
           filterItem={filters.gender}
         />
         <SFlex direction="column" gap="5px">
@@ -37,7 +69,7 @@ const Filters = ({
               title="Bats"
               titleWidth="50px"
               type="bats"
-              setFilter={setFilter}
+              setFilter={submitFilters}
               filterItem={filters.bats}
             />
           )}
@@ -45,7 +77,7 @@ const Filters = ({
             title="Throws"
             titleWidth="50px"
             type="throws"
-            setFilter={setFilter}
+            setFilter={submitFilters}
             filterItem={filters.throws}
           />
         </SFlex>
@@ -56,16 +88,16 @@ const Filters = ({
                 title="Role"
                 titleWidth="55px"
                 type="pitching"
-                setFilter={setFilter}
-                setAllFilters={setAllFilters}
+                setFilter={submitFilters}
+                setAllFilters={submitAllFilters}
                 filterItem={filters.pitching}
               />
               <FilterCheckbox
                 title="Pitches"
                 titleWidth="55px"
                 type="pitches"
-                setFilter={setFilter}
-                setAllFilters={setAllFilters}
+                setFilter={submitFilters}
+                setAllFilters={submitAllFilters}
                 filterItem={filters.pitches}
               />
             </>
@@ -75,15 +107,15 @@ const Filters = ({
                 title="Position"
                 type="position"
                 options={filters.position}
-                setFilter={setFilter}
-                setAllFilters={setAllFilters}
+                setFilter={submitFilters}
+                setAllFilters={submitAllFilters}
               />
               <FilterDropdown
                 title="2nd Position"
                 type="secondPosition"
                 options={filters.secondPosition}
-                setFilter={setFilter}
-                setAllFilters={setAllFilters}
+                setFilter={submitFilters}
+                setAllFilters={submitAllFilters}
               />
             </>
           )}
@@ -94,22 +126,22 @@ const Filters = ({
               title="Teams"
               type="teams"
               options={filters.teams}
-              setFilter={setFilter}
-              setAllFilters={setAllFilters}
+              setFilter={submitFilters}
+              setAllFilters={submitAllFilters}
             />
             <FilterDropdown
               title="Trait"
               type="traits"
               options={filters.traits}
-              setFilter={setFilter}
-              setAllFilters={setAllFilters}
+              setFilter={submitFilters}
+              setAllFilters={submitAllFilters}
             />
             <FilterDropdown
               title="Trait 2"
               type="traits2"
               options={filters.traits2}
-              setFilter={setFilter}
-              setAllFilters={setAllFilters}
+              setFilter={submitFilters}
+              setAllFilters={submitAllFilters}
             />
           </SFlex>
           <FilterCheckbox
@@ -117,8 +149,8 @@ const Filters = ({
             titleWidth="72px"
             type="playerChemistry"
             isImgType={true}
-            setFilter={setFilter}
-            setAllFilters={setAllFilters}
+            setFilter={submitFilters}
+            setAllFilters={submitAllFilters}
             filterItem={filters.playerChemistry}
           />
         </SFlex>

@@ -6,21 +6,18 @@ const { playerSelect } = require("./selectConstants");
 const {
   transformPlayer,
   sharedWhereQuery,
-  REVERSE_BATS,
-  REVERSE_PRIMARY_POS,
-  REVERSE_PITCHING,
-  REVERSE_SECOND_POS,
-  REVERSE_PITCHES,
+  pitcherWhereQuery,
+  playerWhereQuery,
 } = require("./helpers");
 const { uniqBy } = require("lodash");
 
-router.get("/teams", async function (req, res, next) {
+router.get("/teams", async function (req, res) {
   const resp = await db.player.findMany({ select: { team: true } });
   const teams = uniqBy(resp, "team");
   res.json({ teams });
 });
 
-router.get("/team", async function (req, res, next) {
+router.get("/team", async function (req, res) {
   const { name } = req.query;
   const players = await db.player.findMany({
     where: { team: name },
@@ -35,7 +32,7 @@ router.get("/team", async function (req, res, next) {
   }
 });
 
-router.get("/player", async function (req, res, next) {
+router.get("/player", async function (req, res) {
   const { localID } = req.query;
   const player = await db.player.findFirst({
     where: {
@@ -49,28 +46,26 @@ router.get("/player", async function (req, res, next) {
   res.json({ player: data });
 });
 
-router.get("/players", async function (req, res, next) {
-  const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const { bats, position, secondPosition } = filters;
-  const sharedWhere = sharedWhereQuery(filters);
+const playerQuery = async (req, isPitcher = false) => {
+  const {
+    take,
+    skip,
+    sortAttr = "id",
+    isAsc,
+    nameQuery,
+    ...filters
+  } = req.query;
+  const sharedWhere = sharedWhereQuery(filters, nameQuery);
+  const playerWhere = isPitcher
+    ? pitcherWhereQuery(filters)
+    : playerWhereQuery(filters);
 
   const direction = isAsc === "true" ? "asc" : "desc";
   const orderBy =
     sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
 
   const where = {
-    AND: [
-      ...sharedWhere,
-      { OR: bats?.map((i) => ({ bats: +REVERSE_BATS[i] })) },
-      {
-        OR: position?.map((i) => ({ primaryPosition: REVERSE_PRIMARY_POS[i] })),
-      },
-      {
-        OR: secondPosition?.map((i) => ({
-          secondaryPosition: REVERSE_SECOND_POS[i],
-        })),
-      },
-    ],
+    AND: [...sharedWhere, ...playerWhere],
   };
 
   const count = await db.player.aggregate({
@@ -89,47 +84,16 @@ router.get("/players", async function (req, res, next) {
   });
   const players = selectedPlayers.map(transformPlayer);
   const hasMore = count._count > +take + +skip;
-  res.json({ players, count: count._count, hasMore });
+  return { players, count: count._count, hasMore };
+};
+
+router.get("/players", async function (req, res) {
+  const { players, count, hasMore } = await playerQuery(req);
+  res.json({ players, count, hasMore });
 });
 
-router.get("/pitchers", async function (req, res, next) {
-  const { take, skip, sortAttr = "id", isAsc, ...filters } = req.query;
-  const { pitching, pitches } = filters;
-  const sharedWhere = sharedWhereQuery(filters);
-
-  const direction = isAsc === "true" ? "asc" : "desc";
-  const orderBy =
-    sortAttr === "id" ? {} : { [sortAttr]: { sort: direction, nulls: "last" } };
-
-  const where = {
-    AND: [
-      ...sharedWhere,
-      {
-        OR: pitching?.map((i) => ({ pitcherRole: REVERSE_PITCHING[i] })),
-      },
-      { OR: { NOT: { pitcherRole: null } } },
-      {
-        AND: pitches?.map((i) => ({ [REVERSE_PITCHES[i]]: 1 })),
-      },
-    ],
-  };
-
-  const count = await db.player.aggregate({
-    _count: true,
-    where,
-  });
-
-  const selectedPlayers = await db.player.findMany({
-    skip: +skip,
-    take: +take,
-    select: {
-      ...playerSelect,
-    },
-    where,
-    orderBy,
-  });
-  const players = selectedPlayers.map(transformPlayer);
-  const hasMore = count._count > +take + +skip;
+router.get("/pitchers", async function (req, res) {
+  const { players, count, hasMore } = await playerQuery(req, true);
   res.json({ players, count: count._count, hasMore });
 });
 

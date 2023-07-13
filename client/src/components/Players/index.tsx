@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react";
+import { useEffect } from "react";
 import { useOutlet } from "react-router-dom";
 
 import PlayersTable from "../PlayersTable";
@@ -14,7 +14,6 @@ const Players = () => {
   const {
     loading,
     fetchPlayers,
-    fetchPitchers,
     players,
     sortPlayers,
     hasMorePlayers,
@@ -22,23 +21,15 @@ const Players = () => {
     isPitchers,
   } = useAppContext();
 
-  const getPlayers = (shouldReset?: boolean) => {
-    if (!isPitchers) {
-      fetchPlayers(shouldReset);
-    } else {
-      fetchPitchers(shouldReset);
-    }
-  };
-
   useEffect(() => {
-    getPlayers(true);
+    fetchPlayers(true);
   }, [isPitchers]);
 
   const { ref } = useInView({
     threshold: 0.25,
     onChange: (inView) => {
       if (inView && !!players && !loading.players && hasMorePlayers) {
-        getPlayers();
+        fetchPlayers();
       }
     },
   });

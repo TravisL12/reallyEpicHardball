@@ -8,7 +8,6 @@ const AppContext = createContext<IAppContext>({
   loading: { players: false, team: false, teams: false },
   sortPlayers: undefined,
   fetchPlayers: undefined,
-  fetchPitchers: undefined,
   fetchAllTeams: undefined,
   fetchSingleTeam: undefined,
   fetchSinglePlayer: undefined,
@@ -30,14 +29,14 @@ const AppContext = createContext<IAppContext>({
 
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
   const isPitchers = !!useMatch("/pitchers/*");
-  const { filters, setFilter, setAllFilters } = useFilters(isPitchers);
-  const apiData = useApi(filters, isPitchers);
+  const { filters, nameFilter, setFilter, setAllFilters } =
+    useFilters(isPitchers);
+  const apiData = useApi({ allFilters: { filters, nameFilter }, isPitchers });
 
   return (
     <AppContext.Provider
       value={{
         ...apiData,
-
         filters,
         setFilter,
         setAllFilters,
