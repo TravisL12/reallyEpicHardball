@@ -6,7 +6,13 @@ import { BASE_URL } from "../constants";
 
 const PLAYER_SIZE = 100;
 
-export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
+export const useApi = ({
+  filters,
+  isPitchers,
+}: {
+  filters: TAllFilters;
+  isPitchers: boolean;
+}) => {
   const [team, setTeam] = useState<ITeam | undefined>();
   const [allTeams, setAllTeams] = useState<ITeam[] | undefined>();
 
@@ -26,13 +32,13 @@ export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
   });
 
   const apiFilters = useMemo(() => {
-    return Object.keys(filters.checkbox).reduce((acc: any, filterKey) => {
-      acc[filterKey] = filters.checkbox[filterKey]
+    return Object.keys(filters).reduce((acc: any, filterKey) => {
+      acc[filterKey] = filters[filterKey]
         .filter((f) => f.checked)
         .map((f) => f.name);
       return acc;
     }, {});
-  }, [filters.checkbox]);
+  }, [filters]);
 
   useEffect(() => {
     if (!players) {
@@ -53,8 +59,8 @@ export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
     setPlayerSort({ sortAttr, isAsc });
   };
 
-  const searchPlayers = () => {
-    fetchPlayers(true, true);
+  const searchPlayers = (nameQuery: string) => {
+    fetchPlayers(true, nameQuery);
   };
 
   const fetchSinglePlayer = async (localID: number) => {
@@ -69,10 +75,7 @@ export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
     return data.player;
   };
 
-  const fetchPlayers = (
-    shouldReset?: boolean,
-    isNameSearch: boolean = false
-  ) => {
+  const fetchPlayers = (shouldReset?: boolean, nameQuery?: string) => {
     updateLoading("players", async () => {
       const { sortAttr, isAsc } = playerSort;
       const { data } = await axios.get(
@@ -83,6 +86,7 @@ export const useApi = (filters: TAllFilters, isPitchers: boolean) => {
             take: PLAYER_SIZE,
             sortAttr,
             isAsc,
+            nameQuery,
             ...apiFilters,
           },
         }

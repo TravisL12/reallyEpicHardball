@@ -45,10 +45,7 @@ export interface ILoading {
   teams: boolean;
 }
 
-export type TAllFilters = {
-  checkbox: { [key: string]: TFilter[] };
-  nameQuery: string;
-};
+export type TAllFilters = { [key: string]: TFilter[] };
 
 export type TPlayerSort = {
   sortAttr: string;

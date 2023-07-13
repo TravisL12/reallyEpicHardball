@@ -24,7 +24,6 @@ const changeItem = (cPrev: TFilter[], value: TFilter) => {
 };
 
 export const useFilters = (isPitchers: boolean) => {
-  const [nameQuery, setNameQuery] = useState<string>("");
   const [gender, setGender] = useState<TFilter[]>(
     ALL_GENDER.map((name) => ({ name, checked: true }))
   );
@@ -147,21 +146,18 @@ export const useFilters = (isPitchers: boolean) => {
 
   return {
     filters: {
-      checkbox: {
-        gender,
-        bats,
-        throws,
-        league,
-        position,
-        pitching,
-        secondPosition,
-        pitches,
-        traits,
-        traits2,
-        playerChemistry,
-        teams,
-      },
-      nameQuery,
+      gender,
+      bats,
+      throws,
+      league,
+      position,
+      pitching,
+      secondPosition,
+      pitches,
+      traits,
+      traits2,
+      playerChemistry,
+      teams,
     },
     setFilter,
     setAllFilters,

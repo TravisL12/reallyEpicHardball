@@ -15,7 +15,7 @@ const AppContext = createContext<IAppContext>({
   players: undefined,
   team: undefined,
   allTeams: undefined,
-  filters: { checkbox: {}, nameQuery: "" },
+  filters: {},
   setFilter: () => {
     return false;
   },
@@ -31,7 +31,7 @@ const AppContext = createContext<IAppContext>({
 const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
   const isPitchers = !!useMatch("/pitchers/*");
   const { filters, setFilter, setAllFilters } = useFilters(isPitchers);
-  const apiData = useApi(filters, isPitchers);
+  const apiData = useApi({ filters, isPitchers });
 
   return (
     <AppContext.Provider
