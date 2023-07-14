@@ -1,4 +1,4 @@
-export const BASE_URL = `http://${window.location.hostname}:5005`;
+export const BASE_URL = `https://${window.location.hostname}:5005`;
 const IMAGE_URL = `${BASE_URL}/images`;
 const IMAGE_URL_AWS = `https://smb4.s3.us-west-2.amazonaws.com`;
 export const IMAGE_BASE_URL =
