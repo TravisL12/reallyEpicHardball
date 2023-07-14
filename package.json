@@ -7,9 +7,9 @@
   "license": "MIT",
   "scripts": {
     "run-prod-rebuild": "yarn --cwd ./client build && docker compose -f docker-compose.prod.yaml up --build",
-    "run-prod-build": "yarn --cwd ./client build && docker compose -f docker-compose.prod.yaml up --build",
+    "run-prod-build": "yarn --cwd ./client build && docker compose -f docker-compose.prod.yaml up",
     "run-prod": "docker compose -f docker-compose.prod.yaml up",
-    "run-dev-build": "docker compose up --build",
+    "run-dev-rebuild": "docker compose up --build",
     "run-dev": "docker compose up"
   }
 }
