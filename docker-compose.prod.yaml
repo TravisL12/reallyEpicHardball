@@ -51,4 +51,5 @@ services:
 volumes:
   postgresDb:
 # docker compose -f docker-compose.prod.yaml run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d reallyepichardball.com
+# docker compose -f docker-compose.prod.yaml run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ -d reallyepichardball.com
 
