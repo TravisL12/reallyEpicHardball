@@ -39,13 +39,14 @@ services:
       - 443:443
     volumes:
       - ./client/build:/usr/share/nginx/reallyepichardball
-      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/www:/usr/share/nginx/reallyepichardball/certbot/:ro
 
   certbot:
     image: certbot/certbot:latest
     volumes:
-      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/www/:/usr/share/nginx/reallyepichardball/certbot/:rw
 
 volumes:
   postgresDb:
-# docker compose run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d reallyepichardball.com
+# docker compose -f docker-compose.prod.yaml run --rm  certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d reallyepichardball.com
+
