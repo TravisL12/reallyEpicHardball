@@ -27,21 +27,9 @@ services:
     volumes:
       - postgresDb:/var/lib/postgresql/data
 
-  client:
-    stdin_open: true
-    environment:
-      - REACT_APP_API_PORT=5005
-    build:
-      context: ./client
-      target: "client_prod"
-    volumes:
-      - /app/node_modules
-      - ./client:/app
-
   nginx:
     depends_on:
       - api
-      - client
     restart: always
     build:
       context: ./nginx
